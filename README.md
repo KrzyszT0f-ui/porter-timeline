@@ -1,6 +1,6 @@
 # Porter's Five Forces Timeline Engine
 
-**Live Application:** [https://porter-timeline.vercel.app](https://porter-timeline.vercel.app)
+**Live Application:** https://porter-timeline.vercel.app
 
 An interactive, multi-company strategic analysis web application (PWA) designed to visualize how competitive dynamics and industry moats evolve over multi-decade financial trajectories.
 
@@ -20,10 +20,33 @@ An interactive, multi-company strategic analysis web application (PWA) designed 
 
 The engine decouples UI visualization from company datasets through a modular registry pattern:
 
-```text
-src/
-├── data/
-│   ├── nvda.json        # Historical dataset (1993–2026)
-│   └── registry.js      # Central company index and selector binding
-├── components/          # Radar chart, revenue trajectory, and mobile-docked timeline controls
-└── App.jsx              # Core state management and comparison engine
+* `src/data/nvda.json` – Historical dataset (1993–2026)
+* `src/data/registry.js` – Central company index and selector binding
+* `src/components/` – Radar chart, revenue trajectory, and mobile-docked timeline controls
+* `src/App.jsx` – Core state management and comparison engine
+
+To add a new company, create a corresponding JSON file in `src/data/` following the existing schema and register its metadata in `src/data/registry.js`.
+
+---
+
+## Tech Stack
+
+* **Frontend:** React, Vite 8, Tailwind CSS
+* **Icons & Visualization:** Custom SVG rendering, `lucide-react`
+* **PWA & Deployment:** `vite-plugin-pwa` (Workbox), Vercel CI/CD
+
+---
+
+## Local Development
+
+1. Clone the repository: `git clone https://github.com/KrzyszT0f-ui/porter-timeline.git`
+2. Enter the directory: `cd porter-timeline`
+3. Install dependencies: `npm install`
+4. Start development server: `npm run dev`
+5. Build production bundle: `npm run build`
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
