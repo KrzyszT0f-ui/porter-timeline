@@ -7,7 +7,9 @@ import {
   Globe,
   ChevronLeft,
   ChevronRight,
-  Cpu
+  Cpu,
+  Radio,
+  Plane
 } from 'lucide-react';
 import { COMPANIES, getCompanyById } from './data/registry';
 import { translations, pickLang } from './i18n/translations';
@@ -302,7 +304,7 @@ export default function App() {
               className="w-9 h-9 rounded-lg flex items-center justify-center font-bold"
               style={{ backgroundColor: 'var(--accent-soft)', color: 'var(--accent)', border: '1px solid var(--accent)' }}
             >
-              <Cpu className="w-5 h-5" />
+              {company.id === 'spot' ? <Radio className="w-5 h-5" /> : company.id === 'rya' ? <Plane className="w-5 h-5" /> : <Cpu className="w-5 h-5" />}
             </div>
             <div>
               <h1 className="text-base sm:text-lg font-bold tracking-tight leading-tight">

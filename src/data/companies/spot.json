@@ -1,0 +1,1297 @@
+{
+  "id": "spot",
+  "ticker": "SPOT",
+  "name": "Spotify Technology S.A.",
+  "sector": {
+    "pl": "Streaming audio i rozrywka cyfrowa",
+    "en": "Audio Streaming & Digital Entertainment"
+  },
+  "theme": {
+    "bgMain": "#121212",
+    "bgCard": "#181818",
+    "bgCardElevated": "#242424",
+    "borderSubtle": "#2e2e2e",
+    "textPrimary": "#ffffff",
+    "textSecondary": "#cbd5e1",
+    "accent": "#1db954",
+    "accentSoft": "rgba(29, 185, 84, 0.16)",
+    "accentContrast": "#000000",
+    "compareAccent": "#38bdf8"
+  },
+  "timeline": [
+    {
+      "year": 2014,
+      "fiscalLabel": {
+        "pl": "FY2014 (01.01–31.12.2014, Pre-IPO)",
+        "en": "FY2014 (Jan 1–Dec 31, 2014, Pre-IPO)"
+      },
+      "era": {
+        "pl": "Era I: Start-up, model freemium i walka z piractwem",
+        "en": "Era I: Start-up, Freemium Model & Anti-Piracy"
+      },
+      "summary": {
+        "pl": "Spotify przekroczyło miliard euro przychodów, walidując model freemium jako legalną alternatywę dla piractwa. Wysokie koszty licencji i skalowania wygenerowały jednak 191 mln EUR straty operacyjnej i ujemne przepływy operacyjne.",
+        "en": "Spotify surpassed €1 billion in revenue, validating the freemium model as a legal alternative to digital piracy. However, heavy licensing and scaling expenses resulted in a €191M operating loss and negative operating cash flows."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "1,09 mld EUR",
+          "en": "€1.09B"
+        },
+        "revenueNum": 1.085,
+        "yoy": "N/A",
+        "grossMargin": "16.0%",
+        "opMargin": "-17.6%",
+        "netIncome": {
+          "pl": "-188 mln EUR",
+          "en": "-€188M"
+        },
+        "rnd": {
+          "pl": "R&D: 114 mln EUR / MAU i subskrybenci: b.d.",
+          "en": "R&D: €114M / MAUs & Subscribers: N/A"
+        },
+        "catalyst": {
+          "pl": "Skalowanie modelu freemium przy ujemnych przepływach operacyjnych (-74 mln EUR)",
+          "en": "Scaling the freemium model amid negative operating cash flows (-€74M)"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Spotify konkurowało o kształtujący się rynek streamingu, przeznaczając 184 mln EUR na sprzedaż i marketing (17,0% przychodów) przy stracie operacyjnej -191 mln EUR. Presja nie osiągnęła jeszcze maksimum (5/5), ponieważ najwięksi giganci technologiczni dopiero przygotowywali swoje usługi na żądanie.",
+            "en": "Spotify competed aggressively to capture the emerging streaming market, spending €184M on sales and marketing (17.0% of revenue) with a -€191M operating loss. Pressure had not yet peaked at 5/5 as Big Tech rivals were still preparing their on-demand offerings."
+          }
+        },
+        "suppliers": {
+          "score": 5,
+          "rationale": {
+            "pl": "Oligopol wielkich wytwórni fonograficznych sprawował pełną kontrolę nad licencjonowaniem katalogu niezbędnego do działania platformy. Przejawiało się to w niskiej marży brutto (16,0%) oraz restrykcyjnych gwarancjach minimalnych w umowach.",
+            "en": "The major record label oligopoly exercised near-total control over licensing the music catalog essential for platform operations. This was reflected in a low 16.0% gross margin and restrictive minimum guarantee clauses."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Przy niewielkiej skali bazy i niskich kosztach przejścia między dostawcami konsumenci oczekiwali darmowego dostępu reklamowego lub niskiej ceny abonamentu. Ocenę przed maksimum (5/5) chroniła wygoda legalnego dostępu do katalogu w porównaniu z piractwem.",
+            "en": "With a smaller user base and low switching costs, consumers expected either free ad-supported access or low subscription pricing. Convenience compared to piracy prevented buyer power from reaching 5/5."
+          }
+        },
+        "substitutes": {
+          "score": 4,
+          "rationale": {
+            "pl": "Tradycyjne radio linearne, płatne pobrania utworów oraz piractwo cyfrowe stanowiły wciąż dominujące kanały słuchania muzyki. Streaming na żądanie pozostawał w fazie budowania masowych nawyków.",
+            "en": "Traditional linear radio, paid digital downloads, and piracy remained dominant music consumption channels. On-demand streaming was still in the early stages of forming mass consumer habits."
+          }
+        },
+        "newEntrants": {
+          "score": 4,
+          "rationale": {
+            "pl": "Bariery wejścia dla dobrze dokapitalizowanych koncernów technologicznych były niskie, gdyż wytwórnie udzielały licencji niewyłącznych wielu podmiotom równolegle. Dla małych start-upów wejście utrudniało wysokie zapotrzebowanie na kapitał.",
+            "en": "Entry barriers for well-capitalized tech giants were low because labels granted non-exclusive licenses to multiple platforms in parallel. High capital requirements still hindered smaller independent start-ups."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Premium",
+            "en": "Premium"
+          },
+          "value": {
+            "pl": "983 mln EUR",
+            "en": "€983M"
+          },
+          "pct": 90.6
+        },
+        {
+          "name": {
+            "pl": "Ad-Supported",
+            "en": "Ad-Supported"
+          },
+          "value": {
+            "pl": "102 mln EUR",
+            "en": "€102M"
+          },
+          "pct": 9.4
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "fiscalLabel": {
+        "pl": "FY2015 (01.01–31.12.2015, Pre-IPO)",
+        "en": "FY2015 (Jan 1–Dec 31, 2015, Pre-IPO)"
+      },
+      "era": {
+        "pl": "Era II: Hiperwzrost przed IPO, ekspansja globalna i dyktat wytwórni",
+        "en": "Era II: Pre-IPO Hypergrowth, Global Expansion & Label Dominance"
+      },
+      "summary": {
+        "pl": "Przychody wystrzeliły o 78,8% r/r do 1,94 mld EUR, lecz debiut Apple Music i minimalne gwarancje licencyjne obniżyły marżę brutto do rekordowo niskiego poziomu 11,6%. Segment reklamowy notował głęboką ujemną marżę brutto (-16%).",
+        "en": "Revenue surged 78.8% YoY to €1.94B, but the launch of Apple Music and minimum licensing guarantees compressed gross margin to a trough of 11.6%. The Ad-Supported segment posted a deeply negative -16% gross margin."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "1,94 mld EUR",
+          "en": "€1.94B"
+        },
+        "revenueNum": 1.94,
+        "yoy": "+78.8%",
+        "grossMargin": "11.6%",
+        "opMargin": "-12.1%",
+        "netIncome": {
+          "pl": "-230 mln EUR",
+          "en": "-€230M"
+        },
+        "rnd": {
+          "pl": "R&D: 136 mln EUR / MAU i subskrybenci: b.d.",
+          "en": "R&D: €136M / MAUs & Subscribers: N/A"
+        },
+        "catalyst": {
+          "pl": "Wejście Apple Music; presja gwarancji minimalnych wytwórni (marża Ad-Supported -16%)",
+          "en": "Apple Music market entry; label minimum guarantee pressure (-16% Ad-Supported margin)"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Mimo skoku przychodów o 78,8% r/r do 1 940 mln EUR Spotify musiało bronić rynku przed wejściem Apple Music w połowie 2015 r., wydając 219 mln EUR na sprzedaż i marketing. Pełnoskalowa wojna marketingowa rozwinęła się dopiero w kolejnym roku.",
+            "en": "Despite 78.8% YoY revenue growth to €1,940M, Spotify had to defend its turf against Apple Music's mid-2015 entry, spending €219M on S&M. Full-scale marketing warfare intensified in the following year."
+          }
+        },
+        "suppliers": {
+          "score": 5,
+          "rationale": {
+            "pl": "Szybki wzrost skali nie poprawił warunków licencyjnych — marża brutto spadła z 16,0% do 11,6%, a segment reklamowy notował marżę -16%. Wytwórnie przejmowały niemal całą nadwyżkę ekonomiczną z rosnących przychodów.",
+            "en": "Rapid scale gains failed to improve licensing terms as gross margin dropped from 16.0% to 11.6% and Ad-Supported posted a -16% margin. Record labels captured nearly all incremental economic surplus."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Pojawienie się alternatywy ze strony Apple oraz dominacja darmowego progu Ad-Supported utrzymywały wysoką wrażliwość cenową użytkowników. Brak możliwości podnoszenia cen abonamentowych utrzymał ocenę na 4/5.",
+            "en": "Apple's entry and reliance on the free ad-supported tier kept consumer price sensitivity elevated. An inability to raise subscription prices kept buyer power at 4/5."
+          }
+        },
+        "substitutes": {
+          "score": 4,
+          "rationale": {
+            "pl": "Choć streaming zaczął przywracać wzrost branży muzycznej, tradycyjne radio (globalny rynek reklamy ok. 28 mld USD) oraz darmowe treści wideo pozostawały głównymi substytutami. Presja pozostała niezmieniona wobec 2014 r.",
+            "en": "Although streaming began reviving recorded music growth, traditional radio (a ~USD 28B global ad market) and free video platforms remained key substitutes. Substitution pressure held steady versus 2014."
+          }
+        },
+        "newEntrants": {
+          "score": 4,
+          "rationale": {
+            "pl": "Wejście Apple Music potwierdziło w praktyce, że gracze z własnymi ekosystemami dystrybucji mogą błyskawicznie uruchomić konkurencyjny serwis. Dla niezależnych podmiotów barierą pozostawały jednak straty operacyjne rzędu -235 mln EUR.",
+            "en": "Apple Music's launch proved that players with proprietary device ecosystems could rapidly enter the market. High operating losses (-€235M at Spotify) continued to deter independent entrants."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Premium",
+            "en": "Premium"
+          },
+          "value": {
+            "pl": "1,74 mld EUR",
+            "en": "€1.74B"
+          },
+          "pct": 89.9
+        },
+        {
+          "name": {
+            "pl": "Ad-Supported",
+            "en": "Ad-Supported"
+          },
+          "value": {
+            "pl": "196 mln EUR",
+            "en": "€196M"
+          },
+          "pct": 10.1
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "fiscalLabel": {
+        "pl": "FY2016 (01.01–31.12.2016, Pre-IPO)",
+        "en": "FY2016 (Jan 1–Dec 31, 2016, Pre-IPO)"
+      },
+      "era": {
+        "pl": "Era II: Hiperwzrost przed IPO, ekspansja globalna i dyktat wytwórni",
+        "en": "Era II: Pre-IPO Hypergrowth, Global Expansion & Label Dominance"
+      },
+      "summary": {
+        "pl": "Agresywna ekspansja na rynki międzynarodowe podniosła przychody o 52,2% do 2,95 mld EUR, ale wymagała pozyskania 916 mln EUR finansowania zewnętrznego. Streaming napędził najszybszy od 20 lat wzrost globalnego rynku muzyki nagranej.",
+        "en": "Aggressive international expansion lifted revenue 52.2% to €2.95B, requiring €916M in external financing. Streaming drove the fastest annual growth in the global recorded music industry in 20 years."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "2,95 mld EUR",
+          "en": "€2.95B"
+        },
+        "revenueNum": 2.952,
+        "yoy": "+52.2%",
+        "grossMargin": "13.6%",
+        "opMargin": "-11.8%",
+        "netIncome": {
+          "pl": "-539 mln EUR",
+          "en": "-€539M"
+        },
+        "rnd": {
+          "pl": "R&D: 207 mln EUR / MAU i subskrybenci: b.d.",
+          "en": "R&D: €207M / MAUs & Subscribers: N/A"
+        },
+        "catalyst": {
+          "pl": "Odbicie rynku muzyki nagranej (+6% do 15,7 mld USD); pozyskanie 916 mln EUR finansowania",
+          "en": "Global recorded music rebound (+6% to $15.7B); €916M financing raised"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 5,
+          "rationale": {
+            "pl": "Presja wzrosła do maksimum (5/5) wskutek agresywnej walki o globalny udział w rynku między Spotify, Apple Music i rywalami. Wydatki na sprzedaż i marketing podskoczyły o 68% r/r do 368 mln EUR, pogłębiając stratę operacyjną do -349 mln EUR.",
+            "en": "Competitive rivalry peaked at 5/5 amid an aggressive global land grab between Spotify, Apple Music, and peers. S&M spending jumped 68% YoY to €368M, widening operating losses to -€349M."
+          }
+        },
+        "suppliers": {
+          "score": 5,
+          "rationale": {
+            "pl": "Mimo wzrostu przychodów o 52,2% r/r marża brutto poprawiła się zaledwie do 13,6%, a w segmencie reklamowym wciąż była ujemna (-12%). Brak kontroli nad dostawcami katalogu stanowił główne ryzyko operacyjne.",
+            "en": "Despite 52.2% YoY revenue growth, gross margin edged up only to 13.6% and Ad-Supported remained negative (-12%). Lack of control over content rights holders remained Spotify's primary operating risk."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Konkurencyjne platformy oferowały zbliżony katalog ponad 30 mln utworów w identycznych widełkach cenowych, co utrzymywało niskie koszty rezygnacji. Rosnąca personalizacja list odtwarzania ograniczała jednak pełną zamienność usług.",
+            "en": "Competing platforms offered nearly identical 30M+ track catalogs at similar price points, keeping churn friction low. Expanding playlist personalization partially cushioned full substitutability."
+          }
+        },
+        "substitutes": {
+          "score": 4,
+          "rationale": {
+            "pl": "Globalne przychody z muzyki nagranej wzrosły o 6% do 15,7 mld USD głównie dzięki streamingowi, który wypierał płatne pobrania. Mimo to tradycyjne radio linearne wciąż zagospodarowywało ogromną część czasu słuchaczy.",
+            "en": "Global recorded music revenue rose 6% to $15.7B largely on streaming gains that displaced downloads. Nonetheless, linear broadcast radio still commanded a massive share of listening hours."
+          }
+        },
+        "newEntrants": {
+          "score": 3,
+          "rationale": {
+            "pl": "Ocena spadła z 4/5 do 3/5, ponieważ skala strat netto (-539 mln EUR) oraz konieczność pozyskania 916 mln EUR finansowania zewnętrznego zablokowały wejście mniejszym podmiotom. Rynek pozostał dostępny niemal wyłącznie dla gigantów technologicznych.",
+            "en": "Threat of entry eased from 4/5 to 3/5 as -€539M in net losses and a €916M external financing requirement priced out smaller challengers. Entry remained viable almost solely for Big Tech."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Premium",
+            "en": "Premium"
+          },
+          "value": {
+            "pl": "2,66 mld EUR",
+            "en": "€2.66B"
+          },
+          "pct": 90.0
+        },
+        {
+          "name": {
+            "pl": "Ad-Supported",
+            "en": "Ad-Supported"
+          },
+          "value": {
+            "pl": "295 mln EUR",
+            "en": "€295M"
+          },
+          "pct": 10.0
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "fiscalLabel": {
+        "pl": "FY2017 (01.01–31.12.2017, Pre-IPO)",
+        "en": "FY2017 (Jan 1–Dec 31, 2017, Pre-IPO)"
+      },
+      "era": {
+        "pl": "Era II: Hiperwzrost przed IPO, ekspansja globalna i dyktat wytwórni",
+        "en": "Era II: Pre-IPO Hypergrowth, Global Expansion & Label Dominance"
+      },
+      "summary": {
+        "pl": "Kluczowa renegocjacja kontraktów licencyjnych przed debiutem podniosła marżę brutto o 7,2 p.p. do 20,8% i wyprowadziła segment reklamowy na plus (+10% marży). Koszty finansowe długu zamiennego pogłębiły jednak stratę netto do -1,24 mld EUR.",
+        "en": "Landmark pre-IPO licensing renegotiations boosted gross margin by 7.2 percentage points to 20.8% and turned the Ad-Supported gross margin positive (+10%). Convertible debt finance charges drove net loss to -€1.24B."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "4,09 mld EUR",
+          "en": "€4.09B"
+        },
+        "revenueNum": 4.09,
+        "yoy": "+38.6%",
+        "grossMargin": "20.8%",
+        "opMargin": "-9.2%",
+        "netIncome": {
+          "pl": "-1,24 mld EUR",
+          "en": "-€1.24B"
+        },
+        "rnd": {
+          "pl": "R&D: 396 mln EUR / 159 mln MAU / 71 mln subskrybentów",
+          "en": "R&D: €396M / 159M MAUs / 71M Subscribers"
+        },
+        "catalyst": {
+          "pl": "Renegocjacja umów z wytwórniami (+7,2 p.p. marży brutto); 974 mln EUR kosztów finansowych przed IPO",
+          "en": "Label license renegotiation (+7.2 pp gross margin); €974M pre-IPO finance costs"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 5,
+          "rationale": {
+            "pl": "Rywalizacja pozostała maksymalna: wydatki na sprzedaż i marketing wzrosły o 54% do 567 mln EUR, a R&D niemal się podwoiło do 396 mln EUR. Mimo zdobycia 71 mln subskrybentów — niemal dwukrotnie więcej niż Apple Music — strata operacyjna wyniosła -378 mln EUR.",
+            "en": "Rivalry stayed at 5/5 as S&M rose 54% to €567M and R&D nearly doubled to €396M. Despite reaching 71M subscribers—nearly double Apple Music—Spotify posted an operating loss of -€378M."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Siła dostawców obniżyła się z 5/5 do 4/5 po renegocjacjach przed IPO, które podniosły marżę brutto do 20,8% i dały +10% marży w segmencie Ad-Supported. Nadal była to jednak wysoka presja ze względu na brak kontroli nad katalogiem i gwarancje minimalne.",
+            "en": "Supplier power eased from 5/5 to 4/5 following pre-IPO contract renegotiations that lifted gross margin to 20.8% and Ad-Supported margin to +10%. Reliance on external catalog holders and minimum guarantees kept pressure high."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Mimo wzrostu zaangażowania (25 godzin treści miesięcznie na MAU w Q4, +13% r/r) użytkownicy przyzwyczaili się do stałych cen abonamentu i promocji próbnych. Brak siły do podnoszenia cen utrzymał ocenę 4/5.",
+            "en": "Despite rising engagement (25 content hours per MAU monthly in Q4, +13% YoY), consumers expected flat pricing and generous trials. Limited pricing power kept buyer power at 4/5."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Presja spadła z 4/5 do 3/5, ponieważ katalog ponad 35 mln utworów i spersonalizowane playlisty zdecydowanie wyparły pobieranie plików i skuteczniej przejmowały słuchaczy radia. Głównym substytutem pozostały darmowe platformy wideo.",
+            "en": "Substitution threat dropped from 4/5 to 3/5 as a 35M+ track catalog and personalized playlists displaced digital downloads and captured radio share. Free video platforms remained the primary alternative."
+          }
+        },
+        "newEntrants": {
+          "score": 3,
+          "rationale": {
+            "pl": "Skala 159 mln MAU w 61 krajach, złożoność wielorynkowych rozliczeń praw autorskich oraz wysokie straty podtrzymywały istotną barierę wejścia. Rynek pozostawał otwarty wyłącznie dla największych koncernów technologicznych.",
+            "en": "A footprint of 159M MAUs across 61 countries, complex multi-territory rights clearance, and steep losses maintained high entry barriers, leaving the market open only to global tech titans."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Premium",
+            "en": "Premium"
+          },
+          "value": {
+            "pl": "3,67 mld EUR",
+            "en": "€3.67B"
+          },
+          "pct": 89.8
+        },
+        {
+          "name": {
+            "pl": "Ad-Supported",
+            "en": "Ad-Supported"
+          },
+          "value": {
+            "pl": "416 mln EUR",
+            "en": "€416M"
+          },
+          "pct": 10.2
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "fiscalLabel": {
+        "pl": "FY2018 (01.01–31.12.2018, Direct Listing)",
+        "en": "FY2018 (Jan 1–Dec 31, 2018, Direct Listing)"
+      },
+      "era": {
+        "pl": "Era III: Debiut giełdowy Direct Listing i początek dywersyfikacji poza muzykę",
+        "en": "Era III: Direct Listing & Early Non-Music Diversification"
+      },
+      "summary": {
+        "pl": "W kwietniu 2018 r. spółka zadebiutowała na NYSE w bezemisyjnej formule Direct Listing, a marża brutto wzrosła do 25,7%. Strata operacyjna skurczyła się niemal do progu rentowności (-43 mln EUR) przy 96 mln płatnych subskrybentów.",
+        "en": "Spotify completed its non-dilutive Direct Listing on the NYSE in April 2018 as gross margin expanded to 25.7%. Operating loss narrowed close to breakeven (-€43M) with 96M paid subscribers."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "5,26 mld EUR",
+          "en": "€5.26B"
+        },
+        "revenueNum": 5.259,
+        "yoy": "+28.6%",
+        "grossMargin": "25.7%",
+        "opMargin": "-0.8%",
+        "netIncome": {
+          "pl": "-78 mln EUR",
+          "en": "-€78M"
+        },
+        "rnd": {
+          "pl": "R&D: 493 mln EUR / 207 mln MAU / 96 mln subskrybentów",
+          "en": "R&D: €493M / 207M MAUs / 96M Subscribers"
+        },
+        "catalyst": {
+          "pl": "Direct Listing na NYSE (kwiecień 2018); stabilizacja kosztów licencyjnych",
+          "en": "NYSE Direct Listing (April 2018); stabilization of licensing cost structure"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Ocena spadła z 5/5 do 4/5 po udanym debiucie na NYSE oraz zwiększeniu bazy do 96 mln płatnych subskrybentów (+36% r/r) i ok. 207 mln MAU. Choć Apple i Amazon konkurowały ekosystemami, strata operacyjna zmalała do -43 mln EUR.",
+            "en": "Rivalry eased from 5/5 to 4/5 after a successful NYSE listing and subscriber growth of 36% YoY to 96M (~207M MAUs). While Apple and Amazon competed via ecosystems, Spotify's operating loss shrank to -€43M."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Kolejny wzrost marży brutto do 25,7% potwierdził rosnącą wagę Spotify jako kanału dystrybucji dla wytwórni. Koszt własny przychodu pochłaniał jednak nadal 74,3% przychodów, co nie pozwalało zejść poniżej 4/5.",
+            "en": "Further gross margin expansion to 25.7% confirmed Spotify's growing distribution clout for labels. However, cost of revenue still absorbed 74.3% of total revenue, keeping supplier power at 4/5."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "W Q1 2018 spółka odnotowała swój jedyny historycznie kwartalny spadek bazy MAU, a klienci masowo wybierali tańsze plany rodzinne i promocje. Wrażliwość cenowa utrzymała ocenę 4/5.",
+            "en": "In Q1 2018, Spotify recorded its only historical quarterly MAU dip as consumers gravitated toward discounted family plans and promotions. Persistent price sensitivity kept buyer power at 4/5."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Streaming stał się podstawowym formatem konsumpcji muzyki, lecz darmowe wideo na YouTube i radio tradycyjne nadal walczyły o czas uwagi odbiorców. Ocena pozostała stabilna na poziomie 3/5.",
+            "en": "Streaming became the primary music consumption format, though free YouTube video and broadcast radio continued to compete for listener attention. Substitution threat held steady at 3/5."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Ocena spadła z 3/5 do 2/5: przekroczenie 5,2 mld EUR przychodów, status spółki giełdowej oraz zaawansowane algorytmy personalizacji zbudowały wysoką barierę technologiczną i kapitałową przed nowymi graczami.",
+            "en": "Entry threat fell from 3/5 to 2/5 as €5.26B in revenue, public-company access to capital, and advanced personalization algorithms created formidable technological and financial barriers."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Premium",
+            "en": "Premium"
+          },
+          "value": {
+            "pl": "4,72 mld EUR",
+            "en": "€4.72B"
+          },
+          "pct": 89.7
+        },
+        {
+          "name": {
+            "pl": "Ad-Supported",
+            "en": "Ad-Supported"
+          },
+          "value": {
+            "pl": "542 mln EUR",
+            "en": "€542M"
+          },
+          "pct": 10.3
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "fiscalLabel": {
+        "pl": "FY2019 (01.01–31.12.2019)",
+        "en": "FY2019 (Jan 1–Dec 31, 2019)"
+      },
+      "era": {
+        "pl": "Era III: Debiut giełdowy Direct Listing i początek dywersyfikacji poza muzykę",
+        "en": "Era III: Direct Listing & Early Non-Music Diversification"
+      },
+      "summary": {
+        "pl": "Liczba płatnych subskrybentów przekroczyła 100 mln (124 mln na koniec roku), ale ekspansja planu rodzinnego obniżyła ARPU. Utrzymujący się sufit marżowy w muzyce (tantiemy na poziomie 74,5% przychodów) skłonił zarząd do wejścia w podcasty.",
+        "en": "Paid subscribers crossed the 100M milestone (124M at year-end), though Family Plan growth diluted ARPU. Structural margin ceilings in music (royalties at 74.5% of revenue) prompted an aggressive pivot into podcasts."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "6,76 mld EUR",
+          "en": "€6.76B"
+        },
+        "revenueNum": 6.764,
+        "yoy": "+28.6%",
+        "grossMargin": "25.5%",
+        "opMargin": "-1.1%",
+        "netIncome": {
+          "pl": "-186 mln EUR",
+          "en": "-€186M"
+        },
+        "rnd": {
+          "pl": "R&D: 615 mln EUR / 271 mln MAU / 124 mln subskrybentów",
+          "en": "R&D: €615M / 271M MAUs / 124M Subscribers"
+        },
+        "catalyst": {
+          "pl": "Przekroczenie 100 mln subskrybentów; udział Family Plan (33% przyrostu brutto) i zwrot ku podcastom",
+          "en": "Surpassing 100M subscribers; Family Plan mix (33% of gross adds) and podcast pivot"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Choć Spotify osiągnęło 34% udziału w rynku płatnego streamingu w Q2 2019, musiało podnieść wydatki na S&M o 33% r/r do 826 mln EUR, by utrzymać dynamikę wzrostu. Silna presja Apple, Amazon i YouTube Music utrzymała ocenę 4/5.",
+            "en": "Although Spotify hit a 34% paid streaming share in Q2 2019, it had to raise S&M spending 33% YoY to €826M to sustain growth. Intense competition from Apple, Amazon, and YouTube Music kept rivalry at 4/5."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "W 2019 r. tantiemy pochłonęły 74,54% przychodów, a marża brutto cofnęła się lekko z 25,7% do 25,5%. Dowiodło to strukturalnego oporu marżowego w samej muzyce i pchnęło spółkę w stronę podcastów.",
+            "en": "Royalties consumed 74.54% of revenue in 2019 and gross margin dipped slightly from 25.7% to 25.5%. This proved the structural margin ceiling in pure music streaming and drove the podcast expansion."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Użytkownicy aktywnie optymalizowali wydatki: Family Plan odpowiadał za 33% przyrostu brutto subskrybentów, a darmowe okresy próbne za 23%, obniżając ARPU w Q4 2019 o 5% r/r do 4,65 EUR. Siła nabywców pozostała wysoka.",
+            "en": "Consumers actively optimized pricing as Family Plans drove 33% of gross subscriber adds and free trials accounted for 23%, pushing Q4 2019 ARPU down 5% YoY to €4.65. Buyer power stayed high."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Rosnąca słuchalność podcastów w aplikacji Spotify ograniczała odpływ słuchaczy do tradycyjnego radia mówionego. Platformy wideo nadal jednak konkurowały o czas konsumpcji.",
+            "en": "Growing in-app podcast engagement curbed listener attrition to talk radio. However, video platforms continued to compete aggressively for overall entertainment attention."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Baza 124 mln płatnych subskrybentów (271 mln MAU) oraz nakłady R&D na poziomie 615 mln EUR utrzymywały niskie ryzyko pojawienia się nowych podmiotów.",
+            "en": "A base of 124M paid subscribers (271M MAUs) alongside €615M in annual R&D investment kept the threat of new market entrants low."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Premium",
+            "en": "Premium"
+          },
+          "value": {
+            "pl": "6,09 mld EUR",
+            "en": "€6.09B"
+          },
+          "pct": 90.0
+        },
+        {
+          "name": {
+            "pl": "Ad-Supported",
+            "en": "Ad-Supported"
+          },
+          "value": {
+            "pl": "678 mln EUR",
+            "en": "€678M"
+          },
+          "pct": 10.0
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "fiscalLabel": {
+        "pl": "FY2020 (01.01–31.12.2020)",
+        "en": "FY2020 (Jan 1–Dec 31, 2020)"
+      },
+      "era": {
+        "pl": "Era IV: Pandemia COVID-19, ofensywa podcastowa i szczyt presji kosztowej",
+        "en": "Era IV: COVID-19 Pandemic, Podcast Push & Peak Cost Pressure"
+      },
+      "summary": {
+        "pl": "Pandemia przyspieszyła adopcję streamingu w domach do 345 mln MAU, a przychody osiągnęły 7,88 mld EUR. Agresywna ofensywa w ekskluzywne podcasty i wzrost R&D o 36,1% r/r powiększyły jednak stratę operacyjną do -293 mln EUR.",
+        "en": "The pandemic accelerated at-home streaming adoption to 345M MAUs, lifting revenue to €7.88B. However, heavy exclusive podcast investments and a 36.1% YoY jump in R&D widened operating loss to -€293M."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "7,88 mld EUR",
+          "en": "€7.88B"
+        },
+        "revenueNum": 7.88,
+        "yoy": "+16.5%",
+        "grossMargin": "25.6%",
+        "opMargin": "-3.7%",
+        "netIncome": {
+          "pl": "-581 mln EUR",
+          "en": "-€581M"
+        },
+        "rnd": {
+          "pl": "R&D: 837 mln EUR / 345 mln MAU / 155 mln subskrybentów",
+          "en": "R&D: €837M / 345M MAUs / 155M Subscribers"
+        },
+        "catalyst": {
+          "pl": "Pandemia COVID-19 (wzrost streamingu w domu) i ekspansja nakładów na R&D (+36,1% r/r)",
+          "en": "COVID-19 lockdowns boosting home listening and R&D expansion (+36.1% YoY)"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Lockdowny przyspieszyły wzrost do 345 mln MAU, lecz Amazon Music (ponad 55 mln klientów) i YouTube Music (wspierane przez 2 mld użytkowników YouTube) intensywnie walczyły o rynek. Wzrost S&M do 1 029 mln EUR i R&D do 837 mln EUR podtrzymał presję 4/5.",
+            "en": "Lockdowns lifted Spotify to 345M MAUs, yet Amazon Music (55M+ customers) and YouTube Music (backed by 2B YouTube users) competed fiercely. Rising S&M (€1,029M) and R&D (€837M) sustained 4/5 rivalry."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Marża brutto pozostała niemal płaska (25,6% wobec 25,5% w 2019 r.), potwierdzając zależność od stawek licencyjnych wytwórni. Równolegle nowe kontrakty na wyłączne podcasty tworzyły wysokie koszty stałe poza muzyką.",
+            "en": "Gross margin stayed nearly flat at 25.6% (vs. 25.5% in 2019), confirming continued reliance on label licensing rates. Simultaneously, exclusive podcast deals introduced steep fixed non-music content costs."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Mimo skokowego wzrostu zaangażowania w domu (m.in. +180% słuchalności podcastów o tematyce zdrowotnej) ekspansja na rynki o niższej sile nabywczej i brak podwyżek abonamentów ciążyły na ARPU. Ocena pozostała na 4/5.",
+            "en": "Despite surging home engagement (+180% in health and wellness podcast listening), emerging-market expansion and unchanged pricing weighed on ARPU. Buyer power remained at 4/5."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Ograniczenia mobilności osłabiły tradycyjne radio samochodowe, ale jednocześnie w domach nasiliła się konkurencja o uwagę ze strony serwisów wideo oraz gier. Bilans substytucji pozostał na 3/5.",
+            "en": "Mobility restrictions weakened traditional in-car radio, while at-home competition for leisure time intensified from video streaming and gaming. Net substitution pressure remained at 3/5."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Przychody sięgające 7,88 mld EUR i ekspansja w produkcję własną podcastów jeszcze bardziej podnosiły próg kapitałowy wejścia na rynek.",
+            "en": "Revenue reaching €7.88B and heavy investment in proprietary podcast production raised capital barriers to entry even higher."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Premium",
+            "en": "Premium"
+          },
+          "value": {
+            "pl": "7,14 mld EUR",
+            "en": "€7.14B"
+          },
+          "pct": 90.5
+        },
+        {
+          "name": {
+            "pl": "Ad-Supported",
+            "en": "Ad-Supported"
+          },
+          "value": {
+            "pl": "745 mln EUR",
+            "en": "€745M"
+          },
+          "pct": 9.5
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "fiscalLabel": {
+        "pl": "FY2021 (01.01–31.12.2021)",
+        "en": "FY2021 (Jan 1–Dec 31, 2021)"
+      },
+      "era": {
+        "pl": "Era IV: Pandemia COVID-19, ofensywa podcastowa i szczyt presji kosztowej",
+        "en": "Era IV: COVID-19 Pandemic, Podcast Push & Peak Cost Pressure"
+      },
+      "summary": {
+        "pl": "Dynamiczne odbicie przychodów reklamowych (+62,2% r/r) i obecność na 184 rynkach przyniosły pierwszy w historii roczny zysk operacyjny (94 mln EUR). Marża brutto poprawiła się do 26,8%, a baza przekroczyła 400 mln MAU.",
+        "en": "A sharp advertising rebound (+62.2% YoY) and expansion across 184 markets delivered Spotify's first-ever annual operating profit (€94M). Gross margin rose to 26.8% as MAUs surpassed 400M."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "9,67 mld EUR",
+          "en": "€9.67B"
+        },
+        "revenueNum": 9.668,
+        "yoy": "+22.7%",
+        "grossMargin": "26.8%",
+        "opMargin": "+1.0%",
+        "netIncome": {
+          "pl": "-34 mln EUR",
+          "en": "-€34M"
+        },
+        "rnd": {
+          "pl": "R&D: 912 mln EUR / 406 mln MAU / 180 mln subskrybentów",
+          "en": "R&D: €912M / 406M MAUs / 180M Subscribers"
+        },
+        "catalyst": {
+          "pl": "Odbicie reklamy (+62,2% r/r), obecność na 184 rynkach i pierwszy zysk operacyjny (94 mln EUR)",
+          "en": "Ad revenue surge (+62.2% YoY), 184-market reach, and first annual operating profit (€94M)"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Według MIDiA Research Spotify utrzymało 31% udziału w płatnym streamingu wobec 15% Apple Music, 13% Amazon i 8% YouTube Music. Osiągnięcie pierwszego zysku operacyjnego (94 mln EUR) przy 1 135 mln EUR kosztów S&M pokazało wysoką, lecz stabilizującą się rywalizację.",
+            "en": "Per MIDiA Research, Spotify held a 31% paid streaming share versus Apple Music (15%), Amazon (13%), and YouTube Music (8%). Achieving a €94M operating profit amid €1,135M in S&M reflected intense yet stabilizing rivalry."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Marża brutto wzrosła do 26,8% głównie dzięki skokowemu odbiciu reklamy (+62,2% r/r do 1 208 mln EUR). W podstawowym streamingu muzycznym pozycja negocjacyjna wielkich wytwórni pozostała jednak niezmiennie silna.",
+            "en": "Gross margin increased to 26.8% largely due to the advertising rebound (+62.2% YoY to €1,208M). In core music streaming, major labels' bargaining power remained solidly entrenched."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Ocena spadła z 4/5 do 3/5, ponieważ miesięczny odpływ subskrybentów (churn) na koniec 2021 r. wynosił niskie 3,9% dzięki przywiązaniu do playlist i algorytmów personalizacji, choć ARPU osiągnęło niskie 4,29 EUR.",
+            "en": "Buyer power eased from 4/5 to 3/5 as monthly churn declined to 3.9% by year-end due to sticky playlists and personalization algorithms, despite low ARPU of €4.29."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Dane MIDiA Research pokazywały, że streaming muzyczny generował 32% tygodniowego zaangażowania muzycznego, lecz wideo (YouTube: 22%) oraz aplikacje krótkiego wideo (TikTok: 11%) stały się silnymi substytucyjnymi kanałami odkrywania muzyki.",
+            "en": "MIDiA data indicated music streaming captured 32% of weekly music engagement, while video (YouTube 22%) and short-form video apps (TikTok 11%) emerged as powerful substitutes for discovery and listening."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Obecność na 184 rynkach z katalogiem 82 mln utworów oraz bazą ok. 406 mln MAU tworzyła globalną skalę niemal niemożliwą do odtworzenia przez nowych graczy.",
+            "en": "Operating across 184 markets with an 82M-track catalog and ~406M MAUs established global scale virtually impossible for new entrants to replicate."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Premium",
+            "en": "Premium"
+          },
+          "value": {
+            "pl": "8,46 mld EUR",
+            "en": "€8.46B"
+          },
+          "pct": 87.5
+        },
+        {
+          "name": {
+            "pl": "Ad-Supported",
+            "en": "Ad-Supported"
+          },
+          "value": {
+            "pl": "1,21 mld EUR",
+            "en": "€1.21B"
+          },
+          "pct": 12.5
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "fiscalLabel": {
+        "pl": "FY2022 (01.01–31.12.2022)",
+        "en": "FY2022 (Jan 1–Dec 31, 2022)"
+      },
+      "era": {
+        "pl": "Era IV: Pandemia COVID-19, ofensywa podcastowa i szczyt presji kosztowej",
+        "en": "Era IV: COVID-19 Pandemic, Podcast Push & Peak Cost Pressure"
+      },
+      "summary": {
+        "pl": "Rok 2022 przyniósł szczyt presji kosztowej: nakłady R&D wzrosły o 52,1% do 1,39 mld EUR, a koszty podcastów obniżyły marżę brutto do 25,0%. Mimo przekroczenia 11,7 mld EUR przychodów strata operacyjna wyniosła -659 mln EUR.",
+        "en": "2022 marked peak cost pressure as R&D surged 52.1% to €1.39B and podcast content costs pushed gross margin down to 25.0%. Despite revenue exceeding €11.7B, operating loss widened to -€659M."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "11,73 mld EUR",
+          "en": "€11.73B"
+        },
+        "revenueNum": 11.727,
+        "yoy": "+21.3%",
+        "grossMargin": "25.0%",
+        "opMargin": "-5.6%",
+        "netIncome": {
+          "pl": "-430 mln EUR",
+          "en": "-€430M"
+        },
+        "rnd": {
+          "pl": "R&D: 1,39 mld EUR / 489 mln MAU / 205 mln subskrybentów",
+          "en": "R&D: €1.39B / 489M MAUs / 205M Subscribers"
+        },
+        "catalyst": {
+          "pl": "Szczyt wydatków podcastowych i R&D (+52,1% r/r); erozja marży brutto i strata operacyjna (-659 mln EUR)",
+          "en": "Peak podcast and R&D spending (+52.1% YoY); gross margin compression and -€659M operating loss"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Udział rynkowy Spotify w subskrypcjach lekko osłabł do ok. 30,5% w Q2 2022. Aby utrzymać tempo ekspansji (489 mln MAU na koniec roku), spółka wydała rekordowe 1 572 mln EUR na S&M i 1 387 mln EUR na R&D, co wywołało stratę operacyjną -659 mln EUR.",
+            "en": "Spotify's paid market share edged down to ~30.5% in Q2 2022. To sustain expansion (489M year-end MAUs), it spent a record €1,572M on S&M and €1,387M on R&D, generating a -€659M operating loss."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Marża brutto spadła o 1,8 p.p. do 25,0%, gdyż obok tantiem muzycznych ciążyły wysokie koszty kontentu podcastowego. Koszt własny segmentu Ad-Supported sięgnął 1 446 mln EUR przy 1 476 mln EUR przychodu (~2% marży brutto).",
+            "en": "Gross margin contracted 1.8 pp to 25.0% as heavy podcast content costs compounded music royalties. Ad-Supported cost of revenue reached €1,446M on €1,476M of revenue (~2% gross margin)."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Subskrybenci wykazywali wysoką retencję, jednak w warunkach wysokiej inflacji spółka nie przeprowadziła jeszcze szerokich podwyżek cen, a reklamodawcy ograniczali budżety. Ocena pozostała na poziomie 3/5.",
+            "en": "Subscribers maintained strong retention, yet amid elevated inflation Spotify had not enacted broad price hikes while advertisers tightened budgets. Buyer power held at 3/5."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Krótkie wideo (m.in. TikTok) przejmowało coraz większą część czasu uwagi młodszych odbiorców oraz procesu odkrywania hitów muzycznych, utrzymując realną presję substytucyjną (3/5).",
+            "en": "Short-form video platforms like TikTok captured growing shares of younger users' attention and music discovery workflows, maintaining steady substitution pressure at 3/5."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Zacieśnienie polityki pieniężnej w 2022 r. i strata operacyjna lidera rzędu -659 mln EUR skutecznie zamknęły dostęp kapitału wysokiego ryzyka dla potencjalnych nowych konkurentów.",
+            "en": "Monetary tightening in 2022 combined with the market leader's -€659M operating loss effectively closed venture capital access for prospective new entrants."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Premium",
+            "en": "Premium"
+          },
+          "value": {
+            "pl": "10,25 mld EUR",
+            "en": "€10.25B"
+          },
+          "pct": 87.4
+        },
+        {
+          "name": {
+            "pl": "Ad-Supported",
+            "en": "Ad-Supported"
+          },
+          "value": {
+            "pl": "1,48 mld EUR",
+            "en": "€1.48B"
+          },
+          "pct": 12.6
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "fiscalLabel": {
+        "pl": "FY2023 (01.01–31.12.2023)",
+        "en": "FY2023 (Jan 1–Dec 31, 2023)"
+      },
+      "era": {
+        "pl": "Era V: Zwrot ku rentowności, monetyzacja wieloformatowa i dominacja platformy",
+        "en": "Era V: Profitability Pivot, Multi-Format Monetization & Platform Dominance"
+      },
+      "summary": {
+        "pl": "Rok 2023 był punktem zwrotu: spółka przeprowadziła głęboką restrukturyzację, odeszła od wyłączności podcastów i wdrożyła pierwszą falę podwyżek cen. Mimo rekordowego przyrostu użytkowników (+113 mln MAU), odpisy restrukturyzacyjne utrzymały wynik operacyjny na minusie (-446 mln EUR).",
+        "en": "2023 marked a strategic pivot as Spotify executed deep restructuring, ended podcast exclusivity, and initiated price hikes. Despite record user additions (+113M MAUs), restructuring charges kept operating income negative (-€446M)."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "13,25 mld EUR",
+          "en": "€13.25B"
+        },
+        "revenueNum": 13.247,
+        "yoy": "+13.0%",
+        "grossMargin": "25.6%",
+        "opMargin": "-3.4%",
+        "netIncome": {
+          "pl": "-532 mln EUR",
+          "en": "-€532M"
+        },
+        "rnd": {
+          "pl": "R&D: 1,73 mld EUR / 602 mln MAU / 236 mln subskrybentów",
+          "en": "R&D: €1.73B / 602M MAUs / 236M Subscribers"
+        },
+        "catalyst": {
+          "pl": "Restrukturyzacja, odejście od wyłączności podcastów i pierwsza fala podwyżek cen przy +113 mln MAU",
+          "en": "Restructuring, exit from podcast exclusivity, and first wave of price hikes alongside +113M MAUs"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Spotify utrzymało 31,7% udziału rynkowego (236 mln subskrybentów), podczas gdy Apple, Alphabet i Amazon nadal subsydiowały streaming w ramach pakietów. Ograniczenie kosztów S&M do 1 533 mln EUR rozpoczęło jednak odwrót od wyniszczającej walki marketingowej.",
+            "en": "Spotify held a 31.7% share (236M subscribers) while Apple, Alphabet, and Amazon continued bundling music within broader ecosystems. Cutting S&M to €1,533M signaled a retreat from cash-burning marketing competition."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Marża brutto lekko odbiła do 25,6%, przy zysku brutto segmentu reklamowego zaledwie 62 mln EUR (3,7% marży). Rezygnacja z kosztownej wyłączności podcastów i szczyt R&D (1 725 mln EUR m.in. przez restrukturyzację) przygotowały grunt pod poprawę w 2024 r., lecz presja pozostała wysoka.",
+            "en": "Gross margin edged up to 25.6%, with Ad-Supported gross profit at just €62M (3.7% margin). Ending exclusive podcast deals and peak R&D (€1,725M including severance) paved the way for 2024 gains, though supplier pressure remained high."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Pierwsza fala podwyżek cen podniosła ARPU (do 4,39 EUR), a mimo to baza MAU wzrosła do 602 mln, potwierdzając niższą elastyczność cenową konsumentów. Presję na poziomie 3/5 podtrzymywało słabsze otoczenie reklamowe.",
+            "en": "Initial price increases lifted ARPU to €4.39 while MAUs still expanded to 602M, demonstrating low consumer price elasticity. Softer ad-market demand kept buyer power at 3/5."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Użytkownicy wygenerowali 165 mld godzin treści w 2023 r., co dowodziło głębokiego zakorzenienia nawyku korzystania z platformy. Konkurencja wideo ze strony YouTube i TikToka nie pozwalała jednak zejść poniżej 3/5.",
+            "en": "Listeners streamed 165B content hours in 2023, underscoring deeply entrenched platform habits. Ongoing video competition from YouTube and TikTok prevented substitution risk from falling below 3/5."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Baza 602 mln MAU, nakłady R&D przekraczające 1,7 mld EUR i integracja trzech formatów audio czyniły rynek nieopłacalnym dla nowych projektów.",
+            "en": "A 602M-MAU user base, €1.73B+ in R&D outlays, and multi-format audio integration rendered the market uneconomical for new entrants."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Premium",
+            "en": "Premium"
+          },
+          "value": {
+            "pl": "11,57 mld EUR",
+            "en": "€11.57B"
+          },
+          "pct": 87.3
+        },
+        {
+          "name": {
+            "pl": "Ad-Supported",
+            "en": "Ad-Supported"
+          },
+          "value": {
+            "pl": "1,68 mld EUR",
+            "en": "€1.68B"
+          },
+          "pct": 12.7
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "fiscalLabel": {
+        "pl": "FY2024 (01.01–31.12.2024)",
+        "en": "FY2024 (Jan 1–Dec 31, 2024)"
+      },
+      "era": {
+        "pl": "Era V: Zwrot ku rentowności, monetyzacja wieloformatowa i dominacja platformy",
+        "en": "Era V: Profitability Pivot, Multi-Format Monetization & Platform Dominance"
+      },
+      "summary": {
+        "pl": "Spotify osiągnęło historyczny przełom rentowności: marża brutto przekroczyła 30%, a spółka wypracowała pierwszy pełny rok zysku operacyjnego (1,37 mld EUR) oraz 1,14 mld EUR zysku netto. Wzrost ARPU (+7%) i pakietowanie audiobooków uruchomiły silną dźwignię operacyjną.",
+        "en": "Spotify achieved a landmark profitability inflection: gross margin exceeded 30%, delivering the company's first full year of operating profit (€1.37B) and €1.14B in net income. ARPU gains (+7%) and audiobook bundling unlocked strong operating leverage."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "15,67 mld EUR",
+          "en": "€15.67B"
+        },
+        "revenueNum": 15.673,
+        "yoy": "+18.3%",
+        "grossMargin": "30.1%",
+        "opMargin": "+8.7%",
+        "netIncome": {
+          "pl": "1,14 mld EUR",
+          "en": "€1.14B"
+        },
+        "rnd": {
+          "pl": "R&D: 1,49 mld EUR / 675 mln MAU / 263 mln subskrybentów",
+          "en": "R&D: €1.49B / 675M MAUs / 263M Subscribers"
+        },
+        "catalyst": {
+          "pl": "Pierwszy pełny rok zysku operacyjnego (1 365 mln EUR), wzrost ARPU (+7%) i pakietowanie audiobooków",
+          "en": "First full-year operating profit (€1,365M), +7% ARPU growth, and audiobook bundling"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 3,
+          "rationale": {
+            "pl": "Ocena spadła z 4/5 do 3/5: konkurenci również podnieśli ceny abonamentów, a Spotify zredukowało wydatki marketingowe przy rekordowym przyroście 35 mln MAU w Q4. Obecność Apple, Alphabet, Amazon i Meta pozostaje istotna, ale nie blokuje już rentowności.",
+            "en": "Rivalry eased from 4/5 to 3/5 as peers matched price hikes and Spotify cut marketing spend while adding a record 35M MAUs in Q4. Big Tech competitors remain relevant but no longer block profitability."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Historyczny spadek presji z 4/5 do 3/5: marża brutto wzrosła o 4,5 p.p. do 30,1% (w Q4 aż 32,2%) mimo wypłacenia rekordowych 10 mld USD tantiem. Kluczową dźwignią było pakietowanie audiobooków, programy Marketplace oraz rentowność podcastów.",
+            "en": "Supplier power fell from 4/5 to 3/5 as gross margin jumped 4.5 pp to 30.1% (32.2% in Q4) despite paying a record $10B in music royalties. Audiobook bundling, Marketplace tools, and podcast profitability drove the shift."
+          }
+        },
+        "buyers": {
+          "score": 2,
+          "rationale": {
+            "pl": "Ocena spadła z 3/5 do 2/5, gdyż wzrost ARPU o 7% r/r współwystępował z pozyskaniem kolejnych 27 mln subskrybentów (do 263 mln). Ponad 8 mld playlist tworzonych przez użytkowników oraz AI budowało wysokie koszty zmiany dostawcy.",
+            "en": "Buyer power dropped from 3/5 to 2/5 as a 7% YoY ARPU increase coincided with 27M net subscriber additions (to 263M). Over 8B user playlists and AI personalization created high switching costs."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Wideo-podcasty na YouTube oraz krótkie wideo pozostały istotną alternatywą rozrywkową. Uruchomienie programu monetyzacyjnego Spotify Partner Program dla twórców wideo miało bezpośrednio zatrzymać tę konsumpcję w ekosystemie Spotify.",
+            "en": "Video podcasts on YouTube and short-form video remained meaningful entertainment alternatives. Launching the Spotify Partner Program directly targeted retaining video creators and viewers inside Spotify's ecosystem."
+          }
+        },
+        "newEntrants": {
+          "score": 1,
+          "rationale": {
+            "pl": "Ocena spadła z 2/5 do 1/5: 675 mln MAU, pierwszy pełny rok zysku operacyjnego (1 365 mln EUR), 2,3 mld EUR rocznego FCF i 7,5 mld EUR płynności tworzą nieprzekraczalną fosę przed nowymi wejściami.",
+            "en": "Threat of new entry declined from 2/5 to 1/5: 675M MAUs, €1,365M in operating income, €2.3B in annual FCF, and €7.5B in liquidity built an insurmountable moat."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Premium",
+            "en": "Premium"
+          },
+          "value": {
+            "pl": "13,82 mld EUR",
+            "en": "€13.82B"
+          },
+          "pct": 88.2
+        },
+        {
+          "name": {
+            "pl": "Ad-Supported",
+            "en": "Ad-Supported"
+          },
+          "value": {
+            "pl": "1,85 mld EUR",
+            "en": "€1.85B"
+          },
+          "pct": 11.8
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "fiscalLabel": {
+        "pl": "FY2025 (01.01–31.12.2025)",
+        "en": "FY2025 (Jan 1–Dec 31, 2025)"
+      },
+      "era": {
+        "pl": "Era V: Zwrot ku rentowności, monetyzacja wieloformatowa i dominacja platformy",
+        "en": "Era V: Profitability Pivot, Multi-Format Monetization & Platform Dominance"
+      },
+      "summary": {
+        "pl": "Marża brutto wzrosła do 32,0%, a zysk netto niemal podwoił się do 2,21 mld EUR mimo 585 mln EUR niekorzystnego wpływu kursów walutowych. Spotify umocniło dominację z 751 mln MAU i 290 mln subskrybentów, choć segment reklamowy lekko skurczył się (-1% r/r).",
+        "en": "Gross margin climbed to 32.0% and net income nearly doubled to €2.21B despite €585M in FX headwinds. Spotify reinforced its lead with 751M MAUs and 290M subscribers, even as Ad-Supported revenue edged down 1% YoY."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "17,19 mld EUR",
+          "en": "€17.19B"
+        },
+        "revenueNum": 17.186,
+        "yoy": "+9.7%",
+        "grossMargin": "32.0%",
+        "opMargin": "+12.8%",
+        "netIncome": {
+          "pl": "2,21 mld EUR",
+          "en": "€2.21B"
+        },
+        "rnd": {
+          "pl": "R&D: 1,39 mld EUR / 751 mln MAU / 290 mln subskrybentów",
+          "en": "R&D: €1.39B / 751M MAUs / 290M Subscribers"
+        },
+        "catalyst": {
+          "pl": "Skok marży brutto (Premium 34%, Ad-Supported 18%) mimo -585 mln EUR FX; spór o tantiemy za audiobooki",
+          "en": "Gross margin surge (Premium 34%, Ad-Supported 18%) despite -€585M FX drag; audiobook royalty dispute"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 3,
+          "rationale": {
+            "pl": "Spotify utrzymało ok. 31,7%–32% udziału w globalnej bazie subskrybentów — ponad dwukrotnie więcej niż Tencent Music (14,4%), Apple Music (12,6%) i Amazon (11,1%) — podnosząc marżę operacyjną do 12,8%. Rywalizacja przeniosła się na personalizację AI i wideo.",
+            "en": "Spotify maintained a ~31.7%–32% global subscriber share—more than double Tencent Music (14.4%), Apple Music (12.6%), and Amazon (11.1%)—while raising operating margin to 12.8%. Competition shifted toward AI personalization and video."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Marża brutto wzrosła do 32,0% (Premium 34%, Ad-Supported 18%) dzięki programom Marketplace i poprawie kontrybucji podcastów. Dostawcy nadal bronią jednak stawek prawnie — w 2025 r. wybuchł spór o obniżenie tantiem mechanicznych wskutek pakietowania audiobooków.",
+            "en": "Gross margin expanded to 32.0% (Premium 34%, Ad-Supported 18%) on Marketplace gains and podcast efficiency. Suppliers actively defended rates legally, sparking a 2025 dispute over mechanical royalties on audiobook bundles."
+          }
+        },
+        "buyers": {
+          "score": 2,
+          "rationale": {
+            "pl": "Liczba płatnych subskrybentów wzrosła o kolejne 27 mln do 290 mln (751 mln MAU) mimo wyższych cen. Spadek przychodów Ad-Supported o 1% r/r pokazał jednak, że nabywcy reklamowi zachowali większą elastyczność niż subskrybenci.",
+            "en": "Paid subscribers grew by another 27M to 290M (751M MAUs) despite higher pricing. However, a 1% YoY dip in Ad-Supported revenue showed that ad buyers retained greater spend flexibility than consumers."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Wprowadzenie funkcji „Share to TikTok” zamieniło potencjalnego rywala w kanał doprowadzania ruchu. Rozwój treści wideo na innych platformach oraz wyzwania ze strony treści AI utrzymywały ocenę substytucji na poziomie 3/5.",
+            "en": "Launching the 'Share to TikTok' integration converted a potential rival into a user-acquisition funnel. Video platform competition and emerging AI-generated audio kept substitution pressure at 3/5."
+          }
+        },
+        "newEntrants": {
+          "score": 1,
+          "rationale": {
+            "pl": "Zysk netto na poziomie 2 212 mln EUR, 2,9 mld EUR rocznego FCF i ponad 100 mln utworów w 184 krajach wykluczają ekonomiczny sens budowy nowej platformy streamingowej od zera.",
+            "en": "Net income of €2,212M, €2.9B in annual FCF, and a 100M+ track library across 184 markets make building a competing platform from scratch economically unviable."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Premium",
+            "en": "Premium"
+          },
+          "value": {
+            "pl": "15,35 mld EUR",
+            "en": "€15.35B"
+          },
+          "pct": 89.3
+        },
+        {
+          "name": {
+            "pl": "Ad-Supported",
+            "en": "Ad-Supported"
+          },
+          "value": {
+            "pl": "1,84 mld EUR",
+            "en": "€1.84B"
+          },
+          "pct": 10.7
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "fiscalLabel": {
+        "pl": "9M 2026 (01.01–30.09.2026, Q1–Q3 YTD)",
+        "en": "9M 2026 (Jan 1–Sep 30, 2026, Q1–Q3 YTD)"
+      },
+      "era": {
+        "pl": "Era V: Zwrot ku rentowności, monetyzacja wieloformatowa i dominacja platformy",
+        "en": "Era V: Profitability Pivot, Multi-Format Monetization & Platform Dominance"
+      },
+      "summary": {
+        "pl": "W pierwszych dziewięciu miesiącach 2026 r. przychody wzrosły o 12,8% r/r do 14,28 mld EUR, a spółka przekroczyła próg 300 mln subskrybentów (306 mln w Q3) przy marży operacyjnej 14,3%. Silny bilans umożliwił wykup 1,3 mld EUR obligacji zamiennych, skup akcji własnych i skok inwestycji w AI.",
+        "en": "In 9M 2026, revenue rose 12.8% YoY to €14.28B and Spotify surpassed 300M paid subscribers (306M in Q3) at a 14.3% operating margin. Balance sheet strength funded €1.3B in convertible debt retirement, share buybacks, and stepped-up AI R&D."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "14,28 mld EUR",
+          "en": "€14.28B"
+        },
+        "revenueNum": 14.279,
+        "yoy": "+12.8%",
+        "grossMargin": "33.1%",
+        "opMargin": "+14.3%",
+        "netIncome": {
+          "pl": "1,78 mld EUR",
+          "en": "€1.78B"
+        },
+        "rnd": {
+          "pl": "R&D: 1,20 mld EUR / 788 mln MAU / 306 mln subskrybentów",
+          "en": "R&D: €1.20B / 788M MAUs / 306M Subscribers"
+        },
+        "catalyst": {
+          "pl": "Przekroczenie 300 mln subskrybentów, wykup 1,3 mld EUR obligacji zamiennych, skup akcji i inwestycje AI",
+          "en": "Crossing 300M subscribers, €1.3B convertible note retirement, share buybacks, and AI investments"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 3,
+          "rationale": {
+            "pl": "Przekroczenie 300 mln i osiągnięcie 306 mln płatnych subskrybentów (788 mln MAU) w Q3 2026 umocniło pozycję lidera. Skok nakładów R&D o 35% r/r w Q3 (do 417 mln EUR) pokazuje jednak, że utrzymanie przewagi wobec gigantów AI i wideo wymaga stałego reinwestowania.",
+            "en": "Surpassing 300M to reach 306M paid subscribers (788M MAUs) in Q3 2026 cemented market leadership. However, a 35% YoY surge in Q3 R&D (€417M) reflects ongoing reinvestment needed to outpace AI and video rivals."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Marża brutto ustabilizowała się na rekordowym poziomie 33,0%–33,4% (w Q3 marża Premium osiągnęła 34,5%, a Ad-Supported 18,7%). Wytwórnie pozostają kluczowym dostawcą bez pełnego substytutu, lecz rosnący koszt wideo-podcastów jest równoważony przez programy Marketplace.",
+            "en": "Gross margin stabilized at record levels of 33.0%–33.4% (Q3 Premium at 34.5%, Ad-Supported at 18.7%). Labels remain indispensable suppliers, while higher video-podcast costs are offset by Marketplace monetization."
+          }
+        },
+        "buyers": {
+          "score": 2,
+          "rationale": {
+            "pl": "W Q3 2026 Premium ARPU wzrosło o 9,3% r/r do 4,95 EUR przy jednoczesnym wzroście bazy płatnych subskrybentów o 9% r/r do 306 mln, co potwierdza silną władzę cenową. Odbicie przychodów reklamowych w Q3 (+10% r/r do 482 mln EUR) zmniejszyło też presję ze strony reklamodawców.",
+            "en": "In Q3 2026, Premium ARPU rose 9.3% YoY to €4.95 alongside 9% subscriber growth to 306M, confirming strong pricing power. A Q3 ad revenue rebound (+10% YoY to €482M) also eased pressure from advertisers."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Zgromadzenie ponad 590 tys. wideo-podcastów i ponad 700 tys. audiobooków zatrzymuje użytkowników wewnątrz jednej aplikacji, lecz YouTube i krótkie wideo nadal rywalizują o uwagę oraz twórców. Generatywna AI tworzy ponadto wyzwania dotyczące jakości katalogu i manipulacji odtworzeniami.",
+            "en": "Hosting 590k+ video podcasts and 700k+ audiobooks locks users into a single app, yet YouTube and short-form video still vie for attention and creators. Generative AI adds new catalog-quality and stream-manipulation risks."
+          }
+        },
+        "newEntrants": {
+          "score": 1,
+          "rationale": {
+            "pl": "Przy przychodach za 9M 2026 sięgających 14 279 mln EUR, buforze płynnościowym 8,8 mld EUR (na koniec Q1 2026, po umorzeniu 1,3 mld EUR długu i skupie akcji) oraz FCF rzędu 3,2 mld EUR LTM, bariery wejścia pozostają maksymalnie wysokie.",
+            "en": "With €14,279M in 9M 2026 revenue, €8.8B in liquidity (end of Q1 2026, post €1.3B debt retirement and buybacks), and €3.2B LTM FCF, barriers to new entry remain maximum-strength."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Premium",
+            "en": "Premium"
+          },
+          "value": {
+            "pl": "12,97 mld EUR",
+            "en": "€12.97B"
+          },
+          "pct": 90.8
+        },
+        {
+          "name": {
+            "pl": "Ad-Supported",
+            "en": "Ad-Supported"
+          },
+          "value": {
+            "pl": "1,31 mld EUR",
+            "en": "€1.31B"
+          },
+          "pct": 9.2
+        }
+      ]
+    }
+  ]
+}
