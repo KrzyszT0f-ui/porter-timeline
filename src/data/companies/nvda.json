@@ -1,599 +1,505 @@
 {
-  "meta": {
-    "ticker": "NVDA",
-    "name": "NVIDIA Corporation",
-    "sector": "Półprzewodniki / Akceleratory AI",
-    "currency": "USD",
-    "foundedYear": 1993,
-    "fiscalNote": "Lata 1993–1997 wg roku kalendarzowego (31 gru); od 1998 r. rok fiskalny kończący się w ostatnią niedzielę stycznia (1998 = FY1999, 2026 = FY2027 YTD/TTM)."
+  "id": "nvda",
+  "ticker": "NVDA",
+  "name": "NVIDIA Corporation",
+  "sector": {
+    "pl": "Półprzewodniki / Infrastruktura AI",
+    "en": "Semiconductors / AI Infrastructure"
   },
-  "eras": [
-    { "id": "survival", "name": "Walka o standardy i model fabless", "start": 1993, "end": 1998, "color": "#ef4444" },
-    { "id": "consolidation", "name": "IPO, GeForce i konsolidacja duopolu", "start": 1999, "end": 2005, "color": "#f97316" },
-    { "id": "gpgpu", "name": "Unifikacja shaderów i narodziny CUDA", "start": 2006, "end": 2013, "color": "#eab308" },
-    { "id": "pascal_ai", "name": "Dominacja Gamingu i zapłon Deep Learning", "start": 2014, "end": 2018, "color": "#22c55e" },
-    { "id": "datacenter", "name": "Sieciowanie Mellanox i szok eksportowy", "start": 2019, "end": 2022, "color": "#06b6d4" },
-    { "id": "genai", "name": "Eksplozja GenAI, CoWoS i krzem ASIC", "start": 2023, "end": 2026, "color": "#3b82f6" }
-  ],
-  "snapshots": [
+  "theme": {
+    "bgMain": "#000000",
+    "bgCard": "#111111",
+    "bgCardElevated": "#1a1a1a",
+    "borderSubtle": "#262626",
+    "textPrimary": "#ffffff",
+    "textSecondary": "#a3a3a3",
+    "accent": "#76b900",
+    "accentSoft": "rgba(118, 185, 0, 0.15)",
+    "accentContrast": "#000000",
+    "compareAccent": "#38bdf8"
+  },
+  "timeline": [
     {
       "year": 1993,
-      "fiscalLabel": "CY1993",
-      "eraId": "survival",
-      "architectures": ["Brak (faza R&D)"],
-      "financials": { "revenueM": 0, "yoyGrowthPct": null, "grossMarginPct": null, "operatingMarginPct": null, "netIncomeM": -0.48, "rdExpenseM": null },
-      "segments": {},
-      "forces": { "rivalry": 4, "supplierPower": 3, "buyerPower": 4, "substitutes": 3, "newEntrants": 5 },
-      "catalyst": "Założenie spółki przez J. Huanga, C. Malachowsky'ego i C. Priema; 26 firm na rynku układów graficznych i gwałtowny napływ startupów.",
-      "forceDetails": {
-        "rivalry": "26 producentów układów graficznych 2D rywalizuje o miejsce na płytach głównych PC.",
-        "supplierPower": "Standardowa dostępność mocy produkcyjnych w odlewniach dla wczesnych układów 2D.",
-        "buyerPower": "Producenci komputerów OEM dyktują niskie ceny komponentów.",
-        "substitutes": "Podstawowe akceleratory 2D zintegrowane na płytach głównych.",
-        "newEntrants": "Niskie bariery wejścia przyciągają dziesiątki startupów wspieranych kapitałem VC."
-      }
-    },
-    {
-      "year": 1994,
-      "fiscalLabel": "CY1994",
-      "eraId": "survival",
-      "architectures": ["NV1 (w opracowaniu)"],
-      "financials": { "revenueM": 0, "yoyGrowthPct": null, "grossMarginPct": null, "operatingMarginPct": null, "netIncomeM": -1.36, "rdExpenseM": null },
-      "segments": {},
-      "forces": { "rivalry": 4, "supplierPower": 3, "buyerPower": 4, "substitutes": 3, "newEntrants": 5 },
-      "catalyst": "Brak przychodów; inwestycja blisko 15 mln USD kapitału VC w autorski układ multimedialny NV1 przed ujednoliceniem standardów 3D.",
-      "forceDetails": {
-        "rivalry": "Liczba konkurentów rośnie w kierunku 70 podmiotów; walka o standard renderowania 3D.",
-        "supplierPower": "Wczesne partnerstwa produkcyjne bez krytycznych wąskich gardeł.",
-        "buyerPower": "Producenci kart graficznych (AIB) testują wiele konkurencyjnych architektur jednocześnie.",
-        "substitutes": "Renderowanie programowe na CPU oraz wczesne akceleratory 2D.",
-        "newEntrants": "Szczyt fali powstawania nowych firm projektujących układy graficzne."
-      }
-    },
-    {
-      "year": 1995,
-      "fiscalLabel": "CY1995",
-      "eraId": "survival",
-      "architectures": ["NV1"],
-      "financials": { "revenueM": 1.18, "yoyGrowthPct": null, "grossMarginPct": -31.0, "operatingMarginPct": -547.4, "netIncomeM": -6.38, "rdExpenseM": null },
-      "segments": { "Multimedia NV1": 1.18 },
-      "forces": { "rivalry": 5, "supplierPower": 3, "buyerPower": 4, "substitutes": 4, "newEntrants": 5 },
-      "catalyst": "Debiut NV1 (100% przychodów w latach 1995–1996); ujemna marża brutto (-31%) z powodu odrzucenia autorskiej technologii przez rynek na rzecz Direct3D.",
-      "forceDetails": {
-        "rivalry": "Brutalna wojna o standard API: autorskie rozwiązania przegrywają z Microsoft Direct3D.",
-        "supplierPower": "Umiarkowana siła odlewni przy niskich wolumenach zamówień.",
-        "buyerPower": "Klienci OEM odrzucają niestandardowe interfejsy programistyczne.",
-        "substitutes": "Klasyczne karty 2D oraz konsole do gier (PlayStation, Sega Saturn).",
-        "newEntrants": "Kolejni gracze wchodzą na rynek akceleratorów 3D."
-      }
-    },
-    {
-      "year": 1996,
-      "fiscalLabel": "CY1996",
-      "eraId": "survival",
-      "architectures": ["NV1", "NV2 (anulowany)"],
-      "financials": { "revenueM": 3.91, "yoyGrowthPct": 231.0, "grossMarginPct": 22.3, "operatingMarginPct": -76.5, "netIncomeM": -3.08, "rdExpenseM": null },
-      "segments": { "Multimedia NV1": 3.91 },
-      "forces": { "rivalry": 5, "supplierPower": 3, "buyerPower": 5, "substitutes": 4, "newEntrants": 5 },
-      "catalyst": "Szczyt rozdrobnienia branży (~70 rywali); NV1 pozostaje jedynym źródłem przychodu (-76,5% marży operacyjnej) przed zwrotem w stronę Direct3D.",
-      "forceDetails": {
-        "rivalry": "Około 70 firm walczy o przetrwanie na rynku grafiki PC.",
-        "supplierPower": "Standardowe moce produkcyjne; brak dominacji pojedynczej odlewni.",
-        "buyerPower": "Skrajna siła nabywców – producenci OEM mogą wybierać spośród dziesiątek dostawców.",
-        "substitutes": "Zintegrowane układy 2D oraz dedykowane konsole stacjonarne.",
-        "newEntrants": "Łatwy dostęp do kapitału VC utrzymuje maksymalną presję nowych wejść."
-      }
-    },
-    {
-      "year": 1997,
-      "fiscalLabel": "CY1997",
-      "eraId": "survival",
-      "architectures": ["NV3 (RIVA 128)"],
-      "financials": { "revenueM": 29.07, "yoyGrowthPct": 643.1, "grossMarginPct": 27.0, "operatingMarginPct": -8.8, "netIncomeM": -2.69, "rdExpenseM": null },
-      "segments": { "RIVA 128": 29.07 },
-      "forces": { "rivalry": 5, "supplierPower": 3, "buyerPower": 4, "substitutes": 3, "newEntrants": 4 },
-      "catalyst": "Premiera RIVA 128 zgodnego z Direct3D ratuje firmę na miesiąc przed wyczerpaniem gotówki na płace (~1 mln sprzedanych sztuk); 3dfx dominuje rynek 3D.",
-      "forceDetails": {
-        "rivalry": "3dfx kontroluje rynek akceleratorów 3D, podczas gdy dawni liderzy (S3) zaczynają słabnąć.",
-        "supplierPower": "Współpraca z SGS-Thomson i wczesne poszukiwanie większych mocy produkcyjnych.",
-        "buyerPower": "Producenci kart AIB agresywnie negocjują ceny układów.",
-        "substitutes": "Akceleracja 3D staje się wymogiem w grach PC, osłabiając karty wyłącznie 2D.",
-        "newEntrants": "Rosnące koszty projektowania 3D zaczynają wyhamowywać falę nowych startupów."
-      }
-    },
-    {
-      "year": 1998,
-      "fiscalLabel": "FY1999 (sty 1999)",
-      "eraId": "survival",
-      "architectures": ["Fahrenheit (RIVA TNT)"],
-      "financials": { "revenueM": 158.20, "yoyGrowthPct": null, "grossMarginPct": 34.8, "operatingMarginPct": 2.8, "netIncomeM": 4.10, "rdExpenseM": null },
-      "segments": { "Desktop GPU": 158.20 },
-      "forces": { "rivalry": 5, "supplierPower": 3, "buyerPower": 5, "substitutes": 3, "newEntrants": 4 },
-      "catalyst": "Start partnerstwa z TSMC; 3dfx posiada >85% udziału w rynku 3D (szac.), a dwaj odbiorcy (STB Systems 53% i Diamond 35%) dają 88% przychodów w Q1.",
-      "forceDetails": {
-        "rivalry": "3dfx posiada ponad 85% udziału w rynku 3D; ostra walka na wydajność z serią RIVA TNT.",
-        "supplierPower": "Początek długoterminowego partnerstwa odlewniczego z TSMC.",
-        "buyerPower": "Ekstremalna koncentracja: STB Systems (53%) i Diamond Multimedia (35%) odpowiadają za 88% sprzedaży.",
-        "substitutes": "Zintegrowane układy graficzne w tanich komputerach biurowych.",
-        "newEntrants": "Wysokie tempo zmian technologicznych zniechęca mniejsze podmioty."
-      }
+      "fiscalLabel": { "pl": "Założenie spółki (kwiecień 1993)", "en": "Company Founding (April 1993)" },
+      "era": { "pl": "Era Start-upu: Pierwsze akceleratory 2D/3D", "en": "Startup Era: Early 2D/3D Accelerators" },
+      "summary": {
+        "pl": "Jensen Huang, Chris Malachowsky i Curtis Priem zakładają NVIDIĘ z kapitałem 40 tys. USD, stawiając na grafikę 3D jako przyszłość PC.",
+        "en": "Jensen Huang, Chris Malachowsky, and Curtis Priem found NVIDIA with $40k seed capital, betting on 3D graphics as the next PC computing wave."
+      },
+      "kpis": {
+        "revenue": { "pl": "0 mln USD (Pre-revenue)", "en": "$0M (Pre-revenue)" },
+        "revenueNum": 0.001,
+        "yoy": null,
+        "grossMargin": "N/A",
+        "opMargin": "N/A",
+        "netIncome": { "pl": "Strata (etap R&D)", "en": "Loss (R&D stage)" },
+        "rnd": { "pl": "Kapitał VC (Sequoia)", "en": "VC Seed (Sequoia)" },
+        "catalyst": { "pl": "Start prac nad NV1", "en": "NV1 architecture kickoff" }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 5,
+          "rationale": {
+            "pl": "Ponad 30 producentów układów graficznych (S3, ATI, Cirrus Logic, Trident) walczy o standardy 2D/3D.",
+            "en": "Over 30 graphics chip vendors (S3, ATI, Cirrus Logic, Trident) compete fiercely for PC 2D/3D standards."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Model fabless bez własnych fabryk; ograniczony dostęp do mocy produkcyjnych wczesnych odlewni krzemu.",
+            "en": "Fabless startup with zero scale; limited allocation access at early semiconductor foundries."
+          }
+        },
+        "buyers": {
+          "score": 5,
+          "rationale": {
+            "pl": "Producenci OEM PC dyktują ceny i wymuszają zgodność z własnymi standardami multimedialnymi.",
+            "en": "PC OEMs dictate component pricing and demand strict compatibility with proprietary multimedia specs."
+          }
+        },
+        "substitutes": {
+          "score": 4,
+          "rationale": {
+            "pl": "Renderowanie programowe na CPU (Intel) oraz konsole (Sega, Nintendo) stanowią główny rynek gier.",
+            "en": "Software rendering on CPUs (Intel) and dedicated consoles (Sega, Nintendo) dominate gaming."
+          }
+        },
+        "newEntrants": {
+          "score": 4,
+          "rationale": {
+            "pl": "Niskie bariery kapitałowe wejścia w projektowanie układów przed erą miliardowych procesów litograficznych.",
+            "en": "Relatively low capital barriers to chip design prior to multi-billion-dollar lithography nodes."
+          }
+        }
+      },
+      "segments": [
+        { "name": { "pl": "Prace R&D (NV1)", "en": "R&D Stage (NV1)" }, "value": "100%", "pct": 100 }
+      ]
     },
     {
       "year": 1999,
-      "fiscalLabel": "FY2000 (sty 2000)",
-      "eraId": "consolidation",
-      "architectures": ["Celsius (GeForce 256)"],
-      "financials": { "revenueM": 374.51, "yoyGrowthPct": 136.7, "grossMarginPct": 37.9, "operatingMarginPct": 15.7, "netIncomeM": 40.96, "rdExpenseM": null },
-      "segments": { "GeForce & Quadro": 374.51 },
-      "forces": { "rivalry": 4, "supplierPower": 3, "buyerPower": 4, "substitutes": 3, "newEntrants": 3 },
-      "catalyst": "Debiut na Nasdaq po 12 USD/akcję; premiera GeForce 256 ('pierwszego GPU na świecie') i linii Quadro podnosi marżę brutto do 37,9%.",
-      "forceDetails": {
-        "rivalry": "GeForce 256 odbiera udziały 3dfx i ATI; rynek zaczyna się konsolidować.",
-        "supplierPower": "TSMC staje się głównym partnerem produkcyjnym.",
-        "buyerPower": "Dywersyfikacja sprzedaży na rynki Azji i Pacyfiku obniża zależność od dwóch OEM.",
-        "substitutes": "Pierwsze chipsety ze zintegrowaną grafiką (Intel i810) odbierają najniższy segment rynku.",
-        "newEntrants": "Kapitał z IPO oraz wymóg 6-miesięcznego cyklu premier podnoszą barierę wejścia."
-      }
-    },
-    {
-      "year": 2000,
-      "fiscalLabel": "FY2001 (sty 2001)",
-      "eraId": "consolidation",
-      "architectures": ["Celsius (GeForce 2)"],
-      "financials": { "revenueM": 735.26, "yoyGrowthPct": 96.3, "grossMarginPct": 37.1, "operatingMarginPct": 17.4, "netIncomeM": 98.47, "rdExpenseM": null },
-      "segments": { "GeForce & Quadro": 735.26 },
-      "forces": { "rivalry": 4, "supplierPower": 3, "buyerPower": 4, "substitutes": 3, "newEntrants": 2 },
-      "catalyst": "Kontrakt na wyłączność dla konsoli Microsoft Xbox (200 mln USD zaliczki) oraz przejęcie kluczowych aktywów i patentów 3dfx w grudniu 2000 r.",
-      "forceDetails": {
-        "rivalry": "Przejęcie aktywów 3dfx i wyjście S3 z rynku redukuje konkurencję do duopolu NVIDIA–ATI.",
-        "supplierPower": "Stabilne moce produkcyjne w TSMC przy rosnącej skali zamówień.",
-        "buyerPower": "Wejście dużego gracza konsolowego (Microsoft) tworzy nowe ryzyko negocjacyjne.",
-        "substitutes": "Zintegrowana grafika w PC oraz konsole PlayStation 2.",
-        "newEntrants": "Niska groźba nowych wejść – złożoność projektowania GPU eliminuje startupy."
-      }
-    },
-    {
-      "year": 2001,
-      "fiscalLabel": "FY2002 (sty 2002)",
-      "eraId": "consolidation",
-      "architectures": ["Kelvin (GeForce 3)"],
-      "financials": { "revenueM": 1370.00, "yoyGrowthPct": 86.3, "grossMarginPct": 37.9, "operatingMarginPct": 17.7, "netIncomeM": 176.92, "rdExpenseM": null },
-      "segments": { "GPU & Xbox": 1370.00 },
-      "forces": { "rivalry": 3, "supplierPower": 3, "buyerPower": 4, "substitutes": 3, "newEntrants": 2 },
-      "catalyst": "Krystalizacja duopolu z ATI; start komercyjnych dostaw układów dla Xboxa w procesie 0,15 mikrona w TSMC podnosi przychody do 1,37 mld USD.",
-      "forceDetails": {
-        "rivalry": "Ustabilizowany duopol NVIDIA vs ATI Technologies w kartach dedykowanych.",
-        "supplierPower": "TSMC produkuje układy dla Xboxa i GeForce 3 w procesie 0,15 µm.",
-        "buyerPower": "Wysoki udział Microsoftu w wolumenie sprzedaży daje mu silną pozycję przetargową.",
-        "substitutes": "Zintegrowane układy graficzne w laptopach i komputerach biurowych.",
-        "newEntrants": "Bariery patentowe i koszty B+R skutecznie blokują nowych graczy."
-      }
-    },
-    {
-      "year": 2002,
-      "fiscalLabel": "FY2003 (sty 2003)",
-      "eraId": "consolidation",
-      "architectures": ["Kelvin (GeForce 4)"],
-      "financials": { "revenueM": 1910.00, "yoyGrowthPct": 39.4, "grossMarginPct": 30.2, "operatingMarginPct": 7.5, "netIncomeM": 90.80, "rdExpenseM": null },
-      "segments": { "GPU & Xbox": 1910.00 },
-      "forces": { "rivalry": 4, "supplierPower": 3, "buyerPower": 5, "substitutes": 3, "newEntrants": 2 },
-      "catalyst": "Microsoft pozywa NVIDIA do wiążącego arbitrażu o ceny procesorów do Xboxa (kwiecień 2002), co zbija marżę brutto z 37,9% do 30,2%.",
-      "forceDetails": {
-        "rivalry": "ATI odbiera część rynku serią Radeon 9700 Pro.",
-        "supplierPower": "Umiarkowana presja ze strony odlewni wafli.",
-        "buyerPower": "Maksymalna presja nabywcy: spór arbitrażowy z Microsoftem o marże na układach Xbox.",
-        "substitutes": "Intel Extreme Graphics dominuje w tanich komputerach OEM.",
-        "newEntrants": "Rynek dedykowanych GPU jest całkowicie zamknięty dla nowych podmiotów."
-      }
-    },
-    {
-      "year": 2003,
-      "fiscalLabel": "FY2004 (sty 2004)",
-      "eraId": "consolidation",
-      "architectures": ["Rankine (GeForce FX)"],
-      "financials": { "revenueM": 1820.00, "yoyGrowthPct": -4.5, "grossMarginPct": 29.0, "operatingMarginPct": 5.0, "netIncomeM": 74.42, "rdExpenseM": null },
-      "segments": { "GPU & Console": 1820.00 },
-      "forces": { "rivalry": 4, "supplierPower": 3, "buyerPower": 4, "substitutes": 3, "newEntrants": 2 },
-      "catalyst": "Nieudana generacja Rankine (GeForce FX); przychody spadają o 4,5%, a marża brutto osiąga historyczny dołek na poziomie 29,0%.",
-      "forceDetails": {
-        "rivalry": "Silna presja ze strony ATI Radeon 9800; GeForce FX przegrywa w testach wydajności DirectX 9.",
-        "supplierPower": "Problemy z uzyskiem w nowych procesach litograficznych odbijają się na marży.",
-        "buyerPower": "Entuzjaści PC i recenzenci bezlitośnie karzą słabszą architekturę.",
-        "substitutes": "Zintegrowana grafika Intel staje się standardem w segmentach korporacyjnych.",
-        "newEntrants": "Niska presja nowych wejść."
-      }
-    },
-    {
-      "year": 2004,
-      "fiscalLabel": "FY2005 (sty 2005)",
-      "eraId": "consolidation",
-      "architectures": ["Curie (GeForce 6)"],
-      "financials": { "revenueM": 2010.00, "yoyGrowthPct": 10.3, "grossMarginPct": 32.2, "operatingMarginPct": 4.7, "netIncomeM": 88.62, "rdExpenseM": null },
-      "segments": { "GPU & Platform": 2010.00 },
-      "forces": { "rivalry": 4, "supplierPower": 3, "buyerPower": 4, "substitutes": 3, "newEntrants": 2 },
-      "catalyst": "Premiera serii Curie (GeForce 6) przywraca konkurencyjność w DirectX 9; przychody rosną o 10,3%, a marża brutto odbija do 32,2%.",
-      "forceDetails": {
-        "rivalry": "Wyrównany wyścig zbrojeń między GeForce 6 a serią ATI Radeon X800.",
-        "supplierPower": "Stabilizacja dostaw w TSMC.",
-        "buyerPower": "Producenci kart AIB (Asus, MSI, Gigabyte) utrzymują niskie marże na produktach masowych.",
-        "substitutes": "Rosnąca popularność laptopów ze zintegrowaną grafiką.",
-        "newEntrants": "Niska groźba nowych wejść."
-      }
-    },
-    {
-      "year": 2005,
-      "fiscalLabel": "FY2006 (sty 2006)",
-      "eraId": "consolidation",
-      "architectures": ["Curie (GeForce 7)"],
-      "financials": { "revenueM": 2380.00, "yoyGrowthPct": 18.2, "grossMarginPct": 38.3, "operatingMarginPct": 14.2, "netIncomeM": 301.18, "rdExpenseM": null },
-      "segments": { "GPU & Platform": 2380.00 },
-      "forces": { "rivalry": 3, "supplierPower": 3, "buyerPower": 3, "substitutes": 3, "newEntrants": 2 },
-      "catalyst": "Rozszerzenie rodziny Curie o GeForce 7; marża operacyjna wraca do 14,2%, a zysk netto przekracza 300 mln USD.",
-      "forceDetails": {
-        "rivalry": "Umiarkowana rywalizacja w ustabilizowanym duopolu; wycofywanie się z niskomarżowego biznesu Xbox 1.",
-        "supplierPower": "Umiarkowana siła odlewni.",
-        "buyerPower": "Zrównoważona baza odbiorców AIB i OEM.",
-        "substitutes": "Premiera Xbox 360 (z układem ATI) otwiera nową generację konsol.",
-        "newEntrants": "Niska groźba nowych wejść."
-      }
+      "fiscalLabel": { "pl": "FY2000 (IPO i premiera GeForce 256)", "en": "FY2000 (IPO & GeForce 256 Launch)" },
+      "era": { "pl": "Narodziny GPU: Definicja nowej kategorii", "en": "Birth of the GPU: Category Creation" },
+      "summary": {
+        "pl": "Debiut na NASDAQ oraz premiera GeForce 256 – pierwszego na świecie układu zwanego GPU (sprzętowy Transform & Lighting).",
+        "en": "NASDAQ IPO and launch of GeForce 256, marketed as the world's first GPU with integrated hardware Transform & Lighting."
+      },
+      "kpis": {
+        "revenue": { "pl": "374,5 mln USD", "en": "$374.5M" },
+        "revenueNum": 0.375,
+        "yoy": "+137%",
+        "grossMargin": "37.2%",
+        "opMargin": "14.8%",
+        "netIncome": { "pl": "38,1 mln USD", "en": "$38.1M" },
+        "rnd": { "pl": "48,0 mln USD", "en": "$48.0M" },
+        "catalyst": { "pl": "GeForce 256 (pierwsze GPU)", "en": "GeForce 256 (first GPU)" }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Zacięta rywalizacja z 3dfx (Voodoo) oraz ATI, ale 6-miesięczny cykl wydawniczy NVIDII zaczyna eliminować rywali.",
+            "en": "Intense rivalry with 3dfx (Voodoo) and ATI, though NVIDIA's 6-month product cadence starts outpacing peers."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Zacieśnienie strategicznego partnerstwa z TSMC poprawia uzyski wafli i stabilizuje dostawy.",
+            "en": "Deepening strategic foundry partnership with TSMC improves wafer yields and supply predictability."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Silna pozycja OEM (Dell, Compaq), lecz rośnie bezpośredni popyt entuzjastów gier PC.",
+            "en": "Strong PC OEM concentration (Dell, Compaq), offset by rising direct enthusiast demand."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Sprzętowa akceleracja 3D staje się wymogiem gier PC; CPU nie jest już w stanie zastąpić GPU.",
+            "en": "Hardware 3D acceleration becomes mandatory for PC gaming; CPUs can no longer substitute GPUs."
+          }
+        },
+        "newEntrants": {
+          "score": 3,
+          "rationale": {
+            "pl": "Rosnąca złożoność sterowników DirectX/OpenGL podnosi próg wejścia dla nowych graczy.",
+            "en": "Growing DirectX/OpenGL driver stack complexity raises technical barriers for new entrants."
+          }
+        }
+      },
+      "segments": [
+        { "name": { "pl": "Karty graficzne PC (GeForce/RIVA)", "en": "PC Graphics (GeForce/RIVA)" }, "value": "374.5 mln USD", "pct": 100 }
+      ]
     },
     {
       "year": 2006,
-      "fiscalLabel": "FY2007 (sty 2007)",
-      "eraId": "gpgpu",
-      "architectures": ["Tesla (GeForce 8 / Tesla 800)"],
-      "financials": { "revenueM": 3070.00, "yoyGrowthPct": 29.2, "grossMarginPct": 42.4, "operatingMarginPct": 14.8, "netIncomeM": 448.83, "rdExpenseM": null },
-      "segments": { "GPU & Tesla": 3070.00 },
-      "forces": { "rivalry": 3, "supplierPower": 3, "buyerPower": 3, "substitutes": 3, "newEntrants": 2 },
-      "catalyst": "Premiera zunifikowanych shaderów Tesla oraz pierwszych akceleratorów obliczeniowych Tesla 800; NVIDIA zostaje jedynym ocalałym producentem GPU z lat 90.",
-      "forceDetails": {
-        "rivalry": "AMD przejmuje ATI za 5,4 mld USD, tworząc zintegrowanego rywala CPU+GPU.",
-        "supplierPower": "Dobra dostępność mocy w TSMC.",
-        "buyerPower": "Silna pozycja rynkowa GeForce 8800 GTX daje NVIDIA przewagę cenową w segmencie entuzjastów.",
-        "substitutes": "Premiera PlayStation 3 (układ NVIDIA RSX) równoważy rynek konsolowy.",
-        "newEntrants": "Brak nowych graczy w segmencie dedykowanych GPU."
-      }
-    },
-    {
-      "year": 2007,
-      "fiscalLabel": "FY2008 (sty 2008)",
-      "eraId": "gpgpu",
-      "architectures": ["Tesla", "CUDA 1.0"],
-      "financials": { "revenueM": 4100.00, "yoyGrowthPct": 33.5, "grossMarginPct": 45.6, "operatingMarginPct": 20.4, "netIncomeM": 797.65, "rdExpenseM": null },
-      "segments": { "GPU & Tesla": 4100.00 },
-      "forces": { "rivalry": 3, "supplierPower": 3, "buyerPower": 3, "substitutes": 3, "newEntrants": 2 },
-      "catalyst": "Skalowanie architektury Tesla i pierwsze wdrożenia CUDA; marża brutto sięga 45,6%, a marża operacyjna 20,4% (797,7 mln USD zysku netto).",
-      "forceDetails": {
-        "rivalry": "Przewaga technologiczna nad integrującym się po fuzji AMD/ATI.",
-        "supplierPower": "Umiarkowana presja dostawców.",
-        "buyerPower": "Wysoki popyt na karty GeForce i stacje robocze Quadro.",
-        "substitutes": "Intel zapowiada projekt Larrabee (wewnętrzny układ graficzny x86).",
-        "newEntrants": "Niska groźba nowych wejść."
-      }
-    },
-    {
-      "year": 2008,
-      "fiscalLabel": "FY2009 (sty 2009)",
-      "eraId": "gpgpu",
-      "architectures": ["Tesla (GeForce 9 / GTX 200)"],
-      "financials": { "revenueM": 3420.00, "yoyGrowthPct": -16.4, "grossMarginPct": 34.3, "operatingMarginPct": -2.1, "netIncomeM": -30.04, "rdExpenseM": null },
-      "segments": { "GPU & Tegra": 3420.00 },
-      "forces": { "rivalry": 4, "supplierPower": 4, "buyerPower": 4, "substitutes": 4, "newEntrants": 2 },
-      "catalyst": "Lipcowy odpis ~200 mln USD na wadliwe układy mobilne i kryzys finansowy; spadek przychodów o 16,4% oraz strata operacyjna (-70,7 mln USD).",
-      "forceDetails": {
-        "rivalry": "AMD odbiera udziały udaną serią Radeon HD 4800, wymuszając obniżki cen.",
-        "supplierPower": "Koszty wad materiałowych w pakowaniu układów obciążają rentowność.",
-        "buyerPower": "Kryzys makroekonomiczny i spadek wydatków OEM na drogie karty graficzne.",
-        "substitutes": "Zintegrowana grafika przejmuje rynek laptopów i tanich desktopów.",
-        "newEntrants": "Niska groźba nowych wejść."
-      }
-    },
-    {
-      "year": 2009,
-      "fiscalLabel": "FY2010 (sty 2010)",
-      "eraId": "gpgpu",
-      "architectures": ["Tesla refresh"],
-      "financials": { "revenueM": 3330.00, "yoyGrowthPct": -2.9, "grossMarginPct": 35.4, "operatingMarginPct": -3.0, "netIncomeM": -67.99, "rdExpenseM": null },
-      "segments": { "GPU & Tegra": 3330.00 },
-      "forces": { "rivalry": 4, "supplierPower": 4, "buyerPower": 4, "substitutes": 4, "newEntrants": 2 },
-      "catalyst": "Drugi rok z rzędu ze stratą operacyjną (-99,0 mln USD) pod silną presją zintegrowanych układów graficznych w procesorach CPU.",
-      "forceDetails": {
-        "rivalry": "Opóźnienie architektury Fermi pozwala AMD zdominować rynek kart DirectX 11 (seria HD 5000).",
-        "supplierPower": "Problemy z uzyskiem w nowym procesie 40 nm w TSMC.",
-        "buyerPower": "Producenci laptopów masowo przechodzą na zintegrowaną grafikę w procesorach Intel Core.",
-        "substitutes": "Integracja GPU bezpośrednio w strukturze CPU (Intel Westmere / AMD Fusion) eliminuje tanie karty dedykowane.",
-        "newEntrants": "Intel anuluje rynkowy debiut Larrabee jako karty dla graczy."
-      }
-    },
-    {
-      "year": 2010,
-      "fiscalLabel": "FY2011 (sty 2011)",
-      "eraId": "gpgpu",
-      "architectures": ["Fermi (GTX 400 / Tesla 2000)"],
-      "financials": { "revenueM": 3540.00, "yoyGrowthPct": 6.5, "grossMarginPct": 39.8, "operatingMarginPct": 7.2, "netIncomeM": 253.15, "rdExpenseM": null },
-      "segments": { "GPU & Tegra": 3540.00 },
-      "forces": { "rivalry": 4, "supplierPower": 3, "buyerPower": 3, "substitutes": 4, "newEntrants": 2 },
-      "catalyst": "Premiera architektury Fermi w liniach GeForce, Quadro i Tesla przywraca rentowność (253,2 mln USD zysku netto) i pierwsze klastry HPC.",
-      "forceDetails": {
-        "rivalry": "Zacięta konkurencja z serią AMD Radeon HD 6000.",
-        "supplierPower": "Poprawa uzysku w procesie 40 nm TSMC.",
-        "buyerPower": "Odbudowa popytu w segmencie stacji roboczych i centrów obliczeniowych HPC.",
-        "substitutes": "Intel Sandy Bridge ze zintegrowaną grafiką w krzemie CPU trwale zamyka segment kart poniżej 100 USD.",
-        "newEntrants": "Niska groźba nowych wejść."
-      }
-    },
-    {
-      "year": 2011,
-      "fiscalLabel": "FY2012 (sty 2012)",
-      "eraId": "gpgpu",
-      "architectures": ["Fermi (GTX 500)", "Tegra 2/3"],
-      "financials": { "revenueM": 4000.00, "yoyGrowthPct": 12.8, "grossMarginPct": 51.4, "operatingMarginPct": 16.2, "netIncomeM": 581.09, "rdExpenseM": null },
-      "segments": { "GPU & Tegra": 4000.00 },
-      "forces": { "rivalry": 3, "supplierPower": 3, "buyerPower": 3, "substitutes": 4, "newEntrants": 2 },
-      "catalyst": "Umowa licencyjna z Intelem (1,5 mld USD opłat) i zakup producenta modemów Icera (367 mln USD); marża brutto skacze powyżej 51%.",
-      "forceDetails": {
-        "rivalry": "Dopracowana seria GTX 500 stabilizuje udziały rynkowe przeciwko AMD.",
-        "supplierPower": "Umiarkowana presja odlewni.",
-        "buyerPower": "Rosnący udział wysokomarżowych produktów Quadro i Tesla.",
-        "substitutes": "Smartfony, tablety oraz zintegrowane APU wypierają tradycyjny rynek PC.",
-        "newEntrants": "Niska groźba nowych wejść w GPU; trudna walka z Qualcommem na rynku mobilnym."
-      }
+      "fiscalLabel": { "pl": "FY2007 (Premiera architektury CUDA)", "en": "FY2007 (CUDA Architecture Launch)" },
+      "era": { "pl": "Zwrot ku GPGPU: Fundament fosy programowej", "en": "GPGPU Pivot: Building the Software Moat" },
+      "summary": {
+        "pl": "Wprowadzenie architektury G80 i platformy CUDA, umożliwiającej programowanie GPU w języku C do obliczeń ogólnych, kosztem krótkoterminowej marży.",
+        "en": "Introduction of G80 unified shaders and CUDA, allowing developers to program GPUs in C for general computing despite short-term margin drag."
+      },
+      "kpis": {
+        "revenue": { "pl": "3,07 mld USD", "en": "$3.07B" },
+        "revenueNum": 3.07,
+        "yoy": "+29%",
+        "grossMargin": "42.5%",
+        "opMargin": "16.3%",
+        "netIncome": { "pl": "448,8 mln USD", "en": "$448.8M" },
+        "rnd": { "pl": "546,0 mln USD", "en": "$546.0M" },
+        "catalyst": { "pl": "GeForce 8800 (G80) & CUDA", "en": "GeForce 8800 (G80) & CUDA" }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 3,
+          "rationale": {
+            "pl": "AMD przejmuje ATI za 5,4 mld USD; rynek konsoliduje się do duopolu NVIDIA–AMD.",
+            "en": "AMD acquires ATI for $5.4B; discrete graphics consolidates into an NVIDIA–AMD duopoly."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "TSMC pozostaje główną odlewnią; większa skala zamówień wzmacnia pozycję NVIDII.",
+            "en": "TSMC remains primary foundry; larger wafer volume strengthens NVIDIA's allocation priority."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Dywersyfikacja przychodów o profesjonalne stacje robocze Quadro i chipsety nForce zmniejsza presję OEM.",
+            "en": "Revenue diversification into Quadro workstations and nForce chipsets reduces PC OEM pricing pressure."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Wielordzeniowe procesory Intel Core 2 konkurują o budżety obliczeniowe w stacjach roboczych.",
+            "en": "Multi-core Intel Core 2 CPUs compete for compute budgets in enterprise workstations."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Koszty projektowania układów w procesach 90nm/65nm oraz ekosystem sterowników blokują nowych graczy.",
+            "en": "90nm/65nm tape-out costs and mature driver ecosystems deter new silicon entrants."
+          }
+        }
+      },
+      "segments": [
+        { "name": { "pl": "GPU (GeForce / Quadro)", "en": "GPU (GeForce / Quadro)" }, "value": "2.15 mld USD", "pct": 70 },
+        { "name": { "pl": "MCP / Chipsety (nForce)", "en": "MCP / Chipsets (nForce)" }, "value": "0.92 mld USD", "pct": 30 }
+      ]
     },
     {
       "year": 2012,
-      "fiscalLabel": "FY2013 (sty 2013)",
-      "eraId": "gpgpu",
-      "architectures": ["Kepler (GTX 600 / Tesla K)"],
-      "financials": { "revenueM": 4280.00, "yoyGrowthPct": 7.1, "grossMarginPct": 52.0, "operatingMarginPct": 15.2, "netIncomeM": 562.54, "rdExpenseM": null },
-      "segments": { "GPU & Tegra": 4280.00 },
-      "forces": { "rivalry": 3, "supplierPower": 3, "buyerPower": 3, "substitutes": 4, "newEntrants": 2 },
-      "catalyst": "Energooszczędna architektura Kepler podnosi marżę brutto do 52,0% mimo rozpoczęcia 5-letniego spadku globalnej sprzedaży komputerów PC.",
-      "forceDetails": {
-        "rivalry": "Kepler wygrywa efektywnością energetyczną z architekturą AMD GCN.",
-        "supplierPower": "Przejście na proces 28 nm w TSMC.",
-        "buyerPower": "Umiarkowana siła nabywców w segmencie dla graczy.",
-        "substitutes": "Początek wieloletniego spadku dostaw tradycyjnych komputerów PC na rzecz urządzeń mobilnych.",
-        "newEntrants": "Niska groźba nowych wejść."
-      }
-    },
-    {
-      "year": 2013,
-      "fiscalLabel": "FY2014 (sty 2014)",
-      "eraId": "gpgpu",
-      "architectures": ["Kepler (GTX 700 / TITAN)"],
-      "financials": { "revenueM": 4130.00, "yoyGrowthPct": -3.5, "grossMarginPct": 54.9, "operatingMarginPct": 12.0, "netIncomeM": 440.00, "rdExpenseM": 1336.00 },
-      "segments": { "GPU & Tegra": 4130.00 },
-      "forces": { "rivalry": 3, "supplierPower": 3, "buyerPower": 3, "substitutes": 4, "newEntrants": 2 },
-      "catalyst": "Wydatki R&D osiągają 32,3% przychodów (1,34 mld USD); konsole PS4 i Xbox One wybierają układy AMD APU zamiast rozwiązań NVIDIA.",
-      "forceDetails": {
-        "rivalry": "AMD zdobywa kontrakty na wyłączność do konsol PlayStation 4 i Xbox One.",
-        "supplierPower": "Dojrzały proces 28 nm w TSMC zapewnia wysokie uzyski i marżę brutto 54,9%.",
-        "buyerPower": "Premiera serii TITAN otwiera nowy, wysokomarżowy segment ultra-entuzjastów (999 USD).",
-        "substitutes": "Premiera konsol nowej generacji (PS4 / Xbox One) stanowi silną alternatywę dla gamingu PC.",
-        "newEntrants": "Wysokie nakłady R&D (32% przychodów) tworzą barierę nie do przejścia."
-      }
-    },
-    {
-      "year": 2014,
-      "fiscalLabel": "FY2015 (sty 2015)",
-      "eraId": "pascal_ai",
-      "architectures": ["Maxwell (GTX 900)"],
-      "financials": { "revenueM": 4680.00, "yoyGrowthPct": 13.4, "grossMarginPct": 55.5, "operatingMarginPct": 16.2, "netIncomeM": 630.60, "rdExpenseM": 1360.00 },
-      "segments": { "GPU & Tegra": 4680.00 },
-      "forces": { "rivalry": 2, "supplierPower": 3, "buyerPower": 3, "substitutes": 3, "newEntrants": 2 },
-      "catalyst": "Architektura Maxwell podnosi udział NVIDIA w kartach AIB do 76,0% w Q4 2014 (JPR); początek sporu patentowego z Samsungiem przed ITC.",
-      "forceDetails": {
-        "rivalry": "Maxwell (GTX 970/980) deklasuje AMD pod względem wydajności na wat; udział rośnie o 20 pkt proc.",
-        "supplierPower": "Stabilna produkcja w procesie 28 nm TSMC.",
-        "buyerPower": "Rosnący rynek e-sportu zwiększa skłonność graczy do zakupu kart ze średniej i wyższej półki.",
-        "substitutes": "Gaming PC oddziela się od kurczącego się rynku tanich komputerów biurowych.",
-        "newEntrants": "Niska groźba nowych wejść."
-      }
+      "fiscalLabel": { "pl": "FY2013 (Przełom AlexNet na GPU)", "en": "FY2013 (AlexNet Deep Learning Breakthrough)" },
+      "era": { "pl": "Iskra Deep Learning: AlexNet i architektura Kepler", "en": "Deep Learning Spark: AlexNet & Kepler" },
+      "summary": {
+        "pl": "Sieć neuronowa AlexNet wygrywa konkurs ImageNet trenowana na dwóch kartach GTX 580, udowadniając przewagę CUDA w sztucznej inteligencji.",
+        "en": "AlexNet wins ImageNet trained on two GTX 580 GPUs, proving CUDA's decisive speed advantage for deep neural networks."
+      },
+      "kpis": {
+        "revenue": { "pl": "4,28 mld USD", "en": "$4.28B" },
+        "revenueNum": 4.28,
+        "yoy": "+7%",
+        "grossMargin": "52.0%",
+        "opMargin": "15.1%",
+        "netIncome": { "pl": "562,5 mln USD", "en": "$562.5M" },
+        "rnd": { "pl": "1,15 mld USD", "en": "$1.15B" },
+        "catalyst": { "pl": "Kepler / AlexNet (CUDA AI)", "en": "Kepler / AlexNet (CUDA AI)" }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 3,
+          "rationale": {
+            "pl": "Stabilny duopol z AMD w gamingu, lecz w obliczeniach naukowych (Tesla/CUDA) NVIDIA zaczyna budować monopol.",
+            "en": "Stable gaming duopoly with AMD, while Tesla/CUDA begins establishing a scientific compute monopoly."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Przejście na proces 28nm w TSMC wiąże się z przejściowymi ograniczeniami podaży wafli.",
+            "en": "Transition to TSMC 28nm node brings temporary wafer supply constraints."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Rosnący udział wysokomarżowych kart Quadro i Tesla dla laboratoriów oraz centrów HPC.",
+            "en": "Growing mix of high-margin Quadro and Tesla accelerators for HPC labs."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Zintegrowana grafika w CPU (Intel Ivy Bridge) przejmuje rynek tanich laptopów, zmuszając NVIDIĘ do ucieczki w segment premium.",
+            "en": "Integrated CPU graphics (Intel Ivy Bridge) cannibalizes low-end laptops, pushing NVIDIA upmarket."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "6 lat rozwoju bibliotek CUDA tworzy barierę przejścia trudną do skopiowania.",
+            "en": "Six years of CUDA library accumulation creates a high software switching barrier."
+          }
+        }
+      },
+      "segments": [
+        { "name": { "pl": "GPU (Gaming & Enterprise)", "en": "GPU (Gaming & Enterprise)" }, "value": "3.52 mld USD", "pct": 82 },
+        { "name": { "pl": "Tegra (Mobile / Embedded)", "en": "Tegra (Mobile / Embedded)" }, "value": "0.76 mld USD", "pct": 18 }
+      ]
     },
     {
       "year": 2015,
-      "fiscalLabel": "FY2016 (sty 2016)",
-      "eraId": "pascal_ai",
-      "architectures": ["Maxwell (TITAN X)"],
-      "financials": { "revenueM": 5010.00, "yoyGrowthPct": 7.0, "grossMarginPct": 56.1, "operatingMarginPct": 14.9, "netIncomeM": 614.00, "rdExpenseM": 1330.00 },
-      "segments": { "Gaming": 2800.00, "Data Center": 339.00, "Pozostałe (ProViz/Auto/OEM)": 1871.00 },
-      "forces": { "rivalry": 2, "supplierPower": 4, "buyerPower": 2, "substitutes": 3, "newEntrants": 2 },
-      "catalyst": "Wygaszenie modemów Icera (odpis 131 mln USD); udział AIB sięga 81,9% w Q2 2015 (JPR); Gaming rośnie o 37% do 2,80 mld USD.",
-      "forceDetails": {
-        "rivalry": "Dominacja w duopolu z AMD (ponad 80% rynku kart dedykowanych); przewaga ekosystemu CUDA i sterowników.",
-        "supplierPower": "Zacieśnienie mocy produkcyjnych w TSMC przy przejściu na litografię 16 nm FinFET (rywalizacja z Apple).",
-        "buyerPower": "Niska siła nabywców w gamingu; silna pozycja cenowa przy braku konkurencyjnej odpowiedzi AMD w segmencie high-end.",
-        "substitutes": "Zintegrowana grafika Intel HD oraz konsole PS4/Xbox One ograniczają dół rynku.",
-        "newEntrants": "Bariery patentowe i ponad 1,3 mld USD rocznego R&D chronią sektor."
-      }
-    },
-    {
-      "year": 2016,
-      "fiscalLabel": "FY2017 (sty 2017)",
-      "eraId": "pascal_ai",
-      "architectures": ["Pascal (GTX 10 / Tesla P100)"],
-      "financials": { "revenueM": 6910.00, "yoyGrowthPct": 37.9, "grossMarginPct": 58.8, "operatingMarginPct": 28.0, "netIncomeM": 1670.00, "rdExpenseM": null },
-      "segments": { "Gaming": 4100.00, "Data Center": 830.00, "Pozostałe (ProViz/Auto/OEM)": 1980.00 },
-      "forces": { "rivalry": 2, "supplierPower": 4, "buyerPower": 2, "substitutes": 3, "newEntrants": 2 },
-      "catalyst": "Premiera Pascala (TSMC 16nm i Samsung 14nm); karty Founders Edition za 699 USD przejmują marżę od partnerów AIB; Data Center potraja się do 830 mln USD.",
-      "forceDetails": {
-        "rivalry": "Pascal GTX 1080/1070 nie ma konkurencji w wyższym segmencie (AMD Polaris celuje tylko w średnią półkę).",
-        "supplierPower": "Dywersyfikacja między TSMC 16nm a Samsung 14nm oraz drogie pamięci HBM2/GDDR5X.",
-        "buyerPower": "Wprowadzenie kart Founders Edition bezpośrednio przez NVIDIA ogranicza siłę producentów AIB.",
-        "substitutes": "Rozwój sieci neuronowych (AlexNet/Deep Learning) otwiera zupełnie nowy rynek w centrach danych.",
-        "newEntrants": "Google prezentuje pierwszy układ TPU v1 do wewnętrznych zadań AI."
-      }
-    },
-    {
-      "year": 2017,
-      "fiscalLabel": "FY2018 (sty 2018)",
-      "eraId": "pascal_ai",
-      "architectures": ["Volta (V100 / TITAN V)"],
-      "financials": { "revenueM": 9710.00, "yoyGrowthPct": 40.6, "grossMarginPct": 59.9, "operatingMarginPct": 33.1, "netIncomeM": 3050.00, "rdExpenseM": 1800.00 },
-      "segments": { "GPU Segment": 8140.00, "Tegra Segment": 1530.00, "All Other": 40.00 },
-      "forces": { "rivalry": 2, "supplierPower": 4, "buyerPower": 2, "substitutes": 3, "newEntrants": 2 },
-      "catalyst": "Debiut rdzeni Tensor (Tensor Cores) w architekturze Volta V100; boom na uczenie głębokie i kryptowaluty podnosi przychody o 40,6%.",
-      "forceDetails": {
-        "rivalry": "Architektura AMD Vega nie zagraża dominacji NVIDIA ani w grach, ani w badaniach AI.",
-        "supplierPower": "Wysoka zależność od TSMC (12nm FFN) oraz ograniczona podaż pamięci HBM2.",
-        "buyerPower": "Chmury obliczeniowe (AWS, Azure, GCP) masowo zamawiają akceleratory V100.",
-        "substitutes": "Wczesne układy ASIC (Google TPU v2) zaczynają pojawiać się w chmurze.",
-        "newEntrants": "Fala startupów AI (Cerebras, Graphcore, Habana) dopiero rozpoczyna prace nad pierwszymi chipami."
-      }
-    },
-    {
-      "year": 2018,
-      "fiscalLabel": "FY2019 (sty 2019)",
-      "eraId": "pascal_ai",
-      "architectures": ["Turing (RTX 20 / T4)"],
-      "financials": { "revenueM": 11720.00, "yoyGrowthPct": 20.6, "grossMarginPct": 61.2, "operatingMarginPct": 32.5, "netIncomeM": 4140.00, "rdExpenseM": 2380.00 },
-      "segments": { "Gaming": 6250.00, "Data Center": 2930.00, "ProViz": 1130.00, "Automotive": 641.00, "OEM & Other": 767.00 },
-      "forces": { "rivalry": 2, "supplierPower": 3, "buyerPower": 3, "substitutes": 3, "newEntrants": 2 },
-      "catalyst": "Premiera ray-tracingu w czasie rzeczywistym (Turing RTX 20); pęknięcie bańki kryptowalutowej wywołuje spadek przychodów w Q4 FY19 o 24,3% r/r.",
-      "forceDetails": {
-        "rivalry": "Niska presja ze strony AMD w segmencie ultra-high-end.",
-        "supplierPower": "Stabilna produkcja w procesie 12 nm TSMC.",
-        "buyerPower": "Nadpodaż używanych kart po krachu kryptowalut osłabia popyt na drogie modele RTX 20.",
-        "substitutes": "Starsze karty serii GTX 10 na rynku wtórnym konkurują z nowymi modelami Turing.",
-        "newEntrants": "Niska groźba nowych wejść."
-      }
-    },
-    {
-      "year": 2019,
-      "fiscalLabel": "FY2020 (sty 2020)",
-      "eraId": "datacenter",
-      "architectures": ["Turing (GTX 16 / RTX Super)"],
-      "financials": { "revenueM": 10920.00, "yoyGrowthPct": -6.8, "grossMarginPct": 62.0, "operatingMarginPct": 26.1, "netIncomeM": 2800.00, "rdExpenseM": 2830.00 },
-      "segments": { "Gaming": 5520.00, "Data Center": 2980.00, "ProViz": 1210.00, "Automotive": 700.00, "OEM & Other": 505.00 },
-      "forces": { "rivalry": 2, "supplierPower": 3, "buyerPower": 3, "substitutes": 3, "newEntrants": 3 },
-      "catalyst": "Ogłoszenie przejęcia Mellanox Technologies za 6,9 mld USD w gotówce; korekta zapasów w Gamingu obniża przychody spółki o 6,8%.",
-      "forceDetails": {
-        "rivalry": "AMD wprowadza architekturę RDNA (RX 5700), odzyskując część średniego segmentu.",
-        "supplierPower": "Umiarkowana siła odlewni.",
-        "buyerPower": "Korekta zapasów w kanale detalicznym po krachu krypto.",
-        "substitutes": "AWS przejmuje Annapurna Labs i rozwija własne układy Inferentia.",
-        "newEntrants": "Intel przejmuje Habana Labs za 2 mld USD, przyspieszając budowę oferty AI."
-      }
+      "fiscalLabel": { "pl": "FY2016 (luty 2015 – styczeń 2016)", "en": "FY2016 (Feb 2015 – Jan 2016)" },
+      "era": { "pl": "Era: Dominacja Gamingu i zapłon Deep Learning", "en": "Era: Gaming Dominance & Deep Learning Ignition" },
+      "summary": {
+        "pl": "Wygaszenie modemów Icera (odpis 131 mln USD); udział AIB sięga 81,9%; Gaming rośnie o 37% do 2,80 mld USD przy wczesnej adopcji AI.",
+        "en": "Wind-down of Icera modems ($131M charge); discrete GPU share reaches 81.9%; Gaming surges 37% to $2.80B alongside early AI adoption."
+      },
+      "kpis": {
+        "revenue": { "pl": "5,01 mld USD", "en": "$5.01B" },
+        "revenueNum": 5.01,
+        "yoy": "+7%",
+        "grossMargin": "56.1%",
+        "opMargin": "14.9%",
+        "netIncome": { "pl": "614,0 mln USD", "en": "$614.0M" },
+        "rnd": { "pl": "1,33 mld USD", "en": "$1.33B" },
+        "catalyst": { "pl": "Maxwell (TITAN X) & cuDNN", "en": "Maxwell (TITAN X) & cuDNN" }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 2,
+          "rationale": {
+            "pl": "Dominacja w duopolu z AMD (ponad 80% rynku kart dedykowanych), przewaga ekosystemu CUDA i sterowników.",
+            "en": "Dominance in duopoly with AMD (>80% discrete GPU share), backed by CUDA and driver ecosystem."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Zależność od TSMC w procesie 28nm oraz dostawców pamięci GDDR5, ale dojrzały proces zapewnia wysoką rentowność.",
+            "en": "Reliance on TSMC 28nm and GDDR5 memory suppliers, though mature node yields protect margins."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Rozproszona baza graczy PC (niska siła) równoważona przez pierwszych dużych klientów chmurowych testujących GPU.",
+            "en": "Fragmented PC gamer base (low power) balanced by early hyperscale cloud buyers testing GPUs."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Konsole PS4/Xbox One oraz zintegrowane układy Intel stanowią alternatywę w niższym segmencie gier.",
+            "en": "PS4/Xbox One consoles and Intel integrated graphics serve as substitutes in casual gaming."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Wysokie nakłady R&D (1,33 mld USD rocznie) i efekt sieciowy bibliotek cuDNN blokują nowych konkurentów.",
+            "en": "Heavy R&D spend ($1.33B/yr) and cuDNN library network effects deter new entrants."
+          }
+        }
+      },
+      "segments": [
+        { "name": { "pl": "Gaming", "en": "Gaming" }, "value": "2.80 mld USD", "pct": 55.9 },
+        { "name": { "pl": "Data Center", "en": "Data Center" }, "value": "0.34 mld USD", "pct": 6.8 },
+        { "name": { "pl": "Pozostałe (ProViz / Auto / OEM)", "en": "Other (ProViz / Auto / OEM)" }, "value": "1.87 mld USD", "pct": 37.3 }
+      ]
     },
     {
       "year": 2020,
-      "fiscalLabel": "FY2021 (sty 2021)",
-      "eraId": "datacenter",
-      "architectures": ["Ampere (RTX 30 / A100)"],
-      "financials": { "revenueM": 16680.00, "yoyGrowthPct": 52.7, "grossMarginPct": 62.3, "operatingMarginPct": 27.2, "netIncomeM": 4330.00, "rdExpenseM": 3920.00 },
-      "segments": { "Gaming": 7760.00, "Data Center": 6700.00, "ProViz": 1050.00, "Automotive": 536.00, "OEM & Other": 631.00 },
-      "forces": { "rivalry": 2, "supplierPower": 4, "buyerPower": 2, "substitutes": 3, "newEntrants": 3 },
-      "catalyst": "Finalizacja przejęcia Mellanox i Cumulus; premiera Ampere (A100 na TSMC 7nm, RTX 30 na Samsung 8nm); Data Center rośnie o 124,5% do 6,70 mld USD.",
-      "forceDetails": {
-        "rivalry": "A100 staje się niekwestionowanym standardem treningu AI w centrach danych.",
-        "supplierPower": "Globalny kryzys półprzewodników i ograniczenia mocy w odlewniach TSMC i Samsunga.",
-        "buyerPower": "Pandemiczny boom na gaming i chmurę tworzy gigantyczny niedobór kart.",
-        "substitutes": "Premiera konsol PlayStation 5 i Xbox Series X.",
-        "newEntrants": "NVIDIA ogłasza próbę przejęcia Arm za 40 mld USD, by zablokować rywali na poziomie CPU."
-      }
-    },
-    {
-      "year": 2021,
-      "fiscalLabel": "FY2022 (sty 2022)",
-      "eraId": "datacenter",
-      "architectures": ["Ampere"],
-      "financials": { "revenueM": 26910.00, "yoyGrowthPct": 61.4, "grossMarginPct": 64.9, "operatingMarginPct": 37.3, "netIncomeM": 9750.00, "rdExpenseM": 5270.00 },
-      "segments": { "Gaming": 12460.00, "Data Center": 10610.00, "ProViz": 2110.00, "Automotive": 566.00, "OEM & Other": 1160.00 },
-      "forces": { "rivalry": 1, "supplierPower": 4, "buyerPower": 1, "substitutes": 2, "newEntrants": 3 },
-      "catalyst": "Ekstremalny deficyt kart (gaming + AI + kryptowaluty) winduje marżę brutto do 64,9%, a kapitalizację spółki do 735,9 mld USD.",
-      "forceDetails": {
-        "rivalry": "Minimalna presja konkurencyjna – rynek wchłania każdą wyprodukowaną sztukę GPU.",
-        "supplierPower": "TSMC podnosi ceny wafli przy pełnym obłożeniu fabryk.",
-        "buyerPower": "Najniższa siła nabywców w historii – klienci płacą ceny wielokrotnie przekraczające MSRP.",
-        "substitutes": "Brak realnych zamienników przy jednoczesnym deficycie konsol PS5.",
-        "newEntrants": "Intel zapowiada powrót na rynek dedykowanych GPU z linią Arc Alchemist."
-      }
-    },
-    {
-      "year": 2022,
-      "fiscalLabel": "FY2023 (sty 2023)",
-      "eraId": "datacenter",
-      "architectures": ["Hopper (H100)", "Ada Lovelace (RTX 40)"],
-      "financials": { "revenueM": 26970.00, "yoyGrowthPct": 0.2, "grossMarginPct": 56.9, "operatingMarginPct": 15.7, "netIncomeM": 4370.00, "rdExpenseM": 7340.00 },
-      "segments": { "Data Center": 15010.00, "Gaming": 9070.00, "ProViz": 1540.00, "Automotive": 903.00, "OEM & Other": 455.00 },
-      "forces": { "rivalry": 2, "supplierPower": 4, "buyerPower": 3, "substitutes": 3, "newEntrants": 3 },
-      "catalyst": "Data Center (15,01 mld USD) po raz pierwszy wyprzedza Gaming (-27,2%); upadek przejęcia Arm (kara 1,25 mld USD), wyjście partnera EVGA i sankcje USA na Chiny.",
-      "forceDetails": {
-        "rivalry": "Debiut AMD Instinct MI250X w superkomputerach; początek dostaw Hopper H100.",
-        "supplierPower": "Przejście na droższy proces 4 nm w TSMC dla obu architektur.",
-        "buyerPower": "Załamanie rynku krypto (Ethereum Merge) powoduje nadpodaż kart w Gamingu; EVGA zrywa współpracę przez niskie marże.",
-        "substitutes": "Restrykcje eksportowe USA z października 2022 r. zmuszają do tworzenia okrojonych układów A800/H800 dla Chin.",
-        "newEntrants": "Hiperskalery przyspieszają prace nad własnymi układami ASIC (Google TPU v4, AWS Trainium)."
-      }
+      "fiscalLabel": { "pl": "FY2021 (Przejęcie Mellanox i boom chmurowy)", "en": "FY2021 (Mellanox Acquisition & Cloud Boom)" },
+      "era": { "pl": "Transformacja w Platformę Data Center", "en": "Data Center Platform Transformation" },
+      "summary": {
+        "pl": "Zamknięcie przejęcia Mellanox (6,9 mld USD) łączy obliczenia GPU z sieciami InfiniBand; przychody Data Center niemal się podwajają.",
+        "en": "Closing of $6.9B Mellanox acquisition unites GPU compute with InfiniBand networking; Data Center revenue nearly doubles."
+      },
+      "kpis": {
+        "revenue": { "pl": "16,68 mld USD", "en": "$16.68B" },
+        "revenueNum": 16.68,
+        "yoy": "+53%",
+        "grossMargin": "62.3%",
+        "opMargin": "27.2%",
+        "netIncome": { "pl": "4,33 mld USD", "en": "$4.33B" },
+        "rnd": { "pl": "3,92 mld USD", "en": "$3.92B" },
+        "catalyst": { "pl": "Ampere A100 + Mellanox", "en": "Ampere A100 + Mellanox" }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 2,
+          "rationale": {
+            "pl": "A100 deklasuje konkurencję w treningu modeli AI; przejęcie Mellanox buduje przewagę na poziomie całego klastra.",
+            "en": "A100 dominates AI training; Mellanox integration creates full-cluster architectural lock-in."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Rosnąca koncentracja na zaawansowanych procesach litograficznych (TSMC 7nm / Samsung 8nm) i pamięciach HBM2.",
+            "en": "Growing reliance on leading-edge lithography (TSMC 7nm / Samsung 8nm) and HBM2 memory."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Hyperscalerzy (AWS, Azure, GCP) stają się kluczowymi odbiorcami, ale brak alternatywy ogranicza ich presję cenową.",
+            "en": "Hyperscalers (AWS, Azure, GCP) become major buyers, yet lack viable alternatives to pressure pricing."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Google TPU i wczesne układy ASIC mają wąskie zastosowanie; uniwersalność CUDA wygrywa w badaniach AI.",
+            "en": "Google TPUs and early ASICs remain narrow; CUDA's generality wins across AI research."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Wymóg jednoczesnego dostarczania krzemu, sieci, serwerów DGX i oprogramowania zamyka rynek dla start-upów.",
+            "en": "Need to deliver silicon, networking, DGX systems, and software simultaneously blocks startups."
+          }
+        }
+      },
+      "segments": [
+        { "name": { "pl": "Gaming", "en": "Gaming" }, "value": "7.76 mld USD", "pct": 46.5 },
+        { "name": { "pl": "Data Center", "en": "Data Center" }, "value": "6.70 mld USD", "pct": 40.2 },
+        { "name": { "pl": "Pozostałe (ProViz / Auto)", "en": "Other (ProViz / Auto)" }, "value": "2.22 mld USD", "pct": 13.3 }
+      ]
     },
     {
       "year": 2023,
-      "fiscalLabel": "FY2024 (sty 2024)",
-      "eraId": "genai",
-      "architectures": ["Hopper (H100 / H200)"],
-      "financials": { "revenueM": 60920.00, "yoyGrowthPct": 125.9, "grossMarginPct": 72.7, "operatingMarginPct": 54.1, "netIncomeM": 29760.00, "rdExpenseM": 8680.00 },
-      "segments": { "Data Center": 47530.00, "Gaming": 10450.00, "ProViz": 1550.00, "Automotive": 1090.00, "OEM & Other": 306.00 },
-      "forces": { "rivalry": 1, "supplierPower": 5, "buyerPower": 2, "substitutes": 3, "newEntrants": 3 },
-      "catalyst": "Eksplozja generatywnego AI (efekt ChatGPT) podnosi przychody Data Center o 216,7% do 47,53 mld USD, a marżę brutto do 72,7%; kapitalizacja przekracza 1,22 bln USD.",
-      "forceDetails": {
-        "rivalry": "Praktyczny monopol NVIDIA w treningu wielkich modeli językowych (LLM).",
-        "supplierPower": "Ekstremalne wąskie gardło w zaawansowanym pakowaniu TSMC CoWoS oraz pamięciach HBM3.",
-        "buyerPower": "Globalny wyścig zbrojeń AI sprawia, że hiperskalery kupują każdą dostępną liczbę układów H100.",
-        "substitutes": "Ekosystem oprogramowania CUDA stanowi barierę nie do przejścia przy nagłym skalowaniu klastrów.",
-        "newEntrants": "Microsoft prezentuje własny akcelerator Maia 100, a AMD zapowiada serię Instinct MI300X."
-      }
-    },
-    {
-      "year": 2024,
-      "fiscalLabel": "FY2025 (sty 2025)",
-      "eraId": "genai",
-      "architectures": ["Blackwell (B200 / GB200)"],
-      "financials": { "revenueM": 130500.00, "yoyGrowthPct": 114.2, "grossMarginPct": 75.0, "operatingMarginPct": 62.4, "netIncomeM": 72880.00, "rdExpenseM": 12910.00 },
-      "segments": { "Data Center": 115190.00, "Gaming": 11350.00, "ProViz": 1880.00, "Automotive": 1690.00, "OEM & Other": 389.00 },
-      "forces": { "rivalry": 2, "supplierPower": 5, "buyerPower": 3, "substitutes": 3, "newEntrants": 4 },
-      "catalyst": "Szczyt udziału w akceleratorach AI (~87% szac.) i rekordowa marża brutto 75,0%; przejęcie Run:ai i Deci AI; start produkcji architektury Blackwell.",
-      "forceDetails": {
-        "rivalry": "AMD MI300X zdobywa pierwsze miliardowe zamówienia u Microsoftu i Mety jako drugie źródło dostaw.",
-        "supplierPower": "Maksymalna presja: oligopol HBM (SK Hynix, Samsung, Micron) i monopol pakowania CoWoS w TSMC.",
-        "buyerPower": "Rosnąca koncentracja – najwięksi klienci chmurowi odpowiadają za blisko połowę przychodów Data Center.",
-        "substitutes": "Kompilator OpenAI Triton oraz rozwój PyTorch zaczynają abstrahować kod od czystego CUDA.",
-        "newEntrants": "Wysoka presja: Google TPU v5p/v6 oraz AWS Trainium 2 przejmują część wewnętrznych obciążeń Big Tech."
-      }
-    },
-    {
-      "year": 2025,
-      "fiscalLabel": "FY2026 (sty 2026)",
-      "eraId": "genai",
-      "architectures": ["Blackwell (RTX 50 / GB300)"],
-      "financials": { "revenueM": 215940.00, "yoyGrowthPct": 65.5, "grossMarginPct": 71.1, "operatingMarginPct": 60.4, "netIncomeM": 120070.00, "rdExpenseM": 18500.00 },
-      "segments": { "Data Center": 193740.00, "Gaming": 16040.00, "ProViz": 3190.00, "Automotive": 2350.00, "OEM & Other": 619.00 },
-      "forces": { "rivalry": 2, "supplierPower": 5, "buyerPower": 4, "substitutes": 4, "newEntrants": 4 },
-      "catalyst": "Pierwsza spółka z wyceną 5 bln USD (paź 2025); odpis 4,5 mld USD na zapasy H20 przez sankcje USA; 94% udziału w kartach PC AIB; umowa o wartości 20 mld USD z Groq.",
-      "forceDetails": {
-        "rivalry": "AMD MI350X dorównuje w inferencji, a Huawei Ascend przejmuje zamknięty rynek chiński.",
-        "supplierPower": "Wąskie gardła CoWoS i HBM3e; NVIDIA inwestuje 5 mld USD w partnerstwo z Intelem.",
-        "buyerPower": "Dwóch bezpośrednich klientów stanowi 39% przychodów w Q2; powstają konsorcja otwartych standardów UALink i Ultra Ethernet.",
-        "substitutes": "Modele DeepSeek (MoE/FP8) i kwantyzacja FP4 obniżają koszt tokenu, napędzając jednak popyt przez paradoks Jevonsa.",
-        "newEntrants": "Gwałtowny wzrost dostaw układów ASIC (Google TPU v7, AWS Trainium 3, Meta MTIA)."
-      }
+      "fiscalLabel": { "pl": "FY2024 (Eksplozja Generatywnej AI)", "en": "FY2024 (Generative AI Inflection)" },
+      "era": { "pl": "Infleksja GenAI: Monopol infrastruktury LLM", "en": "GenAI Inflection: LLM Infrastructure Monopoly" },
+      "summary": {
+        "pl": "Premiera ChatGPT wywołuje globalny wyścig zbrojeń o układy Hopper H100; przychody Data Center rosną o ponad 217% r/r.",
+        "en": "ChatGPT sparks a global hyperscaler arms race for Hopper H100 GPUs; Data Center revenue surges over 217% YoY."
+      },
+      "kpis": {
+        "revenue": { "pl": "60,92 mld USD", "en": "$60.92B" },
+        "revenueNum": 60.92,
+        "yoy": "+126%",
+        "grossMargin": "72.7%",
+        "opMargin": "54.1%",
+        "netIncome": { "pl": "29,76 mld USD", "en": "$29.76B" },
+        "rnd": { "pl": "8,68 mld USD", "en": "$8.68B" },
+        "catalyst": { "pl": "Hopper H100 & NVLink", "en": "Hopper H100 & NVLink" }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 1,
+          "rationale": {
+            "pl": "Ponad 90% udziału w akceleratorach AI w centrach danych; rywale nie są w stanie dostarczyć porównywalnego stosu programowego.",
+            "en": "Over 90% share in data center AI accelerators; rivals lack a comparable full-stack software ecosystem."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Wąskie gardła w zaawansowanym pakowaniu CoWoS w TSMC oraz dostawach pamięci HBM3 (SK Hynix).",
+            "en": "Supply bottlenecks in TSMC CoWoS advanced packaging and SK Hynix HBM3 memory capacity."
+          }
+        },
+        "buyers": {
+          "score": 2,
+          "rationale": {
+            "pl": "Niedobór mocy obliczeniowych zmusza gigantów chmurowych do akceptacji cen dyktowanych przez NVIDIĘ i wielomiesięcznych kolejek.",
+            "en": "Severe compute shortage forces cloud giants to accept NVIDIA pricing and multi-month waitlists."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Własne układy klientów (AWS Trainium, Google TPU) łagodzą niedobory, lecz nie zastępują H100 w kluczowych modelach.",
+            "en": "In-house silicon (AWS Trainium, Google TPU) eases shortages but cannot replace H100 for frontier models."
+          }
+        },
+        "newEntrants": {
+          "score": 1,
+          "rationale": {
+            "pl": "Budżet R&D na poziomie 8,7 mld USD i ekosystem 4+ mln programistów CUDA tworzą niemal nieprzekraczalną fosę.",
+            "en": "$8.7B R&D budget and an ecosystem of 4M+ CUDA developers create a near-insurmountable moat."
+          }
+        }
+      },
+      "segments": [
+        { "name": { "pl": "Data Center", "en": "Data Center" }, "value": "47.52 mld USD", "pct": 78.0 },
+        { "name": { "pl": "Gaming", "en": "Gaming" }, "value": "10.45 mld USD", "pct": 17.2 },
+        { "name": { "pl": "Pozostałe (ProViz / Auto)", "en": "Other (ProViz / Auto)" }, "value": "2.95 mld USD", "pct": 4.8 }
+      ]
     },
     {
       "year": 2026,
-      "fiscalLabel": "FY2027 YTD / TTM (paź 2026)",
-      "eraId": "genai",
-      "isPartialOrTTM": true,
-      "architectures": ["Vera Rubin (NVL72)", "Blackwell Ultra (GB300)"],
-      "financials": { "revenueM": 361810.00, "yoyGrowthPct": 93.3, "grossMarginPct": 74.9, "operatingMarginPct": 66.3, "netIncomeM": 183300.00, "rdExpenseM": 23590.00 },
-      "segments": { "Data Center (Q1-Q3)": 271870.00, "Edge & Non-DC (Q1-Q3)": 21770.00 },
-      "forces": { "rivalry": 3, "supplierPower": 5, "buyerPower": 4, "substitutes": 4, "newEntrants": 4 },
-      "catalyst": "Wdrożenia pełnoszafowe Vera Rubin NVL72 (115,8 mld USD przychodu w samym Q3 FY27); całkowite wstrzymanie sprzedaży H200 do Chin i zmiany u sterów spółki w XI 2026.",
-      "forceDetails": {
-        "rivalry": "Udział w akceleratorach AI szacowany na ~75–81%; AMD (kontrakty 6 GW z OpenAI i Meta) staje się wiarygodnym drugim dostawcą.",
-        "supplierPower": "Ekstremalna presja: TSMC podnosi ceny CoWoS o 10–25%, pamięć HBM4 wyprzedana na cały rok, inwestycje w optykę Lumentum i Corning.",
-        "buyerPower": "Top 3 bezpośrednich odbiorców to 44% sprzedaży w H1 FY27; kontrakty w segmencie ACIE i Sovereign AI równoważą hiperscalerów.",
-        "substitutes": "ROCm 7.x i PyTorch/vLLM ułatwiają przenoszenie inferencji, ale domeny szafowe NVLink 6.0 utrzymują lock-in.",
-        "newEntrants": "Dostawy własnych ASIC rosną o 44,6% r/r wobec 16,1% dla GPU; debiut giełdowy Cerebras."
-      }
+      "fiscalLabel": { "pl": "FY2026/2027 (Architektura Blackwell i Rubin)", "en": "FY2026/2027 (Blackwell & Rubin Cycle)" },
+      "era": { "pl": "Era Fabryk AI: Pełnoskalowe systemy Rack-Scale", "en": "AI Factory Era: Full-Stack Rack-Scale Systems" },
+      "summary": {
+        "pl": "NVIDIA sprzedaje kompletne fabryki AI (szafy NVL72 Blackwell oraz zapowiedź Rubin), generując ponad 85% przychodów w segmencie Data Center.",
+        "en": "NVIDIA transitions from chip vendor to full AI factory provider (Blackwell NVL72 racks & Rubin roadmap), with >85% Data Center revenue mix."
+      },
+      "kpis": {
+        "revenue": { "pl": "130,5+ mld USD", "en": "$130.5B+" },
+        "revenueNum": 130.5,
+        "yoy": "+114%",
+        "grossMargin": "75.0%",
+        "opMargin": "62.4%",
+        "netIncome": { "pl": "72,88 mld USD", "en": "$72.88B" },
+        "rnd": { "pl": "12,91 mld USD", "en": "$12.91B" },
+        "catalyst": { "pl": "Blackwell GB200 NVL72 / NIM", "en": "Blackwell GB200 NVL72 / NIM" }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 2,
+          "rationale": {
+            "pl": "AMD MI300/MI350 zdobywa przyczółki w inferencji, lecz integracja szaf NVLink72 utrzymuje przywództwo NVIDII.",
+            "en": "AMD MI300/MI350 gains inference footholds, yet NVLink72 rack integration preserves NVIDIA's leadership."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Krytyczna zależność od TSMC (CoWoS-L) oraz dostawców HBM3e (SK Hynix, Micron), łagodzona przedpłatami i rezerwacją mocy.",
+            "en": "Critical reliance on TSMC (CoWoS-L) and HBM3e suppliers (SK Hynix, Micron), mitigated via capacity prepayments."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Wysoka koncentracja (4 największych hyperscalerów to ~45% przychodów), którzy intensywnie rozwijają własne układy ASIC.",
+            "en": "High buyer concentration (top 4 hyperscalers ~45% of revenue) actively investing in custom ASICs."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Custom ASIC (Google TPU v6, AWS Trainium2, Broadcom) stają się realnym substytutem dla wyspecjalizowanych obciążeń.",
+            "en": "Custom ASICs (Google TPU v6, AWS Trainium2, Broadcom) emerge as viable substitutes for targeted workloads."
+          }
+        },
+        "newEntrants": {
+          "score": 1,
+          "rationale": {
+            "pl": "Roczny rytm premier architektur (Hopper -> Blackwell -> Rubin) i oprogramowanie NIM uniemożliwiają dogonienie lidera.",
+            "en": "Annual architecture cadence (Hopper -> Blackwell -> Rubin) and NIM enterprise software lock out new entrants."
+          }
+        }
+      },
+      "segments": [
+        { "name": { "pl": "Data Center & Networking", "en": "Data Center & Networking" }, "value": "115.2 mld USD", "pct": 88.3 },
+        { "name": { "pl": "Gaming & AI PC", "en": "Gaming & AI PC" }, "value": "11.4 mld USD", "pct": 8.7 },
+        { "name": { "pl": "ProViz & Automotive", "en": "ProViz & Automotive" }, "value": "3.9 mld USD", "pct": 3.0 }
+      ]
     }
   ]
 }

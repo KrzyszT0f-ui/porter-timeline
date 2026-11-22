@@ -1,1 +1,53 @@
 @import "tailwindcss";
+
+:root {
+  --bg-main: #000000;
+  --bg-card: #111111;
+  --bg-card-elevated: #1a1a1a;
+  --border-subtle: #262626;
+  --text-primary: #ffffff;
+  --text-secondary: #a3a3a3;
+  --accent: #76b900;
+  --accent-soft: rgba(118, 185, 0, 0.14);
+  --accent-contrast: #000000;
+  --compare-accent: #f59e0b;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  margin: 0;
+}
+
+/* Stylowanie suwaka osi czasu pod aktualny akcent spółki */
+input[type="range"].porter-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--border-subtle);
+  height: 6px;
+  border-radius: 999px;
+  outline: none;
+}
+
+input[type="range"].porter-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg-main);
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--accent-soft);
+}
+
+input[type="range"].porter-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg-main);
+  cursor: pointer;
+}

@@ -1,70 +1,48 @@
-import React, { useState, useMemo } from 'react';
-import { COMPANIES, COMPANY_LIST } from './data/registry';
+import React, { useState, useEffect, useMemo } from 'react';
 import {
-  ChevronLeft,
-  ChevronRight,
+  TrendingUp,
   Layers,
   GitCompare,
-  Cpu,
-  TrendingUp,
-  AlertTriangle,
-  Info,
+  X,
+  Globe,
+  ChevronLeft,
+  ChevronRight,
+  Cpu
 } from 'lucide-react';
+import { COMPANIES, getCompanyById } from './data/registry';
+import { translations, pickLang } from './i18n/translations';
 
-const FORCE_LABELS = [
-  { key: 'rivalry', label: 'Rywalizacja w sektorze', short: 'Rywalizacja' },
-  { key: 'supplierPower', label: 'Siła dostawców', short: 'Dostawcy' },
-  { key: 'buyerPower', label: 'Siła nabywców', short: 'Nabywcy' },
-  { key: 'substitutes', label: 'Groźba substytutów', short: 'Substytuty' },
-  { key: 'newEntrants', label: 'Groźba nowych wejść', short: 'Nowe wejścia' },
-];
+const FORCE_KEYS = ['rivalry', 'suppliers', 'buyers', 'substitutes', 'newEntrants'];
 
-const SCORE_BADGES = {
-  1: { text: '1/5 Bardzo niska', cls: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40' },
-  2: { text: '2/5 Niska', cls: 'bg-teal-500/20 text-teal-300 border-teal-500/40' },
-  3: { text: '3/5 Umiarkowana', cls: 'bg-amber-500/20 text-amber-300 border-amber-500/40' },
-  4: { text: '4/5 Wysoka', cls: 'bg-orange-500/20 text-orange-300 border-orange-500/40' },
-  5: { text: '5/5 Ekstremalna', cls: 'bg-rose-500/20 text-rose-300 border-rose-500/40' },
-};
-
-function formatMoney(valM, currency = 'USD') {
-  if (valM === null || valM === undefined) return 'Brak danych';
-  const abs = Math.abs(valM);
-  const sign = valM < 0 ? '-' : '';
-  if (abs >= 1000) {
-    return `${sign}${(abs / 1000).toFixed(2)} mld ${currency}`;
-  }
-  return `${sign}${abs.toFixed(2)} mln ${currency}`;
-}
-
-function PorterRadar({ forces, compareForces, activeForce, onSelectForce }) {
+function FiveForcesRadar({ currentForces, compareForces, labels, accentColor, compareColor, selectedForce, onSelectForce }) {
   const size = 300;
   const center = size / 2;
-  const maxRadius = 105;
+  const maxRadius = 102;
   const levels = [1, 2, 3, 4, 5];
 
-  const getPoint = (index, value) => {
+  const getPoint = (index, score) => {
     const angle = (Math.PI * 2 * index) / 5 - Math.PI / 2;
-    const r = (value / 5) * maxRadius;
+    const r = (score / 5) * maxRadius;
     return {
       x: center + r * Math.cos(angle),
-      y: center + r * Math.sin(angle),
+      y: center + r * Math.sin(angle)
     };
   };
 
-  const mainPoints = FORCE_LABELS.map((f, i) => getPoint(i, forces[f.key] || 1));
-  const mainPath = mainPoints.map((p) => `${p.x},${p.y}`).join(' ');
+  const currentPoints = FORCE_KEYS.map((key, idx) => getPoint(idx, currentForces[key]?.score || 1));
+  const currentPolygon = currentPoints.map((p) => `${p.x},${p.y}`).join(' ');
 
   const comparePoints = compareForces
-    ? FORCE_LABELS.map((f, i) => getPoint(i, compareForces[f.key] || 1))
+    ? FORCE_KEYS.map((key, idx) => getPoint(idx, compareForces[key]?.score || 1))
     : null;
-  const comparePath = comparePoints ? comparePoints.map((p) => `${p.x},${p.y}`).join(' ') : '';
+  const comparePolygon = comparePoints ? comparePoints.map((p) => `${p.x},${p.y}`).join(' ') : '';
 
   return (
-    <div className="flex flex-col items-center">
-      <svg viewBox={`0 0 ${size} ${size}`} className="w-full max-w-[320px] overflow-visible select-none">
+    <div className="flex flex-col items-center justify-center w-full">
+      <svg viewBox={`0 0 ${size} ${size}`} className="w-full max-w-[310px] overflow-visible select-none">
+        {/* Siatka pięciokątów 1-5 */}
         {levels.map((lvl) => {
-          const pts = FORCE_LABELS.map((_, i) => getPoint(i, lvl))
+          const pts = FORCE_KEYS.map((_, idx) => getPoint(idx, lvl))
             .map((p) => `${p.x},${p.y}`)
             .join(' ');
           return (
@@ -72,67 +50,83 @@ function PorterRadar({ forces, compareForces, activeForce, onSelectForce }) {
               key={lvl}
               points={pts}
               fill="none"
-              stroke="#334155"
-              strokeWidth={lvl === 5 ? '1.5' : '0.8'}
-              strokeDasharray={lvl === 5 ? 'none' : '3 3'}
+              stroke="var(--border-subtle)"
+              strokeWidth={lvl === 5 ? '1.5' : '1'}
+              strokeDasharray={lvl === 5 ? '0' : '2,2'}
             />
           );
         })}
 
-        {FORCE_LABELS.map((f, i) => {
-          const outer = getPoint(i, 5);
-          const labelPos = getPoint(i, 6.15);
-          const isSelected = activeForce === f.key;
+        {/* Osie promieniowe */}
+        {FORCE_KEYS.map((key, idx) => {
+          const outer = getPoint(idx, 5);
           return (
-            <g key={f.key} onClick={() => onSelectForce(f.key)} className="cursor-pointer group">
-              <line x1={center} y1={center} x2={outer.x} y2={outer.y} stroke="#334155" strokeWidth="1" />
-              <text
-                x={labelPos.x}
-                y={labelPos.y}
-                textAnchor="middle"
-                dominantBaseline="middle"
-                className={`text-[11px] font-medium transition-colors ${
-                  isSelected ? 'fill-sky-400 font-bold' : 'fill-slate-300 group-hover:fill-white'
-                }`}
-              >
-                {f.short}
-              </text>
-            </g>
+            <line
+              key={key}
+              x1={center}
+              y1={center}
+              x2={outer.x}
+              y2={outer.y}
+              stroke="var(--border-subtle)"
+              strokeWidth="1"
+            />
           );
         })}
 
-        {comparePath && (
+        {/* Wielokąt roku porównawczego */}
+        {comparePolygon && (
           <polygon
-            points={comparePath}
-            fill="rgba(245, 158, 11, 0.18)"
-            stroke="#f59e0b"
+            points={comparePolygon}
+            fill={compareColor}
+            fillOpacity="0.16"
+            stroke={compareColor}
             strokeWidth="2"
-            strokeDasharray="4 3"
+            strokeDasharray="4,3"
           />
         )}
 
+        {/* Wielokąt aktywnego roku */}
         <polygon
-          points={mainPath}
-          fill="rgba(56, 189, 248, 0.25)"
-          stroke="#38bdf8"
+          points={currentPolygon}
+          fill={accentColor}
+          fillOpacity="0.22"
+          stroke={accentColor}
           strokeWidth="2.5"
-          className="transition-all duration-300"
         />
 
-        {mainPoints.map((p, i) => {
-          const fKey = FORCE_LABELS[i].key;
-          const isSelected = activeForce === fKey;
+        {/* Interaktywne wierzchołki i etykiety */}
+        {FORCE_KEYS.map((key, idx) => {
+          const pt = currentPoints[idx];
+          const labelPt = getPoint(idx, 6.25);
+          const isSelected = selectedForce === key;
+
           return (
-            <circle
-              key={fKey}
-              cx={p.x}
-              cy={p.y}
-              r={isSelected ? 6.5 : 4.5}
-              onClick={() => onSelectForce(fKey)}
-              className={`cursor-pointer transition-all ${
-                isSelected ? 'fill-white stroke-sky-400 stroke-2' : 'fill-sky-400 hover:fill-white'
-              }`}
-            />
+            <g
+              key={key}
+              onClick={() => onSelectForce(key)}
+              className="cursor-pointer group"
+            >
+              <circle
+                cx={pt.x}
+                cy={pt.y}
+                r={isSelected ? 7 : 5}
+                fill={isSelected ? 'var(--text-primary)' : accentColor}
+                stroke="var(--bg-main)"
+                strokeWidth="2"
+              />
+              <text
+                x={labelPt.x}
+                y={labelPt.y}
+                textAnchor="middle"
+                dominantBaseline="middle"
+                fill={isSelected ? accentColor : 'var(--text-secondary)'}
+                fontSize="11"
+                fontWeight={isSelected ? '700' : '500'}
+                className="transition-colors"
+              >
+                {labels[key]}
+              </text>
+            </g>
           );
         })}
       </svg>
@@ -140,226 +134,293 @@ function PorterRadar({ forces, compareForces, activeForce, onSelectForce }) {
   );
 }
 
-function RevenueHistoryChart({ snapshots, selectedYear, onSelectYear, logScale, currency }) {
-  const width = 640;
-  const height = 190;
-  const padL = 52;
-  const padR = 16;
-  const padT = 16;
-  const padB = 28;
-  const plotW = width - padL - padR;
-  const plotH = height - padT - padB;
+function RevenueChart({ timeline, activeIndex, onSelectIndex, isLog, accentColor }) {
+  const width = 460;
+  const height = 160;
+  const padX = 28;
+  const padY = 20;
 
-  const validRevs = snapshots.map((s) => Math.max(s.financials.revenueM, 0.5));
-  const maxRev = Math.max(...validRevs);
-  const minLog = Math.log10(0.5);
-  const maxLog = Math.log10(maxRev);
+  const values = timeline.map((d) => Math.max(d.kpis.revenueNum || 0.001, 0.01));
+  const transformed = isLog ? values.map((v) => Math.log10(v + 0.1)) : values;
 
-  const getX = (idx) => padL + (idx / Math.max(snapshots.length - 1, 1)) * plotW;
-  const getY = (revM) => {
-    const safeVal = Math.max(revM || 0, 0.5);
-    if (logScale) {
-      const ratio = (Math.log10(safeVal) - minLog) / (maxLog - minLog);
-      return padT + plotH - ratio * plotH;
-    }
-    const ratio = (revM || 0) / maxRev;
-    return padT + plotH - ratio * plotH;
-  };
+  const minVal = Math.min(...transformed);
+  const maxVal = Math.max(...transformed);
+  const range = maxVal - minVal || 1;
 
-  const points = snapshots.map((s, i) => `${getX(i)},${getY(s.financials.revenueM)}`).join(' ');
-  const activeIdx = snapshots.findIndex((s) => s.year === selectedYear);
+  const coords = transformed.map((val, idx) => {
+    const x = padX + (idx / Math.max(timeline.length - 1, 1)) * (width - padX * 2);
+    const y = height - padY - ((val - minVal) / range) * (height - padY * 2);
+    return { x, y, year: timeline[idx].year, label: timeline[idx].kpis.revenue };
+  });
+
+  const polyline = coords.map((c) => `${c.x},${c.y}`).join(' ');
+  const activeCoord = coords[activeIndex] || coords[0];
 
   return (
-    <svg viewBox={`0 0 ${width} ${height}`} className="w-full h-48 overflow-visible select-none">
-      {[0, 0.25, 0.5, 0.75, 1].map((t, idx) => {
-        const y = padT + plotH * (1 - t);
-        let labelVal;
-        if (logScale) {
-          labelVal = Math.pow(10, minLog + t * (maxLog - minLog));
-        } else {
-          labelVal = maxRev * t;
-        }
-        const labelStr = labelVal >= 1000 ? `${(labelVal / 1000).toFixed(0)}B` : `${labelVal.toFixed(0)}M`;
+    <svg viewBox={`0 0 ${width} ${height}`} className="w-full h-40 overflow-visible select-none">
+      {/* Linia pionowa wybranego roku */}
+      {activeCoord && (
+        <line
+          x1={activeCoord.x}
+          y1={padY / 2}
+          x2={activeCoord.x}
+          y2={height - padY}
+          stroke="var(--text-secondary)"
+          strokeWidth="1"
+          strokeDasharray="3,3"
+        />
+      )}
+
+      {/* Linia trendu przychodów */}
+      <polyline
+        fill="none"
+        stroke={accentColor}
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        points={polyline}
+      />
+
+      {/* Punkty danych */}
+      {coords.map((c, idx) => {
+        const isActive = idx === activeIndex;
         return (
-          <g key={idx}>
-            <line x1={padL} y1={y} x2={width - padR} y2={y} stroke="#1e293b" strokeWidth="1" />
-            <text x={padL - 8} y={y + 3} textAnchor="end" className="fill-slate-500 text-[10px]">
-              {labelStr}
+          <g
+            key={c.year}
+            onClick={() => onSelectIndex(idx)}
+            className="cursor-pointer"
+          >
+            <circle
+              cx={c.x}
+              cy={c.y}
+              r={isActive ? 6 : 3.5}
+              fill={isActive ? 'var(--text-primary)' : accentColor}
+              stroke="var(--bg-main)"
+              strokeWidth="1.5"
+            />
+            <text
+              x={c.x}
+              y={height - 4}
+              textAnchor="middle"
+              fill={isActive ? accentColor : 'var(--text-secondary)'}
+              fontSize="10"
+              fontWeight={isActive ? '700' : '400'}
+            >
+              {c.year}
             </text>
           </g>
         );
       })}
-
-      <polyline fill="none" stroke="#38bdf8" strokeWidth="2.5" points={points} />
-
-      {snapshots.map((s, i) => {
-        const cx = getX(i);
-        const cy = getY(s.financials.revenueM);
-        const isSelected = s.year === selectedYear;
-        return (
-          <g key={s.year} onClick={() => onSelectYear(s.year)} className="cursor-pointer">
-            <rect x={cx - 8} y={padT} width="16" height={plotH} fill="transparent" />
-            {(isSelected || s.year % 5 === 0 || i === snapshots.length - 1) && (
-              <text
-                x={cx}
-                y={height - 6}
-                textAnchor="middle"
-                className={`text-[10px] ${isSelected ? 'fill-sky-400 font-bold' : 'fill-slate-500'}`}
-              >
-                {s.year}
-              </text>
-            )}
-            <circle
-              cx={cx}
-              cy={cy}
-              r={isSelected ? 5.5 : 2.5}
-              className={isSelected ? 'fill-white stroke-sky-400 stroke-2' : 'fill-sky-400/70'}
-            />
-          </g>
-        );
-      })}
-
-      {activeIdx >= 0 && (
-        <line
-          x1={getX(activeIdx)}
-          y1={padT}
-          x2={getX(activeIdx)}
-          y2={padT + plotH}
-          stroke="#38bdf8"
-          strokeWidth="1"
-          strokeDasharray="3 3"
-        />
-      )}
     </svg>
   );
 }
 
 export default function App() {
-  const [ticker, setTicker] = useState(COMPANY_LIST[0].ticker);
-  const company = COMPANIES[ticker];
-  const snapshots = company.snapshots;
+  const [lang, setLang] = useState(() => localStorage.getItem('porter_lang') || 'pl');
+  const [companyId, setCompanyId] = useState(COMPANIES[0].id);
+  const [yearIndex, setYearIndex] = useState(0);
+  const [compareIndex, setCompareIndex] = useState(null);
+  const [selectedForce, setSelectedForce] = useState('rivalry');
+  const [isLogScale, setIsLogScale] = useState(true);
 
-  const [selectedYear, setSelectedYear] = useState(2015);
-  const [compareMode, setCompareMode] = useState(false);
-  const [compareYear, setCompareYear] = useState(2026);
-  const [activeForce, setActiveForce] = useState('rivalry');
-  const [logScale, setLogScale] = useState(true);
+  const company = useMemo(() => getCompanyById(companyId), [companyId]);
+  const t = translations[lang] || translations.pl;
 
-  const currentSnap = useMemo(
-    () => snapshots.find((s) => s.year === selectedYear) || snapshots[0],
-    [snapshots, selectedYear]
-  );
+  // Zapis języka w localStorage
+  useEffect(() => {
+    localStorage.setItem('porter_lang', lang);
+  }, [lang]);
 
-  const compareSnap = useMemo(
-    () => snapshots.find((s) => s.year === compareYear) || snapshots[snapshots.length - 1],
-    [snapshots, compareYear]
-  );
+  // Dynamiczne wstrzykiwanie motywu kolorystycznego aktywnej spółki
+  useEffect(() => {
+    const theme = company.theme;
+    if (!theme) return;
+    const root = document.documentElement;
+    root.style.setProperty('--bg-main', theme.bgMain);
+    root.style.setProperty('--bg-card', theme.bgCard);
+    root.style.setProperty('--bg-card-elevated', theme.bgCardElevated);
+    root.style.setProperty('--border-subtle', theme.borderSubtle);
+    root.style.setProperty('--text-primary', theme.textPrimary);
+    root.style.setProperty('--text-secondary', theme.textSecondary);
+    root.style.setProperty('--accent', theme.accent);
+    root.style.setProperty('--accent-soft', theme.accentSoft);
+    root.style.setProperty('--accent-contrast', theme.accentContrast);
+    root.style.setProperty('--compare-accent', theme.compareAccent || '#38bdf8');
 
-  const currentEra = useMemo(
-    () => company.eras.find((e) => e.id === currentSnap.eraId) || company.eras[0],
-    [company.eras, currentSnap]
-  );
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    if (metaTheme) {
+      metaTheme.setAttribute('content', theme.bgMain);
+    }
+  }, [company]);
 
-  const minYear = snapshots[0].year;
-  const maxYear = snapshots[snapshots.length - 1].year;
+  // Reset indeksu roku po przełączeniu spółki (ustawienie na przedostatni lub najnowszy rok)
+  useEffect(() => {
+    const defaultIdx = Math.max(0, company.timeline.length - 1);
+    setYearIndex(defaultIdx);
+    setCompareIndex(null);
+  }, [company]);
 
-  const stepYear = (delta) => {
-    const next = Math.min(maxYear, Math.max(minYear, selectedYear + delta));
-    setSelectedYear(next);
+  // Obsługa klawiatury (strzałki lewo/prawo)
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'ArrowLeft') {
+        setYearIndex((prev) => Math.max(0, prev - 1));
+      } else if (e.key === 'ArrowRight') {
+        setYearIndex((prev) => Math.min(company.timeline.length - 1, prev + 1));
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [company.timeline.length]);
+
+  const currentEntry = company.timeline[yearIndex] || company.timeline[0];
+  const compareEntry = compareIndex !== null ? company.timeline[compareIndex] : null;
+  const activeForceData = currentEntry.forces[selectedForce];
+
+  const toggleCompare = () => {
+    if (compareIndex !== null) {
+      setCompareIndex(null);
+    } else {
+      const fallbackIdx = yearIndex > 0 ? 0 : Math.min(1, company.timeline.length - 1);
+      setCompareIndex(fallbackIdx);
+    }
   };
 
-  const segmentEntries = Object.entries(currentSnap.segments || {});
-  const totalSegmentRev = segmentEntries.reduce((acc, [, v]) => acc + (v || 0), 0);
-
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 pb-28 md:pb-12 font-sans">
+    <div
+      className="min-h-screen pb-32 transition-colors duration-300"
+      style={{ backgroundColor: 'var(--bg-main)', color: 'var(--text-primary)' }}
+    >
       {/* Górny pasek nawigacji */}
-      <header className="sticky top-0 z-30 bg-slate-900/90 backdrop-blur border-b border-slate-800 px-4 py-3">
-        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <header
+        className="sticky top-0 z-30 border-b backdrop-blur-md"
+        style={{ backgroundColor: 'color-mix(in srgb, var(--bg-main) 88%, transparent)', borderColor: 'var(--border-subtle)' }}
+      >
+        <div className="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3">
           <div className="flex items-center gap-3">
-            <div className="p-2 rounded-lg bg-sky-500/10 border border-sky-500/30 text-sky-400">
-              <Layers className="w-5 h-5" />
+            <div
+              className="w-9 h-9 rounded-lg flex items-center justify-center font-bold"
+              style={{ backgroundColor: 'var(--accent-soft)', color: 'var(--accent)', border: '1px solid var(--accent)' }}
+            >
+              <Cpu className="w-5 h-5" />
             </div>
             <div>
-              <h1 className="text-base md:text-lg font-bold tracking-tight text-white">
-                Silnik 5 Sił Portera
+              <h1 className="text-base sm:text-lg font-bold tracking-tight leading-tight">
+                {t.appTitle}
               </h1>
-              <p className="text-xs text-slate-400 hidden sm:block">
-                Dynamiczna analiza ewolucji pozycji konkurencyjnej
+              <p className="text-xs" style={{ color: 'var(--text-secondary)' }}>
+                {t.appSubtitle}
               </p>
             </div>
           </div>
 
           <div className="flex items-center gap-2 sm:gap-3">
-            {/* Przełącznik spółki */}
-            <select
-              value={ticker}
-              onChange={(e) => {
-                const nextTicker = e.target.value;
-                setTicker(nextTicker);
-                const nextSnaps = COMPANIES[nextTicker].snapshots;
-                setSelectedYear(nextSnaps[nextSnaps.length - 1].year);
+            {/* Przełącznik języka PL / EN */}
+            <button
+              onClick={() => setLang((prev) => (prev === 'pl' ? 'en' : 'pl'))}
+              className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-semibold border transition-all cursor-pointer"
+              style={{
+                backgroundColor: 'var(--bg-card)',
+                borderColor: 'var(--border-subtle)',
+                color: 'var(--text-primary)'
               }}
-              className="bg-slate-800 border border-slate-700 text-sm rounded-lg px-3 py-1.5 text-white focus:outline-none focus:border-sky-500"
+              title="Switch language / Zmień język"
             >
-              {COMPANY_LIST.map((c) => (
-                <option key={c.ticker} value={c.ticker}>
+              <Globe className="w-3.5 h-3.5" style={{ color: 'var(--accent)' }} />
+              <span className={lang === 'pl' ? 'font-extrabold' : 'opacity-50'}>PL</span>
+              <span className="opacity-30">|</span>
+              <span className={lang === 'en' ? 'font-extrabold' : 'opacity-50'}>EN</span>
+            </button>
+
+            {/* Selektor spółki */}
+            <select
+              value={companyId}
+              onChange={(e) => setCompanyId(e.target.value)}
+              className="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold border outline-none cursor-pointer"
+              style={{
+                backgroundColor: 'var(--bg-card)',
+                borderColor: 'var(--border-subtle)',
+                color: 'var(--text-primary)'
+              }}
+            >
+              {COMPANIES.map((c) => (
+                <option key={c.id} value={c.id}>
                   {c.ticker} — {c.name}
                 </option>
               ))}
             </select>
 
-            {/* Tryb porównania */}
+            {/* Przycisk porównania lat */}
             <button
-              onClick={() => setCompareMode(!compareMode)}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium border transition-colors ${
-                compareMode
-                  ? 'bg-amber-500/20 border-amber-500/50 text-amber-300'
-                  : 'bg-slate-800 border-slate-700 text-slate-300 hover:bg-slate-700'
-              }`}
+              onClick={toggleCompare}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all cursor-pointer"
+              style={{
+                backgroundColor: compareIndex !== null ? 'var(--accent)' : 'var(--bg-card)',
+                borderColor: compareIndex !== null ? 'var(--accent)' : 'var(--border-subtle)',
+                color: compareIndex !== null ? 'var(--accent-contrast)' : 'var(--text-primary)'
+              }}
             >
-              <GitCompare className="w-4 h-4" />
-              <span>Porównaj rok</span>
+              {compareIndex !== null ? <X className="w-3.5 h-3.5" /> : <GitCompare className="w-3.5 h-3.5" />}
+              <span className="hidden sm:inline">
+                {compareIndex !== null ? t.exitCompareBtn : t.compareBtn}
+              </span>
             </button>
           </div>
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-4 pt-5 space-y-6">
-        {/* Pasek kontekstu roku i ery */}
-        <section className="bg-slate-900 border border-slate-800 rounded-xl p-4 md:p-5">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-            <div>
-              <div className="flex flex-wrap items-center gap-2 mb-1.5">
-                <span className="text-2xl md:text-3xl font-extrabold text-white">{currentSnap.year}</span>
-                <span className="text-xs font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">
-                  {currentSnap.fiscalLabel}
-                </span>
-                <span
-                  className="text-xs font-semibold px-2.5 py-0.5 rounded-full border"
-                  style={{
-                    backgroundColor: `${currentEra.color}20`,
-                    borderColor: `${currentEra.color}60`,
-                    color: currentEra.color,
-                  }}
-                >
-                  Era: {currentEra.name}
-                </span>
-              </div>
-              <p className="text-sm md:text-base text-slate-200 leading-relaxed">{currentSnap.catalyst}</p>
+      {/* Główna zawartość */}
+      <main className="max-w-6xl mx-auto px-4 pt-5 space-y-5">
+        {/* Karta nagłówkowa wybranego roku i KPI */}
+        <section
+          className="rounded-xl p-5 border"
+          style={{ backgroundColor: 'var(--bg-card)', borderColor: 'var(--border-subtle)' }}
+        >
+          <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+            <div className="flex flex-wrap items-center gap-2.5">
+              <span className="text-3xl sm:text-4xl font-extrabold tracking-tight" style={{ color: 'var(--text-primary)' }}>
+                {currentEntry.year}
+              </span>
+              <span
+                className="px-2.5 py-0.5 rounded-md text-xs font-medium border"
+                style={{
+                  backgroundColor: 'var(--bg-card-elevated)',
+                  borderColor: 'var(--border-subtle)',
+                  color: 'var(--text-secondary)'
+                }}
+              >
+                {pickLang(currentEntry.fiscalLabel, lang)}
+              </span>
+              <span
+                className="px-2.5 py-0.5 rounded-md text-xs font-semibold border"
+                style={{
+                  backgroundColor: 'var(--accent-soft)',
+                  borderColor: 'var(--accent)',
+                  color: 'var(--accent)'
+                }}
+              >
+                {pickLang(currentEntry.era, lang)}
+              </span>
             </div>
 
-            {compareMode && (
-              <div className="flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 rounded-lg px-3 py-2 shrink-0">
-                <span className="text-xs text-amber-300 font-medium">Zestaw z rokiem:</span>
+            {/* Pasek wyboru roku do porównania */}
+            {compareIndex !== null && (
+              <div
+                className="flex items-center gap-2 px-3 py-1 rounded-lg border text-xs"
+                style={{ backgroundColor: 'var(--bg-card-elevated)', borderColor: 'var(--compare-accent)' }}
+              >
+                <span style={{ color: 'var(--compare-accent)' }} className="font-semibold">
+                  {t.comparingWith}
+                </span>
                 <select
-                  value={compareYear}
-                  onChange={(e) => setCompareYear(Number(e.target.value))}
-                  className="bg-slate-900 border border-amber-500/40 text-amber-200 text-sm rounded px-2 py-1"
+                  value={compareIndex}
+                  onChange={(e) => setCompareIndex(Number(e.target.value))}
+                  className="bg-transparent font-bold outline-none cursor-pointer"
+                  style={{ color: 'var(--text-primary)' }}
                 >
-                  {snapshots.map((s) => (
-                    <option key={s.year} value={s.year}>
-                      {s.year} ({s.fiscalLabel})
+                  {company.timeline.map((item, idx) => (
+                    <option key={item.year} value={idx} style={{ backgroundColor: '#111111' }}>
+                      {item.year}
                     </option>
                   ))}
                 </select>
@@ -367,288 +428,300 @@ export default function App() {
             )}
           </div>
 
-          {/* Architektury i kluczowe wskaźniki finansowe */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mt-4 pt-4 border-t border-slate-800/80">
-            <div className="bg-slate-950/60 p-3 rounded-lg border border-slate-800/80">
-              <div className="text-[11px] text-slate-400 uppercase">Przychody</div>
-              <div className="text-sm md:text-base font-bold text-white mt-0.5">
-                {formatMoney(currentSnap.financials.revenueM, company.meta.currency)}
+          <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--text-secondary)' }}>
+            {pickLang(currentEntry.summary, lang)}
+          </p>
+
+          {/* Siatka 6 kart KPI */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+            <div className="p-3 rounded-lg border" style={{ backgroundColor: 'var(--bg-card-elevated)', borderColor: 'var(--border-subtle)' }}>
+              <div className="text-[10px] font-bold tracking-wider uppercase mb-1" style={{ color: 'var(--text-secondary)' }}>
+                {t.kpiRevenue}
               </div>
-              {currentSnap.financials.yoyGrowthPct !== null && (
-                <div
-                  className={`text-xs mt-0.5 ${
-                    currentSnap.financials.yoyGrowthPct >= 0 ? 'text-emerald-400' : 'text-rose-400'
-                  }`}
-                >
-                  {currentSnap.financials.yoyGrowthPct >= 0 ? '+' : ''}
-                  {currentSnap.financials.yoyGrowthPct}% r/r
+              <div className="text-sm sm:text-base font-extrabold">{pickLang(currentEntry.kpis.revenue, lang)}</div>
+              {currentEntry.kpis.yoy && (
+                <div className="text-xs font-semibold mt-0.5" style={{ color: 'var(--accent)' }}>
+                  {currentEntry.kpis.yoy} r/r
                 </div>
               )}
             </div>
 
-            <div className="bg-slate-950/60 p-3 rounded-lg border border-slate-800/80">
-              <div className="text-[11px] text-slate-400 uppercase">Marża brutto</div>
-              <div className="text-sm md:text-base font-bold text-white mt-0.5">
-                {currentSnap.financials.grossMarginPct !== null
-                  ? `${currentSnap.financials.grossMarginPct.toFixed(1)}%`
-                  : 'Brak danych'}
+            <div className="p-3 rounded-lg border" style={{ backgroundColor: 'var(--bg-card-elevated)', borderColor: 'var(--border-subtle)' }}>
+              <div className="text-[10px] font-bold tracking-wider uppercase mb-1" style={{ color: 'var(--text-secondary)' }}>
+                {t.kpiGrossMargin}
               </div>
+              <div className="text-sm sm:text-base font-extrabold">{currentEntry.kpis.grossMargin}</div>
             </div>
 
-            <div className="bg-slate-950/60 p-3 rounded-lg border border-slate-800/80">
-              <div className="text-[11px] text-slate-400 uppercase">Marża operacyjna</div>
-              <div className="text-sm md:text-base font-bold text-white mt-0.5">
-                {currentSnap.financials.operatingMarginPct !== null
-                  ? `${currentSnap.financials.operatingMarginPct.toFixed(1)}%`
-                  : 'Brak danych'}
+            <div className="p-3 rounded-lg border" style={{ backgroundColor: 'var(--bg-card-elevated)', borderColor: 'var(--border-subtle)' }}>
+              <div className="text-[10px] font-bold tracking-wider uppercase mb-1" style={{ color: 'var(--text-secondary)' }}>
+                {t.kpiOpMargin}
               </div>
+              <div className="text-sm sm:text-base font-extrabold">{currentEntry.kpis.opMargin}</div>
             </div>
 
-            <div className="bg-slate-950/60 p-3 rounded-lg border border-slate-800/80">
-              <div className="text-[11px] text-slate-400 uppercase">Zysk netto</div>
-              <div className="text-sm md:text-base font-bold text-white mt-0.5">
-                {formatMoney(currentSnap.financials.netIncomeM, company.meta.currency)}
+            <div className="p-3 rounded-lg border" style={{ backgroundColor: 'var(--bg-card-elevated)', borderColor: 'var(--border-subtle)' }}>
+              <div className="text-[10px] font-bold tracking-wider uppercase mb-1" style={{ color: 'var(--text-secondary)' }}>
+                {t.kpiNetIncome}
               </div>
+              <div className="text-sm sm:text-base font-extrabold">{pickLang(currentEntry.kpis.netIncome, lang)}</div>
             </div>
 
-            <div className="bg-slate-950/60 p-3 rounded-lg border border-slate-800/80">
-              <div className="text-[11px] text-slate-400 uppercase">Wydatki R&D</div>
-              <div className="text-sm md:text-base font-bold text-white mt-0.5">
-                {formatMoney(currentSnap.financials.rdExpenseM, company.meta.currency)}
+            <div className="p-3 rounded-lg border" style={{ backgroundColor: 'var(--bg-card-elevated)', borderColor: 'var(--border-subtle)' }}>
+              <div className="text-[10px] font-bold tracking-wider uppercase mb-1" style={{ color: 'var(--text-secondary)' }}>
+                {t.kpiRnd}
               </div>
+              <div className="text-sm sm:text-base font-extrabold">{pickLang(currentEntry.kpis.rnd, lang)}</div>
             </div>
 
-            <div className="bg-slate-950/60 p-3 rounded-lg border border-slate-800/80">
-              <div className="text-[11px] text-slate-400 uppercase flex items-center gap-1">
-                <Cpu className="w-3 h-3 text-sky-400" /> Architektura
+            <div className="p-3 rounded-lg border" style={{ backgroundColor: 'var(--bg-card-elevated)', borderColor: 'var(--border-subtle)' }}>
+              <div className="text-[10px] font-bold tracking-wider uppercase mb-1" style={{ color: 'var(--text-secondary)' }}>
+                {t.kpiCatalyst}
               </div>
-              <div className="text-xs font-semibold text-sky-300 mt-1 line-clamp-2">
-                {currentSnap.architectures.join(', ')}
+              <div className="text-xs sm:text-sm font-bold leading-snug" style={{ color: 'var(--accent)' }}>
+                {pickLang(currentEntry.kpis.catalyst, lang)}
               </div>
             </div>
           </div>
         </section>
 
-        {/* Główna siatka: Radar 5 sił + Szczegóły sił i wykres finansowy */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-          {/* Lewa kolumna: Wykres Radarowy */}
-          <section className="lg:col-span-5 bg-slate-900 border border-slate-800 rounded-xl p-5 flex flex-col justify-between">
+        {/* Główna sekcja analityczna: Radar (lewa) + Uzasadnienie i Wykresy (prawa) */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
+          {/* Lewa kolumna: Radar + Lista 5 sił */}
+          <section
+            className="lg:col-span-5 rounded-xl p-5 border flex flex-col justify-between"
+            style={{ backgroundColor: 'var(--bg-card)', borderColor: 'var(--border-subtle)' }}
+          >
             <div>
-              <div className="flex items-center justify-between mb-2">
-                <h2 className="text-base font-bold text-white">Profil 5 Sił Portera ({currentSnap.year})</h2>
-                <span className="text-[11px] text-slate-400">Skala 1–5 (presja zewnętrzna)</span>
+              <div className="flex items-center justify-between mb-1">
+                <h2 className="text-sm font-bold">
+                  {t.radarTitle} ({currentEntry.year})
+                </h2>
+                <span className="text-[11px]" style={{ color: 'var(--text-secondary)' }}>
+                  {t.radarScaleNote}
+                </span>
               </div>
-              <p className="text-xs text-slate-400 mb-4">
-                Kliknij dowolny wierzchołek lub wiersz poniżej, aby przeczytać uzasadnienie dla wybranego roku.
+              <p className="text-xs mb-4" style={{ color: 'var(--text-secondary)' }}>
+                {t.radarInstruction}
               </p>
 
-              <PorterRadar
-                forces={currentSnap.forces}
-                compareForces={compareMode ? compareSnap.forces : null}
-                activeForce={activeForce}
-                onSelectForce={setActiveForce}
+              <FiveForcesRadar
+                currentForces={currentEntry.forces}
+                compareForces={compareEntry?.forces}
+                labels={t.forces}
+                accentColor="var(--accent)"
+                compareColor="var(--compare-accent)"
+                selectedForce={selectedForce}
+                onSelectForce={setSelectedForce}
               />
-
-              {compareMode && (
-                <div className="flex justify-center gap-4 text-xs mt-2">
-                  <span className="flex items-center gap-1.5 text-sky-300">
-                    <span className="w-3 h-3 rounded-full bg-sky-400 inline-block" /> {currentSnap.year}
-                  </span>
-                  <span className="flex items-center gap-1.5 text-amber-300">
-                    <span className="w-3 h-3 rounded-full bg-amber-400 inline-block" /> {compareSnap.year}
-                  </span>
-                </div>
-              )}
             </div>
 
-            {/* Lista ocen 1-5 */}
-            <div className="space-y-2 mt-4">
-              {FORCE_LABELS.map((f) => {
-                const score = currentSnap.forces[f.key];
-                const badge = SCORE_BADGES[score];
-                const isSelected = activeForce === f.key;
+            {/* Lista klikalna wszystkich 5 sił */}
+            <div className="mt-4 space-y-2">
+              {FORCE_KEYS.map((key) => {
+                const score = currentEntry.forces[key]?.score || 1;
+                const compScore = compareEntry?.forces[key]?.score;
+                const isSelected = selectedForce === key;
+
                 return (
                   <button
-                    key={f.key}
-                    onClick={() => setActiveForce(f.key)}
-                    className={`w-full flex items-center justify-between px-3 py-2 rounded-lg border text-left transition-all ${
-                      isSelected
-                        ? 'bg-slate-800 border-sky-500/60'
-                        : 'bg-slate-950/50 border-slate-800/80 hover:border-slate-700'
-                    }`}
+                    key={key}
+                    onClick={() => setSelectedForce(key)}
+                    className="w-full flex items-center justify-between px-3 py-2 rounded-lg border text-left text-xs transition-all cursor-pointer"
+                    style={{
+                      backgroundColor: isSelected ? 'var(--accent-soft)' : 'var(--bg-card-elevated)',
+                      borderColor: isSelected ? 'var(--accent)' : 'var(--border-subtle)'
+                    }}
                   >
-                    <span className="text-xs sm:text-sm font-medium text-slate-200">{f.label}</span>
-                    <span className={`text-xs font-semibold px-2 py-0.5 rounded border ${badge.cls}`}>
-                      {badge.text}
+                    <span className="font-semibold" style={{ color: isSelected ? 'var(--accent)' : 'var(--text-primary)' }}>
+                      {t.forceFullNames[key]}
                     </span>
+                    <div className="flex items-center gap-2">
+                      {compScore !== undefined && (
+                        <span className="font-bold" style={{ color: 'var(--compare-accent)' }}>
+                          {compScore}/5 vs
+                        </span>
+                      )}
+                      <span className="font-extrabold px-2 py-0.5 rounded" style={{ backgroundColor: 'var(--bg-main)', color: 'var(--accent)' }}>
+                        {score}/5
+                      </span>
+                    </div>
                   </button>
                 );
               })}
             </div>
           </section>
 
-          {/* Prawa kolumna: Szczegóły wybranej siły + Segmenty + Wykres przychodów */}
-          <div className="lg:col-span-7 space-y-6">
-            {/* Karta uzasadnienia wybranej siły */}
-            <section className="bg-slate-900 border border-slate-800 rounded-xl p-5">
-              <div className="flex items-center justify-between gap-2 mb-3">
+          {/* Prawa kolumna: Uzasadnienie siły + Struktura przychodów + Trajektoria */}
+          <div className="lg:col-span-7 space-y-5">
+            {/* Szczegóły wybranej siły */}
+            <section
+              className="rounded-xl p-5 border"
+              style={{ backgroundColor: 'var(--bg-card)', borderColor: 'var(--border-subtle)' }}
+            >
+              <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
                 <div className="flex items-center gap-2">
-                  <AlertTriangle className="w-5 h-5 text-sky-400" />
-                  <h3 className="text-base font-bold text-white">
-                    {FORCE_LABELS.find((f) => f.key === activeForce)?.label} — rok {currentSnap.year}
+                  <Layers className="w-4 h-4" style={{ color: 'var(--accent)' }} />
+                  <h3 className="text-sm font-bold">
+                    {t.forceFullNames[selectedForce]} — {currentEntry.year}
                   </h3>
                 </div>
                 <span
-                  className={`text-xs font-semibold px-2.5 py-0.5 rounded border ${
-                    SCORE_BADGES[currentSnap.forces[activeForce]].cls
-                  }`}
+                  className="px-2.5 py-0.5 rounded text-xs font-bold border"
+                  style={{
+                    backgroundColor: 'var(--accent-soft)',
+                    borderColor: 'var(--accent)',
+                    color: 'var(--accent)'
+                  }}
                 >
-                  {SCORE_BADGES[currentSnap.forces[activeForce]].text}
+                  {activeForceData.score}/5 • {t.levels[activeForceData.score]}
                 </span>
               </div>
 
-              <p className="text-sm text-slate-200 leading-relaxed bg-slate-950/70 p-4 rounded-lg border border-slate-800">
-                {currentSnap.forceDetails[activeForce]}
+              <p className="text-sm leading-relaxed mb-4" style={{ color: 'var(--text-primary)' }}>
+                {pickLang(activeForceData.rationale, lang)}
               </p>
 
-              {compareMode && (
-                <div className="mt-3 bg-amber-950/20 border border-amber-500/30 p-3.5 rounded-lg">
-                  <div className="text-xs font-semibold text-amber-300 mb-1">
-                    Kontrast dla roku {compareSnap.year} (ocena {compareSnap.forces[activeForce]}/5):
+              {compareEntry && (
+                <div
+                  className="p-3 rounded-lg border mb-4 text-xs"
+                  style={{ backgroundColor: 'var(--bg-card-elevated)', borderColor: 'var(--compare-accent)' }}
+                >
+                  <div className="font-bold mb-1" style={{ color: 'var(--compare-accent)' }}>
+                    {compareEntry.year} ({compareEntry.forces[selectedForce].score}/5 • {t.levels[compareEntry.forces[selectedForce].score]}):
                   </div>
-                  <p className="text-xs sm:text-sm text-amber-100/90 leading-relaxed">
-                    {compareSnap.forceDetails[activeForce]}
+                  <p style={{ color: 'var(--text-secondary)' }}>
+                    {pickLang(compareEntry.forces[selectedForce].rationale, lang)}
                   </p>
                 </div>
               )}
 
-              {/* Struktura segmentowa przychodów */}
-              {segmentEntries.length > 0 && (
-                <div className="mt-5 pt-4 border-t border-slate-800">
-                  <div className="text-xs font-semibold text-slate-400 uppercase mb-2.5">
-                    Struktura przychodów w {currentSnap.fiscalLabel}
-                  </div>
-                  <div className="space-y-2">
-                    {segmentEntries.map(([segName, valM]) => {
-                      const pct = totalSegmentRev > 0 ? ((valM / totalSegmentRev) * 100).toFixed(1) : 0;
-                      return (
-                        <div key={segName}>
-                          <div className="flex justify-between text-xs mb-1">
-                            <span className="text-slate-300">{segName}</span>
-                            <span className="text-slate-400 font-mono">
-                              {formatMoney(valM, company.meta.currency)} ({pct}%)
-                            </span>
-                          </div>
-                          <div className="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
-                            <div className="bg-sky-400 h-full rounded-full" style={{ width: `${pct}%` }} />
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
+              {/* Paski struktury przychodów */}
+              <div className="pt-3 border-t" style={{ borderColor: 'var(--border-subtle)' }}>
+                <div className="text-[11px] font-bold uppercase tracking-wider mb-3" style={{ color: 'var(--text-secondary)' }}>
+                  {t.segmentTitle} ({pickLang(currentEntry.fiscalLabel, lang)})
                 </div>
-              )}
+                <div className="space-y-3">
+                  {currentEntry.segments.map((seg, idx) => (
+                    <div key={idx}>
+                      <div className="flex justify-between text-xs mb-1">
+                        <span className="font-medium">{pickLang(seg.name, lang)}</span>
+                        <span style={{ color: 'var(--text-secondary)' }}>
+                          {pickLang(seg.value, lang)} ({seg.pct}%)
+                        </span>
+                      </div>
+                      <div className="w-full h-2 rounded-full overflow-hidden" style={{ backgroundColor: 'var(--bg-main)' }}>
+                        <div
+                          className="h-full rounded-full transition-all duration-300"
+                          style={{ width: `${seg.pct}%`, backgroundColor: 'var(--accent)' }}
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </section>
 
-            {/* Wykres trajektorii finansowej */}
-            <section className="bg-slate-900 border border-slate-800 rounded-xl p-5">
-              <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+            {/* Wykres trajektorii przychodów */}
+            <section
+              className="rounded-xl p-5 border"
+              style={{ backgroundColor: 'var(--bg-card)', borderColor: 'var(--border-subtle)' }}
+            >
+              <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-2">
-                  <TrendingUp className="w-5 h-5 text-sky-400" />
-                  <h3 className="text-base font-bold text-white">
-                    Trajektoria przychodów ({minYear}–{maxYear})
+                  <TrendingUp className="w-4 h-4" style={{ color: 'var(--accent)' }} />
+                  <h3 className="text-sm font-bold">
+                    {t.trajectoryTitle} ({company.timeline[0]?.year}–{company.timeline[company.timeline.length - 1]?.year})
                   </h3>
                 </div>
 
-                <div className="flex items-center bg-slate-950 p-1 rounded-lg border border-slate-800 text-xs">
+                <div
+                  className="flex rounded-lg p-0.5 border text-xs"
+                  style={{ backgroundColor: 'var(--bg-main)', borderColor: 'var(--border-subtle)' }}
+                >
                   <button
-                    onClick={() => setLogScale(true)}
-                    className={`px-2.5 py-1 rounded transition-colors ${
-                      logScale ? 'bg-sky-500 text-slate-950 font-bold' : 'text-slate-400 hover:text-white'
-                    }`}
+                    onClick={() => setIsLogScale(true)}
+                    className="px-2.5 py-1 rounded-md font-semibold transition-all cursor-pointer"
+                    style={{
+                      backgroundColor: isLogScale ? 'var(--accent)' : 'transparent',
+                      color: isLogScale ? 'var(--accent-contrast)' : 'var(--text-secondary)'
+                    }}
                   >
-                    Skala Log
+                    {t.scaleLog}
                   </button>
                   <button
-                    onClick={() => setLogScale(false)}
-                    className={`px-2.5 py-1 rounded transition-colors ${
-                      !logScale ? 'bg-sky-500 text-slate-950 font-bold' : 'text-slate-400 hover:text-white'
-                    }`}
+                    onClick={() => setIsLogScale(false)}
+                    className="px-2.5 py-1 rounded-md font-semibold transition-all cursor-pointer"
+                    style={{
+                      backgroundColor: !isLogScale ? 'var(--accent)' : 'transparent',
+                      color: !isLogScale ? 'var(--accent-contrast)' : 'var(--text-secondary)'
+                    }}
                   >
-                    Liniowa
+                    {t.scaleLinear}
                   </button>
                 </div>
               </div>
 
-              <RevenueHistoryChart
-                snapshots={snapshots}
-                selectedYear={selectedYear}
-                onSelectYear={setSelectedYear}
-                logScale={logScale}
-                currency={company.meta.currency}
+              <RevenueChart
+                timeline={company.timeline}
+                activeIndex={yearIndex}
+                onSelectIndex={setYearIndex}
+                isLog={isLogScale}
+                accentColor="var(--accent)"
               />
-
-              <div className="flex items-start gap-2 mt-3 text-[11px] text-slate-400">
-                <Info className="w-4 h-4 text-slate-500 shrink-0 mt-0.5" />
-                <span>{company.meta.fiscalNote}</span>
-              </div>
             </section>
           </div>
         </div>
       </main>
 
-      {/* Dolny suwak czasu (przyklejony na mobile pod kciuk, statyczny na desktopie) */}
-      <footer className="fixed bottom-0 inset-x-0 md:static z-30 bg-slate-900/95 backdrop-blur border-t md:border border-slate-800 md:max-w-7xl md:mx-auto md:mt-6 md:rounded-xl px-4 py-3 shadow-2xl">
-        <div className="flex items-center gap-3">
-          <button
-            onClick={() => stepYear(-1)}
-            disabled={selectedYear <= minYear}
-            className="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 disabled:opacity-40 text-white"
-            aria-label="Poprzedni rok"
-          >
-            <ChevronLeft className="w-5 h-5" />
-          </button>
+      {/* Dolny suwak osi czasu (Mobile-first Dock) */}
+      <footer
+        className="fixed bottom-0 left-0 right-0 z-30 border-t backdrop-blur-md"
+        style={{ backgroundColor: 'color-mix(in srgb, var(--bg-main) 92%, transparent)', borderColor: 'var(--border-subtle)' }}
+      >
+        <div className="max-w-6xl mx-auto px-4 py-3">
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => setYearIndex((prev) => Math.max(0, prev - 1))}
+              disabled={yearIndex === 0}
+              className="p-2 rounded-lg border disabled:opacity-30 cursor-pointer"
+              style={{ backgroundColor: 'var(--bg-card)', borderColor: 'var(--border-subtle)' }}
+            >
+              <ChevronLeft className="w-4 h-4" />
+            </button>
 
-          <div className="flex-1">
-            <div className="flex justify-between text-xs font-mono text-slate-400 mb-1">
-              <span>{minYear}</span>
-              <span className="text-sky-400 font-bold">Wybrany rok: {selectedYear}</span>
-              <span>{maxYear}</span>
+            <div className="flex-1">
+              <div className="flex justify-between text-[11px] font-bold mb-1.5 px-1">
+                {company.timeline.map((item, idx) => (
+                  <button
+                    key={item.year}
+                    onClick={() => setYearIndex(idx)}
+                    className="cursor-pointer transition-colors"
+                    style={{ color: idx === yearIndex ? 'var(--accent)' : 'var(--text-secondary)' }}
+                  >
+                    {item.year}
+                  </button>
+                ))}
+              </div>
+              <input
+                type="range"
+                min={0}
+                max={company.timeline.length - 1}
+                value={yearIndex}
+                onChange={(e) => setYearIndex(Number(e.target.value))}
+                className="w-full porter-slider"
+              />
             </div>
-            <input
-              type="range"
-              min={minYear}
-              max={maxYear}
-              value={selectedYear}
-              onChange={(e) => setSelectedYear(Number(e.target.value))}
-              className="w-full accent-sky-400 cursor-pointer h-2 bg-slate-800 rounded-lg"
-            />
-            {/* Pasek er strategicznych pod suwakiem */}
-            <div className="hidden sm:flex w-full h-1.5 rounded-full overflow-hidden mt-2 gap-0.5">
-              {company.eras.map((era) => {
-                const span = era.end - era.start + 1;
-                const total = maxYear - minYear + 1;
-                const widthPct = (span / total) * 100;
-                return (
-                  <div
-                    key={era.id}
-                    title={`${era.name} (${era.start}–${era.end})`}
-                    style={{ width: `${widthPct}%`, backgroundColor: era.color }}
-                    className="h-full opacity-80"
-                  />
-                );
-              })}
-            </div>
+
+            <button
+              onClick={() => setYearIndex((prev) => Math.min(company.timeline.length - 1, prev + 1))}
+              disabled={yearIndex === company.timeline.length - 1}
+              className="p-2 rounded-lg border disabled:opacity-30 cursor-pointer"
+              style={{ backgroundColor: 'var(--bg-card)', borderColor: 'var(--border-subtle)' }}
+            >
+              <ChevronRight className="w-4 h-4" />
+            </button>
           </div>
-
-          <button
-            onClick={() => stepYear(1)}
-            disabled={selectedYear >= maxYear}
-            className="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 disabled:opacity-40 text-white"
-            aria-label="Następny rok"
-          >
-            <ChevronRight className="w-5 h-5" />
-          </button>
         </div>
       </footer>
     </div>
