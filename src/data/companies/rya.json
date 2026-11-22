@@ -1,0 +1,2963 @@
+{
+  "id": "rya",
+  "ticker": "RYA / RYAAY",
+  "name": "Ryanair Holdings plc",
+  "sector": {
+    "pl": "Europejskie lotnictwo pasażerskie (przewoźnik niskokosztowy / LCC)",
+    "en": "European Passenger Aviation (Low-Cost Carrier / LCC)"
+  },
+  "theme": {
+    "bgMain": "#041e54",
+    "bgCard": "#073590",
+    "bgCardElevated": "#0a43b5",
+    "borderSubtle": "#1a56cc",
+    "textPrimary": "#ffffff",
+    "textSecondary": "#cbd5e1",
+    "accent": "#f1c933",
+    "accentSoft": "rgba(241, 201, 51, 0.16)",
+    "accentContrast": "#041e54",
+    "compareAccent": "#38bdf8"
+  },
+  "timeline": [
+    {
+      "year": 1997,
+      "fiscalLabel": {
+        "pl": "FY1997 (01.04.1996 – 31.03.1997)",
+        "en": "FY1997 (Apr 1, 1996 – Mar 31, 1997)"
+      },
+      "era": {
+        "pl": "Era I: Kryzys wczesnego modelu i zwrot ku no-frills",
+        "en": "Era I: Early Model Crisis & No-Frills Pivot"
+      },
+      "summary": {
+        "pl": "Przed czerwcowym debiutem giełdowym Ryanair sfinalizował utworzenie struktury holdingowej i ugruntował pozycję na trasie Dublin–Londyn w modelu taniego przewoźnika na używanych Boeingach 737-200A. Pełne dane rachunku wyników za ten rok nie figurują w dostępnych wyciągach archiwalnych.",
+        "en": "Ahead of its June IPO, Ryanair completed its holding company structure and cemented its position on Dublin–London using second-hand Boeing 737-200A aircraft in a low-fare model. Full income statement figures for this year are not present in available archival extracts."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "PAX: 205,0 mln / Load Factor: 94%",
+          "en": "PAX: 205.0M / Load Factor: 94%"
+        },
+        "revenueNum": 0.0,
+        "yoy": "N/A",
+        "grossMargin": "N/A",
+        "opMargin": "N/A",
+        "netIncome": {
+          "pl": "Brak pełnych danych w wyciągach",
+          "en": "Not available in extracts"
+        },
+        "rnd": {
+          "pl": "ok. 3,7 mln PAX (1997, źródło wtórne) / LF: b.d.",
+          "en": "~3.7M PAX (1997, secondary source) / LF: N/A"
+        },
+        "catalyst": {
+          "pl": "Utworzenie holdingu przed IPO (sierpień–październik 1996) i 37% udziału na Dublin–Londyn",
+          "en": "Pre-IPO holding formation (Aug–Oct 1996) and 37% share on Dublin–London"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Przed debiutem giełdowym Ryanair rywalizował z znacznie większymi liniami sieciowymi (Aer Lingus i British Airways) na połączeniach między Irlandią a Wielką Brytanią. Udział 37% na korytarzu Dublin–Londyn dawał mocny punkt oparcia, ale wymagał stałego utrzymywania niskich taryf wobec konkurencji.",
+            "en": "Prior to its IPO, Ryanair competed against much larger network carriers (Aer Lingus and British Airways) on Ireland–UK routes. A 37% share on Dublin–London gave it a solid foothold yet required continuously low fares against rivals."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Kurcząca się podaż używanych Boeingów 737-200A na rynku wtórnym ograniczała możliwość taniego skalowania floty w dotychczasowym modelu. Jednocześnie ograniczona skala przed IPO nie dawała jeszcze pełnej siły negocjacyjnej wobec producentów samolotów i portów głównych.",
+            "en": "Shrinking secondary-market supply of used Boeing 737-200A jets constrained cheap fleet scaling under the existing model. At the same time, limited pre-IPO scale prevented full bargaining leverage with aircraft makers and major airports."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Podróżni mieli niewielki wybór tanich połączeń lotniczych między Irlandią a Wielką Brytanią, co ograniczało presję na erozję rentowności. Sprzedaż opierała się jednak wciąż w znacznej mierze na pośrednikach i tradycyjnych kanałach rezerwacji przed erą internetową.",
+            "en": "Travelers had limited low-fare air choices between Ireland and the UK, curbing pressure on profitability. Distribution still relied heavily on intermediaries and legacy booking channels ahead of the internet era."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Przy siatce skoncentrowanej na krótkich przelotach wokół Wysp Brytyjskich promy przez Morze Irlandzkie oraz transport lądowy pozostawały realną alternatywą dla pasażerów najbardziej wrażliwych na cenę.",
+            "en": "With a network focused on short flights around the British Isles, Irish Sea ferries and ground transport remained viable alternatives for price-sensitive passengers."
+          }
+        },
+        "newEntrants": {
+          "score": 4,
+          "rationale": {
+            "pl": "Liberalizacja unijnego rynku lotniczego znosiła bariery regulacyjne w Europie, ułatwiając nowym przewoźnikom niskokosztowym (w tym Virgin Express) start na krótkich trasach.",
+            "en": "Liberalization of the EU aviation market dismantled regulatory barriers across Europe, making it easier for new low-cost carriers (including Virgin Express) to launch short-haul routes."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "Brak danych w wyciągach",
+            "en": "N/A in extracts"
+          },
+          "pct": 0.0
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "Brak danych w wyciągach",
+            "en": "N/A in extracts"
+          },
+          "pct": 0.0
+        }
+      ]
+    },
+    {
+      "year": 1998,
+      "fiscalLabel": {
+        "pl": "FY1998 (01.04.1997 – 31.03.1998)",
+        "en": "FY1998 (Apr 1, 1997 – Mar 31, 1998)"
+      },
+      "era": {
+        "pl": "Era II: Debiut giełdowy, ekspansja kontynentalna i cyfryzacja sprzedaży",
+        "en": "Era II: IPO, Continental Expansion & Direct Digital Sales"
+      },
+      "summary": {
+        "pl": "Po czerwcowym debiucie giełdowym w 1997 roku Ryanair wszedł na pierwsze trasy kontynentalne (Paryż, Bruksela) i podpisał przełomowy kontrakt z Boeingiem na 25 nowych B737-800. Spółka osiągnęła IR£182,6 mln przychodów (ok. €231,9 mln) i €45,5 mln zysku netto.",
+        "en": "Following its June 1997 IPO, Ryanair launched its first continental routes (Paris, Brussels) and signed a landmark Boeing contract for 25 new 737-800s. The carrier generated IR£182.6m in revenue (~€231.9m) and €45.5m in net profit."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "IR£182,6 mln (ok. €231,9 mln wg EBC)",
+          "en": "IR£182.6m (~€231.9m at ECB rate)"
+        },
+        "revenueNum": 0.232,
+        "yoy": "N/A",
+        "grossMargin": "N/A (koszty op. 75,7%)",
+        "opMargin": "24.3%",
+        "netIncome": {
+          "pl": "€45,5 mln (19,6% przychodów)",
+          "en": "€45.5m (19.6% of revenue)"
+        },
+        "rnd": {
+          "pl": "3,99 mln PAX / LF: b.d.",
+          "en": "3.99M PAX / LF: N/A"
+        },
+        "catalyst": {
+          "pl": "IPO (czerwiec 1997), loty do Paryża i Brukseli oraz kontrakt na 25 B737-800 (marzec 1998)",
+          "en": "June 1997 IPO, Paris & Brussels launches, and March 1998 Boeing order for 25 737-800s"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Ocena utrzymana na 4/5: wejście na pierwsze trasy kontynentalne (Paryż-Beauvais, Bruksela-Charleroi) skonfrontowało spółkę z operatorami flagowymi oraz rywalami typu British Airways i Virgin Express. Ekspansja kontynentalna wymagała 9,0% przychodów na marketing i dystrybucję przy 24,3% marży operacyjnej.",
+            "en": "Remains at 4/5: entering first continental routes (Paris-Beauvais, Brussels-Charleroi) pitted the carrier against flag operators and rivals like British Airways and Virgin Express. Continental expansion required 9.0% of revenue on marketing and distribution alongside a 24.3% operating margin."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Nadal 4/5 mimo zawarcia w marcu 1998 roku przełomowego kontraktu z Boeingiem na 25 nowych B737-800 (+20 opcji), ponieważ pierwsze dostawy zaplanowano dopiero na rok kolejny. Koszty paliwa (11,9% przychodów), opłat lotniskowych (10,3%) i personelu (13,2%) pozostawały pod kontrolą, ale nie spadły jeszcze dzięki nowym maszynom.",
+            "en": "Still 4/5 despite signing a landmark March 1998 Boeing deal for 25 new 737-800s (+20 options), as first deliveries were scheduled for the following year. Fuel (11.9% of revenue), airport charges (10.3%), and staff costs (13.2%) were controlled but not yet lowered by new aircraft."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Bez zmian (3/5) — przy wzroście ruchu do 3,99 mln pasażerów i marży netto 19,6% przewoźnik nie musiał oddawać całej przewagi kosztowej pasażerom.",
+            "en": "Unchanged (3/5) — with traffic rising to 3.99M passengers and a 19.6% net margin, the airline did not have to pass its full cost advantage to passengers."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Bez zmian (3/5) — na najkrótszych połączeniach do Wielkiej Brytanii i Europy Zachodniej kolej oraz promy nadal konkurowały o ruch budżetowy.",
+            "en": "Unchanged (3/5) — on the shortest UK and Western European corridors, rail and ferries continued to compete for budget travelers."
+          }
+        },
+        "newEntrants": {
+          "score": 4,
+          "rationale": {
+            "pl": "Bez zmian (4/5) — udane IPO Ryanaira w czerwcu 1997 r. zademonstrowało atrakcyjność modelu LCC na zliberalizowanym rynku europejskim.",
+            "en": "Unchanged (4/5) — Ryanair's successful June 1997 IPO demonstrated the attractiveness of the LCC model in a liberalized European market."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "87,9% przychodów (dopełnienie)",
+            "en": "87.9% of revenue (complement)"
+          },
+          "pct": 87.9
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "€28,1 mln",
+            "en": "€28.1M"
+          },
+          "pct": 12.1
+        }
+      ]
+    },
+    {
+      "year": 1999,
+      "fiscalLabel": {
+        "pl": "FY1999 (01.04.1998 – 31.03.1999)",
+        "en": "FY1999 (Apr 1, 1998 – Mar 31, 1999)"
+      },
+      "era": {
+        "pl": "Era II: Debiut giełdowy, ekspansja kontynentalna i cyfryzacja sprzedaży",
+        "en": "Era II: IPO, Continental Expansion & Direct Digital Sales"
+      },
+      "summary": {
+        "pl": "Ryanair odebrał pierwszego nowego Boeinga 737-800 w marcu 1999 roku i otworzył 7 nowych tras (łącznie 27), zwiększając przychody o 27,6% do €295,8 mln. Jednostkowy koszt miejsca spadł z €0,101 do €0,092 przy 22,9% marży operacyjnej.",
+        "en": "Ryanair took delivery of its first new Boeing 737-800 in March 1999 and opened 7 new routes (27 total), lifting revenue 27.6% to €295.8m. Seat unit cost fell from €0.101 to €0.092 alongside a 22.9% operating margin."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "€295,8 mln (IR£232,9 mln)",
+          "en": "€295.8M (IR£232.9m)"
+        },
+        "revenueNum": 0.296,
+        "yoy": "+27.6%",
+        "grossMargin": "N/A (koszty op. 77,1%)",
+        "opMargin": "22.9%",
+        "netIncome": {
+          "pl": "€57,5 mln (19,4% przychodów)",
+          "en": "€57.5M (19.4% of revenue)"
+        },
+        "rnd": {
+          "pl": "4,93 mln PAX / LF 71% (zajętość 73%)",
+          "en": "4.93M PAX / LF 71% (occupancy 73%)"
+        },
+        "catalyst": {
+          "pl": "Dostawa pierwszego B737-800 (marzec 1999) i rozbudowa sieci do 27 tras",
+          "en": "First 737-800 delivery (March 1999) and network expansion to 27 routes"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Uruchomienie 7 nowych tras (łącznie 27) i wzrost ruchu o 24% do 4,93 mln pasażerów przy marży operacyjnej 22,9% dowodziło wysokiej konkurencyjności, ale starcie z przewoźnikami sieciowymi (w tym Aer Lingus notującym silne wyniki przed wejściem do OneWorld) utrzymywało napięcie.",
+            "en": "Launching 7 new routes (27 total) and growing traffic 24% to 4.93M passengers at a 22.9% operating margin showed strong competitiveness, yet clashes with network carriers (including Aer Lingus ahead of OneWorld) kept pressure high."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Spadek presji z 4 do 3: dostawa pierwszego nowego Boeinga 737-800 w marcu 1999 roku uniezależniła spółkę od rynku używanych B737-200A i rozpoczęła cykl obniżania jednostkowego kosztu miejsca (CASM spadł z €0,101 do €0,092), mimo wzrostu kosztów obsługi technicznej w Stansted o 66%.",
+            "en": "Down from 4 to 3: delivery of the first new Boeing 737-800 in March 1999 reduced reliance on used 737-200As and began lowering seat unit cost (CASM fell from €0.101 to €0.092), despite a 66% jump in Stansted maintenance costs."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Bez zmian (3/5) — zajętość miejsc na poziomie 73% (LF 71%) przy wzroście średnich przychodów potwierdzała zrównoważoną pozycję cenową.",
+            "en": "Unchanged (3/5) — 73% seat occupancy (71% LF) alongside higher average revenues confirmed a balanced pricing position."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Bez zmian (3/5) — choć sieć 27 tras poszerzała zasięg poza strefę kolei i promów, gros ruchu wciąż koncentrowało się na krótkich korytarzach północno-zachodniej Europy.",
+            "en": "Unchanged (3/5) — although 27 routes extended reach beyond rail and ferries, most traffic still centered on short Northwestern European corridors."
+          }
+        },
+        "newEntrants": {
+          "score": 4,
+          "rationale": {
+            "pl": "Bez zmian (4/5) — rentowność netto na poziomie 19,4% i ujednolicony model operacyjny zachęcały kolejnych naśladowców na rynku unijnym.",
+            "en": "Unchanged (4/5) — a 19.4% net margin and standardized operating model encouraged further entrants in the EU market."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "€258,9 mln",
+            "en": "€258.9M"
+          },
+          "pct": 87.5
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "€36,9 mln",
+            "en": "€36.9M"
+          },
+          "pct": 12.5
+        }
+      ]
+    },
+    {
+      "year": 2000,
+      "fiscalLabel": {
+        "pl": "FY2000 (01.04.1999 – 31.03.2000)",
+        "en": "FY2000 (Apr 1, 1999 – Mar 31, 2000)"
+      },
+      "era": {
+        "pl": "Era II: Debiut giełdowy, ekspansja kontynentalna i cyfryzacja sprzedaży",
+        "en": "Era II: IPO, Continental Expansion & Direct Digital Sales"
+      },
+      "summary": {
+        "pl": "W styczniu 2000 roku Ryanair uruchomił serwis ryanair.com (ok. 10% sprzedaży do końca roku obrotowego), podczas gdy zniesienie sprzedaży duty-free w UE w lipcu 1999 roku obniżyło udział ancillary do 10,7%. Przychody wzrosły o 25,1% do €370,1 mln przy zysku netto €72,5 mln.",
+        "en": "In January 2000 Ryanair launched ryanair.com (~10% of sales by fiscal year-end), while abolition of intra-EU duty-free in July 1999 lowered ancillary share to 10.7%. Revenue rose 25.1% to €370.1m with €72.5m net profit."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "€370,1 mln",
+          "en": "€370.1M"
+        },
+        "revenueNum": 0.37,
+        "yoy": "+25.1%",
+        "grossMargin": "N/A (koszty op. 77,3%)",
+        "opMargin": "22.7%",
+        "netIncome": {
+          "pl": "€72,5 mln (19,6% przychodów)",
+          "en": "€72.5M (19.6% of revenue)"
+        },
+        "rnd": {
+          "pl": "5,5 mln PAX (20-F) / LF 67% (flota 26–31)",
+          "en": "5.5M PAX (20-F) / LF 67% (fleet 26–31)"
+        },
+        "catalyst": {
+          "pl": "Uruchomienie ryanair.com (styczeń 2000) i zniesienie duty-free wewnątrz UE (lipiec 1999)",
+          "en": "Launch of ryanair.com (January 2000) and end of intra-EU duty-free sales (July 1999)"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Otwarcie kolejnych 8 tras europejskich i wzrost floty (do 26–31 samolotów) doprowadziły do spadku LF z 71% do 67% w warunkach ostrej konkurencji europejskiej, choć przychody wzrosły o 25,1% do €370,1 mln.",
+            "en": "Opening 8 more European routes and growing the fleet (to 26–31 aircraft) lowered LF from 71% to 67% amid fierce European competition, though revenue rose 25.1% to €370.1m."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Nadal 3/5: pomimo wzrostu światowych cen ropy udział paliwa w przychodach spadł do 11,3%, a uruchomienie sprzedaży przez ryanair.com (10% sprzedaży w pierwszych miesiącach) ograniczyło zależność od zewnętrznych pośredników.",
+            "en": "Still 3/5: despite higher global oil prices, fuel share of revenue dipped to 11.3%, while launching ryanair.com (10% of sales in early months) reduced reliance on third-party intermediaries."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Wzrost z 3 do 4: start portalu ryanair.com w styczniu 2000 r. ułatwił klientom bezpośrednie porównywanie najniższych cen, a zniesienie sprzedaży duty-free wewnątrz UE od lipca 1999 r. zmniejszyło wydatki pasażerów na pokładzie (udział ancillary spadł z 12,5% do 10,7%).",
+            "en": "Up from 3 to 4: launching ryanair.com in January 2000 made direct low-fare comparison easier for buyers, while ending intra-EU duty-free in July 1999 cut onboard spend (ancillary share fell from 12.5% to 10.7%)."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Bez zmian (3/5) — dalszy spadek kosztu na fotelomil do €0,085 umacniał przewagę cenową nad transportem lądowym, lecz krótkie trasy nadal stykały się z alternatywami.",
+            "en": "Unchanged (3/5) — further seat-mile cost reduction to €0.085 strengthened price advantage over ground transport, though short routes still faced alternatives."
+          }
+        },
+        "newEntrants": {
+          "score": 4,
+          "rationale": {
+            "pl": "Bez zmian (4/5) — niskokosztowa rezerwacja internetowa obniżała próg dystrybucyjny również dla potencjalnych nowych konkurentów.",
+            "en": "Unchanged (4/5) — low-cost online booking also lowered distribution barriers for potential new competitors."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "€330,6 mln",
+            "en": "€330.6M"
+          },
+          "pct": 89.3
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "€39,6 mln",
+            "en": "€39.6M"
+          },
+          "pct": 10.7
+        }
+      ]
+    },
+    {
+      "year": 2001,
+      "fiscalLabel": {
+        "pl": "FY2001 (01.04.2000 – 31.03.2001)",
+        "en": "FY2001 (Apr 1, 2000 – Mar 31, 2001)"
+      },
+      "era": {
+        "pl": "Era II: Debiut giełdowy, ekspansja kontynentalna i cyfryzacja sprzedaży",
+        "en": "Era II: IPO, Continental Expansion & Direct Digital Sales"
+      },
+      "summary": {
+        "pl": "W roku FY2001 Ryanair przeprowadził konwersję głównego systemu rezerwacji i szybko przeniósł sprzedaż do internetu, przy udziale usług dodatkowych na poziomie 11,2%. Pełne wartości przychodów, zysku i wolumenu ruchu nie są ujęte w dostępnych wyciągach z raportu za ten okres.",
+        "en": "In FY2001 Ryanair converted its core reservation system and rapidly shifted bookings online, with ancillary revenue at 11.2%. Full revenue, profit, and passenger volume figures are not included in available extracts for this period."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "Brak danych w wyciągach",
+          "en": "Not available in extracts"
+        },
+        "revenueNum": 0.0,
+        "yoy": "N/A",
+        "grossMargin": "N/A",
+        "opMargin": "N/A",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "Not available in extracts"
+        },
+        "rnd": {
+          "pl": "Ruch i LF: b.d. w wyciągach",
+          "en": "Traffic & LF: N/A in extracts"
+        },
+        "catalyst": {
+          "pl": "Konwersja głównego systemu rezerwacji (2000) i przyspieszenie sprzedaży online",
+          "en": "Core reservation system conversion (2000) and rapid shift to online bookings"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Pomimo braku pełnych danych finansowych w dostępnych wyciągach, szybka konwersja systemu rezerwacyjnego i rozwój tras w Europie Kontynentalnej utrzymywały wysoką rywalizację z liniami narodowymi i wczesnymi LCC.",
+            "en": "Despite missing full financial figures in available extracts, rapid reservation system conversion and continental route growth kept rivalry intense against flag carriers and early LCCs."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Stabilna (3/5) — przeniesienie według opracowań wtórnych ok. 75% rezerwacji do internetu w ciągu roku od startu portalu zredukowało zależność od pośredników sprzedaży.",
+            "en": "Stable (3/5) — shifting roughly three-quarters of bookings online within a year of portal launch (per secondary literature) reduced reliance on sales intermediaries."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Nadal 4/5 — sprzedaż bezpośrednia online wzmacniała wrażliwość cenową klientów poszukujących najniższych taryf bazowych (udział ancillary wyniósł 11,2%).",
+            "en": "Still 4/5 — direct online sales heightened buyer price sensitivity for lowest base fares (ancillary share was 11.2%)."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Bez zmian (3/5) — niższe taryfy internetowe systematycznie odbierały ruch kolejom i promom na krótszych trasach.",
+            "en": "Unchanged (3/5) — lower internet fares steadily drew traffic away from rail and ferries on shorter routes."
+          }
+        },
+        "newEntrants": {
+          "score": 4,
+          "rationale": {
+            "pl": "Bez zmian (4/5) — zliberalizowane niebo UE i niski koszt systemów rezerwacji online nadal sprzyjały powstawaniu małych linii budżetowych.",
+            "en": "Unchanged (4/5) — liberalized EU skies and low-cost online booking engines still favored small budget carriers."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "88,8% przychodów (dopełnienie)",
+            "en": "88.8% of revenue (complement)"
+          },
+          "pct": 88.8
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "11,2% przychodów",
+            "en": "11.2% of revenue"
+          },
+          "pct": 11.2
+        }
+      ]
+    },
+    {
+      "year": 2002,
+      "fiscalLabel": {
+        "pl": "FY2002 (01.04.2001 – 31.03.2002)",
+        "en": "FY2002 (Apr 1, 2001 – Mar 31, 2002)"
+      },
+      "era": {
+        "pl": "Era II: Debiut giełdowy, ekspansja kontynentalna i cyfryzacja sprzedaży",
+        "en": "Era II: IPO, Continental Expansion & Direct Digital Sales"
+      },
+      "summary": {
+        "pl": "Mimo szoku po zamachach z 11 września 2001 roku i epidemii pryszczycy Ryanair zwiększył wolumen do 11,1 mln pasażerów i osiągnął €624,1 mln przychodów oraz €150,4 mln zysku netto (24,1% marży). W grudniu 2001 roku przeprowadzono split akcji 2:1.",
+        "en": "Despite the September 11, 2001 shock and foot-and-mouth outbreak, Ryanair grew volume to 11.1M passengers and delivered €624.1m in revenue and €150.4m in net profit (24.1% margin). A 2:1 share split took place in December 2001."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "€624,1 mln",
+          "en": "€624.1M"
+        },
+        "revenueNum": 0.624,
+        "yoy": "N/A",
+        "grossMargin": "N/A (koszty personelu €78,2 mln)",
+        "opMargin": "N/A (w wyciągu brak zysku op.)",
+        "netIncome": {
+          "pl": "€150,4 mln (marża netto 24,1%)",
+          "en": "€150.4M (24.1% net margin)"
+        },
+        "rnd": {
+          "pl": "11,1 mln PAX / LF: b.d. w wyciągu",
+          "en": "11.1M PAX / LF: N/A in extract"
+        },
+        "catalyst": {
+          "pl": "Zamachy z 11 września 2001, pryszczyca, split akcji 2:1 (grudzień 2001) i kontrakt z Boeingiem (2002)",
+          "en": "September 11, 2001 attacks, foot-and-mouth, 2:1 split (Dec 2001) & 2002 Boeing contract"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 3,
+          "rationale": {
+            "pl": "Spadek z 4 do 3: szok po zamachach 11 września 2001 roku i epidemia pryszczycy skłoniły linie tradycyjne do redukcji siatek, podczas gdy Ryanair zwiększył skalę do 11,1 mln pasażerów i €624,1 mln przychodów (marża netto 24,1%).",
+            "en": "Down from 4 to 3: the September 11, 2001 attacks and foot-and-mouth outbreak prompted legacy carriers to cut capacity, while Ryanair scaled to 11.1M passengers and €624.1m revenue (24.1% net margin)."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Nadal 3/5: składki ubezpieczeniowe gwałtownie wzrosły po wrześniu 2001 r., ale Ryanair skontrował to korzystnymi umowami z małymi lotniskami poszukującymi ruchu (we Frankfurt-Hahn ruch linii wzrósł trzykrotnie z 0,40 mln w 2001 r. do 1,23 mln w 2002 r.) oraz kontraktem z Boeingiem z 2002 r.",
+            "en": "Still 3/5: insurance premiums spiked after September 2001, but Ryanair countered with favorable deals at smaller airports seeking traffic (Frankfurt-Hahn traffic tripled from 0.40M in 2001 to 1.23M in 2002) and a 2002 Boeing order."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Bez zmian (4/5) — przy ogólnym spadku skłonności do latania po 11 września pobudzenie popytu wymagało agresywnie niskich cen biletów.",
+            "en": "Unchanged (4/5) — with overall travel propensity depressed after September 11, stimulating demand required aggressively low fares."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Bez zmian (3/5) — przejściowe obawy przed podróżami lotniczymi po atakach w USA sprzyjały częściowo transportowi naziemnemu, choć niskie taryfy szybko odzyskały klientów.",
+            "en": "Unchanged (3/5) — temporary flying fears after the US attacks favored ground transport somewhat, though low fares quickly won travelers back."
+          }
+        },
+        "newEntrants": {
+          "score": 4,
+          "rationale": {
+            "pl": "Bez zmian (4/5) — niższe ceny leasingu samolotów po kryzysie z 2001 r. ułatwiały uruchamianie lokalnych przewoźników na kontynencie.",
+            "en": "Unchanged (4/5) — lower aircraft lease rates after the 2001 downturn made launching local continental carriers easier."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "~€551,0 mln (różnica)",
+            "en": "~€551.0M (remainder)"
+          },
+          "pct": 88.3
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "€73,1 mln",
+            "en": "€73.1M"
+          },
+          "pct": 11.7
+        }
+      ]
+    },
+    {
+      "year": 2003,
+      "fiscalLabel": {
+        "pl": "FY2003 (01.04.2002 – 31.03.2003)",
+        "en": "FY2003 (Apr 1, 2002 – Mar 31, 2003)"
+      },
+      "era": {
+        "pl": "Era II: Debiut giełdowy, ekspansja kontynentalna i cyfryzacja sprzedaży",
+        "en": "Era II: IPO, Continental Expansion & Direct Digital Sales"
+      },
+      "summary": {
+        "pl": "Ryanair przejął i zintegrował linię Buzz od KLM, zwiększył siatkę o 50 nowych tras (do 125) oraz podniósł ruch o 42% do 15,7 mln pasażerów mimo wojny w Iraku i SARS. Przychody wzrosły o 35,0% do €842,5 mln, a zysk netto osiągnął €239,4 mln (28% marży netto).",
+        "en": "Ryanair acquired and integrated Buzz from KLM, added 50 routes (to 125), and grew traffic 42% to 15.7M passengers despite the Iraq war and SARS. Revenue rose 35.0% to €842.5m and net profit reached €239.4m (28% net margin)."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "€842,5 mln",
+          "en": "€842.5M"
+        },
+        "revenueNum": 0.843,
+        "yoy": "+35.0%",
+        "grossMargin": "N/A (amortyzacja €76,9 mln, personel €93,1 mln)",
+        "opMargin": "N/A (w wyciągu brak zysku op.)",
+        "netIncome": {
+          "pl": "€239,4 mln (+59% r/r; marża netto 28%)",
+          "en": "€239.4M (+59% YoY; 28% net margin)"
+        },
+        "rnd": {
+          "pl": "15,7 mln PAX (+42% r/r; 125 tras) / LF: b.d.",
+          "en": "15.7M PAX (+42% YoY; 125 routes) / LF: N/A"
+        },
+        "catalyst": {
+          "pl": "Przejęcie linii Buzz od KLM, 50 nowych tras (125 łącznie) oraz kontrakt z Boeingiem (2003)",
+          "en": "Acquisition of Buzz from KLM, 50 new routes (125 total), and 2003 Boeing contract"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 3,
+          "rationale": {
+            "pl": "Przejęcie i integracja linii Buzz od KLM wyeliminowały istotnego konkurenta, a wybuch wojny w Iraku i epidemia SARS dodatkowo osłabiły linie sieciowe; Ryanair zwiększył przewozy o 42% do 15,7 mln pasażerów i podniósł marżę netto do rekordowych 28%.",
+            "en": "Acquiring and integrating Buzz from KLM removed a notable rival, while the Iraq war and SARS further weakened legacy airlines; Ryanair grew traffic 42% to 15.7M passengers and lifted net margin to a record 28%."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Bez zmian (3/5) — kontrakt z Boeingiem z 2003 r. (uzupełniający umowy z 1998 i 2002 r.) umocnił pozycję negocjacyjną wobec producenta samolotów, a porty regionalne konkurowały o otwierane 50 nowych tras (łącznie 125).",
+            "en": "Unchanged (3/5) — the 2003 Boeing contract (alongside 1998 and 2002 deals) strengthened leverage with the airframer, while regional airports competed for 50 new routes (125 total)."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Bez zmian (4/5) — w warunkach niepewności geopolitycznej i zdrowotnej wypełnienie 50 nowych tras wymagało utrzymania bardzo niskich taryf bazowych przy rosnącym udziale ancillary (13,1%).",
+            "en": "Unchanged (4/5) — amid geopolitical and health uncertainty, filling 50 new routes required very low base fares alongside a rising ancillary share (13.1%)."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Bez zmian (3/5) — wraz z rozbudową sieci do 125 tras w Europie ciężar operacji przesuwał się na dystanse niedostępne dla sprawnej podróży naziemnej.",
+            "en": "Unchanged (3/5) — expanding to 125 European routes shifted operations toward distances poorly served by efficient ground travel."
+          }
+        },
+        "newEntrants": {
+          "score": 3,
+          "rationale": {
+            "pl": "Spadek z 4 do 3: wchłonięcie Buzz przez Ryanaira i postępująca koncentracja rynku podniosły minimalną skalę wymaganą do rentownego konkurowania w Europie Zachodniej.",
+            "en": "Down from 4 to 3: absorbing Buzz and rising market consolidation increased the minimum scale required to compete profitably in Western Europe."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "€731,6 mln",
+            "en": "€731.6M"
+          },
+          "pct": 86.8
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "€110,6 mln (+€0,4 mln inne)",
+            "en": "€110.6M (+€0.4M other)"
+          },
+          "pct": 13.2
+        }
+      ]
+    },
+    {
+      "year": 2004,
+      "fiscalLabel": {
+        "pl": "FY2004 (01.04.2003 – 31.03.2004)",
+        "en": "FY2004 (Apr 1, 2003 – Mar 31, 2004)"
+      },
+      "era": {
+        "pl": "Era III: Hiperwzrost floty, ofensywa ancillary i tarcia regulacyjne",
+        "en": "Era III: Fleet Hypergrowth, Ancillary Push & Regulatory Friction"
+      },
+      "summary": {
+        "pl": "W roku FY2004 Ryanair kontynuował odbiory Boeingów 737-800 z wcześniejszych kontraktów oraz rozbudowę ruchu w portach regionalnych, podczas gdy Unia Europejska przyjęła w kwietniu 2004 roku rozporządzenie EC 261/2004. Pełne wartości przychodów i zysku nie figurują w dostępnych wyciągach.",
+        "en": "In FY2004 Ryanair continued Boeing 737-800 deliveries from prior contracts and expanded regional airport traffic, while the EU adopted Regulation EC 261/2004 in April 2004. Full revenue and profit figures do not appear in available extracts."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "Brak danych w wyciągach",
+          "en": "Not available in extracts"
+        },
+        "revenueNum": 0.0,
+        "yoy": "N/A",
+        "grossMargin": "N/A",
+        "opMargin": "N/A",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "Not available in extracts"
+        },
+        "rnd": {
+          "pl": "Ruch ogółem: b.d. w wyciągach (Hahn 2,67 mln PAX w kal. 2004)",
+          "en": "Total PAX: N/A in extracts (Hahn 2.67M PAX in cal. 2004)"
+        },
+        "catalyst": {
+          "pl": "Przyjęcie rozporządzenia UE EC 261/2004 (kwiecień 2004) i odbiory z kontraktów Boeinga 2002–2003",
+          "en": "Adoption of EU Regulation EC 261/2004 (April 2004) and 2002–2003 Boeing deliveries"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 3,
+          "rationale": {
+            "pl": "Koncentracja na portach regionalnych i wysoka efektywność kapitałowa (zewnętrzne opracowania wskazują na skorygowany ROIC w okolicach 22–23% w 2004 r.) ograniczały bezpośrednią presję cenową ze strony linii flagowych.",
+            "en": "Focus on regional airports and high capital efficiency (external analyses indicate adjusted ROIC around 22–23% in 2004) limited direct fare pressure from flag carriers."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Kolejne odbiory B737-800 z kontraktów 2002–2003 r. oraz niskie opłaty w portach regionalnych (np. ruch Ryanaira w Frankfurt-Hahn osiągnął 2,67 mln pasażerów w 2004 r.) utrzymywały korzystną strukturę kosztów.",
+            "en": "Ongoing 737-800 deliveries from 2002–2003 contracts and low regional airport charges (e.g., Ryanair at Frankfurt-Hahn reached 2.67M passengers in 2004) kept cost structure favorable."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Upowszechnienie zakupów online utrwaliło wysoką przejrzystość cenową i oczekiwanie tanich biletów, zgodnie z zapowiedzią zarządu w raporcie za 2003 r. o planowanym spadku średnich yieldów o 10–15%.",
+            "en": "Widespread online booking cemented fare transparency and low-fare expectations, matching management's 2003 annual report guidance for a planned 10–15% drop in average yields."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Spadek z 3 do 2: ekspansja sieci poza korytarz irlandzko-brytyjski na długie trasy kontynentalne sprawiła, że czas i cena podróży lotniczej stały się nieosiągalne dla kolei i promów.",
+            "en": "Down from 3 to 2: expanding beyond Ireland–UK onto longer continental routes made air travel time and cost unbeatable versus rail and ferries."
+          }
+        },
+        "newEntrants": {
+          "score": 3,
+          "rationale": {
+            "pl": "Bez zmian (3/5) — przy rosnącej skali liderów nowi operatorzy niskokosztowi pojawiali się już głównie w niszach regionalnych lub w Europie Środkowej.",
+            "en": "Unchanged (3/5) — as incumbents scaled, new low-cost carriers emerged mainly in regional niches or Central Europe."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "Brak danych w wyciągach",
+            "en": "N/A in extracts"
+          },
+          "pct": 0.0
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "Brak danych w wyciągach",
+            "en": "N/A in extracts"
+          },
+          "pct": 0.0
+        }
+      ]
+    },
+    {
+      "year": 2005,
+      "fiscalLabel": {
+        "pl": "FY2005 (01.04.2004 – 31.03.2005)",
+        "en": "FY2005 (Apr 1, 2004 – Mar 31, 2005)"
+      },
+      "era": {
+        "pl": "Era III: Hiperwzrost floty, ofensywa ancillary i tarcia regulacyjne",
+        "en": "Era III: Fleet Hypergrowth, Ancillary Push & Regulatory Friction"
+      },
+      "summary": {
+        "pl": "W lutym 2005 roku weszło w życie unijne rozporządzenie EC 261/2004 o prawach pasażerów, a Ryanair podpisał kolejny kontrakt z Boeingiem (łącząc z wcześniejszymi umowami pulę 348 zamówionych maszyn) oraz zgłosił skargi do KE przeciw pomocy dla Alitalii. Pełne dane finansowe nie figurują w wyciągach.",
+        "en": "EU passenger rights Regulation EC 261/2004 took effect in February 2005, while Ryanair signed another Boeing contract (bringing cumulative orders across deals to 348 aircraft) and challenged state aid to Alitalia. Full financial tables are absent from extracts."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "Brak danych w wyciągach",
+          "en": "Not available in extracts"
+        },
+        "revenueNum": 0.0,
+        "yoy": "N/A",
+        "grossMargin": "N/A",
+        "opMargin": "N/A",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "Not available in extracts"
+        },
+        "rnd": {
+          "pl": "Ruch ogółem: b.d. w wyciągach (Hahn 2,86 mln PAX w kal. 2005)",
+          "en": "Total PAX: N/A in extracts (Hahn 2.86M PAX in cal. 2005)"
+        },
+        "catalyst": {
+          "pl": "Wejście w życie EC 261/2004 (luty 2005), kontrakt z Boeingiem (2005) i skargi na pomoc dla Alitalii",
+          "en": "EC 261/2004 entry into force (Feb 2005), 2005 Boeing contract, and Alitalia aid complaints"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 3,
+          "rationale": {
+            "pl": "Spółka dalej wykorzystywała przewagę kosztową na lotniskach regionalnych, zwalczając na drodze prawnej subsydiowanie państwowych rywali (skargi do Komisji Europejskiej z lat 2005–2006 przeciw pomocy publicznej dla Alitalii).",
+            "en": "The carrier continued leveraging its regional-airport cost edge while challenging state subsidies to flag rivals (European Commission complaints in 2005–2006 against public aid to Alitalia)."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Zawarcie kolejnego dużego kontraktu z Boeingiem w 2005 roku (łącznie z wcześniejszymi umowami 348 zamówionych maszyn) utrwaliło siłę nabywczą wobec producenta samolotów.",
+            "en": "Signing another major Boeing contract in 2005 (bringing cumulative orders across deals to 348 aircraft) reinforced purchasing power with the airframer."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Bez zmian (4/5) — wejście w życie w lutym 2005 roku unijnego rozporządzenia EC 261/2004 wzmocniło ustawowe uprawnienia pasażerów do opieki i odszkodowań w razie opóźnień lub odwołań.",
+            "en": "Unchanged (4/5) — EU Regulation EC 261/2004 taking effect in February 2005 strengthened statutory passenger rights to care and compensation for delays or cancellations."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Bez zmian (2/5) — kontynentalne połączenia punkt-punkt utrzymywały wyraźną przewagę nad transportem lądowym.",
+            "en": "Unchanged (2/5) — point-to-point continental routes kept a clear advantage over ground transport."
+          }
+        },
+        "newEntrants": {
+          "score": 3,
+          "rationale": {
+            "pl": "Bez zmian (3/5) — rozszerzenie UE w 2004 r. otwierało nowe rynki w Europie Środkowo-Wschodniej, ale wysoka skala flotowa Ryanaira w Europie Zachodniej stanowiła już silną zaporę.",
+            "en": "Unchanged (3/5) — the 2004 EU enlargement opened Central and Eastern European markets, yet Ryanair's Western European fleet scale already formed a strong barrier."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "Brak danych w wyciągach",
+            "en": "N/A in extracts"
+          },
+          "pct": 0.0
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "Brak danych w wyciągach",
+            "en": "N/A in extracts"
+          },
+          "pct": 0.0
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "fiscalLabel": {
+        "pl": "FY2006 (01.04.2005 – 31.03.2006)",
+        "en": "FY2006 (Apr 1, 2005 – Mar 31, 2006)"
+      },
+      "era": {
+        "pl": "Era III: Hiperwzrost floty, ofensywa ancillary i tarcia regulacyjne",
+        "en": "Era III: Fleet Hypergrowth, Ancillary Push & Regulatory Friction"
+      },
+      "summary": {
+        "pl": "Ryanair przekroczył 100 samolotów we flocie (103 maszyny) i obsłużył 34,8 mln pasażerów, osiągając €1 692,5 mln przychodów, €375,0 mln zysku operacyjnego (marża 22,2%) oraz €306,7 mln zysku netto. Jednocześnie Komisja Europejska wszczęła postępowanie wobec umów z portem Frankfurt-Hahn.",
+        "en": "Ryanair passed 100 aircraft (103 jets) and carried 34.8M passengers, generating €1,692.5m in revenue, €375.0m in operating profit (22.2% margin), and €306.7m in net profit. Meanwhile, the European Commission opened a probe into Frankfurt-Hahn agreements."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "€1 692,5 mln",
+          "en": "€1,692.5M"
+        },
+        "revenueNum": 1.693,
+        "yoy": "N/A",
+        "grossMargin": "N/A (koszty op. €1 317,5 mln)",
+        "opMargin": "22.2%",
+        "netIncome": {
+          "pl": "€306,7 mln (skoryg. €301,5 mln)",
+          "en": "€306.7M (adj. €301.5M)"
+        },
+        "rnd": {
+          "pl": "34,8 mln PAX / LF ok. 83% / flota 103",
+          "en": "34.8M PAX / LF ~83% / fleet 103"
+        },
+        "catalyst": {
+          "pl": "Przekroczenie 100 samolotów we flocie i wszczęcie postępowań KE ws. Frankfurt-Hahn (2006)",
+          "en": "Crossing 100 aircraft in fleet and EC state-aid probes into Frankfurt-Hahn (2006)"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 3,
+          "rationale": {
+            "pl": "Przekroczenie 100 maszyn (103 samoloty), 34,8 mln pasażerów i marża operacyjna 22,2% (€375,0 mln) potwierdzały silną pozycję wobec konkurentów.",
+            "en": "Crossing 100 aircraft (103 jets), 34.8M passengers, and a 22.2% operating margin (€375.0m) confirmed a strong position against competitors."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Koszty operacyjne rosły proporcjonalnie do skali (€1 317,5 mln), jednak wszczęcie w 2006 r. postępowania Komisji Europejskiej wobec umów w Frankfurt-Hahn zapowiedziało ograniczenie swobody negocjacji z portami publicznymi.",
+            "en": "Operating costs scaled with volume (€1,317.5m), but the European Commission's 2006 probe into Frankfurt-Hahn deals signaled tighter limits on negotiating with public airports."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Silna dywersyfikacja przychodów przez usługi dodatkowe (€259,2 mln, 15,3% sprzedaży) nie znosiła presji konsumentów na jak najniższą cenę bazową biletu.",
+            "en": "Strong ancillary revenue diversification (€259.2m, 15.3% of sales) did not eliminate consumer pressure for the lowest possible base ticket fare."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Bez zmian (2/5) — wypełnienie kabin na poziomie ok. 83% przy 34,8 mln pasażerów potwierdzało brak odpływu do transportu naziemnego.",
+            "en": "Unchanged (2/5) — roughly 83% load factor across 34.8M passengers confirmed no drift toward ground transport."
+          }
+        },
+        "newEntrants": {
+          "score": 3,
+          "rationale": {
+            "pl": "Bez zmian (3/5) — lokalni rywale powstający w nowej części UE nie zagrażali skali Ryanaira, choć konkurowali na wybranych kierunkach.",
+            "en": "Unchanged (3/5) — local rivals emerging in newer EU member states did not match Ryanair's scale, though they competed on select routes."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "~€1 433,4 mln (różnica)",
+            "en": "~€1,433.4M (remainder)"
+          },
+          "pct": 84.7
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "€259,2 mln",
+            "en": "€259.2M"
+          },
+          "pct": 15.3
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "fiscalLabel": {
+        "pl": "FY2007 (01.04.2006 – 31.03.2007)",
+        "en": "FY2007 (Apr 1, 2006 – Mar 31, 2007)"
+      },
+      "era": {
+        "pl": "Era III: Hiperwzrost floty, ofensywa ancillary i tarcia regulacyjne",
+        "en": "Era III: Fleet Hypergrowth, Ancillary Push & Regulatory Friction"
+      },
+      "summary": {
+        "pl": "Przychody wzrosły o 32,2% do €2 236,9 mln, a usługi dodatkowe skoczyły o 40% do €362,1 mln (16,2% całości), podczas gdy ruch osiągnął 42,5 mln pasażerów (133 samoloty). Próba przejęcia Aer Lingus (€1,5 mld) zakończyła się niepowodzeniem, a zysk netto wyniósł €435,6 mln.",
+        "en": "Revenue climbed 32.2% to €2,236.9m and ancillary revenue jumped 40% to €362.1m (16.2% of total), with traffic reaching 42.5M passengers (133 aircraft). A €1.5bn bid for Aer Lingus failed, while net profit reached €435.6m."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "€2 236,9 mln",
+          "en": "€2,236.9M"
+        },
+        "revenueNum": 2.237,
+        "yoy": "+32.2%",
+        "grossMargin": "N/A (koszty op. €1 765,2 mln)",
+        "opMargin": "21.1%",
+        "netIncome": {
+          "pl": "€435,6 mln (skoryg. €401,4 mln)",
+          "en": "€435.6M (adj. €401.4M)"
+        },
+        "rnd": {
+          "pl": "42,5 mln PAX (+22% r/r) / LF 82% / flota 133",
+          "en": "42.5M PAX (+22% YoY) / LF 82% / fleet 133"
+        },
+        "catalyst": {
+          "pl": "Nieudana oferta przejęcia Aer Lingus (€1,5 mld) i skok usług ancillary o +40% r/r",
+          "en": "Failed €1.5bn Aer Lingus takeover bid and +40% YoY ancillary revenue surge"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Wzrost z 3 do 4: mimo 22-procentowego skoku ruchu do 42,5 mln pasażerów (133 maszyny) zwiększenie podaży o 23% obniżyło LF o 1 pkt proc. do 82%, a oferta przejęcia Aer Lingus (€1,5 mld) została odrzucona, utrzymując ostrą rywalizację na rynku bazowym.",
+            "en": "Up from 3 to 4: despite a 22% traffic jump to 42.5M passengers (133 jets), a 23% capacity increase trimmed LF by 1 pp to 82%, and a €1.5bn Aer Lingus bid was rejected, keeping home-market rivalry intense."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Marża operacyjna pozostała na wysokim poziomie 21,1% (€471,7 mln), a skala zamówień flotowych chroniła przed podwyżkami jednostkowych kosztów.",
+            "en": "Operating margin remained high at 21.1% (€471.7m), while fleet order scale protected against unit cost increases."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Bez zmian (4/5) — dynamiczny wzrost usług ancillary o 40% r/r do €362,1 mln (16,2% przychodów, w tym opłaty za bagaż nadmiarowy) równoważył wymagania cenowe na rynku biletów.",
+            "en": "Unchanged (4/5) — a 40% YoY surge in ancillary revenue to €362.1m (16.2% of revenue, including excess baggage fees) offset ticket price pressure."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Bez zmian (2/5) — brak nowej presji substytucyjnej.",
+            "en": "Unchanged (2/5) — no new substitution pressure."
+          }
+        },
+        "newEntrants": {
+          "score": 3,
+          "rationale": {
+            "pl": "Bez zmian (3/5) — przy 133 samolotach i €2,24 mld przychodów bariera skali rosła, choć na rynku europejskim działało jeszcze wielu średnich graczy (np. Air Berlin).",
+            "en": "Unchanged (3/5) — at 133 aircraft and €2.24bn revenue, scale barriers rose, though many mid-sized players (such as Air Berlin) still operated in Europe."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "~€1 874,8 mln (różnica)",
+            "en": "~€1,874.8M (remainder)"
+          },
+          "pct": 83.8
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "€362,1 mln",
+            "en": "€362.1M"
+          },
+          "pct": 16.2
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "fiscalLabel": {
+        "pl": "FY2008 (01.04.2007 – 31.03.2008)",
+        "en": "FY2008 (Apr 1, 2007 – Mar 31, 2008)"
+      },
+      "era": {
+        "pl": "Era III: Hiperwzrost floty, ofensywa ancillary i tarcia regulacyjne",
+        "en": "Era III: Fleet Hypergrowth, Ancillary Push & Regulatory Friction"
+      },
+      "summary": {
+        "pl": "Przychody wzrosły o 21,3% do €2 713,8 mln przy 19,8% marży operacyjnej (€537,1 mln) i +39,7% dynamice przychodów dodatkowych, jednak gwałtowny wzrost cen ropy oraz kolejne nieudane próby przejęcia Aer Lingus zaostrzyły warunki rynkowe. W wyciągu z 20-F za ten rok brak zysku netto i wolumenu pasażerów.",
+        "en": "Revenue grew 21.3% to €2,713.8m at a 19.8% operating margin (€537.1m) and +39.7% ancillary growth, but surging oil prices and renewed failed Aer Lingus bids tightened conditions. Net profit and passenger volume are missing from the 20-F extract."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "€2 713,8 mln",
+          "en": "€2,713.8M"
+        },
+        "revenueNum": 2.714,
+        "yoy": "+21.3%",
+        "grossMargin": "N/A (koszty op. €2 176,7 mln)",
+        "opMargin": "19.8%",
+        "netIncome": {
+          "pl": "Brak w wyciągu z 20-F",
+          "en": "Not in 20-F extract"
+        },
+        "rnd": {
+          "pl": "Ruch i LF: b.d. w wyciągu 20-F",
+          "en": "Traffic & LF: N/A in 20-F extract"
+        },
+        "catalyst": {
+          "pl": "Ponowne oferty wobec Aer Lingus (sierpień–wrzesień 2007), start zwrotów kapitału (od 2008 r.) i skok ropy",
+          "en": "Renewed Aer Lingus bids (Aug–Sep 2007), start of capital returns (from 2008), and oil spike"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Przychody wzrosły o 21,3% do €2 713,8 mln, jednak ponowne nieudane próby przejęcia Aer Lingus (sierpień–wrzesień 2007 r.) oraz agresywna rozbudowa podaży przez konkurentów obniżyły marżę operacyjną z 21,1% do 19,8% (€537,1 mln).",
+            "en": "Revenue rose 21.3% to €2,713.8m, yet renewed failed bids for Aer Lingus (Aug–Sep 2007) and aggressive rival capacity additions reduced operating margin from 21.1% to 19.8% (€537.1m)."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Wzrost z 3 do 4: gwałtowne drożenie ropy naftowej na przełomie 2007/2008 roku podniosło udział kosztów paliwa i wywarło presję na marże operacyjne w całym sektorze.",
+            "en": "Up from 3 to 4: sharp oil price increases across late 2007 and early 2008 raised fuel cost share and pressured operating margins across the sector."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Bez zmian (4/5) — presja makroekonomiczna w końcówce roku wymuszała niskie ceny biletów, kompensowane skokiem przychodów ancillary o +39,7% r/r.",
+            "en": "Unchanged (4/5) — late-year macroeconomic pressure forced low ticket fares, offset by a +39.7% YoY jump in ancillary revenue."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Bez zmian (2/5) — brak istotnych alternatyw na trasach średniego zasięgu.",
+            "en": "Unchanged (2/5) — no material alternatives on medium-haul routes."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Spadek z 3 do 2: drogie paliwo i zacieśnienie rynków kredytowych w latach 2007–2008 drastycznie podniosły próg wejścia dla nowych, słabo dokapitalizowanych przewoźników.",
+            "en": "Down from 3 to 2: expensive fuel and tighter credit markets in 2007–2008 sharply raised entry hurdles for thinly capitalized new airlines."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "Brak kwot w wyciągu",
+            "en": "Amounts N/A in extract"
+          },
+          "pct": 0.0
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "+39,7% r/r (kwota b.d. w wyciągu)",
+            "en": "+39.7% YoY (amount N/A in extract)"
+          },
+          "pct": 0.0
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "fiscalLabel": {
+        "pl": "FY2009 (01.04.2008 – 31.03.2009)",
+        "en": "FY2009 (Apr 1, 2008 – Mar 31, 2009)"
+      },
+      "era": {
+        "pl": "Era IV: Szoki makroekonomiczne, kryzys paliwowy i dyscyplina kapitałowa",
+        "en": "Era IV: Macro Shocks, Fuel Crisis & Capital Discipline"
+      },
+      "summary": {
+        "pl": "Globalny kryzys finansowy spowolnił dynamikę przychodów rozkładowych do +5,7% r/r, podczas gdy przychody dodatkowe wzrosły o +22,5% r/r, a spółka uruchomiła skupy akcji własnych i zmierzyła się z podwyżką brytyjskiego podatku UK APD do £11. Pełne kwoty zysków i ruchu nie figurują w wyciągach.",
+        "en": "The global financial crisis slowed scheduled revenue growth to +5.7% YoY, while ancillary revenue rose +22.5% YoY and the company initiated share buybacks amid a UK APD hike to £11. Full profit and passenger figures are absent from extracts."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "Brak pełnych kwot w wyciągach",
+          "en": "Full figures N/A in extracts"
+        },
+        "revenueNum": 0.0,
+        "yoy": "N/A (rozkładowe +5,7%, ancillary +22,5%)",
+        "grossMargin": "N/A",
+        "opMargin": "N/A",
+        "netIncome": {
+          "pl": "Brak w wyciągach",
+          "en": "Not in extracts"
+        },
+        "rnd": {
+          "pl": "Ruch i LF: b.d. w wyciągach",
+          "en": "Traffic & LF: N/A in extracts"
+        },
+        "catalyst": {
+          "pl": "Kryzys finansowy 2008–2009, podwyżka UK APD do £11 i uruchomienie skupów akcji",
+          "en": "2008–2009 financial crisis, UK APD hike to £11, and launch of share buybacks"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Kryzys finansowy wywołał walkę o słabnący popyt; przychody rozkładowe wzrosły już tylko o 5,7% r/r w warunkach nadpodaży miejsc w Europie.",
+            "en": "The financial crisis triggered a battle for weakening demand; scheduled revenues grew just 5.7% YoY amid seat overcapacity in Europe."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Bez zmian (4/5) — silne wahania cen paliwa oraz podwyżki narzutów państwowych (brytyjski podatek UK APD na poziomie £11 w 2009 r.) obciążały bazę kosztową.",
+            "en": "Unchanged (4/5) — sharp fuel price swings and higher state levies (UK Air Passenger Duty at £11 in 2009) weighed on the cost base."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Recesja zmusiła pasażerów do szukania najtańszych połączeń, przy równoczesnym wzroście sprzedaży usług dodatkowych (+22,5% r/r).",
+            "en": "Recession pushed passengers to hunt for lowest fares, alongside a +22.5% YoY increase in ancillary sales."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Bez zmian (2/5) — spowolnienie skłaniało raczej do rezygnacji z części wyjazdów niż przechodzenia na droższy transport kolejowy.",
+            "en": "Unchanged (2/5) — the downturn led travelers to skip some trips rather than switch to pricier rail."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Bez zmian (2/5) — kryzys bankowy i zniknięcie finansowania dłużnego praktycznie zamroziły powstawanie nowych linii lotniczych w Europie.",
+            "en": "Unchanged (2/5) — the banking crisis and evaporated debt financing virtually froze new airline launches in Europe."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "+5,7% r/r (kwota b.d. w wyciągu)",
+            "en": "+5.7% YoY (amount N/A in extract)"
+          },
+          "pct": 0.0
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "+22,5% r/r (kwota b.d. w wyciągu)",
+            "en": "+22.5% YoY (amount N/A in extract)"
+          },
+          "pct": 0.0
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "fiscalLabel": {
+        "pl": "FY2010 (01.04.2009 – 31.03.2010)",
+        "en": "FY2010 (Apr 1, 2009 – Mar 31, 2010)"
+      },
+      "era": {
+        "pl": "Era IV: Szoki makroekonomiczne, kryzys paliwowy i dyscyplina kapitałowa",
+        "en": "Era IV: Macro Shocks, Fuel Crisis & Capital Discipline"
+      },
+      "summary": {
+        "pl": "W roku FY2010 Ryanair ograniczył liczbę zbazowanych samolotów w Londynie-Stansted wobec podwyżki UK APD do £12 i słabego popytu po kryzysie, a pod koniec okresu pojawiły się pierwsze zakłócenia związane z pyłem wulkanicznym. Pełne dane finansowe nie figurują w wyciągach.",
+        "en": "In FY2010 Ryanair trimmed London Stansted based aircraft amid a UK APD hike to £12 and post-crisis demand weakness, with volcanic ash disruptions beginning late in the year. Full financial figures are not in available extracts."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "Brak danych w wyciągach",
+          "en": "Not available in extracts"
+        },
+        "revenueNum": 0.0,
+        "yoy": "N/A",
+        "grossMargin": "N/A",
+        "opMargin": "N/A",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "Not available in extracts"
+        },
+        "rnd": {
+          "pl": "Ruch i LF: b.d. w wyciągach",
+          "en": "Traffic & LF: N/A in extracts"
+        },
+        "catalyst": {
+          "pl": "Podwyżka UK APD do £12, cięcia w Stansted i początek kryzysu wulkanicznego (2010)",
+          "en": "UK APD hike to £12, Stansted capacity cuts, and onset of 2010 volcanic ash crisis"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Utrzymująca się presja na rynkach Europy Zachodniej i podwyżka UK APD do £12 skłoniły Ryanaira do ograniczenia liczby zbazowanych maszyn w porcie Londyn-Stansted.",
+            "en": "Persistent pressure in Western European markets and a UK APD hike to £12 led Ryanair to reduce based aircraft at London Stansted."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Rosnące obciążenia podatkowe państw (UK APD £12, irlandzki podatek lotniczy) oraz wysokie koszty paliwa i początek kryzysu wulkanicznego utrzymywały wysoką siłę kosztów regulowanych i surowcowych.",
+            "en": "Rising state taxes (UK APD £12, Irish travel tax), high fuel costs, and the start of the volcanic ash crisis kept regulatory and commodity cost pressure high."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Słaba siła nabywcza gospodarstw domowych po recesji w strefie euro ograniczała możliwości podwyżek cen biletów.",
+            "en": "Weak household purchasing power after the eurozone recession constrained fare increases."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Poza incydentalnym wpływem chmury pyłu wulkanicznego pod koniec roku, kolej i transport drogowy nie stanowiły zagrożenia strukturalnego.",
+            "en": "Aside from incidental volcanic ash impact near year-end, rail and road transport posed no structural threat."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Bez zmian (2/5) — rynek pozostawał zamknięty dla nowych graczy bez dużego zaplecza kapitałowego.",
+            "en": "Unchanged (2/5) — the market remained closed to entrants without deep capital backing."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "Brak danych w wyciągach",
+            "en": "N/A in extracts"
+          },
+          "pct": 0.0
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "Brak danych w wyciągach",
+            "en": "N/A in extracts"
+          },
+          "pct": 0.0
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "fiscalLabel": {
+        "pl": "FY2011 (01.04.2010 – 31.03.2011)",
+        "en": "FY2011 (Apr 1, 2010 – Mar 31, 2011)"
+      },
+      "era": {
+        "pl": "Era IV: Szoki makroekonomiczne, kryzys paliwowy i dyscyplina kapitałowa",
+        "en": "Era IV: Macro Shocks, Fuel Crisis & Capital Discipline"
+      },
+      "summary": {
+        "pl": "Zamknięcia przestrzeni powietrznej nad Europą Północną w latach 2010–2011 wygenerowały koszty uziemień i opieki nad pasażerami przy nadal wysokich cenach ropy i kryzysie zadłużenia w strefie euro, a Load Factor wyniósł 83%. Pełne dane rachunku wyników nie figurują w dostępnych wyciągach.",
+        "en": "Northern European airspace closures in 2010–2011 generated grounding and passenger-care costs amid high oil prices and the eurozone debt crisis, with Load Factor at 83%. Full income statement figures do not appear in available extracts."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "Brak danych w wyciągach",
+          "en": "Not available in extracts"
+        },
+        "revenueNum": 0.0,
+        "yoy": "N/A",
+        "grossMargin": "N/A",
+        "opMargin": "N/A",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "Not available in extracts"
+        },
+        "rnd": {
+          "pl": "Ruch: b.d. w wyciągach / LF 83%",
+          "en": "Traffic: N/A in extracts / LF 83%"
+        },
+        "catalyst": {
+          "pl": "Zamknięcia przestrzeni powietrznej nad Europą Płn. (2010–2011) i irlandzki podatek lotniczy",
+          "en": "Northern European airspace closures (2010–2011) and Irish air travel tax"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Kryzys zadłużenia w strefie euro osłabiał popyt w Europie Południowej i utrzymywał silną walkę cenową o pasażera wypoczynkowego.",
+            "en": "The eurozone debt crisis weighed on Southern European demand and kept price competition intense for leisure flyers."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Poważne zamknięcia przestrzeni powietrznej nad Europą Północną w 2010 i 2011 roku wygenerowały koszty uziemienia i obowiązkowej opieki nad pasażerami przy nadal wysokich cenach ropy.",
+            "en": "Major Northern European airspace closures in 2010 and 2011 drove grounding and mandatory passenger-care costs alongside elevated oil prices."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Pasażerowie korzystali z ustawowej ochrony przy odwołaniach lotów oraz agresywnych promocji cenowych w obliczu dekoniunktury.",
+            "en": "Passengers benefited from statutory cancellation protections and aggressive fare promotions amid weak economic conditions."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "W okresach zamknięcia przestrzeni powietrznej część pasażerów tymczasowo korzystała z transportu naziemnego, lecz w skali roku popyt natychmiast wracał do lotnictwa.",
+            "en": "During airspace closures some travelers briefly used ground transport, but across the year demand quickly returned to aviation."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Bez zmian (2/5) — drogie paliwo i podatki lotnicze w UE zniechęcały nowy kapitał.",
+            "en": "Unchanged (2/5) — high fuel costs and EU aviation taxes deterred fresh capital."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "Brak danych w wyciągach",
+            "en": "N/A in extracts"
+          },
+          "pct": 0.0
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "Brak danych w wyciągach",
+            "en": "N/A in extracts"
+          },
+          "pct": 0.0
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "fiscalLabel": {
+        "pl": "FY2012 (01.04.2011 – 31.03.2012)",
+        "en": "FY2012 (Apr 1, 2011 – Mar 31, 2012)"
+      },
+      "era": {
+        "pl": "Era IV: Szoki makroekonomiczne, kryzys paliwowy i dyscyplina kapitałowa",
+        "en": "Era IV: Macro Shocks, Fuel Crisis & Capital Discipline"
+      },
+      "summary": {
+        "pl": "Przy ograniczonym wzroście ruchu (+5% r/r) Ryanair podniósł średnie taryfy o 16%, zwiększając przychody o 19,0% do €4 324,9 mln przy LF 82% oraz skupując akcje własne za €124,6 mln. W dostępnym wyciągu brak zysku operacyjnego i netto.",
+        "en": "With modest traffic growth (+5% YoY), Ryanair raised average fares by 16%, lifting revenue 19.0% to €4,324.9m at an 82% load factor and executing €124.6m in share buybacks. Operating and net profit are not in the available extract."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "€4 324,9 mln",
+          "en": "€4,324.9M"
+        },
+        "revenueNum": 4.325,
+        "yoy": "+19.0%",
+        "grossMargin": "N/A (presja kosztów paliwa)",
+        "opMargin": "N/A (brak w wyciągu)",
+        "netIncome": {
+          "pl": "Brak w wyciągu",
+          "en": "Not in extract"
+        },
+        "rnd": {
+          "pl": "Ruch +5% r/r (kwota b.d.) / LF 82%",
+          "en": "Traffic +5% YoY (volume N/A) / LF 82%"
+        },
+        "catalyst": {
+          "pl": "Wzrost średnich taryf o +16% przy drogiej ropie, UK APD £13 (kwiecień 2012) i skup akcji €124,6 mln",
+          "en": "+16% average fare rise amid high oil, UK APD £13 (April 2012), and €124.6m buyback"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 3,
+          "rationale": {
+            "pl": "Spadek z 4 do 3: redukcje mocy u osłabionych kryzysem konkurentów pozwoliły Ryanairowi ograniczyć wzrost ruchu do 5% i podnieść średnie taryfy aż o 16%, zwiększając przychody o 19% do €4 324,9 mln.",
+            "en": "Down from 4 to 3: capacity cuts by crisis-weakened rivals allowed Ryanair to cap traffic growth at 5% and raise average fares by 16%, lifting revenue 19% to €4,324.9m."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Bez zmian (4/5) — główne źródło presji kosztowej stanowiły wysokie ceny paliwa lotniczego, a od kwietnia 2012 roku UK APD wzrósł do £13 (częściowo łagodzony przez obniżkę irlandzkiego podatku do €7,50 w styczniu 2012 r.).",
+            "en": "Unchanged (4/5) — high jet fuel prices were the main cost headwind, while UK APD rose to £13 from April 2012 (partially cushioned by cutting the Irish travel tax to €7.50 in January 2012)."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Podniesienie cen biletów o 16% spowodowało spadek LF o 1 pkt proc. (z 83% do 82%), wskazując na wyraźną barierę akceptacji cenowej.",
+            "en": "Raising ticket prices by 16% trimmed load factor by 1 pp (from 83% to 82%), pointing to a clear price-acceptance ceiling."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Bez zmian (2/5) — nawet przy wyższych taryfach czas i koszt lotu w Europie pozostały bezkonkurencyjne.",
+            "en": "Unchanged (2/5) — even at higher fares, European flight time and cost remained hard to beat."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Bez zmian (2/5) — przy €4,3 mld przychodów i kosztach paliwa barierą wejścia stała się już ogromna skala operacyjna i bilansowa.",
+            "en": "Unchanged (2/5) — at €4.3bn revenue and high fuel costs, massive operational and balance-sheet scale became a decisive entry barrier."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "~€3 438,7 mln (różnica)",
+            "en": "~€3,438.7M (remainder)"
+          },
+          "pct": 79.5
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "€886,2 mln",
+            "en": "€886.2M"
+          },
+          "pct": 20.5
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "fiscalLabel": {
+        "pl": "FY2013 (01.04.2012 – 31.03.2013)",
+        "en": "FY2013 (Apr 1, 2012 – Mar 31, 2013)"
+      },
+      "era": {
+        "pl": "Era IV: Szoki makroekonomiczne, kryzys paliwowy i dyscyplina kapitałowa",
+        "en": "Era IV: Macro Shocks, Fuel Crisis & Capital Discipline"
+      },
+      "summary": {
+        "pl": "Przychody wzrosły o 12,9% do €4 884,0 mln, zysk operacyjny osiągnął €718,2 mln (marża 14,7%), a zysk netto €569,3 mln, czemu towarzyszył kontrakt z Boeingiem z 2013 roku. W wyciągu brak wolumenu pasażerów i podziału przychodów.",
+        "en": "Revenue grew 12.9% to €4,884.0m, operating profit reached €718.2m (14.7% margin), and net profit hit €569.3m alongside a 2013 Boeing contract. Passenger volume and revenue split are not in the extract."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "€4 884,0 mln",
+          "en": "€4,884.0M"
+        },
+        "revenueNum": 4.884,
+        "yoy": "+12.9%",
+        "grossMargin": "N/A (koszty op. €4 165,8 mln)",
+        "opMargin": "14.7%",
+        "netIncome": {
+          "pl": "€569,3 mln",
+          "en": "€569.3M"
+        },
+        "rnd": {
+          "pl": "Ruch i LF: b.d. w wyciągu",
+          "en": "Traffic & LF: N/A in extract"
+        },
+        "catalyst": {
+          "pl": "Kontrakt z Boeingiem z 2013 r. i plan opcji na akcje (Option Plan 2013)",
+          "en": "2013 Boeing contract and 2013 employee share option plan"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 3,
+          "rationale": {
+            "pl": "Większa dyscyplina podażowa europejskich grup lotniczych sprzyjała stabilizacji rynku: przychody Ryanaira wzrosły o 12,9% do €4 884,0 mln przy marży operacyjnej 14,7% (€718,2 mln) i zysku netto €569,3 mln.",
+            "en": "Greater capacity discipline among European airline groups aided market stability: Ryanair revenue rose 12.9% to €4,884.0m with a 14.7% operating margin (€718.2m) and €569.3m net profit."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Choć kontrakt z Boeingiem z 2013 r. zabezpieczył przyszłą podaż samolotów, bieżące wysokie ceny ropy i opłaty regulowane utrzymywały koszty na poziomie €4 165,8 mln.",
+            "en": "Although the 2013 Boeing contract secured future aircraft supply, elevated oil prices and regulated charges kept operating costs at €4,165.8m."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Bez zmian (4/5) — słaba koniunktura konsumencka w Europie utrzymywała wrażliwość na ceny, trzymając marżę operacyjną znacznie poniżej poziomów z lat 2006–2007.",
+            "en": "Unchanged (4/5) — weak European consumer sentiment kept price sensitivity elevated, holding operating margin well below 2006–2007 levels."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Bez zmian (2/5) — brak nowych substytutów w ruchu transgranicznym.",
+            "en": "Unchanged (2/5) — no new substitutes in cross-border travel."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Bez zmian (2/5) — rynek wchodził w fazę oligopolizacji pomiędzy największymi grupami sieciowymi a liderami LCC.",
+            "en": "Unchanged (2/5) — the market was moving toward oligopoly among major network groups and leading LCCs."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "Brak danych w wyciągu",
+            "en": "N/A in extract"
+          },
+          "pct": 0.0
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "Brak danych w wyciągach",
+            "en": "N/A in extract"
+          },
+          "pct": 0.0
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "fiscalLabel": {
+        "pl": "FY2014 (01.04.2013 – 31.03.2014)",
+        "en": "FY2014 (Apr 1, 2013 – Mar 31, 2014)"
+      },
+      "era": {
+        "pl": "Era V: Ekspansja na główne bazy, szczyt marż i uzwiązkowienie",
+        "en": "Era V: Primary Airport Push, Peak Margins & Unionization"
+      },
+      "summary": {
+        "pl": "Dynamika przychodów spowolniła do +3,1% (€5 036,7 mln), marża operacyjna spadła do 13,1% (€658,6 mln), a zysk netto wyniósł €522,8 mln, co skłoniło spółkę do zwrotu w stronę wygodniejszej obsługi i głównych portów. W tym samym roku zawarto kontrakt z Boeingiem z 2014 r. i skupiono akcje za €481,7 mln.",
+        "en": "Revenue growth slowed to +3.1% (€5,036.7m), operating margin slipped to 13.1% (€658.6m), and net profit was €522.8m, prompting a pivot toward better service and primary airports alongside a 2014 Boeing deal and €481.7m in buybacks."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "€5 036,7 mln",
+          "en": "€5,036.7M"
+        },
+        "revenueNum": 5.037,
+        "yoy": "+3.1%",
+        "grossMargin": "N/A (koszty op. €4 378,1 mln)",
+        "opMargin": "13.1%",
+        "netIncome": {
+          "pl": "€522,8 mln",
+          "en": "€522.8M"
+        },
+        "rnd": {
+          "pl": "Ruch i LF: b.d. w wyciągu",
+          "en": "Traffic & LF: N/A in extract"
+        },
+        "catalyst": {
+          "pl": "Kontrakt z Boeingiem z 2014 r. i skup akcji własnych za €481,7 mln",
+          "en": "2014 Boeing contract and €481.7m share buyback"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 3,
+          "rationale": {
+            "pl": "Spowolnienie dynamiki przychodów do +3,1% (€5 036,7 mln) i spadek zysku netto do €522,8 mln (marża operacyjna 13,1%) zasygnalizowały nasycenie dotychczasowego modelu opartego niemal wyłącznie na portach drugorzędnych.",
+            "en": "Slower revenue growth at +3.1% (€5,036.7m) and a drop in net profit to €522.8m (13.1% operating margin) signaled saturation of a model reliant almost solely on secondary airports."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Wysokie ceny paliwa utrzymywały presję w bieżącym roku, jednak umowa z Boeingiem z 2014 r. (obok kontraktu z 2013 r., z dostawami od września 2014 r.) zapewniła długoterminowe rabaty flotowe.",
+            "en": "High fuel prices kept pressure on in the current year, though the 2014 Boeing deal (alongside 2013, with deliveries from September 2014) secured long-term fleet discounts."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Klienci domagali się wyższej jakości podróży i wygodniejszych lotnisk, co ograniczało wzrost rentowności w dotychczasowym formacie obsługi.",
+            "en": "Customers demanded higher travel quality and more convenient airports, limiting margin expansion in the existing service format."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Bez zmian (2/5) — brak zmian w strukturze substytutów.",
+            "en": "Unchanged (2/5) — no change in the substitute landscape."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Bez zmian (2/5) — wysokie nakłady na flotę i ograniczony dostęp do slotów hamowały wejścia nowych podmiotów.",
+            "en": "Unchanged (2/5) — high fleet outlays and constrained airport slots deterred new entrants."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "Brak danych w wyciągu",
+            "en": "N/A in extract"
+          },
+          "pct": 0.0
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "Brak danych w wyciągach",
+            "en": "N/A in extract"
+          },
+          "pct": 0.0
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "fiscalLabel": {
+        "pl": "FY2015 (01.04.2014 – 31.03.2015)",
+        "en": "FY2015 (Apr 1, 2014 – Mar 31, 2015)"
+      },
+      "era": {
+        "pl": "Era V: Ekspansja na główne bazy, szczyt marż i uzwiązkowienie",
+        "en": "Era V: Primary Airport Push, Peak Margins & Unionization"
+      },
+      "summary": {
+        "pl": "Tańsza ropa i dostawy z kontraktów Boeinga od września 2014 roku podniosły marżę operacyjną z 13,1% do 18,4% (€1 042,9 mln) przy wzroście przychodów o 12,3% do €5 654,0 mln i zysku netto €866,7 mln. Spółka rozwijała siatkę z 72 baz, wyemitowała euroobligacje i wypłaciła dywidendę specjalną.",
+        "en": "Cheaper oil and Boeing deliveries from September 2014 lifted operating margin from 13.1% to 18.4% (€1,042.9m) as revenue rose 12.3% to €5,654.0m and net profit reached €866.7m. The carrier expanded from 72 bases, issued eurobonds, and paid a special dividend."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "€5 654,0 mln",
+          "en": "€5,654.0M"
+        },
+        "revenueNum": 5.654,
+        "yoy": "+12.3%",
+        "grossMargin": "N/A (koszty op. €4 611,1 mln)",
+        "opMargin": "18.4%",
+        "netIncome": {
+          "pl": "€866,7 mln",
+          "en": "€866.7M"
+        },
+        "rnd": {
+          "pl": "72 bazy operacyjne / Ruch i LF: b.d. w wyciągu",
+          "en": "72 operating bases / Traffic & LF: N/A in extract"
+        },
+        "catalyst": {
+          "pl": "Emisja euroobligacji €850 mln i €750 mln, dywidenda specjalna (luty 2015) i tańsze paliwo",
+          "en": "€850M and €750M eurobond issues, special dividend (Feb 2015), and cheaper fuel"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Wzrost z 3 do 4: rozwijanie siatki z 72 baz i wejście na większe porty europejskie postawiły Ryanaira w bezpośredniej konfrontacji z grupami sieciowymi oraz easyJet, choć przychody wzrosły o 12,3% do €5 654,0 mln.",
+            "en": "Up from 3 to 4: expanding from 72 bases and entering larger European airports put Ryanair directly against network groups and easyJet, even as revenue rose 12.3% to €5,654.0m."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Spadek z 4 do 3: tańsza ropa naftowa oraz rozpoczęcie dostaw z kontraktów Boeinga od września 2014 roku obniżyły koszty jednostkowe i podniosły marżę operacyjną z 13,1% do 18,4% (€1 042,9 mln).",
+            "en": "Down from 4 to 3: cheaper crude oil and Boeing deliveries starting September 2014 lowered unit costs and lifted operating margin from 13.1% to 18.4% (€1,042.9m)."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Bez zmian (4/5) — na głównych lotniskach pasażerowie mieli szerszy wybór operatorów, co wymagało utrzymywania atrakcyjnych taryf mimo wyższego komfortu podróży.",
+            "en": "Unchanged (4/5) — at primary airports passengers had broader airline choice, requiring attractive fares despite improved travel comfort."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Bez zmian (2/5) — przeniesienie części połączeń bliżej centrów miast skracało czas dojazdu na lotnisko, wręcz zmniejszając przewagę kolei.",
+            "en": "Unchanged (2/5) — moving some flights closer to city centers cut airport access time, reducing rail's edge."
+          }
+        },
+        "newEntrants": {
+          "score": 3,
+          "rationale": {
+            "pl": "Wzrost z 2 do 3: gwałtowny spadek cen ropy naftowej oraz tanie finansowanie dłużne (sam Ryanair wyemitował obligacje przy kuponach 1,125–1,875%) ułatwiły konkurentom i nowym markom niskokosztowym rozbudowę mocy.",
+            "en": "Up from 2 to 3: a sharp drop in oil prices and cheap debt funding (Ryanair itself issued bonds at 1.125–1.875% coupons) made capacity expansion easier for rivals and new LCCs."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "Brak danych w wyciągu",
+            "en": "N/A in extract"
+          },
+          "pct": 0.0
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "Brak danych w wyciągach",
+            "en": "N/A in extract"
+          },
+          "pct": 0.0
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "fiscalLabel": {
+        "pl": "FY2016 (01.04.2015 – 31.03.2016)",
+        "en": "FY2016 (Apr 1, 2015 – Mar 31, 2016)"
+      },
+      "era": {
+        "pl": "Era V: Ekspansja na główne bazy, szczyt marż i uzwiązkowienie",
+        "en": "Era V: Primary Airport Push, Peak Margins & Unionization"
+      },
+      "summary": {
+        "pl": "Przychody wzrosły o 15,6% do €6 535,8 mln, marża operacyjna sięgnęła 22,3% (€1 460,1 mln), a zysk netto wzrósł do €1 559,1 mln dzięki korzystnym cenom paliwa oraz €315,0 mln jednorazowego dochodu pozaoperacyjnego. W wyciągu brak wolumenu ruchu i podziału segmentowego.",
+        "en": "Revenue climbed 15.6% to €6,535.8m, operating margin hit 22.3% (€1,460.1m), and net profit rose to €1,559.1m on favorable fuel prices and €315.0m of non-operating income. Traffic volume and revenue split are not in the extract."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "€6 535,8 mln",
+          "en": "€6,535.8M"
+        },
+        "revenueNum": 6.536,
+        "yoy": "+15.6%",
+        "grossMargin": "N/A (koszty op. €5 075,7 mln)",
+        "opMargin": "22.3%",
+        "netIncome": {
+          "pl": "€1 559,1 mln (w tym €315,0 mln dochodu pozaop.)",
+          "en": "€1,559.1M (incl. €315.0M non-op. income)"
+        },
+        "rnd": {
+          "pl": "Ruch i LF: b.d. w wyciągu",
+          "en": "Traffic & LF: N/A in extract"
+        },
+        "catalyst": {
+          "pl": "Jednorazowy dochód pozaoperacyjny €315,0 mln oraz niskie ceny paliwa napędzające marżę",
+          "en": "€315.0m non-operating income gain and low fuel prices driving margin expansion"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Ostra walka o udziały na głównych lotniskach Europy utrzymywała wysoką rywalizację, choć przychody wzrosły o 15,6% do €6 535,8 mln, a wynik netto wsparło €315,0 mln dochodu pozaoperacyjnego (łącznie €1 559,1 mln PAT).",
+            "en": "Fierce share battles at major European airports kept rivalry high, though revenue grew 15.6% to €6,535.8m and net profit was boosted by €315.0m of non-operating income (€1,559.1m PAT total)."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Korzystne ceny ropy i skala dostaw B737 podniosły marżę operacyjną do 22,3% (€1 460,1 mln), równoważąc wyższe opłaty portowe na większych lotniskach.",
+            "en": "Favorable crude prices and 737 delivery scale lifted operating margin to 22.3% (€1,460.1m), offsetting higher airport charges at larger hubs."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Spadek z 4 do 3: poprawa oferty produktowej i wygody lotów z głównych portów zwiększyła skłonność klientów do wyboru Ryanaira oraz dokupowania usług dodatkowych (wybór miejsca, priority boarding).",
+            "en": "Down from 4 to 3: product improvements and primary-airport convenience increased customer willingness to choose Ryanair and buy add-ons (seat selection, priority boarding)."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Bez zmian (2/5) — tanie paliwo utrzymywało niskie ceny biletów lotniczych wobec transportu naziemnego.",
+            "en": "Unchanged (2/5) — cheap fuel kept airfares low relative to ground transport."
+          }
+        },
+        "newEntrants": {
+          "score": 3,
+          "rationale": {
+            "pl": "Bez zmian (3/5) — niskie ceny paliwa przedłużały żywotność mniejszych operatorów i ułatwiały ekspansję regionalnych LCC.",
+            "en": "Unchanged (3/5) — low fuel prices prolonged smaller carriers' viability and aided regional LCC expansion."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "Brak danych w wyciągu",
+            "en": "N/A in extract"
+          },
+          "pct": 0.0
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "Brak danych w wyciągach",
+            "en": "N/A in extract"
+          },
+          "pct": 0.0
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "fiscalLabel": {
+        "pl": "FY2017 (01.04.2016 – 31.03.2017)",
+        "en": "FY2017 (Apr 1, 2016 – Mar 31, 2017)"
+      },
+      "era": {
+        "pl": "Era V: Ekspansja na główne bazy, szczyt marż i uzwiązkowienie",
+        "en": "Era V: Primary Airport Push, Peak Margins & Unionization"
+      },
+      "summary": {
+        "pl": "Wzrost przychodów wyhamował do +1,7% (€6 647,8 mln) przy ostrej konkurencji cenowej, lecz marża operacyjna wzrosła do 23,1% (€1 534,0 mln), a zysk netto wyniósł €1 315,9 mln przy kontynuacji skupów akcji i narastających napięciach kadrowych wśród pilotów. W wyciągu brak wolumenu ruchu.",
+        "en": "Revenue growth slowed to +1.7% (€6,647.8m) amid sharp fare competition, yet operating margin rose to 23.1% (€1,534.0m) and net profit was €1,315.9m alongside buybacks and rising pilot staffing tensions. Traffic volume is not in the extract."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "€6 647,8 mln",
+          "en": "€6,647.8M"
+        },
+        "revenueNum": 6.648,
+        "yoy": "+1.7%",
+        "grossMargin": "N/A (koszty op. €5 113,8 mln)",
+        "opMargin": "23.1%",
+        "netIncome": {
+          "pl": "€1 315,9 mln",
+          "en": "€1,315.9M"
+        },
+        "rnd": {
+          "pl": "Ruch i LF: b.d. w wyciągu",
+          "en": "Traffic & LF: N/A in extract"
+        },
+        "catalyst": {
+          "pl": "Skupy akcji własnych (2016–2017) oraz początek napięć kadrowych i negocjacji pracowniczych",
+          "en": "Share buybacks (2016–2017) and early pilot staffing tensions and labor negotiations"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Wzrost przychodów wyhamował do +1,7% (€6 647,8 mln) w warunkach ostrej konkurencji cenowej w Europie po zawirowaniach walutowych i rynkowych w Wielkiej Brytanii, lecz zysk operacyjny wzrósł do €1 534,0 mln (marża 23,1%).",
+            "en": "Revenue growth slowed to +1.7% (€6,647.8m) amid fierce European fare competition following UK currency and market turbulence, though operating profit rose to €1,534.0m (23.1% margin)."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Zabezpieczenia paliwowe i efekt skali utrzymywały niskie koszty operacyjne (€5 113,8 mln), choć na europejskim rynku pracy rosły napięcia kadrowe wśród pilotów.",
+            "en": "Fuel hedging and scale kept operating costs low (€5,113.8m), although European pilot staffing tensions were building."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Stabilnie 3/5 — pasażerowie korzystali z niższych cen biletów przy utrzymującym się wysokim popycie na usługi dodatkowe.",
+            "en": "Steady at 3/5 — passengers benefited from lower base fares while demand for ancillary services remained high."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Bez zmian (2/5) — brak istotnej alternatywy dla krótkodystansowych podróży zagranicznych.",
+            "en": "Unchanged (2/5) — no material alternative for short-haul international trips."
+          }
+        },
+        "newEntrants": {
+          "score": 3,
+          "rationale": {
+            "pl": "Bez zmian (3/5) — tanie finansowanie wciąż wspierało nowe inicjatywy niskokosztowe na wybranych rynkach europejskich.",
+            "en": "Unchanged (3/5) — cheap funding still supported new low-cost initiatives in select European markets."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "Brak danych w wyciągu",
+            "en": "N/A in extract"
+          },
+          "pct": 0.0
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "Brak danych w wyciągach",
+            "en": "N/A in extract"
+          },
+          "pct": 0.0
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "fiscalLabel": {
+        "pl": "FY2018 (01.04.2017 – 31.03.2018)",
+        "en": "FY2018 (Apr 1, 2017 – Mar 31, 2018)"
+      },
+      "era": {
+        "pl": "Era V: Ekspansja na główne bazy, szczyt marż i uzwiązkowienie",
+        "en": "Era V: Primary Airport Push, Peak Margins & Unionization"
+      },
+      "summary": {
+        "pl": "Ryanair osiągnął szczytową marżę operacyjną 23,3% (€1 667,3 mln) i zysk netto €1 450,2 mln przy przychodach €7 151,0 mln (+7,6%), ale pod koniec 2017 roku niedobory kadrowe wymusiły przełomową decyzję o uznaniu związków zawodowych. W wyciągu brak wolumenu ruchu i podziału segmentowego.",
+        "en": "Ryanair reached a peak operating margin of 23.3% (€1,667.3m) and net profit of €1,450.2m on €7,151.0m revenue (+7.6%), but late-2017 staffing shortages forced a watershed decision to recognize trade unions. Traffic volume and segment split are not in the extract."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "€7 151,0 mln",
+          "en": "€7,151.0M"
+        },
+        "revenueNum": 7.151,
+        "yoy": "+7.6%",
+        "grossMargin": "N/A (koszty op. €5 483,7 mln)",
+        "opMargin": "23.3%",
+        "netIncome": {
+          "pl": "€1 450,2 mln",
+          "en": "€1,450.2M"
+        },
+        "rnd": {
+          "pl": "Ruch i LF: b.d. w wyciągu",
+          "en": "Traffic & LF: N/A in extract"
+        },
+        "catalyst": {
+          "pl": "Historyczna decyzja o uznaniu związków zawodowych (koniec 2017 r.) i start negocjacji CLA",
+          "en": "Historic decision to recognize trade unions (late 2017) and launch of CLA negotiations"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Mimo wyeliminowania części słabszych graczy w Europie, presja konkurencyjna pozostała wysoka, a Ryanair osiągnął €7 151,0 mln przychodów (+7,6%) przy szczytowej marży operacyjnej 23,3% (€1 667,3 mln) i zysku netto €1 450,2 mln.",
+            "en": "Despite weaker European players exiting, competitive pressure remained high as Ryanair reached €7,151.0m revenue (+7.6%) at a peak 23.3% operating margin (€1,667.3m) and €1,450.2m net profit."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "W ujęciu całorocznym koszty pozostały pod kontrolą (3/5), ale pod koniec 2017 roku nastąpiła zasadnicza zmiana w sile siły roboczej — braki personelu lotniczego zmusiły zarząd do uznania związków zawodowych, co zapowiadało wzrost kosztów pracy.",
+            "en": "Full-year costs stayed controlled (3/5), but late-2017 flight-crew shortages shifted labor power and forced union recognition, signaling higher wage costs ahead."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Bez zmian (3/5) — silny popyt pasażerski pozwolił utrzymać rekordową marżę operacyjną 23,3%.",
+            "en": "Unchanged (3/5) — strong passenger demand allowed the airline to sustain its record 23.3% operating margin."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Bez zmian (2/5) — brak istotnej presji substytucyjnej.",
+            "en": "Unchanged (2/5) — no material substitution pressure."
+          }
+        },
+        "newEntrants": {
+          "score": 3,
+          "rationale": {
+            "pl": "Bez zmian (3/5) — choć część słabszych linii wypadała z rynku, przejmowanie ich slotów przez aktywnych graczy utrzymywało lokalną presję nowych wejść.",
+            "en": "Unchanged (3/5) — although weaker carriers exited, active operators picking up their slots kept localized entry pressure alive."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "Brak danych w wyciągu",
+            "en": "N/A in extract"
+          },
+          "pct": 0.0
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "Brak danych w wyciągach",
+            "en": "N/A in extract"
+          },
+          "pct": 0.0
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "fiscalLabel": {
+        "pl": "FY2019 (01.04.2018 – 31.03.2019)",
+        "en": "FY2019 (Apr 1, 2018 – Mar 31, 2019)"
+      },
+      "era": {
+        "pl": "Era V: Ekspansja na główne bazy, szczyt marż i uzwiązkowienie",
+        "en": "Era V: Primary Airport Push, Peak Margins & Unionization"
+      },
+      "summary": {
+        "pl": "Pierwsze układy zbiorowe (CLA) z lat 2018–2019, wyższe koszty paliwa i nadpodaż mocy w Europie obniżyły marżę operacyjną o 10,1 pkt proc. do 13,2% (€1 016,8 mln) oraz zysk netto o 39% do €885,0 mln, mimo wzrostu przychodów o 7,6% do €7 697,4 mln. Udział usług dodatkowych wzrósł do ok. 32%.",
+        "en": "First collective labor agreements (CLAs) in 2018–2019, higher fuel costs, and European capacity oversupply cut operating margin by 10.1 pp to 13.2% (€1,016.8m) and net profit by 39% to €885.0m despite revenue rising 7.6% to €7,697.4m. Ancillary share rose to ~32%."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "€7 697,4 mln",
+          "en": "€7,697.4M"
+        },
+        "revenueNum": 7.697,
+        "yoy": "+7.6%",
+        "grossMargin": "N/A (koszty op. €6 680,6 mln; ex-fuel €31/pax wg porównań z 2026 r.)",
+        "opMargin": "13.2%",
+        "netIncome": {
+          "pl": "€885,0 mln (-39% r/r)",
+          "en": "€885.0M (-39% YoY)"
+        },
+        "rnd": {
+          "pl": "Ruch i LF: b.d. w wyciągu",
+          "en": "Traffic & LF: N/A in extract"
+        },
+        "catalyst": {
+          "pl": "Pierwsze porozumienia zbiorowe CLA (2018–2019) i skok kosztów operacyjnych do €6 680,6 mln",
+          "en": "First CLA labor agreements (2018–2019) and operating cost jump to €6,680.6m"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Nadpodaż mocy w Europie oraz zakłócenia związane z negocjacjami związkowymi osłabiły rentowność: przychody wzrosły o 7,6% do €7 697,4 mln, ale marża operacyjna spadła aż o 10,1 pkt proc. do 13,2% (PAT -39% do €885,0 mln).",
+            "en": "European capacity oversupply and union negotiation disruptions weakened profitability: revenue rose 7.6% to €7,697.4m, yet operating margin dropped 10.1 pp to 13.2% (PAT -39% to €885.0m)."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Wzrost z 3 do 4: zawarcie pierwszych układów zbiorowych (CLA) w latach 2018–2019 trwale podniosło płace załóg, a wyższe ceny paliwa przyspieszyły wzrost kosztów operacyjnych z €5 483,7 mln do €6 680,6 mln.",
+            "en": "Up from 3 to 4: signing initial CLAs in 2018–2019 permanently raised crew wages, while higher fuel prices accelerated operating costs from €5,483.7m to €6,680.6m."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Wzrost z 3 do 4: spory pracownicze skłaniały linię do stymulowania rezerwacji niższymi cenami biletów przy wzroście udziału usług dodatkowych do ok. 32% przychodów.",
+            "en": "Up from 3 to 4: labor disputes prompted the airline to stimulate bookings with lower base fares while ancillary share rose to ~32% of revenue."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Nadal niskie (2/5) — strukturalny popyt na tanie loty pozostawał nienaruszony.",
+            "en": "Still low (2/5) — structural demand for low-fare flights remained intact."
+          }
+        },
+        "newEntrants": {
+          "score": 3,
+          "rationale": {
+            "pl": "Nadal 3/5, choć pogorszenie rentowności w całym europejskim sektorze zaczęło ograniczać apetyt inwestorów na nowe projekty.",
+            "en": "Still 3/5, though deteriorating profitability across the European sector began curbing investor appetite for new ventures."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "~68% przychodów (dopełnienie)",
+            "en": "~68% of revenue (complement)"
+          },
+          "pct": 68.0
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "~32% przychodów",
+            "en": "~32% of revenue"
+          },
+          "pct": 32.0
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "fiscalLabel": {
+        "pl": "FY2020 (01.04.2019 – 31.03.2020)",
+        "en": "FY2020 (Apr 1, 2019 – Mar 31, 2020)"
+      },
+      "era": {
+        "pl": "Era VI: Pandemia COVID-19, restrukturyzacja i popandemiczne odbicie",
+        "en": "Era VI: COVID-19 Pandemic, Restructuring & Post-Pandemic Rebound"
+      },
+      "summary": {
+        "pl": "Przez jedenaście miesięcy Ryanair rósł do ok. 149 mln pasażerów i €8 494,8 mln przychodów (marża operacyjna 13,3%), ale wybuch pandemii COVID-19 w marcu 2020 roku wygenerował €457,1 mln kosztów pozaoperacyjnych i obniżył zysk netto do €648,7 mln. Udział ancillary osiągnął ok. 34% (€19,71/pax).",
+        "en": "For eleven months Ryanair grew toward ~149M passengers and €8,494.8m revenue (13.3% operating margin), but the March 2020 COVID-19 outbreak triggered €457.1m in non-operating expense and cut net profit to €648.7m. Ancillary share reached ~34% (€19.71/pax)."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "€8 494,8 mln",
+          "en": "€8,494.8M"
+        },
+        "revenueNum": 8.495,
+        "yoy": "+10.4%",
+        "grossMargin": "N/A (koszty op. €7 367,4 mln)",
+        "opMargin": "13.3%",
+        "netIncome": {
+          "pl": "€648,7 mln (koszty pozaop. €457,1 mln)",
+          "en": "€648.7M (non-op. expense €457.1M)"
+        },
+        "rnd": {
+          "pl": "ok. 149 mln PAX / ancillary €19,71/pax / LF: b.d.",
+          "en": "~149M PAX / ancillary €19.71/pax / LF: N/A"
+        },
+        "catalyst": {
+          "pl": "Wybuch pandemii COVID-19 w marcu 2020 r. i €457,1 mln kosztów pozaoperacyjnych",
+          "en": "March 2020 COVID-19 pandemic onset and €457.1m non-operating expense"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Przed wybuchem pandemii grupa urosła o 10,4% do €8 494,8 mln przychodów i ok. 149 mln pasażerów, jednak w ostatnim miesiącu roku obrotowego walka o rynek ustąpiła gwałtownemu zatrzymaniu operacji.",
+            "en": "Prior to the pandemic outbreak the group grew 10.4% to €8,494.8m revenue and ~149M passengers, but in the final month of the fiscal year market battles gave way to a sudden operational halt."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Opóźnienia dostaw nowych Boeingów oraz załamanie popytu na przełomie roku obrotowego zbiegły się z €457,1 mln kosztów pozaoperacyjnych („Other expense”), zmniejszając zysk netto do €648,7 mln.",
+            "en": "New Boeing delivery delays and collapsing demand at fiscal year-end coincided with €457.1m of non-operating expense ('Other expense'), reducing net profit to €648.7m."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Wybuch COVID-19 w marcu 2020 r. wywołał falę rezygnacji i roszczeń o zwroty przy udziale ancillary sięgającym ok. 34%.",
+            "en": "The March 2020 COVID-19 outbreak triggered a wave of cancellations and refund demands with ancillary share reaching ~34%."
+          }
+        },
+        "substitutes": {
+          "score": 4,
+          "rationale": {
+            "pl": "Skok z 2 do 4: zamknięcia granic i kwarantanny w marcu 2020 roku zastąpiły loty służbowe komunikacją zdalną, a podróże zagraniczne – wypoczynkiem krajowym.",
+            "en": "Up from 2 to 4: border closures and quarantines in March 2020 replaced business flights with remote communication and foreign trips with domestic leisure."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Spadek z 3 do 2: kryzys wywołany przez COVID-19 odciął dopływ kapitału do nowych projektów lotniczych.",
+            "en": "Down from 3 to 2: the COVID-19 crisis cut off capital supply to new airline ventures."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "~66% przychodów (dopełnienie)",
+            "en": "~66% of revenue (complement)"
+          },
+          "pct": 66.0
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "~34% przychodów (€19,71/pax)",
+            "en": "~34% of revenue (€19.71/pax)"
+          },
+          "pct": 34.0
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "fiscalLabel": {
+        "pl": "FY2021 (01.04.2020 – 31.03.2021)",
+        "en": "FY2021 (Apr 1, 2020 – Mar 31, 2021)"
+      },
+      "era": {
+        "pl": "Era VI: Pandemia COVID-19, restrukturyzacja i popandemiczne odbicie",
+        "en": "Era VI: COVID-19 Pandemic, Restructuring & Post-Pandemic Rebound"
+      },
+      "summary": {
+        "pl": "Lockdowny COVID-19 obniżyły przychody o 80,7% do €1 635,8 mln, przynosząc -€839,4 mln straty operacyjnej (-51,3% marży) i €1 015,1 mln straty netto, podczas gdy koszty uprawnień emisji CO2 (EU ETS) istotnie wzrosły. Po Brexicie (styczeń 2021 r.) zawieszono prawa głosu akcjonariuszy spoza UE.",
+        "en": "COVID-19 lockdowns cut revenue 80.7% to €1,635.8m, resulting in a -€839.4m operating loss (-51.3% margin) and €1,015.1m net loss as EU ETS carbon costs rose sharply. After Brexit (January 2021), non-EU shareholder voting rights were suspended."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "€1 635,8 mln",
+          "en": "€1,635.8M"
+        },
+        "revenueNum": 1.636,
+        "yoy": "-80.7%",
+        "grossMargin": "N/A (koszty op. €2 475,2 mln)",
+        "opMargin": "-51.3%",
+        "netIncome": {
+          "pl": "€(1 015,1) mln (strata netto)",
+          "en": "€(1,015.1)M (net loss)"
+        },
+        "rnd": {
+          "pl": "ancillary €21,80/pax / Ruch i LF: b.d. w wyciągu",
+          "en": "ancillary €21.80/pax / Traffic & LF: N/A in extract"
+        },
+        "catalyst": {
+          "pl": "Lockdowny COVID-19, skok kosztów EU ETS oraz Brexit (styczeń 2021) i zawieszenie praw głosu poza-UE",
+          "en": "COVID-19 lockdowns, EU ETS cost surge, and Brexit (Jan 2021) with non-EU voting suspension"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 5,
+          "rationale": {
+            "pl": "Skok do maksimum 5/5: przy załamaniu przychodów o 80,7% do €1 635,8 mln i stracie netto €1 015,1 mln na rynku nasiliła się asymetria regulacyjna i dochodzenia Komisji Europejskiej dotyczące pomocy publicznej w Europie.",
+            "en": "Peaks at 5/5: with revenue down 80.7% to €1,635.8m and a €1,015.1m net loss, regulatory asymmetry and European Commission state-aid investigations intensified across Europe."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Nadal 4/5: choć część kosztów zmiennych spadła przy uziemieniu floty, gwałtownie wzrosły koszty uprawnień emisji CO2 (EU ETS) w FY2021, a certyfikacja B737-8200 opóźniała odbiór nowych maszyn.",
+            "en": "Still 4/5: although some variable costs fell with grounded aircraft, EU ETS carbon allowance costs rose sharply in FY2021 and 737-8200 certification delayed new deliveries."
+          }
+        },
+        "buyers": {
+          "score": 5,
+          "rationale": {
+            "pl": "Skok z 4 do 5: nieliczni podróżni w okresie obostrzeń wymuszali minimalne taryfy bazowe i pełną elastyczność zmian (udział ancillary wzrósł do ok. 37%, czyli €21,80/pax).",
+            "en": "Up from 4 to 5: scarce travelers under restrictions demanded rock-bottom base fares and full change flexibility (ancillary share rose to ~37%, or €21.80/pax)."
+          }
+        },
+        "substitutes": {
+          "score": 4,
+          "rationale": {
+            "pl": "Nadal 4/5 — praca zdalna, wideokonferencje oraz restrykcje sanitarne przez cały rok obrotowy skutecznie blokowały popyt lotniczy.",
+            "en": "Still 4/5 — remote work, video conferencing, and travel restrictions throughout the fiscal year curtailed aviation demand."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Brak dopływu prywatnego kapitału do nowych linii w warunkach głębokich strat całego sektora.",
+            "en": "No private capital inflow to new airlines amid deep losses across the entire sector."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "~63% przychodów (dopełnienie)",
+            "en": "~63% of revenue (complement)"
+          },
+          "pct": 63.0
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "~37% przychodów (€21,80/pax)",
+            "en": "~37% of revenue (€21.80/pax)"
+          },
+          "pct": 37.0
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "fiscalLabel": {
+        "pl": "FY2022 (01.04.2021 – 31.03.2022)",
+        "en": "FY2022 (Apr 1, 2021 – Mar 31, 2022)"
+      },
+      "era": {
+        "pl": "Era VI: Pandemia COVID-19, restrukturyzacja i popandemiczne odbicie",
+        "en": "Era VI: COVID-19 Pandemic, Restructuring & Post-Pandemic Rebound"
+      },
+      "summary": {
+        "pl": "W roku FY2022 Ryanair wycofał akcje z giełdy londyńskiej (grudzień 2021 r.), zwiększył udział ancillary do ok. 45% (€22,13/pax), a pod koniec okresu zmierzył się z inwazją Rosji na Ukrainę (luty 2022 r.) i skokiem cen ropy. Pełne kwoty przychodów, zysków i ruchu nie figurują w wyciągach.",
+        "en": "In FY2022 Ryanair delisted from the London Stock Exchange (December 2021), lifted ancillary share to ~45% (€22.13/pax), and faced Russia's invasion of Ukraine (February 2022) and surging oil prices late in the year. Full revenue, profit, and traffic figures are missing from extracts."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "Brak pełnych kwot w wyciągach",
+          "en": "Full figures N/A in extracts"
+        },
+        "revenueNum": 0.0,
+        "yoy": "N/A",
+        "grossMargin": "N/A",
+        "opMargin": "N/A",
+        "netIncome": {
+          "pl": "Brak w wyciągach",
+          "en": "Not in extracts"
+        },
+        "rnd": {
+          "pl": "ancillary €22,13/pax / Ruch i LF: b.d. w wyciągu",
+          "en": "ancillary €22.13/pax / Traffic & LF: N/A in extract"
+        },
+        "catalyst": {
+          "pl": "Delisting z LSE (grudzień 2021) i inwazja Rosji na Ukrainę (luty 2022) ze skokiem cen ropy",
+          "en": "LSE delisting (Dec 2021) and Russia's invasion of Ukraine (Feb 2022) with oil price surge"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 3,
+          "rationale": {
+            "pl": "Spadek z 5 do 3: otwieranie granic uwidoczniło osłabienie i redukcję mocy u przewoźników tradycyjnych, dając Ryanairowi przestrzeń do szybkiego odbudowania udziałów rynkowych.",
+            "en": "Down from 5 to 3: reopening borders exposed weakness and capacity cuts at legacy carriers, giving Ryanair room to rapidly rebuild market share."
+          }
+        },
+        "suppliers": {
+          "score": 5,
+          "rationale": {
+            "pl": "Wzrost z 4 do 5: rosyjska inwazja na Ukrainę w lutym 2022 r. wywołała gwałtowny skok cen ropy naftowej, nakładając się na rosnące koszty uprawnień EU ETS i opóźnienia dostaw w fabrykach Boeinga.",
+            "en": "Up from 4 to 5: Russia's February 2022 invasion of Ukraine sparked a sharp jump in crude oil prices on top of rising EU ETS costs and Boeing factory delivery delays."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Spadek z 5 do 3: powrót odłożonego popytu turystycznego poprawił skłonność klientów do płacenia, a przychody ancillary osiągnęły rekordowy udział ok. 45% (€22,13/pax).",
+            "en": "Down from 5 to 3: returning pent-up leisure demand improved willingness to pay, while ancillary revenue reached an estimated ~45% share (€22.13/pax)."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Spadek z 4 do 2: zniesienie obostrzeń natychmiast przywróciło popyt na wyjazdy wypoczynkowe i rodzinne, potwierdzając ograniczoną substytucyjność lotów przez narzędzia cyfrowe.",
+            "en": "Down from 4 to 2: lifting restrictions immediately restored leisure and VFR demand, confirming limited substitution of flights by digital tools."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Wysokie i zmienne ceny paliwa po wybuchu wojny w Ukrainie oraz wąskie gardła w dostawach samolotów blokowały powstawanie dużych nowych rywali, podczas gdy sam Ryanair w grudniu 2021 r. uprościł notowania poprzez delisting z LSE.",
+            "en": "High, volatile fuel prices after the Ukraine war and aircraft supply bottlenecks blocked large new rivals, while Ryanair simplified listings via its December 2021 LSE delisting."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "~55% przychodów (dopełnienie)",
+            "en": "~55% of revenue (complement)"
+          },
+          "pct": 55.0
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "~45% przychodów (€22,13/pax)",
+            "en": "~45% of revenue (€22.13/pax)"
+          },
+          "pct": 45.0
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "fiscalLabel": {
+        "pl": "FY2023 (01.04.2022 – 31.03.2023)",
+        "en": "FY2023 (Apr 1, 2022 – Mar 31, 2023)"
+      },
+      "era": {
+        "pl": "Era VI: Pandemia COVID-19, restrukturyzacja i popandemiczne odbicie",
+        "en": "Era VI: COVID-19 Pandemic, Restructuring & Post-Pandemic Rebound"
+      },
+      "summary": {
+        "pl": "Pełne odbicie popytu po pandemii przy ograniczonej podaży krótkodystansowej w Europie wyniosło przychody do €10 775,0 mln (suma segmentów), zysk operacyjny do €1 440 mln (marża 13,4%) i zysk netto do €1 314,0 mln. W maju 2023 roku ogłoszono zamówienie na do 300 Boeingów 737 MAX-10.",
+        "en": "Full post-pandemic demand recovery amid tight European short-haul capacity brought revenue to €10,775.0m (segment sum), operating profit to €1,440m (13.4% margin), and net profit to €1,314.0m. An order for up to 300 Boeing 737 MAX-10s was announced in May 2023."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "€10 775,0 mln (suma segmentów)",
+          "en": "€10,775.0M (segment sum)"
+        },
+        "revenueNum": 10.775,
+        "yoy": "N/A",
+        "grossMargin": "N/A",
+        "opMargin": "13.4%",
+        "netIncome": {
+          "pl": "€1 314,0 mln",
+          "en": "€1,314.0M"
+        },
+        "rnd": {
+          "pl": "ancillary €22,81/pax / Ruch i LF: b.d. w wyciągu",
+          "en": "ancillary €22.81/pax / Traffic & LF: N/A in extract"
+        },
+        "catalyst": {
+          "pl": "Pełne odbicie popytu po pandemii i zamówienie do 300 Boeingów 737 MAX-10 (maj 2023)",
+          "en": "Full post-pandemic demand rebound and order for up to 300 Boeing 737 MAX-10s (May 2023)"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 3,
+          "rationale": {
+            "pl": "Utrzymana na 3/5: ograniczona podaż krótkodystansowa w Europie po pandemii pozwoliła na powrót do €10 775 mln przychodów, €1 440 mln zysku operacyjnego (marża 13,4%) i €1 314 mln zysku netto.",
+            "en": "Held at 3/5: constrained European short-haul capacity after the pandemic enabled a return to €10,775m revenue, €1,440m operating profit (13.4% margin), and €1,314m net profit."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Spadek z 5 do 4: aktywne zabezpieczenia paliwowe oraz przygotowanie dużego zamówienia na do 300 maszyn B737 MAX-10 (ogłoszonego w maju 2023 r.) poprawiły kontrolę kosztową, choć zmienność cen ropy po 2022 r. i inflacja płac pozostały istotne.",
+            "en": "Down from 5 to 4: active fuel hedging and preparation of a large order for up to 300 737 MAX-10s (announced May 2023) improved cost control, though post-2022 oil volatility and wage inflation stayed significant."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Silny popyt przy mniejszej liczbie dostępnych miejsc w Europie umożliwił odbudowę taryf rozkładowych (€6 930 mln, 64,3%) obok stabilnego €3 845 mln z ancillary (€22,81/pax).",
+            "en": "Strong demand against fewer seats in Europe allowed scheduled fares (€6,930m, 64.3%) to recover alongside steady €3,845m ancillary revenue (€22.81/pax)."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Bez zmian (2/5) — utrzymanie silnego popytu lotniczego w całej Europie.",
+            "en": "Unchanged (2/5) — sustained air travel demand across Europe."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Wieloletnie kolejki produkcyjne na nowe samoloty i wysokie koszty wejścia praktycznie wykluczały pojawienie się nowego masowego przewoźnika.",
+            "en": "Multi-year aircraft delivery backlogs and high entry costs virtually ruled out a new mass-market airline entrant."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "€6 930,0 mln",
+            "en": "€6,930.0M"
+          },
+          "pct": 64.3
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "€3 845,0 mln (€22,81/pax)",
+            "en": "€3,845.0M (€22.81/pax)"
+          },
+          "pct": 35.7
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "fiscalLabel": {
+        "pl": "FY2024 (01.04.2023 – 31.03.2024)",
+        "en": "FY2024 (Apr 1, 2023 – Mar 31, 2024)"
+      },
+      "era": {
+        "pl": "Era VII: Dominacja kosztowa, presja środowiskowa i szoki geopolityczne",
+        "en": "Era VII: Cost Dominance, Environmental Pressure & Geopolitical Shocks"
+      },
+      "summary": {
+        "pl": "Ryanair obsłużył 184,0 mln pasażerów przy 94% Load Factor w 235 portach, podnosząc przychody o 24,8% do €13 443,8 mln, marżę operacyjną do 15,3% (€2 060,7 mln) i zysk netto do €1 917,1 mln. Średnia taryfa wyniosła €49,78/pax, a przychody dodatkowe €4 299,0 mln (€23,40/pax).",
+        "en": "Ryanair carried 184.0M passengers at a 94% load factor across 235 airports, lifting revenue 24.8% to €13,443.8m, operating margin to 15.3% (€2,060.7m), and net profit to €1,917.1m. Average fare was €49.78/pax and ancillary revenue €4,299.0m (€23.40/pax)."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "€13 443,8 mln",
+          "en": "€13,443.8M"
+        },
+        "revenueNum": 13.444,
+        "yoy": "+24.8%",
+        "grossMargin": "N/A (koszty op. €11 383,1 mln; €61,96/pax)",
+        "opMargin": "15.3%",
+        "netIncome": {
+          "pl": "€1 917,1 mln",
+          "en": "€1,917.1M"
+        },
+        "rnd": {
+          "pl": "184,0 mln PAX / LF 94% (BE LF 80%) / 235 lotnisk",
+          "en": "184.0M PAX / LF 94% (BE LF 80%) / 235 airports"
+        },
+        "catalyst": {
+          "pl": "Silna poprawa taryf (€49,78/pax) przy ograniczonych mocach krótkodystansowych w Europie",
+          "en": "Strong fare recovery (€49.78/pax) amid constrained European short-haul capacity"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 3,
+          "rationale": {
+            "pl": "Przy wzroście przychodów o 24,8% do €13 443,8 mln i 184 mln pasażerów (LF 94%), ograniczenia podaży w Europie sprzyjały utrzymaniu korzystnych warunków rynkowych.",
+            "en": "With revenue up 24.8% to €13,443.8m and 184M passengers (94% LF), European supply constraints supported favorable market conditions."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Opóźnienia dostaw z Boeinga ograniczały planowaną rozbudowę siatki, a koszty paliwa (średnio €3,23/galon) i rosnące wynagrodzenia utrzymały koszty jednostkowe na poziomie €61,96/pax mimo świetnej marży operacyjnej 15,3%.",
+            "en": "Boeing delivery delays constrained planned network expansion, while fuel costs (avg. €3.23/gallon) and rising wages kept unit costs at €61.96/pax despite a strong 15.3% operating margin."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Konsumenci zaakceptowali wyższe taryfy (średnio €49,78/pax) i usługi dodatkowe (€23,40/pax), przynosząc €1 917,1 mln zysku netto.",
+            "en": "Consumers accepted higher fares (avg. €49.78/pax) and ancillary services (€23.40/pax), delivering €1,917.1m in net profit."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Bez zmian (2/5) — brak istotnego odpływu podróżnych do transportu naziemnego.",
+            "en": "Unchanged (2/5) — no material passenger shift to ground transport."
+          }
+        },
+        "newEntrants": {
+          "score": 1,
+          "rationale": {
+            "pl": "Spadek z 2 do 1: przy 184 mln pasażerów, ogromnej przewadze kosztowej oraz barierach w dostawach samolotów i slotach lotniskowych wejście na rynek rywala o zbliżonej skali stało się nierealne.",
+            "en": "Down from 2 to 1: at 184M passengers, massive cost advantage, and aircraft delivery and airport slot barriers, entry by a comparable-scale rival became unrealistic."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "€9 145,0 mln (€49,78/pax)",
+            "en": "€9,145.0M (€49.78/pax)"
+          },
+          "pct": 68.0
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "€4 299,0 mln (€23,40/pax)",
+            "en": "€4,299.0M (€23.40/pax)"
+          },
+          "pct": 32.0
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "fiscalLabel": {
+        "pl": "FY2025 (01.04.2024 – 31.03.2025)",
+        "en": "FY2025 (Apr 1, 2024 – Mar 31, 2025)"
+      },
+      "era": {
+        "pl": "Era VII: Dominacja kosztowa, presja środowiskowa i szoki geopolityczne",
+        "en": "Era VII: Cost Dominance, Environmental Pressure & Geopolitical Shocks"
+      },
+      "summary": {
+        "pl": "Ryanair przekroczył 200 mln pasażerów (200,2 mln) przy 94% LF i wzroście przychodów o 3,8% do €13 948,5 mln, jednak 7-procentowy spadek średnich taryf (€46,10), opóźnienia Boeinga oraz start wygaszania darmowego ETS i mandatów SAF (styczeń 2025 r.) obniżyły marżę operacyjną do 11,2% (€1 558,0 mln) i zysk netto do €1 611,6 mln.",
+        "en": "Ryanair surpassed 200M passengers (200.2M) at 94% LF with revenue up 3.8% to €13,948.5m, but a 7% drop in average fares (€46.10), Boeing delays, and the start of EU ETS free-allowance phase-out and SAF mandates (Jan 2025) cut operating margin to 11.2% (€1,558.0m) and net profit to €1,611.6m."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "€13 948,5 mln",
+          "en": "€13,948.5M"
+        },
+        "revenueNum": 13.949,
+        "yoy": "+3.8%",
+        "grossMargin": "N/A (koszty op. €12 390,5 mln; €61,88/pax; paliwo €5 220,2 mln)",
+        "opMargin": "11.2%",
+        "netIncome": {
+          "pl": "€1 611,6 mln",
+          "en": "€1,611.6M"
+        },
+        "rnd": {
+          "pl": "200,2 mln PAX / LF 94% (BE LF 84%) / flota B737: 587 / 228 lotnisk",
+          "en": "200.2M PAX / LF 94% (BE LF 84%) / 737 fleet: 587 / 228 airports"
+        },
+        "catalyst": {
+          "pl": "Przekroczenie 200 mln PAX przy taryfach -7% (€46,10), opóźnienia Boeinga oraz koniec darmowego ETS i start SAF",
+          "en": "Crossing 200M PAX amid -7% fares (€46.10), Boeing delays, and ETS phase-out plus SAF mandates"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 3,
+          "rationale": {
+            "pl": "Mimo ostrożności konsumentów w trakcie roku Ryanair zwiększył ruch o 9% do 200,2 mln pasażerów przy 94% LF, powiększając przewagę kosztową nad europejskimi rywalami.",
+            "en": "Despite consumer caution during the year, Ryanair grew traffic 9% to 200.2M passengers at 94% LF, widening its cost advantage over European rivals."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Wielokrotne opóźnienia dostaw Boeinga hamowały wzrost (mimo otrzymanych rekompensat), a od stycznia 2025 r. rozpoczęto wycofywanie darmowych uprawnień EU ETS i wdrożono obowiązek domieszek paliwa SAF, podnosząc koszty regulowane.",
+            "en": "Repeated Boeing delivery delays constrained growth (despite compensation received), while phasing out free EU ETS allowances and starting SAF blending mandates from January 2025 raised regulated costs."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Wzrost z 3 do 4: wrażliwi cenowo pasażerowie wymusili obniżkę średnich taryf o 7% (do €46,10/pax), co przy zaledwie +1% wzroście ancillary/pax (€23,57) obniżyło marżę operacyjną z 15,3% do 11,2%.",
+            "en": "Up from 3 to 4: price-sensitive travelers forced a 7% drop in average fares (to €46.10/pax), which with just +1% ancillary/pax growth (€23.57) lowered operating margin from 15.3% to 11.2%."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Wzrost z 2 do 3: nowe obciążenia środowiskowe (ETS, SAF) oraz wzrost podatków lotniczych w Europie zaczęły podnosić próg cenowy najtańszych lotów względem kolei na najkrótszych odcinkach.",
+            "en": "Up from 2 to 3: new environmental levies (ETS, SAF) and higher European aviation taxes began raising the price floor of cheapest flights relative to rail on shortest routes."
+          }
+        },
+        "newEntrants": {
+          "score": 1,
+          "rationale": {
+            "pl": "Bez zmian (1/5) — bariera 200 mln pasażerów i brak wolnych samolotów na rynku skutecznie zamykają wejście nowym graczom.",
+            "en": "Unchanged (1/5) — a 200M-passenger scale barrier and scarce available aircraft effectively lock out new entrants."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "€9 230,0 mln (€46,10/pax)",
+            "en": "€9,230.0M (€46.10/pax)"
+          },
+          "pct": 66.2
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "€4 719,0 mln (€23,57/pax)",
+            "en": "€4,719.0M (€23.57/pax)"
+          },
+          "pct": 33.8
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "fiscalLabel": {
+        "pl": "FY2026 (01.04.2025 – 31.03.2026)",
+        "en": "FY2026 (Apr 1, 2025 – Mar 31, 2026)"
+      },
+      "era": {
+        "pl": "Era VII: Dominacja kosztowa, presja środowiskowa i szoki geopolityczne",
+        "en": "Era VII: Cost Dominance, Environmental Pressure & Geopolitical Shocks"
+      },
+      "summary": {
+        "pl": "Odbicie średnich taryf o +10% (do €50,66), 208,4 mln pasażerów (94% LF) i skompletowanie 210 maszyn B737-8200 Gamechanger wywindowały przychody o 11,4% do €15 544,3 mln oraz zysk netto do €2 173,7 mln (€2 258,7 mln przed €85 mln rezerwy na karę AGCM). Pod koniec okresu wybuchła wojna z Iranem i napięcia w cieśninie Ormuz.",
+        "en": "A +10% average fare rebound (to €50.66), 208.4M passengers (94% LF), and completing 210 Boeing 737-8200 Gamechangers lifted revenue 11.4% to €15,544.3m and net profit to €2,173.7m (€2,258.7m before an €85m AGCM fine provision). Late in the period, war with Iran and Strait of Hormuz tensions erupted."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "€15 544,3 mln",
+          "en": "€15,544.3M"
+        },
+        "revenueNum": 15.544,
+        "yoy": "+11.4%",
+        "grossMargin": "N/A (koszty op. €13 170,1 mln; paliwo €5 418,6 mln; płace €1 856,5 mln)",
+        "opMargin": "15.3%",
+        "netIncome": {
+          "pl": "€2 173,7 mln (€2 258,7 mln przed rezerwą AGCM)",
+          "en": "€2,173.7M (€2,258.7M pre-AGCM provision)"
+        },
+        "rnd": {
+          "pl": "208,4 mln PAX (+4,1%) / LF 94% (BE LF 80%) / flota 647 (210 Gamechangerów)",
+          "en": "208.4M PAX (+4.1%) / LF 94% (BE LF 80%) / fleet 647 (210 Gamechangers)"
+        },
+        "catalyst": {
+          "pl": "Odbicie taryf +10% (€50,66), 210 Gamechangerów, kara AGCM €256 mln (rezerwa €85 mln) i wojna z Iranem",
+          "en": "+10% fare rebound (€50.66), 210 Gamechangers, €256M AGCM fine (€85M provision), and Iran war"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 2,
+          "rationale": {
+            "pl": "Spadek z 3 do 2: Ryanair ugruntował ogromną przewagę kosztową (koszt ex-fuel €36/pax wobec €65 w Wizz Air, €90 w easyJet i €178 w IAG/Lufthansie), osiągając 208,4 mln pasażerów (94% LF) i €15 544,3 mln przychodów przy ograniczonych mocach krótkodystansowych w UE.",
+            "en": "Down from 3 to 2: Ryanair cemented a huge cost lead (ex-fuel cost €36/pax vs €65 at Wizz Air, €90 at easyJet, and €178 at IAG/Lufthansa), reaching 208.4M passengers (94% LF) and €15,544.3m revenue amid tight EU short-haul capacity."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Ukompletowanie 210 maszyn B737-8200 Gamechanger (647 samolotów ogółem, z pierwszymi 15–16 MAX-10 spodziewanymi wiosną 2027 r.) poprawiło ekonomikę paliwową. Presję na poziomie 4/5 utrzymują jednak monopoliści nawigacji (trasy +13% do €1 318,2 mln bez negocjacji), układy CLA, rosnące koszty środowiskowe (~€1,4 mld/rok) oraz skok ropy po wojnie z Iranem i napięciach w Ormuz.",
+            "en": "Completing 210 737-8200 Gamechangers (647 total fleet, with first 15–16 MAX-10s due spring 2027) improved fuel economics. Yet 4/5 pressure persists from monopoly ATC providers (route charges +13% to €1,318.2m with no negotiation), CLA wages, rising environmental costs (~€1.4B/yr), and oil spikes from the Iran war and Strait of Hormuz tensions."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Spadek z 4 do 3: odbicie średnich taryf o +10% do €50,66 oraz wzrost przychodów ancillary do €4 988,3 mln (€23,94/pax) podniosły zysk netto przed zdarzeniami jednorazowymi o 40% do €2 258,7 mln. Swobodę komercyjną moderują jednak krótsze okno rezerwacji oraz presja regulacyjna na rzecz konsumentów (kara €256 mln od włoskiego AGCM, z rezerwą €85 mln w FY26).",
+            "en": "Down from 4 to 3: a +10% average fare rebound to €50.66 and ancillary growth to €4,988.3m (€23.94/pax) lifted pre-one-off net profit 40% to €2,258.7m. Commercial flexibility is tempered, however, by shorter booking windows and consumer-protection enforcement (a €256M Italian AGCM fine, with an €85M provision in FY26)."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Bez zmian (3/5) — podatki środowiskowe w UE (rosnące do ok. €1,4 mld rocznie, czyli blisko 7% przychodów FY26) pogarszają konkurencyjność cenową krótkich lotów w Europie, co przy ostrożności konsumentów w obliczu napięć geopolitycznych zwiększa skłonność do odkładania wyjazdów lub wyboru transportu lądowego.",
+            "en": "Unchanged (3/5) — EU environmental charges (rising toward ~€1.4B annually, nearly 7% of FY26 revenue) worsen short-haul flight price competitiveness in Europe, increasing travelers' tendency to defer trips or pick ground transport amid geopolitical caution."
+          }
+        },
+        "newEntrants": {
+          "score": 1,
+          "rationale": {
+            "pl": "Bez zmian (1/5) — niemal całkowicie nieobciążona długiem flota własnościowa (620 Boeingów 737, po spłacie ostatniej obligacji €1,2 mld w maju 2026 r.), rating BBB+ (Fitch i S&P), niedościgniony poziom kosztów jednostkowych oraz wieloletnie kolejki u producentów samolotów czynią wejście nowego europejskiego konkurenta o porównywalnej skali praktycznie niemożliwym.",
+            "en": "Unchanged (1/5) — a virtually debt-free owned fleet (620 Boeing 737s, after repaying the last €1.2B bond in May 2026), BBB+ ratings (Fitch and S&P), unmatched unit costs, and multi-year airframer backlogs make entry by a comparable-scale European rival virtually impossible."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Przychody rozkładowe",
+            "en": "Scheduled Revenues"
+          },
+          "value": {
+            "pl": "€10 556,0 mln (€50,66/pax)",
+            "en": "€10,556.0M (€50.66/pax)"
+          },
+          "pct": 67.9
+        },
+        {
+          "name": {
+            "pl": "Przychody dodatkowe (Ancillary)",
+            "en": "Ancillary Revenues"
+          },
+          "value": {
+            "pl": "€4 988,3 mln (€23,94/pax)",
+            "en": "€4,988.3M (€23.94/pax)"
+          },
+          "pct": 32.1
+        }
+      ]
+    }
+  ]
+}

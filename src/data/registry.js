@@ -1,9 +1,11 @@
 import nvda from './companies/nvda.json';
 import spot from './companies/spot.json';
+import rya from './companies/rya.json';
 
 export const COMPANIES = [
   nvda,
-  spot
+  spot,
+  rya
 ];
 
 export function getCompanyById(id) {
