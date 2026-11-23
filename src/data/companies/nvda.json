@@ -3,502 +3,3001 @@
   "ticker": "NVDA",
   "name": "NVIDIA Corporation",
   "sector": {
-    "pl": "Półprzewodniki / Infrastruktura AI",
-    "en": "Semiconductors / AI Infrastructure"
+    "pl": "Półprzewodniki i infrastruktura AI",
+    "en": "Semiconductors & AI Infrastructure"
   },
   "theme": {
-    "bgMain": "#000000",
-    "bgCard": "#111111",
-    "bgCardElevated": "#1a1a1a",
-    "borderSubtle": "#262626",
+    "bgMain": "#0a0d08",
+    "bgCard": "#12170e",
+    "bgCardElevated": "#1b2415",
+    "borderSubtle": "#2b3a21",
     "textPrimary": "#ffffff",
-    "textSecondary": "#a3a3a3",
+    "textSecondary": "#cbd5e1",
     "accent": "#76b900",
-    "accentSoft": "rgba(118, 185, 0, 0.15)",
-    "accentContrast": "#000000",
+    "accentSoft": "rgba(118, 185, 0, 0.16)",
+    "accentContrast": "#0a0d08",
     "compareAccent": "#38bdf8"
   },
   "timeline": [
     {
-      "year": 1993,
-      "fiscalLabel": { "pl": "Założenie spółki (kwiecień 1993)", "en": "Company Founding (April 1993)" },
-      "era": { "pl": "Era Start-upu: Pierwsze akceleratory 2D/3D", "en": "Startup Era: Early 2D/3D Accelerators" },
+      "year": 1995,
+      "fiscalLabel": {
+        "pl": "1995 (rok kal. przed IPO)",
+        "en": "1995 (Pre-IPO Calendar Year)"
+      },
+      "era": {
+        "pl": "Era I: Start-up, debiut rynkowy i narodziny GPU (1993–FY2003)",
+        "en": "Era I: Start-up, IPO & Birth of the GPU (1993–FY2003)"
+      },
       "summary": {
-        "pl": "Jensen Huang, Chris Malachowsky i Curtis Priem zakładają NVIDIĘ z kapitałem 40 tys. USD, stawiając na grafikę 3D jako przyszłość PC.",
-        "en": "Jensen Huang, Chris Malachowsky, and Curtis Priem found NVIDIA with $40k seed capital, betting on 3D graphics as the next PC computing wave."
+        "pl": "Faza wczesnego start-upu przed IPO z ujemną marżą brutto (-31,0%) przy komercjalizacji pierwszych układów multimedialnych.",
+        "en": "Early pre-IPO start-up phase marked by negative gross margin (-31.0%) while commercializing first multimedia chips."
       },
       "kpis": {
-        "revenue": { "pl": "0 mln USD (Pre-revenue)", "en": "$0M (Pre-revenue)" },
-        "revenueNum": 0.001,
-        "yoy": null,
-        "grossMargin": "N/A",
+        "revenue": {
+          "pl": "1,18 mln USD",
+          "en": "$1.18M"
+        },
+        "revenueNum": 0.00118,
+        "yoy": "N/A",
+        "grossMargin": "-31.0%",
         "opMargin": "N/A",
-        "netIncome": { "pl": "Strata (etap R&D)", "en": "Loss (R&D stage)" },
-        "rnd": { "pl": "Kapitał VC (Sequoia)", "en": "VC Seed (Sequoia)" },
-        "catalyst": { "pl": "Start prac nad NV1", "en": "NV1 architecture kickoff" }
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "Model fabless / strata brutto -367 tys. USD",
+          "en": "Fabless model / Gross loss -$367K"
+        },
+        "catalyst": {
+          "pl": "Wprowadzenie pierwszych układów multimedialnych",
+          "en": "Introduction of first multimedia chips"
+        }
       },
       "forces": {
         "rivalry": {
           "score": 5,
           "rationale": {
-            "pl": "Ponad 30 producentów układów graficznych (S3, ATI, Cirrus Logic, Trident) walczy o standardy 2D/3D.",
-            "en": "Over 30 graphics chip vendors (S3, ATI, Cirrus Logic, Trident) compete fiercely for PC 2D/3D standards."
+            "pl": "Wczesny rynek układów 2D/3D był zatłoczony przez dominującego lidera 3dfx oraz ATI, S3 i Trident. NVIDIA walczyła o przetrwanie, notując ujemny zysk brutto.",
+            "en": "The early 2D/3D chip market was crowded with dominant leader 3dfx alongside ATI, S3, and Trident. NVIDIA fought for survival with negative gross profit."
           }
         },
         "suppliers": {
           "score": 4,
           "rationale": {
-            "pl": "Model fabless bez własnych fabryk; ograniczony dostęp do mocy produkcyjnych wczesnych odlewni krzemu.",
-            "en": "Fabless startup with zero scale; limited allocation access at early semiconductor foundries."
+            "pl": "Jako mały podmiot fabless przy przychodach 1,18 mln USD spółka zależała od cenników i mocy zewnętrznych odlewni krzemu bez priorytetu alokacji wafli.",
+            "en": "As a small fabless designer with $1.18M revenue, the company depended on external foundry pricing and capacity without wafer allocation priority."
           }
         },
         "buyers": {
           "score": 5,
           "rationale": {
-            "pl": "Producenci OEM PC dyktują ceny i wymuszają zgodność z własnymi standardami multimedialnymi.",
-            "en": "PC OEMs dictate component pricing and demand strict compatibility with proprietary multimedia specs."
+            "pl": "Producenci OEM komputerów PC i integratorzy kart mieli szeroki wybór alternatywnych dostawców i dyktowali warunki cenowe.",
+            "en": "PC OEMs and board integrators had a wide choice of alternative suppliers and dictated pricing terms."
           }
         },
         "substitutes": {
           "score": 4,
           "rationale": {
-            "pl": "Renderowanie programowe na CPU (Intel) oraz konsole (Sega, Nintendo) stanowią główny rynek gier.",
-            "en": "Software rendering on CPUs (Intel) and dedicated consoles (Sega, Nintendo) dominate gaming."
+            "pl": "Znaczna część obliczeń graficznych obciążała główne procesory CPU lub tańsze układy zintegrowane, ograniczając popyt na dedykowane karty 3D.",
+            "en": "Most graphics computations still burdened host CPUs or low-cost integrated circuits, limiting demand for dedicated 3D cards."
           }
         },
         "newEntrants": {
           "score": 4,
           "rationale": {
-            "pl": "Niskie bariery kapitałowe wejścia w projektowanie układów przed erą miliardowych procesów litograficznych.",
-            "en": "Relatively low capital barriers to chip design prior to multi-billion-dollar lithography nodes."
+            "pl": "Niskie bariery kapitałowe w modelu fabless dla małych projektantów korzystających z otwartych standardów PC sprzyjały pojawianiu się konkurentów.",
+            "en": "Low capital barriers in the fabless model for small designers using open PC standards allowed frequent new entrants."
           }
         }
       },
       "segments": [
-        { "name": { "pl": "Prace R&D (NV1)", "en": "R&D Stage (NV1)" }, "value": "100%", "pct": 100 }
+        {
+          "name": {
+            "pl": "Układy multimedialne 2D/3D (jednolity biznes)",
+            "en": "2D/3D Multimedia Chips (Single Business)"
+          },
+          "value": {
+            "pl": "1,18 mln USD",
+            "en": "$1.18M"
+          },
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "year": 1996,
+      "fiscalLabel": {
+        "pl": "1996 (rok kal. przed IPO)",
+        "en": "1996 (Pre-IPO Calendar Year)"
+      },
+      "era": {
+        "pl": "Era I: Start-up, debiut rynkowy i narodziny GPU (1993–FY2003)",
+        "en": "Era I: Start-up, IPO & Birth of the GPU (1993–FY2003)"
+      },
+      "summary": {
+        "pl": "Ponad trzykrotny wzrost przychodów do 3,91 mln USD (+231,0%) i osiągnięcie pierwszego dodatniego zysku brutto (marża 22,3%).",
+        "en": "Over threefold revenue surge to $3.91M (+231.0%) and achievement of first positive gross profit (22.3% gross margin)."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "3,91 mln USD",
+          "en": "$3.91M"
+        },
+        "revenueNum": 0.00391,
+        "yoy": "+231.0%",
+        "grossMargin": "22.3%",
+        "opMargin": "N/A",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "Zysk brutto +874 tys. USD",
+          "en": "Gross profit +$874K"
+        },
+        "catalyst": {
+          "pl": "Pierwszy dodatni zysk brutto i skalowanie sprzedaży układów",
+          "en": "First positive gross profit and initial chip volume scaling"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 5,
+          "rationale": {
+            "pl": "Rynek akceleratorów 3D pozostawał silnie rozdrobniony i zdominowany przez 3dfx oraz ATI, wymuszając ostrą konkurencję technologiczną i cenową.",
+            "en": "The 3D accelerator market remained fragmented and dominated by 3dfx and ATI, forcing intense technological and price competition."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Skala zamówień przy 3,91 mln USD przychodu pozostawała minimalna wobec globalnych odlewni półprzewodników.",
+            "en": "Order volume at $3.91M revenue remained minimal relative to global semiconductor foundries."
+          }
+        },
+        "buyers": {
+          "score": 5,
+          "rationale": {
+            "pl": "Odbiorcy OEM i producenci kart zachowywali pełną swobodę wyboru dostawców, ograniczając marżę brutto NVIDIA do 22,3%.",
+            "en": "OEM buyers and board makers retained full freedom to switch suppliers, capping NVIDIA's gross margin at 22.3%."
+          }
+        },
+        "substitutes": {
+          "score": 4,
+          "rationale": {
+            "pl": "Obliczenia graficzne w większości komputerów PC realizowały procesory CPU lub podstawowe układy zintegrowane.",
+            "en": "Graphics processing in most PCs was still handled by host CPUs or basic integrated chipsets."
+          }
+        },
+        "newEntrants": {
+          "score": 4,
+          "rationale": {
+            "pl": "Otwarte standardy PC i brak rozwiniętego ekosystemu oprogramowania pozwalały mniejszym zespołom projektowym wchodzić na rynek.",
+            "en": "Open PC standards and lack of a mature software ecosystem enabled smaller design teams to enter the market."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Układy graficzne i multimedialne (jednolity biznes)",
+            "en": "Graphics & Multimedia Chips (Single Business)"
+          },
+          "value": {
+            "pl": "3,91 mln USD",
+            "en": "$3.91M"
+          },
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "year": 1997,
+      "fiscalLabel": {
+        "pl": "1997 (rok kal. przed IPO)",
+        "en": "1997 (Pre-IPO Calendar Year)"
+      },
+      "era": {
+        "pl": "Era I: Start-up, debiut rynkowy i narodziny GPU (1993–FY2003)",
+        "en": "Era I: Start-up, IPO & Birth of the GPU (1993–FY2003)"
+      },
+      "summary": {
+        "pl": "Przełom komercyjny wczesnych układów 3D (RIVA 128) i opłat licencyjnych (royalty) podniósł sprzedaż o 643,1% do 29,07 mln USD.",
+        "en": "Commercial breakthrough of early 3D chips (RIVA 128) and royalty fees drove revenue up 643.1% to $29.07M."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "29,07 mln USD",
+          "en": "$29.07M"
+        },
+        "revenueNum": 0.02907,
+        "yoy": "+643.1%",
+        "grossMargin": "27.0%",
+        "opMargin": "N/A",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "Zysk brutto +7,85 mln USD / wzrost royalty",
+          "en": "Gross profit +$7.85M / royalty growth"
+        },
+        "catalyst": {
+          "pl": "Przełom komercyjny wczesnych układów 3D i wzrost opłat licencyjnych",
+          "en": "Commercial breakthrough of early 3D chips and rising royalties"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 5,
+          "rationale": {
+            "pl": "Mimo skoku przychodów do 29,07 mln USD spółka rywalizowała z liderem 3dfx (Voodoo) oraz ATI, S3 i Trident w wojnie standardów 3D.",
+            "en": "Despite surging to $29.07M revenue, the firm battled market leader 3dfx (Voodoo) alongside ATI, S3, and Trident in a 3D standards war."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Rosnący wolumen poprawiał relacje z odlewniami, ale przy skali poniżej 30 mln USD spółka nie dysponowała siłą negocjacyjną wobec dostawców krzemu.",
+            "en": "Growing volume improved foundry ties, yet below $30M revenue the company lacked bargaining power over silicon suppliers."
+          }
+        },
+        "buyers": {
+          "score": 5,
+          "rationale": {
+            "pl": "Producenci komputerów PC i kart graficznych wywierali silny nacisk cenowy, utrzymując marżę brutto na poziomie 27,0%.",
+            "en": "PC and graphics card makers exerted heavy pricing pressure, capping gross margin at 27.0%."
+          }
+        },
+        "substitutes": {
+          "score": 4,
+          "rationale": {
+            "pl": "Upowszechnienie interfejsów DirectX i OpenGL zaczęło wspierać dedykowane akceleratory, lecz CPU i zintegrowana grafika wciąż dominowały w biurowych PC.",
+            "en": "Adoption of DirectX and OpenGL began supporting dedicated accelerators, though CPUs and integrated graphics still dominated office PCs."
+          }
+        },
+        "newEntrants": {
+          "score": 4,
+          "rationale": {
+            "pl": "Model fabless oraz standaryzacja API DirectX utrzymywały relatywnie niski próg wejścia dla mniejszych projektantów układów 3D.",
+            "en": "The fabless model and DirectX API standardization kept entry barriers relatively low for smaller 3D chip designers."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Sprzedaż układów 3D i opłaty royalty (jednolity biznes)",
+            "en": "3D Chip Sales & Royalties (Single Business)"
+          },
+          "value": {
+            "pl": "29,07 mln USD",
+            "en": "$29.07M"
+          },
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "year": 1998,
+      "fiscalLabel": {
+        "pl": "1998 (okres przejściowy: 1M do 31.01.98; 9M do 25.10.98)",
+        "en": "1998 (Transition: 1M to Jan 31, 98; 9M to Oct 25, 98)"
+      },
+      "era": {
+        "pl": "Era I: Start-up, debiut rynkowy i narodziny GPU (1993–FY2003)",
+        "en": "Era I: Start-up, IPO & Birth of the GPU (1993–FY2003)"
+      },
+      "summary": {
+        "pl": "Przesunięcie końca roku obrotowego na styczeń oraz rejestracja oferty publicznej Form S-1 przy skokowym wzroście sprzedaży linii RIVA TNT.",
+        "en": "Fiscal year-end shift to January and Form S-1 IPO filing amid rapid sales expansion of the RIVA TNT product line."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "92,70 mln USD (9M do 25.10.98)",
+          "en": "$92.70M (9M ended Oct 25, 98)"
+        },
+        "revenueNum": 0.0927,
+        "yoy": "N/A (zmiana kalendarza)",
+        "grossMargin": "26.8%",
+        "opMargin": "N/A",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "1M do 31.01.98: 5,54 mln USD / rejestracja S-1",
+          "en": "1M to Jan 31, 98: $5.54M / Form S-1 filing"
+        },
+        "catalyst": {
+          "pl": "Zmiana roku obrotowego na styczeń i przygotowanie do IPO na NASDAQ",
+          "en": "Fiscal year-end shift to January and preparation for NASDAQ IPO"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 5,
+          "rationale": {
+            "pl": "Intensywna rywalizacja między rodziną RIVA TNT a układami 3dfx Voodoo2 i ATI Rage utrzymywała najwyższy poziom presji w sektorze.",
+            "en": "Fierce rivalry between the RIVA TNT family, 3dfx Voodoo2, and ATI Rage kept competitive intensity at maximum levels."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Gwałtownie rosnące zamówienia wymagały zabezpieczenia mocy produkcyjnych w zewnętrznych odlewniach bez wsparcia dużego bilansu.",
+            "en": "Rapidly rising orders required securing external foundry capacity without the backing of a large balance sheet."
+          }
+        },
+        "buyers": {
+          "score": 5,
+          "rationale": {
+            "pl": "Silni producenci OEM PC wykorzystywali konkurencję między dostawcami grafiki, utrzymując marżę brutto w okolicach 26,8%.",
+            "en": "Major PC OEMs leveraged competition among graphics vendors, keeping gross margin near 26.8%."
+          }
+        },
+        "substitutes": {
+          "score": 4,
+          "rationale": {
+            "pl": "W segmencie korporacyjnym i budżetowym zintegrowana grafika oraz przetwarzanie przez CPU stanowiły wystarczający substytut dla kart 3D.",
+            "en": "In corporate and budget PCs, integrated graphics and CPU software rendering served as sufficient substitutes for 3D cards."
+          }
+        },
+        "newEntrants": {
+          "score": 4,
+          "rationale": {
+            "pl": "Rynek akceleratorów 3D przyciągał wielu mniejszych konkurentów projektujących układy zgodne z DirectX w modelu fabless.",
+            "en": "The 3D accelerator space attracted numerous smaller fabless competitors designing DirectX-compliant chips."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Układy graficzne (okres przejściowy 9M 1998)",
+            "en": "Graphics Processors (9M 1998 Transition)"
+          },
+          "value": {
+            "pl": "92,70 mln USD",
+            "en": "$92.70M"
+          },
+          "pct": 100.0
+        }
       ]
     },
     {
       "year": 1999,
-      "fiscalLabel": { "pl": "FY2000 (IPO i premiera GeForce 256)", "en": "FY2000 (IPO & GeForce 256 Launch)" },
-      "era": { "pl": "Narodziny GPU: Definicja nowej kategorii", "en": "Birth of the GPU: Category Creation" },
+      "fiscalLabel": {
+        "pl": "FY1999 (luty 1998 – 31.01.1999)",
+        "en": "FY1999 (Feb 1998 – Jan 31, 1999)"
+      },
+      "era": {
+        "pl": "Era I: Start-up, debiut rynkowy i narodziny GPU (1993–FY2003)",
+        "en": "Era I: Start-up, IPO & Birth of the GPU (1993–FY2003)"
+      },
       "summary": {
-        "pl": "Debiut na NASDAQ oraz premiera GeForce 256 – pierwszego na świecie układu zwanego GPU (sprzętowy Transform & Lighting).",
-        "en": "NASDAQ IPO and launch of GeForce 256, marketed as the world's first GPU with integrated hardware Transform & Lighting."
+        "pl": "Debiut giełdowy na NASDAQ 22 stycznia 1999 roku (pozyskanie 42 mln USD) przy przychodach 158,24 mln USD i poprawie marży brutto do 30,6%.",
+        "en": "NASDAQ IPO on January 22, 1999 ($42M raised) with $158.24M revenue and gross margin expanding to 30.6%."
       },
       "kpis": {
-        "revenue": { "pl": "374,5 mln USD", "en": "$374.5M" },
-        "revenueNum": 0.375,
-        "yoy": "+137%",
-        "grossMargin": "37.2%",
-        "opMargin": "14.8%",
-        "netIncome": { "pl": "38,1 mln USD", "en": "$38.1M" },
-        "rnd": { "pl": "48,0 mln USD", "en": "$48.0M" },
-        "catalyst": { "pl": "GeForce 256 (pierwsze GPU)", "en": "GeForce 256 (first GPU)" }
+        "revenue": {
+          "pl": "158,24 mln USD",
+          "en": "$158.24M"
+        },
+        "revenueNum": 0.15824,
+        "yoy": "N/A (zmiana kalendarza)",
+        "grossMargin": "30.6%",
+        "opMargin": "N/A",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "IPO NASDAQ: 42 mln USD / Zysk brutto +48,49 mln USD",
+          "en": "NASDAQ IPO: $42M / Gross profit +$48.49M"
+        },
+        "catalyst": {
+          "pl": "Debiut na NASDAQ (22.01.1999) oraz premiery TNT2 i GeForce 256 w 1999 r.",
+          "en": "NASDAQ IPO (Jan 22, 1999) and 1999 launches of TNT2 and GeForce 256"
+        }
       },
       "forces": {
         "rivalry": {
-          "score": 4,
+          "score": 5,
           "rationale": {
-            "pl": "Zacięta rywalizacja z 3dfx (Voodoo) oraz ATI, ale 6-miesięczny cykl wydawniczy NVIDII zaczyna eliminować rywali.",
-            "en": "Intense rivalry with 3dfx (Voodoo) and ATI, though NVIDIA's 6-month product cadence starts outpacing peers."
+            "pl": "Spółka ścierała się bezpośrednio z mocno okopanym 3dfx i ATI na rynku PC; dopiero kończący rok kalendarzowy 1999 debiut GeForce 256 miał przechylić szalę.",
+            "en": "NVIDIA clashed head-on with entrenched rivals 3dfx and ATI in the PC market; only the late-1999 GeForce 256 launch began tipping the balance."
           }
         },
         "suppliers": {
-          "score": 3,
+          "score": 4,
           "rationale": {
-            "pl": "Zacieśnienie strategicznego partnerstwa z TSMC poprawia uzyski wafli i stabilizuje dostawy.",
-            "en": "Deepening strategic foundry partnership with TSMC improves wafer yields and supply predictability."
+            "pl": "Zależność od zewnętrznych odlewni krzemu utrzymywała się na wysokim poziomie przy wciąż umiarkowanym wolumenie zamówień.",
+            "en": "Reliance on external silicon foundries remained high given still-moderate order volumes."
           }
         },
         "buyers": {
           "score": 4,
           "rationale": {
-            "pl": "Silna pozycja OEM (Dell, Compaq), lecz rośnie bezpośredni popyt entuzjastów gier PC.",
-            "en": "Strong PC OEM concentration (Dell, Compaq), offset by rising direct enthusiast demand."
+            "pl": "Udany debiut giełdowy na NASDAQ i renoma układów TNT poprawiły wiarygodność wobec OEM, podnosząc marżę brutto do 30,6%.",
+            "en": "A successful NASDAQ IPO and the reputation of TNT chips improved OEM credibility, lifting gross margin to 30.6%."
           }
         },
         "substitutes": {
-          "score": 3,
+          "score": 4,
           "rationale": {
-            "pl": "Sprzętowa akceleracja 3D staje się wymogiem gier PC; CPU nie jest już w stanie zastąpić GPU.",
-            "en": "Hardware 3D acceleration becomes mandatory for PC gaming; CPUs can no longer substitute GPUs."
+            "pl": "Przed masowym wdrożeniem GeForce 256 procesory CPU nadal wykonywały istotną część operacji geometrycznych w grafice 3D.",
+            "en": "Prior to mass GeForce 256 adoption, CPUs still handled a substantial share of 3D geometry calculations."
+          }
+        },
+        "newEntrants": {
+          "score": 4,
+          "rationale": {
+            "pl": "Próg wejścia dla mniejszych projektantów zgodnych z DirectX pozostawał niski, choć kapitał z IPO przyspieszył wyścig R&D.",
+            "en": "Entry barriers for smaller DirectX chip designers remained low, though IPO proceeds accelerated NVIDIA's R&D pace."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Sprzedaż produktów graficznych",
+            "en": "Graphics Product Sales"
+          },
+          "value": {
+            "pl": "151,41 mln USD",
+            "en": "$151.41M"
+          },
+          "pct": 95.7
+        },
+        {
+          "name": {
+            "pl": "Opłaty licencyjne i pozostałe (royalty)",
+            "en": "Royalties & Other Revenue"
+          },
+          "value": {
+            "pl": "6,82 mln USD",
+            "en": "$6.82M"
+          },
+          "pct": 4.3
+        }
+      ]
+    },
+    {
+      "year": 2000,
+      "fiscalLabel": {
+        "pl": "FY2000 (01.02.1999 – 30.01.2000)",
+        "en": "FY2000 (Feb 1, 1999 – Jan 30, 2000)"
+      },
+      "era": {
+        "pl": "Era I: Start-up, debiut rynkowy i narodziny GPU (1993–FY2003)",
+        "en": "Era I: Start-up, IPO & Birth of the GPU (1993–FY2003)"
+      },
+      "summary": {
+        "pl": "Komercjalizacja GeForce 256 („pierwszego GPU”) oraz wejście na rynek stacji roboczych CAD z linią Quadro podniosły sprzedaż o 136,7% do 374,51 mln USD.",
+        "en": "Commercialization of GeForce 256 ('the first GPU') and entry into CAD workstations with Quadro boosted revenue 136.7% to $374.51M."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "374,51 mln USD",
+          "en": "$374.51M"
+        },
+        "revenueNum": 0.37451,
+        "yoy": "+136.7%",
+        "grossMargin": "37.9%",
+        "opMargin": "N/A",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "Zysk brutto +141,84 mln USD / debiut Quadro",
+          "en": "Gross profit +$141.84M / Quadro launch"
+        },
+        "catalyst": {
+          "pl": "Sukces GeForce 256 (przewaga nad 3dfx) i uruchomienie linii Quadro",
+          "en": "GeForce 256 success (outpacing 3dfx) and launch of Quadro workstation line"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "GeForce 256 (50% szybszy od 3dfx) oraz TNT2 pozwoliły wyprzedzić rywali, choć ATI intensywnie rozwijało konkurencyjną linię Radeon.",
+            "en": "GeForce 256 (50% faster than 3dfx) and TNT2 put NVIDIA ahead, though ATI aggressively developed its competing Radeon line."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Ponad dwukrotny skok zamówień poprawił pozycję u partnerów produkcyjnych, ale migracja do bardziej złożonych układów podtrzymywała zależność od odlewni.",
+            "en": "More than doubling orders improved foundry standing, yet transitioning to more complex dies maintained reliance on wafer suppliers."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Wejście do profesjonalnych stacji roboczych z Quadro zdywersyfikowało bazę klientów i podniosło marżę brutto o ponad 7 pkt proc. do 37,9%.",
+            "en": "Entering professional workstations with Quadro diversified buyers and raised gross margin by over 7 percentage points to 37.9%."
+          }
+        },
+        "substitutes": {
+          "score": 4,
+          "rationale": {
+            "pl": "Przejęcie transformacji i oświetlenia (T&L) przez GPU osłabiło rolę CPU w grach, lecz zintegrowane układy w płytach głównych dominowały w segmencie biurowym.",
+            "en": "Offloading transform and lighting (T&L) to the GPU reduced CPU reliance in gaming, while integrated motherboard graphics held the office segment."
           }
         },
         "newEntrants": {
           "score": 3,
           "rationale": {
-            "pl": "Rosnąca złożoność sterowników DirectX/OpenGL podnosi próg wejścia dla nowych graczy.",
-            "en": "Growing DirectX/OpenGL driver stack complexity raises technical barriers for new entrants."
+            "pl": "Zdefiniowanie nowej kategorii GPU oraz rosnące koszty utrzymania sterowników dla Windows i Linuxa podniosły próg wejścia dla nowych firm.",
+            "en": "Defining the GPU category and rising driver maintenance costs for Windows and Linux raised barriers to new entrants."
           }
         }
       },
       "segments": [
-        { "name": { "pl": "Karty graficzne PC (GeForce/RIVA)", "en": "PC Graphics (GeForce/RIVA)" }, "value": "374.5 mln USD", "pct": 100 }
+        {
+          "name": {
+            "pl": "Układy GPU (GeForce, TNT2, Quadro)",
+            "en": "GPU Products (GeForce, TNT2, Quadro)"
+          },
+          "value": {
+            "pl": "374,51 mln USD",
+            "en": "$374.51M"
+          },
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "year": 2001,
+      "fiscalLabel": {
+        "pl": "FY2001 (31.01.2000 – 28.01.2001)",
+        "en": "FY2001 (Jan 31, 2000 – Jan 28, 2001)"
+      },
+      "era": {
+        "pl": "Era I: Start-up, debiut rynkowy i narodziny GPU (1993–FY2003)",
+        "en": "Era I: Start-up, IPO & Birth of the GPU (1993–FY2003)"
+      },
+      "summary": {
+        "pl": "Przejęcie kluczowych aktywów 3dfx Interactive, kontrakt z Microsoftem na układ do konsoli Xbox oraz niemal podwojenie przychodów do 735,26 mln USD (+96,3%).",
+        "en": "Acquisition of key 3dfx Interactive assets, Microsoft Xbox chip contract, and near-doubling of revenue to $735.26M (+96.3%)."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "735,26 mln USD",
+          "en": "$735.26M"
+        },
+        "revenueNum": 0.73526,
+        "yoy": "+96.3%",
+        "grossMargin": "37.1%",
+        "opMargin": "N/A",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "Największy klient TSMC w 2001 r. / umowa Xbox",
+          "en": "TSMC's largest customer in 2001 / Xbox contract"
+        },
+        "catalyst": {
+          "pl": "Konsolidacja aktywów 3dfx oraz kontrakt z Microsoftem na Xbox (15.12.2000)",
+          "en": "Consolidation of 3dfx assets and Microsoft Xbox contract (Dec 15, 2000)"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Przejęcie aktywów słabnącego 3dfx wyeliminowało głównego rywala, ale walka duopolistyczna z ATI Radeon na rynku PC pozostała ostra.",
+            "en": "Acquiring failing 3dfx's assets eliminated a primary rival, yet duopolistic competition against ATI Radeon in PCs remained intense."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "W 2001 roku NVIDIA została największym pojedynczym klientem TSMC, jednak koncentracja produkcji w jednej głównej odlewni utrzymywała ryzyko podażowe.",
+            "en": "NVIDIA became TSMC's largest single customer in 2001, yet concentrating manufacturing at one primary foundry preserved supply risk."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Kontrakt na dostawę układów do konsoli Xbox zdywersyfikował sprzedaż poza PC, ale wprowadził odbiorcę (Microsoft) o ogromnej sile przetargowej.",
+            "en": "The Xbox chip supply deal diversified sales beyond PCs, but introduced a buyer (Microsoft) with immense bargaining leverage."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Przyjęcie dedykowanego GPU zarówno przez branżę PC, jak i nową konsolę Xbox potwierdziło, że CPU nie zastąpi wyspecjalizowanego procesora graficznego.",
+            "en": "Adoption of dedicated GPUs by both the PC industry and the new Xbox console confirmed that CPUs could not replace specialized graphics processors."
+          }
+        },
+        "newEntrants": {
+          "score": 3,
+          "rationale": {
+            "pl": "Upadek lub marginalizacja mniejszych firm 3D i rosnące koszty projektowania dla kolejnych generacji DirectX skutecznie odstraszały nowych graczy.",
+            "en": "The collapse or marginalization of smaller 3D vendors and rising design costs for new DirectX generations deterred new entrants."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "GPU (PC, stacje robocze Quadro, Xbox)",
+            "en": "GPUs (PC, Quadro Workstations, Xbox)"
+          },
+          "value": {
+            "pl": "735,26 mln USD",
+            "en": "$735.26M"
+          },
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "year": 2002,
+      "fiscalLabel": {
+        "pl": "FY2002 (29.01.2001 – 27.01.2002)",
+        "en": "FY2002 (Jan 29, 2001 – Jan 27, 2002)"
+      },
+      "era": {
+        "pl": "Era I: Start-up, debiut rynkowy i narodziny GPU (1993–FY2003)",
+        "en": "Era I: Start-up, IPO & Birth of the GPU (1993–FY2003)"
+      },
+      "summary": {
+        "pl": "Przekroczenie progu 1 mld USD przychodów (1,37 mld USD, +86,3%) dzięki masowym dostawom układów do konsoli Xbox oraz ekspansji GeForce i nForce.",
+        "en": "Surpassed $1B revenue milestone ($1.37B, +86.3%) driven by mass Xbox chip shipments alongside GeForce and nForce expansion."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "1,37 mld USD",
+          "en": "$1.37B"
+        },
+        "revenueNum": 1.36947,
+        "yoy": "+86.3%",
+        "grossMargin": "37.9%",
+        "opMargin": "N/A",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "Rozbudowa do 5 linii produktowych (w tym nForce)",
+          "en": "Expansion to 5 product lines (incl. nForce)"
+        },
+        "catalyst": {
+          "pl": "Masowe dostawy układów do konsoli Xbox oraz wejście w chipsety nForce",
+          "en": "Mass chip shipments for Xbox console and entry into nForce chipsets"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Trwał wyścig technologiczny między serią GeForce a ATI Radeon w desktopach i laptopach (GeForce Go), mimo wzrostu sprzedaży NVIDIA o 86,3%.",
+            "en": "A fierce technology race continued between GeForce and ATI Radeon in desktops and notebooks (GeForce Go), despite NVIDIA's 86.3% revenue growth."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Status największego klienta TSMC przy skali zamówień powyżej 1,3 mld USD zapewnił silniejszą pozycję negocjacyjną i marżę brutto 37,9%.",
+            "en": "Status as TSMC's largest customer with over $1.3B in scale secured stronger pricing terms and a 37.9% gross margin."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Koncentracja dużych wolumenów w rękach Microsoftu (Xbox) i głównych producentów PC utrzymywała silną presję cenową odbiorców.",
+            "en": "Concentration of large volumes with Microsoft (Xbox) and major PC OEMs maintained strong buyer pricing pressure."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Zintegrowana grafika obsługiwała podstawowe PC, ale w grach, konsolach i profesjonalnym CAD dedykowany GPU pozostawał bezkonkurencyjny.",
+            "en": "Integrated graphics served basic PCs, but dedicated GPUs remained unmatched in gaming, consoles, and professional CAD."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Skala biznesu przekraczająca 1,3 mld USD, szerokość pięciu linii produktowych oraz przewagi architektoniczne zamknęły rynek dla nowych podmiotów.",
+            "en": "Business scale exceeding $1.3B, breadth across five product lines, and architectural leads closed the high-end GPU market to newcomers."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "GPU i MCP (GeForce, nForce, Quadro, Xbox)",
+            "en": "GPUs & MCPs (GeForce, nForce, Quadro, Xbox)"
+          },
+          "value": {
+            "pl": "1,37 mld USD",
+            "en": "$1.37B"
+          },
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "year": 2003,
+      "fiscalLabel": {
+        "pl": "FY2003 (28.01.2002 – 26.01.2003)",
+        "en": "FY2003 (Jan 28, 2002 – Jan 26, 2003)"
+      },
+      "era": {
+        "pl": "Era I: Start-up, debiut rynkowy i narodziny GPU (1993–FY2003)",
+        "en": "Era I: Start-up, IPO & Birth of the GPU (1993–FY2003)"
+      },
+      "summary": {
+        "pl": "Wzrost przychodów o 39,4% do 1,91 mld USD przy silnej kompresji marży brutto (z 37,9% do 30,2%) wskutek sporu cenowego z Microsoftem i trudnej premiery GeForce FX.",
+        "en": "Revenue grew 39.4% to $1.91B, but gross margin compressed from 37.9% to 30.2% due to Microsoft Xbox pricing disputes and a rocky GeForce FX launch."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "1,91 mld USD",
+          "en": "$1.91B"
+        },
+        "revenueNum": 1.90945,
+        "yoy": "+39.4%",
+        "grossMargin": "30.2%",
+        "opMargin": "4.3%",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "Migracja do litografii 0,13 µm / zysk op. 82,2 mln USD",
+          "en": "Migration to 0.13 µm node / Op. income $82.2M"
+        },
+        "catalyst": {
+          "pl": "Spór cenowy z Microsoftem o Xbox oraz premiera GeForce FX w procesie 0,13 µm",
+          "en": "Xbox pricing dispute with Microsoft and 0.13 µm GeForce FX launch"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Konfrontacja z ATI Radeon nasiliła się w trakcie problematycznej premiery GeForce FX (listopad 2002), ograniczając marżę operacyjną do 4,3%.",
+            "en": "Competition with ATI Radeon intensified during the troubled GeForce FX launch (November 2002), squeezing operating margin to 4.3%."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Przejście na proces technologiczny 0,13 mikrona wiązało się z wyzwaniami wdrożeniowymi, ale status kluczowego klienta TSMC równoważył relacje z odlewnią.",
+            "en": "Transitioning to the 0.13-micron node posed yield challenges, though key TSMC customer status balanced foundry relations."
+          }
+        },
+        "buyers": {
+          "score": 5,
+          "rationale": {
+            "pl": "Pozew Microsoftu z 2002 roku o obniżkę cen układów do Xboxa oraz rabaty dla OEM zbiły marżę brutto o blisko 8 pkt proc. do 30,2%.",
+            "en": "Microsoft's 2002 lawsuit demanding lower Xbox chip prices alongside OEM discounts drove gross margin down nearly 8 points to 30.2%."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Postępująca integracja podstawowej grafiki na płytach głównych nie zagrażała rynkowi wydajnych kart gamingowych ani profesjonalnej linii Quadro.",
+            "en": "Growing integration of basic graphics on motherboards did not threaten high-performance gaming cards or the professional Quadro line."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Koszty wdrożenia litografii 0,13 mikrona i własności intelektualnej wymaganej w programowalnych GPU utrzymywały zaporową barierę wejścia.",
+            "en": "Costs of 0.13-micron node migration and IP required for programmable GPUs maintained a prohibitive entry barrier."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "GPU i MCP (GeForce, nForce, Quadro, Xbox)",
+            "en": "GPUs & MCPs (GeForce, nForce, Quadro, Xbox)"
+          },
+          "value": {
+            "pl": "1,91 mld USD",
+            "en": "$1.91B"
+          },
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "year": 2004,
+      "fiscalLabel": {
+        "pl": "FY2004 (27.01.2003 – 25.01.2004)",
+        "en": "FY2004 (Jan 27, 2003 – Jan 25, 2004)"
+      },
+      "era": {
+        "pl": "Era II: Duopol z ATI, ekspansja nForce i kryzysy licencyjne (FY2004–FY2010)",
+        "en": "Era II: ATI Duopoly, nForce Expansion & Licensing Crises (FY2004–FY2010)"
+      },
+      "summary": {
+        "pl": "Pierwszy po IPO spadek przychodów (-4,5% do 1,82 mld USD) i dołek marży operacyjnej (2,7%) po utracie kontraktu na Xbox 360 na rzecz ATI.",
+        "en": "First post-IPO revenue decline (-4.5% to $1.82B) and operating margin trough (2.7%) after losing the Xbox 360 contract to ATI."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "1,82 mld USD",
+          "en": "$1.82B"
+        },
+        "revenueNum": 1.82295,
+        "yoy": "-4.5%",
+        "grossMargin": "29.0%",
+        "opMargin": "2.7%",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "Zysk operacyjny 49,79 mln USD (dołek po IPO)",
+          "en": "Operating income $49.79M (post-IPO trough)"
+        },
+        "catalyst": {
+          "pl": "Utrata kontraktu na konsolę Xbox 360 na rzecz ATI oraz słabość serii GeForce FX",
+          "en": "Loss of Xbox 360 console contract to ATI and GeForce FX product weakness"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 5,
+          "rationale": {
+            "pl": "Problemy generacji GeForce FX pozwoliły ATI przejąć udziały w PC oraz zdobyć kontrakt na Xbox 360, wywołując spadek przychodów NVIDIA o 4,5%.",
+            "en": "GeForce FX struggles enabled ATI to capture PC market share and win the Xbox 360 design, triggering a 4.5% revenue drop at NVIDIA."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Przy niższych zamówieniach na układy graficzne stabilna dostępność mocy wytwórczych nie tworzyła dodatkowego napięcia po stronie foundry.",
+            "en": "With lower graphics chip orders, stable foundry capacity availability created no additional supply-side strain."
+          }
+        },
+        "buyers": {
+          "score": 5,
+          "rationale": {
+            "pl": "Silni odbiorcy (Microsoft i najwięksi OEM PC) wykorzystali słabszą pozycję produktową NVIDIA, spychając marżę brutto do 29,0% i operacyjną do 2,7%.",
+            "en": "Powerful buyers (Microsoft and top PC OEMs) capitalized on NVIDIA's product weakness, compressing gross margin to 29.0% and operating margin to 2.7%."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "W komputerach biurowych rosła rola zintegrowanej grafiki, jednak w segmencie graczy i profesjonalistów dyskretne karty pozostawały niezbędne.",
+            "en": "Integrated graphics gained ground in office PCs, though discrete cards remained essential for gamers and professionals."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Walka pomiędzy NVIDIA a ATI pochłaniała tak wysokie budżety R&D, że żaden nowy gracz nie był w stanie zagrozić duopolowi.",
+            "en": "The battle between NVIDIA and ATI consumed such massive R&D budgets that no newcomer could threaten the duopoly."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "GPU, MCP (nForce) oraz Xbox",
+            "en": "GPUs, MCPs (nForce) & Xbox"
+          },
+          "value": {
+            "pl": "1,82 mld USD",
+            "en": "$1.82B"
+          },
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "year": 2005,
+      "fiscalLabel": {
+        "pl": "FY2005 (26.01.2004 – 30.01.2005)",
+        "en": "FY2005 (Jan 26, 2004 – Jan 30, 2005)"
+      },
+      "era": {
+        "pl": "Era II: Duopol z ATI, ekspansja nForce i kryzysy licencyjne (FY2004–FY2010)",
+        "en": "Era II: ATI Duopoly, nForce Expansion & Licensing Crises (FY2004–FY2010)"
+      },
+      "summary": {
+        "pl": "Odbicie przychodów o 10,3% do 2,01 mld USD i poprawa marży brutto do 32,3% dzięki udanej serii GeForce 6 oraz ekspansji chipsetów nForce3 i nForce4.",
+        "en": "Revenue rebounded 10.3% to $2.01B with gross margin rising to 32.3%, propelled by the GeForce 6 series and nForce3/nForce4 chipset expansion."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "2,01 mld USD",
+          "en": "$2.01B"
+        },
+        "revenueNum": 2.01003,
+        "yoy": "+10.3%",
+        "grossMargin": "32.3%",
+        "opMargin": "4.7%",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "Zysk operacyjny 95,18 mln USD (+91,2% r/r)",
+          "en": "Operating income $95.18M (+91.2% YoY)"
+        },
+        "catalyst": {
+          "pl": "Premiera serii GeForce 6 oraz dynamiczny wzrost chipsetów nForce3 i nForce4",
+          "en": "Launch of GeForce 6 series and rapid growth of nForce3 and nForce4 chipsets"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Premiera udanej serii GeForce 6 oraz dynamiczny wzrost chipsetów nForce3 i nForce4 przywróciły wzrost przychodów (+10,3%) w starciu z ATI.",
+            "en": "The launch of the successful GeForce 6 series and rapid growth of nForce3 and nForce4 chipsets restored revenue growth (+10.3%) against ATI."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Odbudowa wolumenu powyżej 2 mld USD utrzymała stabilne relacje kosztowe z zewnętrznymi odlewniami krzemu.",
+            "en": "Rebuilding volume above $2B maintained stable cost relations with external silicon foundries."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Silny popyt na platformy nForce i malejące uzależnienie od kontraktu konsolowego pozwoliły podnieść marżę brutto z 29,0% do 32,3%.",
+            "en": "Strong demand for nForce platforms and reduced reliance on console contracts lifted gross margin from 29.0% to 32.3%."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Ekspansja w segmencie chipsetów płyt głównych (MCP/nForce) stanowiła odpowiedź na rosnącą integrację podsystemów w komputerach PC.",
+            "en": "Expansion into motherboard chipsets (MCP/nForce) countered increasing subsystem integration in PCs."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Rozbudowa portfela o GPU, MCP oraz układy WMP dla urządzeń przenośnych dodatkowo utrudniła potencjalnym konkurentom wejście w ekosystem NVIDIA.",
+            "en": "Expanding the portfolio across GPUs, MCPs, and wireless media processors (WMP) further deterred potential entrants."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "GPU, MCP (nForce) i układy przenośne WMP",
+            "en": "GPUs, MCPs (nForce) & Handheld WMP"
+          },
+          "value": {
+            "pl": "2,01 mld USD",
+            "en": "$2.01B"
+          },
+          "pct": 100.0
+        }
       ]
     },
     {
       "year": 2006,
-      "fiscalLabel": { "pl": "FY2007 (Premiera architektury CUDA)", "en": "FY2007 (CUDA Architecture Launch)" },
-      "era": { "pl": "Zwrot ku GPGPU: Fundament fosy programowej", "en": "GPGPU Pivot: Building the Software Moat" },
+      "fiscalLabel": {
+        "pl": "FY2006 (31.01.2005 – 29.01.2006)",
+        "en": "FY2006 (Jan 31, 2005 – Jan 29, 2006)"
+      },
+      "era": {
+        "pl": "Era II: Duopol z ATI, ekspansja nForce i kryzysy licencyjne (FY2004–FY2010)",
+        "en": "Era II: ATI Duopoly, nForce Expansion & Licensing Crises (FY2004–FY2010)"
+      },
       "summary": {
-        "pl": "Wprowadzenie architektury G80 i platformy CUDA, umożliwiającej programowanie GPU w języku C do obliczeń ogólnych, kosztem krótkoterminowej marży.",
-        "en": "Introduction of G80 unified shaders and CUDA, allowing developers to program GPUs in C for general computing despite short-term margin drag."
+        "pl": "Skok rentowności: marża brutto wzrosła o 6 pkt proc. do 38,3%, a marża operacyjna potroiła się do 14,2% dzięki serii GeForce 7 i technologii multi-GPU SLI.",
+        "en": "Profitability surge: gross margin climbed 6 points to 38.3% and operating margin tripled to 14.2%, driven by GeForce 7 and multi-GPU SLI."
       },
       "kpis": {
-        "revenue": { "pl": "3,07 mld USD", "en": "$3.07B" },
-        "revenueNum": 3.07,
-        "yoy": "+29%",
-        "grossMargin": "42.5%",
-        "opMargin": "16.3%",
-        "netIncome": { "pl": "448,8 mln USD", "en": "$448.8M" },
-        "rnd": { "pl": "546,0 mln USD", "en": "$546.0M" },
-        "catalyst": { "pl": "GeForce 8800 (G80) & CUDA", "en": "GeForce 8800 (G80) & CUDA" }
+        "revenue": {
+          "pl": "2,38 mld USD",
+          "en": "$2.38B"
+        },
+        "revenueNum": 2.37569,
+        "yoy": "+18.2%",
+        "grossMargin": "38.3%",
+        "opMargin": "14.2%",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "R&D: 357,1 mln USD (15,0% przych.)",
+          "en": "R&D: $357.1M (15.0% of rev.)"
+        },
+        "catalyst": {
+          "pl": "Sukces rynkowy serii GeForce 7, platform SLI oraz skali chipsetów nForce",
+          "en": "Market success of GeForce 7 series, SLI platforms, and nForce chipset scale"
+        }
       },
       "forces": {
         "rivalry": {
-          "score": 3,
+          "score": 4,
           "rationale": {
-            "pl": "AMD przejmuje ATI za 5,4 mld USD; rynek konsoliduje się do duopolu NVIDIA–AMD.",
-            "en": "AMD acquires ATI for $5.4B; discrete graphics consolidates into an NVIDIA–AMD duopoly."
+            "pl": "Mimo ostrego starcia z ATI na rynku desktopów i notebooków, sukces serii GeForce 7 i technologii SLI wyraźnie umocnił przewagę NVIDIA.",
+            "en": "Despite fierce competition from ATI in desktops and notebooks, the success of GeForce 7 and SLI technology strengthened NVIDIA's lead."
           }
         },
         "suppliers": {
           "score": 3,
           "rationale": {
-            "pl": "TSMC pozostaje główną odlewnią; większa skala zamówień wzmacnia pozycję NVIDII.",
-            "en": "TSMC remains primary foundry; larger wafer volume strengthens NVIDIA's allocation priority."
+            "pl": "Sprawne zarządzanie kosztami produkcji przy nakładach R&D 357,1 mln USD pozwoliło podnieść marżę brutto o 6 pkt proc. do 38,3%.",
+            "en": "Disciplined manufacturing cost control alongside $357.1M in R&D lifted gross margin by 6 percentage points to 38.3%."
           }
         },
         "buyers": {
-          "score": 3,
+          "score": 4,
           "rationale": {
-            "pl": "Dywersyfikacja przychodów o profesjonalne stacje robocze Quadro i chipsety nForce zmniejsza presję OEM.",
-            "en": "Revenue diversification into Quadro workstations and nForce chipsets reduces PC OEM pricing pressure."
+            "pl": "Wzrost udziału entuzjastów gamingu (SLI) i stacji roboczych podniósł marżę operacyjną do 14,2%, choć w masowym segmencie OEM trwała presja cenowa.",
+            "en": "Higher mix of gaming enthusiasts (SLI) and workstations lifted operating margin to 14.2%, though mass OEM pricing pressure persisted."
           }
         },
         "substitutes": {
           "score": 3,
           "rationale": {
-            "pl": "Wielordzeniowe procesory Intel Core 2 konkurują o budżety obliczeniowe w stacjach roboczych.",
-            "en": "Multi-core Intel Core 2 CPUs compete for compute budgets in enterprise workstations."
+            "pl": "Układy zintegrowane w chipsetach zagrażały najtańszym kartom graficznym, nie mając jednak przełożenia na wydajne konfiguracje dla graczy.",
+            "en": "Chipset-integrated graphics threatened entry-level cards but had no impact on high-performance gaming configurations."
           }
         },
         "newEntrants": {
           "score": 2,
           "rationale": {
-            "pl": "Koszty projektowania układów w procesach 90nm/65nm oraz ekosystem sterowników blokują nowych graczy.",
-            "en": "90nm/65nm tape-out costs and mature driver ecosystems deter new silicon entrants."
+            "pl": "Budżet R&D przekraczający 350 mln USD rocznie utrwalał wysoki próg technologiczny i patentowy w branży.",
+            "en": "An R&D budget exceeding $350M annually reinforced high technological and IP barriers across the industry."
           }
         }
       },
       "segments": [
-        { "name": { "pl": "GPU (GeForce / Quadro)", "en": "GPU (GeForce / Quadro)" }, "value": "2.15 mld USD", "pct": 70 },
-        { "name": { "pl": "MCP / Chipsety (nForce)", "en": "MCP / Chipsets (nForce)" }, "value": "0.92 mld USD", "pct": 30 }
+        {
+          "name": {
+            "pl": "GPU, MCP (nForce), GoForce i elektronika użytkowa",
+            "en": "GPUs, MCPs (nForce), GoForce & Consumer Electronics"
+          },
+          "value": {
+            "pl": "2,38 mld USD",
+            "en": "$2.38B"
+          },
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "year": 2007,
+      "fiscalLabel": {
+        "pl": "FY2007 (30.01.2006 – 28.01.2007)",
+        "en": "FY2007 (Jan 30, 2006 – Jan 28, 2007)"
+      },
+      "era": {
+        "pl": "Era II: Duopol z ATI, ekspansja nForce i kryzysy licencyjne (FY2004–FY2010)",
+        "en": "Era II: ATI Duopoly, nForce Expansion & Licensing Crises (FY2004–FY2010)"
+      },
+      "summary": {
+        "pl": "Przekroczenie 3 mld USD przychodów (3,07 mld USD, +29,2%) dzięki premierze GeForce 8 (pierwsza zunifikowana architektura shaderów) oraz nForce 590/680 SLI.",
+        "en": "Crossed $3B revenue ($3.07B, +29.2%) on the launch of GeForce 8 (first unified shader architecture) and nForce 590/680 SLI."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "3,07 mld USD",
+          "en": "$3.07B"
+        },
+        "revenueNum": 3.06877,
+        "yoy": "+29.2%",
+        "grossMargin": "42.4%",
+        "opMargin": "14.8%",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "R&D: 553,5 mln USD (18,0% przych.)",
+          "en": "R&D: $553.5M (18.0% of rev.)"
+        },
+        "catalyst": {
+          "pl": "Premiera GeForce 8, platform SLI dla Intel Core 2 oraz przejęcie ATI przez AMD",
+          "en": "GeForce 8 launch, SLI platforms for Intel Core 2, and AMD's acquisition of ATI"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Przejęcie ATI przez AMD w 2006 roku zapoczątkowało nową fazę rywalizacji zintegrowanych platform CPU+GPU, lecz przychody NVIDIA skoczyły o 29,2%.",
+            "en": "AMD's 2006 acquisition of ATI initiated a new phase of CPU+GPU platform rivalry, though NVIDIA's revenue jumped 29.2%."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Rosnąca skala zamówień w odlewniach zapewniła korzystne warunki kosztowe, podnosząc marżę brutto z 38,3% do 42,4%.",
+            "en": "Expanding order scale at foundries secured favorable cost terms, lifting gross margin from 38.3% to 42.4%."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Pomimo rosnącej siły marek GeForce i nForce w bazie odbiorców utrzymywała się koncentracja — dwóch klientów odpowiadało za 23% należności.",
+            "en": "Despite rising GeForce and nForce brand strength, buyer concentration persisted with two customers accounting for 23% of receivables."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Chipsety nForce dla procesorów Intel Core 2 chroniły pozycję w płytach głównych, podczas gdy GoForce konkurował w urządzeniach przenośnych.",
+            "en": "nForce chipsets for Intel Core 2 processors protected motherboard share, while GoForce competed in handheld devices."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Nakłady R&D wzrosły o 55% do 553,5 mln USD (18,0% przychodów), budując głęboką barierę technologiczną dla potencjalnych rywali.",
+            "en": "R&D spending rose 55% to $553.5M (18.0% of revenue), erecting a steep technological barrier against potential rivals."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "GPU, MCP (nForce), GoForce i elektronika użytkowa",
+            "en": "GPUs, MCPs (nForce), GoForce & Consumer Electronics"
+          },
+          "value": {
+            "pl": "3,07 mld USD",
+            "en": "$3.07B"
+          },
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "year": 2008,
+      "fiscalLabel": {
+        "pl": "FY2008 (29.01.2007 – 27.01.2008)",
+        "en": "FY2008 (Jan 29, 2007 – Jan 27, 2008)"
+      },
+      "era": {
+        "pl": "Era II: Duopol z ATI, ekspansja nForce i kryzysy licencyjne (FY2004–FY2010)",
+        "en": "Era II: ATI Duopoly, nForce Expansion & Licensing Crises (FY2004–FY2010)"
+      },
+      "summary": {
+        "pl": "Przedkryzysowy rekord przychodów (4,10 mld USD, +33,5%) i marży operacyjnej (20,4%) przy wczesnej adopcji platformy obliczeniowej CUDA.",
+        "en": "Pre-crisis peak in revenue ($4.10B, +33.5%) and operating margin (20.4%) alongside early adoption of the CUDA computing platform."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "4,10 mld USD",
+          "en": "$4.10B"
+        },
+        "revenueNum": 4.09786,
+        "yoy": "+33.5%",
+        "grossMargin": "45.6%",
+        "opMargin": "20.4%",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "R&D: 691,6 mln USD (16,9% przych.)",
+          "en": "R&D: $691.6M (16.9% of rev.)"
+        },
+        "catalyst": {
+          "pl": "Dominacja architektury GeForce 8 oraz komercjalizacja platformy CUDA",
+          "en": "Dominance of GeForce 8 architecture and commercialization of CUDA platform"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 3,
+          "rationale": {
+            "pl": "Dominacja architektury GeForce 8 oraz rozwijane środowisko CUDA pozwoliły zwiększyć sprzedaż o 33,5% i zmaksymalizować marżę operacyjną do 20,4%.",
+            "en": "GeForce 8 architectural dominance and the emerging CUDA ecosystem drove 33.5% sales growth and peak operating margin of 20.4%."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Wysoka przewidywalność zamówień w odlewniach przy przekroczeniu 4 mld USD przychodów przełożyła się na 45,6% marży brutto.",
+            "en": "High order predictability at foundries above $4B in revenue translated into a 45.6% gross margin."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Przewaga wydajnościowa flagowych kart NVIDIA ograniczyła zdolność OEM do wymuszania rabatów (dwóch klientów odpowiadało za 21% należności).",
+            "en": "Performance leadership of flagship NVIDIA cards curbed OEM discounting power (top two buyers represented 21% of receivables)."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Narastało długoterminowe ryzyko dla chipsetów MCP w związku z planami producentów CPU dotyczącymi silniejszej integracji logiki systemowej.",
+            "en": "Long-term substitution risk grew for MCP chipsets as CPU makers planned deeper integration of system logic and graphics."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Wydatki na badania i rozwój na poziomie 691,6 mln USD skutecznie zamykały rynek dyskretnych GPU przed nowymi podmiotami.",
+            "en": "R&D expenditures of $691.6M effectively closed the discrete GPU market to new entrants."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "GPU Business, MCP Business i Handheld",
+            "en": "GPU Business, MCP Business & Handheld"
+          },
+          "value": {
+            "pl": "4,10 mld USD",
+            "en": "$4.10B"
+          },
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "fiscalLabel": {
+        "pl": "FY2009 (28.01.2008 – 25.01.2009)",
+        "en": "FY2009 (Jan 28, 2008 – Jan 25, 2009)"
+      },
+      "era": {
+        "pl": "Era II: Duopol z ATI, ekspansja nForce i kryzysy licencyjne (FY2004–FY2010)",
+        "en": "Era II: ATI Duopoly, nForce Expansion & Licensing Crises (FY2004–FY2010)"
+      },
+      "summary": {
+        "pl": "Spadek przychodów o 16,4% (3,42 mld USD) i strata operacyjna -70,7 mln USD wskutek recesji, rezerw gwarancyjnych na wady obudów w laptopach i pozwu Intela.",
+        "en": "Revenue fell 16.4% ($3.42B) with a -$70.7M operating loss amid recession, laptop packaging warranty charges, and Intel's chipset lawsuit."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "3,42 mld USD",
+          "en": "$3.42B"
+        },
+        "revenueNum": 3.42486,
+        "yoy": "-16.4%",
+        "grossMargin": "~34.3%",
+        "opMargin": "-2.1%",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "Rezerwy gwarancyjne (pula 466,4 mln USD w FY09–FY11)",
+          "en": "Warranty charges (part of $466.4M pool FY09–FY11)"
+        },
+        "catalyst": {
+          "pl": "Kryzys finansowy, wady pakowania układów w laptopach i pozew Intela (II 2009)",
+          "en": "Global financial crisis, laptop chip packaging defects, and Intel lawsuit (Feb 2009)"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Recesja uderzyła w popyt PC (-16,4% przychodów), AMD odzyskało konkurencyjność cenową, a w lutym 2009 r. Intel pozwał NVIDIA ws. licencji na chipsety.",
+            "en": "Recession hit PC demand (-16.4% revenue), AMD regained price competitiveness, and Intel sued NVIDIA in Feb 2009 over chipset licenses."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Wady materiałów i pakowania układów mobilnych wymusiły wielomilionowe rezerwy gwarancyjne (z puli 466,4 mln USD), spychając marżę brutto do ok. 34,3%.",
+            "en": "Material and packaging defects in mobile chips forced heavy warranty provisions (part of $466.4M pool), cutting gross margin to ~34.3%."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Producenci notebooków wyegzekwowali pokrycie kosztów napraw gwarancyjnych i niższe ceny w kryzysie, generując stratę operacyjną -70,7 mln USD.",
+            "en": "Notebook OEMs enforced warranty repair reimbursements and crisis price cuts, pushing NVIDIA to a -$70.7M operating loss."
+          }
+        },
+        "substitutes": {
+          "score": 4,
+          "rationale": {
+            "pl": "Szybka ekspansja energooszczędnych procesorów Intel Atom w netbookach oraz integracja grafiki z CPU podważały rynek tanich kart i chipsetów MCP.",
+            "en": "Rapid adoption of power-efficient Intel Atom CPUs in netbooks and CPU-integrated graphics undermined entry-level GPUs and MCP chipsets."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Spowolnienie gospodarcze i wysokie ryzyko gwarancyjne podnosiły barierę przetrwania dla potencjalnych nowych podmiotów.",
+            "en": "Economic downturn and severe warranty liabilities raised survival barriers for any potential new entrants."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "GPU Business oraz MCP Business (brak rozbicia kwotowego)",
+            "en": "GPU Business & MCP Business (no dollar split in extracts)"
+          },
+          "value": {
+            "pl": "3,42 mld USD",
+            "en": "$3.42B"
+          },
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "fiscalLabel": {
+        "pl": "FY2010 (26.01.2009 – 31.01.2010; 53 tyg.)",
+        "en": "FY2010 (Jan 26, 2009 – Jan 31, 2010; 53 wks)"
+      },
+      "era": {
+        "pl": "Era II: Duopol z ATI, ekspansja nForce i kryzysy licencyjne (FY2004–FY2010)",
+        "en": "Era II: ATI Duopoly, nForce Expansion & Licensing Crises (FY2004–FY2010)"
+      },
+      "summary": {
+        "pl": "Dalszy spadek sprzedaży o 2,9% (3,33 mld USD) i pogłębienie straty operacyjnej do -98,95 mln USD wskutek sporu z Intelem i dalszych obciążeń gwarancyjnych.",
+        "en": "Further 2.9% revenue dip ($3.33B) and deeper -$98.95M operating loss amid the Intel legal battle and ongoing warranty charges."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "3,33 mld USD",
+          "en": "$3.33B"
+        },
+        "revenueNum": 3.32645,
+        "yoy": "-2.9%",
+        "grossMargin": "~35.4%",
+        "opMargin": "-3.0%",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "Konsolidacja R&D wokół jednej architektury GPU",
+          "en": "R&D consolidation around unified GPU architecture"
+        },
+        "catalyst": {
+          "pl": "Paraliż chipsetów MCP przez spór z Intelem i boom na netbooki z Intel Atom",
+          "en": "MCP chipset paralysis from Intel litigation and Intel Atom netbook boom"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Trwający spór sądowy z Intelem zablokował rozwój chipsetów MCP dla nowej generacji procesorów x86, prowadząc do dalszego spadku przychodów o 2,9%.",
+            "en": "Ongoing litigation with Intel blocked MCP chipset development for next-gen x86 CPUs, driving a further 2.9% revenue contraction."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Kontynuacja obciążeń gwarancyjnych za układy w notebookach utrzymywała koszty sprzedaży na podwyższonym poziomie (marża brutto ok. 35,4%).",
+            "en": "Continued warranty charges on notebook chips kept cost of revenues elevated (gross margin ~35.4%)."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Partnerzy OEM ograniczali zakupy chipsetów nForce w obliczu niepewności prawnej z Intelem, co pogłębiło stratę operacyjną do -98,95 mln USD.",
+            "en": "OEM partners curtailed nForce chipset orders amid legal uncertainty with Intel, widening operating loss to -$98.95M."
+          }
+        },
+        "substitutes": {
+          "score": 4,
+          "rationale": {
+            "pl": "Integracja grafiki w procesorach oraz popularyzacja netbooków z procesorami Intel Atom dalej wypierały niskobudżetowe układy NVIDIA.",
+            "en": "CPU-integrated graphics and the surge of Intel Atom netbooks further displaced low-end NVIDIA graphics chips."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Duopol NVIDIA–AMD w dyskretnych GPU pozostał nienaruszony mimo przejściowych strat finansowych obu graczy.",
+            "en": "The NVIDIA-AMD discrete GPU duopoly remained intact despite temporary financial losses for both players."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "GPU Business oraz MCP Business (brak rozbicia kwotowego)",
+            "en": "GPU Business & MCP Business (no dollar split in extracts)"
+          },
+          "value": {
+            "pl": "3,33 mld USD",
+            "en": "$3.33B"
+          },
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "fiscalLabel": {
+        "pl": "FY2011 (01.02.2010 – 30.01.2011)",
+        "en": "FY2011 (Feb 1, 2010 – Jan 30, 2011)"
+      },
+      "era": {
+        "pl": "Era III: Transformacja architektoniczna i eksperyment Tegra (FY2011–FY2016)",
+        "en": "Era III: Architectural Transformation & Tegra Experiment (FY2011–FY2016)"
+      },
+      "summary": {
+        "pl": "Powrót do wzrostu (+6,5% do 3,54 mld USD) i zysku operacyjnego (7,2%) po ugodzie patentowej z Intelem (I 2011), wyjściu z chipsetów x86 i starcie segmentu Tegra.",
+        "en": "Return to growth (+6.5% to $3.54B) and operating profit (7.2%) following the Jan 2011 Intel patent settlement, x86 chipset exit, and Tegra segment launch."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "3,54 mld USD",
+          "en": "$3.54B"
+        },
+        "revenueNum": 3.54331,
+        "yoy": "+6.5%",
+        "grossMargin": "~39.7%",
+        "opMargin": "7.2%",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "Ugoda z Intelem: płatności licencyjne 2011–2016",
+          "en": "Intel settlement: licensing payments 2011–2016"
+        },
+        "catalyst": {
+          "pl": "Ugoda patentowa z Intelem (I 2011) i reorganizacja na segmenty GPU i Tegra",
+          "en": "Intel patent settlement (Jan 2011) and reorganization into GPU & Tegra segments"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Ugoda z Intelem zakończyła spór sądowy, lecz zmusiła NVIDIA do wycofania się z chipsetów x86 i podjęcia rywalizacji w mobilnych SoC poprzez segment Tegra.",
+            "en": "The Intel settlement ended litigation but forced NVIDIA out of x86 chipsets and into fierce mobile SoC competition via Tegra."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Wygaszanie rezerw na wady pakowania w laptopach poprawiło ekonomikę produkcji i odbudowało marżę brutto z ok. 35,4% do ok. 39,7%.",
+            "en": "Tapering off laptop packaging warranty charges improved manufacturing economics and restored gross margin from ~35.4% to ~39.7%."
+          }
+        },
+        "buyers": {
+          "score": 4,
+          "rationale": {
+            "pl": "W segmencie mobilnym producenci smartfonów i tabletów mieli wiele alternatyw ARM, choć odbicie GPU przywróciło 7,2% marży operacyjnej.",
+            "en": "In mobile, smartphone and tablet makers had numerous ARM alternatives, though GPU recovery restored a 7.2% operating margin."
+          }
+        },
+        "substitutes": {
+          "score": 4,
+          "rationale": {
+            "pl": "Zintegrowana grafika CPU systematycznie zmniejszała rynek tanich kart OEM, wymuszając na NVIDIA ucieczkę w wyższe segmenty i obliczenia CUDA.",
+            "en": "CPU-integrated graphics steadily shrank the entry-level OEM card market, pushing NVIDIA upmarket and into CUDA computing."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "W dyskretnych GPU bariery skali i oprogramowania pozostały zaporowe, mimo że na rynku mobilnym Tegra sama zmagała się z licznymi rywalami.",
+            "en": "In discrete GPUs, scale and software barriers remained prohibitive even as Tegra faced crowded competition in mobile."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Segment GPU oraz Segment Tegra Processor (brak rozbicia kwotowego)",
+            "en": "GPU Segment & Tegra Processor Segment (no dollar split in extracts)"
+          },
+          "value": {
+            "pl": "3,54 mld USD",
+            "en": "$3.54B"
+          },
+          "pct": 100.0
+        }
       ]
     },
     {
       "year": 2012,
-      "fiscalLabel": { "pl": "FY2013 (Przełom AlexNet na GPU)", "en": "FY2013 (AlexNet Deep Learning Breakthrough)" },
-      "era": { "pl": "Iskra Deep Learning: AlexNet i architektura Kepler", "en": "Deep Learning Spark: AlexNet & Kepler" },
+      "fiscalLabel": {
+        "pl": "FY2012 (31.01.2011 – 29.01.2012)",
+        "en": "FY2012 (Jan 31, 2011 – Jan 29, 2012)"
+      },
+      "era": {
+        "pl": "Era III: Transformacja architektoniczna i eksperyment Tegra (FY2011–FY2016)",
+        "en": "Era III: Architectural Transformation & Tegra Experiment (FY2011–FY2016)"
+      },
       "summary": {
-        "pl": "Sieć neuronowa AlexNet wygrywa konkurs ImageNet trenowana na dwóch kartach GTX 580, udowadniając przewagę CUDA w sztucznej inteligencji.",
-        "en": "AlexNet wins ImageNet trained on two GTX 580 GPUs, proving CUDA's decisive speed advantage for deep neural networks."
+        "pl": "Skok marży brutto o ponad 11 pkt proc. (do ok. 51,4%) oraz marży operacyjnej do 16,2% po wygaśnięciu odpisów gwarancyjnych i uruchomieniu płatności od Intela.",
+        "en": "Gross margin surged over 11 points (to ~51.4%) and operating margin reached 16.2% after warranty write-downs ended and Intel licensing inflows began."
       },
       "kpis": {
-        "revenue": { "pl": "4,28 mld USD", "en": "$4.28B" },
-        "revenueNum": 4.28,
-        "yoy": "+7%",
-        "grossMargin": "52.0%",
-        "opMargin": "15.1%",
-        "netIncome": { "pl": "562,5 mln USD", "en": "$562.5M" },
-        "rnd": { "pl": "1,15 mld USD", "en": "$1.15B" },
-        "catalyst": { "pl": "Kepler / AlexNet (CUDA AI)", "en": "Kepler / AlexNet (CUDA AI)" }
+        "revenue": {
+          "pl": "4,00 mld USD",
+          "en": "$4.00B"
+        },
+        "revenueNum": 3.99793,
+        "yoy": "+12.8%",
+        "grossMargin": "~51.4%",
+        "opMargin": "16.2%",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "Zysk operacyjny 648,30 mln USD (+153,5% r/r)",
+          "en": "Operating income $648.30M (+153.5% YoY)"
+        },
+        "catalyst": {
+          "pl": "Wygaśnięcie fali odpisów gwarancyjnych, płatności licencyjne Intela i wzrost GPU",
+          "en": "End of warranty charge wave, Intel licensing inflows, and GPU margin expansion"
+        }
       },
       "forces": {
         "rivalry": {
-          "score": 3,
+          "score": 4,
           "rationale": {
-            "pl": "Stabilny duopol z AMD w gamingu, lecz w obliczeniach naukowych (Tesla/CUDA) NVIDIA zaczyna budować monopol.",
-            "en": "Stable gaming duopoly with AMD, while Tesla/CUDA begins establishing a scientific compute monopoly."
+            "pl": "Podczas gdy biznes GPU odnotował wyraźną poprawę wyników wobec AMD, procesory Tegra toczyły ciężką walkę o udziały w segmencie urządzeń mobilnych.",
+            "en": "While the GPU business posted strong gains against AMD, Tegra processors fought an uphill battle for share in mobile devices."
           }
         },
         "suppliers": {
           "score": 3,
           "rationale": {
-            "pl": "Przejście na proces 28nm w TSMC wiąże się z przejściowymi ograniczeniami podaży wafli.",
-            "en": "Transition to TSMC 28nm node brings temporary wafer supply constraints."
+            "pl": "Całkowite ustąpienie nadzwyczajnych obciążeń gwarancyjnych i efektywna produkcja wywindowały marżę brutto o ponad 11 pkt proc. do ok. 51,4%.",
+            "en": "Complete abatement of extraordinary warranty charges and efficient production lifted gross margin by over 11 points to ~51.4%."
           }
         },
         "buyers": {
           "score": 3,
           "rationale": {
-            "pl": "Rosnący udział wysokomarżowych kart Quadro i Tesla dla laboratoriów oraz centrów HPC.",
-            "en": "Growing mix of high-margin Quadro and Tesla accelerators for HPC labs."
+            "pl": "Rezygnacja z niskomarżowych chipsetów x86 oraz wysokomarżowe wpływy licencyjne od Intela podniosły marżę operacyjną z 7,2% do 16,2%.",
+            "en": "Exiting low-margin x86 chipsets and collecting high-margin Intel licensing payments lifted operating margin from 7.2% to 16.2%."
           }
         },
         "substitutes": {
-          "score": 3,
+          "score": 4,
           "rationale": {
-            "pl": "Zintegrowana grafika w CPU (Intel Ivy Bridge) przejmuje rynek tanich laptopów, zmuszając NVIDIĘ do ucieczki w segment premium.",
-            "en": "Integrated CPU graphics (Intel Ivy Bridge) cannibalizes low-end laptops, pushing NVIDIA upmarket."
+            "pl": "Grafika zintegrowana z procesorami PC nadal ograniczała sprzedaż najtańszych dyskretnych GPU u producentów komputerów.",
+            "en": "Graphics integrated into PC processors continued to curtail sales of entry-level discrete GPUs among PC OEMs."
           }
         },
         "newEntrants": {
           "score": 2,
           "rationale": {
-            "pl": "6 lat rozwoju bibliotek CUDA tworzy barierę przejścia trudną do skopiowania.",
-            "en": "Six years of CUDA library accumulation creates a high software switching barrier."
+            "pl": "Wspólna architektura GPU zasilająca rynek konsumencki, stacje robocze i rozwiązania Tegra utrwalała przewagę skali R&D.",
+            "en": "A unified GPU architecture spanning consumer, workstation, and Tegra products reinforced R&D scale advantages."
           }
         }
       },
       "segments": [
-        { "name": { "pl": "GPU (Gaming & Enterprise)", "en": "GPU (Gaming & Enterprise)" }, "value": "3.52 mld USD", "pct": 82 },
-        { "name": { "pl": "Tegra (Mobile / Embedded)", "en": "Tegra (Mobile / Embedded)" }, "value": "0.76 mld USD", "pct": 18 }
+        {
+          "name": {
+            "pl": "GPU oraz Tegra Processor (brak rozbicia kwotowego)",
+            "en": "GPU & Tegra Processor (no dollar split in extracts)"
+          },
+          "value": {
+            "pl": "4,00 mld USD",
+            "en": "$4.00B"
+          },
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "fiscalLabel": {
+        "pl": "FY2013 (30.01.2012 – 27.01.2013)",
+        "en": "FY2013 (Jan 30, 2012 – Jan 27, 2013)"
+      },
+      "era": {
+        "pl": "Era III: Transformacja architektoniczna i eksperyment Tegra (FY2011–FY2016)",
+        "en": "Era III: Architectural Transformation & Tegra Experiment (FY2011–FY2016)"
+      },
+      "summary": {
+        "pl": "Rekord przychodów (4,28 mld USD, +7,1%) napędzany wzrostem marży i sprzedaży w segmencie GPU przy marży brutto ok. 52,0%.",
+        "en": "Record revenue ($4.28B, +7.1%) driven by GPU margin and sales growth with gross margin reaching ~52.0%."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "4,28 mld USD",
+          "en": "$4.28B"
+        },
+        "revenueNum": 4.28016,
+        "yoy": "+7.1%",
+        "grossMargin": "~52.0%",
+        "opMargin": "15.1%",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "R&D w Q2 FY13: 281,2 mln USD (brak pełnej kwoty rocznej)",
+          "en": "Q2 FY13 R&D: $281.2M (full-year figure N/A in extracts)"
+        },
+        "catalyst": {
+          "pl": "Rekord przychodów (4,28 mld USD) i dalsza ekspansja marżowa biznesu GPU",
+          "en": "Record revenue ($4.28B) and continued margin expansion in the GPU business"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 3,
+          "rationale": {
+            "pl": "NVIDIA osiągnęła rekordowe 4,28 mld USD przychodów (+7,1%) i powiększyła przewagę marżową w GPU, mimo silnej konkurencji w układach mobilnych.",
+            "en": "NVIDIA reached a record $4.28B revenue (+7.1%) and widened its GPU margin lead despite fierce mobile chip competition."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Stabilne koszty produkcji w odlewniach wspierały dalszy wzrost marży brutto biznesu GPU (łącznie ok. 52,0% dla całej spółki).",
+            "en": "Stable foundry manufacturing costs supported further gross margin expansion in GPUs (~52.0% company-wide)."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Silna pozycja w kartach GeForce dla graczy i rozwiązaniach profesjonalnych utrzymywała marżę operacyjną na poziomie 15,1%.",
+            "en": "Strong positioning in GeForce gaming cards and professional solutions sustained a 15.1% operating margin."
+          }
+        },
+        "substitutes": {
+          "score": 4,
+          "rationale": {
+            "pl": "Wzrost wydajności zintegrowanych układów graficznych w CPU wymagał ciągłego podnoszenia poprzeczki w dyskretnych GPU i nakładach R&D.",
+            "en": "Improving CPU-integrated graphics required continuous performance leaps in discrete GPUs and sustained R&D spending."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Ponad miliard dolarów rocznych nakładów na R&D i rozbudowa portfela patentowego skutecznie blokowały nowe wejścia w rynek GPU.",
+            "en": "Over $1B in annual R&D investment and an expanding patent portfolio effectively blocked new entrants into GPUs."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "GPU oraz Tegra Processor (brak rozbicia kwotowego)",
+            "en": "GPU & Tegra Processor (no dollar split in extracts)"
+          },
+          "value": {
+            "pl": "4,28 mld USD",
+            "en": "$4.28B"
+          },
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "fiscalLabel": {
+        "pl": "FY2014 (28.01.2013 – 26.01.2014)",
+        "en": "FY2014 (Jan 28, 2013 – Jan 26, 2014)"
+      },
+      "era": {
+        "pl": "Era III: Transformacja architektoniczna i eksperyment Tegra (FY2011–FY2016)",
+        "en": "Era III: Architectural Transformation & Tegra Experiment (FY2011–FY2016)"
+      },
+      "summary": {
+        "pl": "Spadek przychodów o 3,5% (4,13 mld USD) wskutek odwrotu procesorów Tegra w smartfonach, zrekompensowany wzrostem marży brutto do ok. 54,9% przy skoku R&D (+16,4%).",
+        "en": "Revenue dipped 3.5% ($4.13B) as Tegra retreated in smartphones, offset by gross margin rising to ~54.9% amid a 16.4% R&D surge."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "4,13 mld USD",
+          "en": "$4.13B"
+        },
+        "revenueNum": 4.13016,
+        "yoy": "-3.5%",
+        "grossMargin": "~54.9%",
+        "opMargin": "12.0%",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "R&D: 1,3 mld USD (+16,4% r/r)",
+          "en": "R&D: $1.3B (+16.4% YoY)"
+        },
+        "catalyst": {
+          "pl": "Presja zintegrowanych SoC w segmencie Tegra oraz skok budżetu R&D o 16,4%",
+          "en": "Integrated SoC pressure in Tegra segment and 16.4% R&D budget expansion"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 4,
+          "rationale": {
+            "pl": "Agresywna konkurencja zintegrowanych platform SoC z modemami komórkowymi uderzyła w segment Tegra, powodując spadek całkowitych przychodów o 3,5%.",
+            "en": "Aggressive competition from integrated SoC platforms with cellular modems hit Tegra, causing total revenue to dip 3.5%."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Przesunięcie struktury sprzedaży w kierunku bardziej rentownego segmentu GPU wsparło wzrost całkowitej marży brutto do ok. 54,9%.",
+            "en": "Revenue mix shift toward the higher-margin GPU segment supported gross margin expansion to ~54.9%."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Klienci profesjonalni i gamingowi akceptowali wyższe ceny flagowych GPU, co pozwoliło sfinansować skok R&D przy zachowaniu 12,0% marży operacyjnej.",
+            "en": "Professional and gaming buyers accepted higher flagship GPU pricing, funding the R&D jump while preserving a 12.0% operating margin."
+          }
+        },
+        "substitutes": {
+          "score": 4,
+          "rationale": {
+            "pl": "Zintegrowane SoC w smartfonach wypierały procesory Tegra, a zintegrowana grafika CPU ograniczała dolny segment kart PC.",
+            "en": "Integrated smartphone SoCs displaced Tegra processors, while CPU-integrated graphics constrained entry-level PC cards."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Skok rocznych nakładów R&D do 1,3 mld USD dodatkowo podniósł barierę technologiczną w segmencie zaawansowanych procesorów graficznych.",
+            "en": "Annual R&D climbing to $1.3B further elevated technological barriers in advanced graphics processors."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "GPU oraz Tegra Processor (brak rozbicia kwotowego)",
+            "en": "GPU & Tegra Processor (no dollar split in extracts)"
+          },
+          "value": {
+            "pl": "4,13 mld USD",
+            "en": "$4.13B"
+          },
+          "pct": 100.0
+        }
       ]
     },
     {
       "year": 2015,
-      "fiscalLabel": { "pl": "FY2016 (luty 2015 – styczeń 2016)", "en": "FY2016 (Feb 2015 – Jan 2016)" },
-      "era": { "pl": "Era: Dominacja Gamingu i zapłon Deep Learning", "en": "Era: Gaming Dominance & Deep Learning Ignition" },
+      "fiscalLabel": {
+        "pl": "FY2015 (27.01.2014 – 25.01.2015)",
+        "en": "FY2015 (Jan 27, 2014 – Jan 25, 2015)"
+      },
+      "era": {
+        "pl": "Era III: Transformacja architektoniczna i eksperyment Tegra (FY2011–FY2016)",
+        "en": "Era III: Architectural Transformation & Tegra Experiment (FY2011–FY2016)"
+      },
       "summary": {
-        "pl": "Wygaszenie modemów Icera (odpis 131 mln USD); udział AIB sięga 81,9%; Gaming rośnie o 37% do 2,80 mld USD przy wczesnej adopcji AI.",
-        "en": "Wind-down of Icera modems ($131M charge); discrete GPU share reaches 81.9%; Gaming surges 37% to $2.80B alongside early AI adoption."
+        "pl": "Odbicie przychodów o 13,4% do 4,68 mld USD i powrót marży operacyjnej do 16,2% dzięki sukcesowi architektury Maxwell i repozycjonowaniu Tegra na motoryzację.",
+        "en": "Revenue rebounded 13.4% to $4.68B with operating margin returning to 16.2%, fueled by Maxwell GPUs and Tegra's pivot to automotive."
       },
       "kpis": {
-        "revenue": { "pl": "5,01 mld USD", "en": "$5.01B" },
-        "revenueNum": 5.01,
-        "yoy": "+7%",
-        "grossMargin": "56.1%",
-        "opMargin": "14.9%",
-        "netIncome": { "pl": "614,0 mln USD", "en": "$614.0M" },
-        "rnd": { "pl": "1,33 mld USD", "en": "$1.33B" },
-        "catalyst": { "pl": "Maxwell (TITAN X) & cuDNN", "en": "Maxwell (TITAN X) & cuDNN" }
+        "revenue": {
+          "pl": "4,68 mld USD",
+          "en": "$4.68B"
+        },
+        "revenueNum": 4.68151,
+        "yoy": "+13.4%",
+        "grossMargin": "~55.5%",
+        "opMargin": "16.2%",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "Jednolita architektura GPU/Tegra / zysk op. 759,0 mln USD",
+          "en": "Unified GPU/Tegra architecture / Op. income $759.0M"
+        },
+        "catalyst": {
+          "pl": "Sukces kart GeForce (Maxwell) oraz przestawienie procesorów Tegra na motoryzację",
+          "en": "Success of GeForce (Maxwell) cards and pivot of Tegra processors to automotive"
+        }
       },
       "forces": {
         "rivalry": {
-          "score": 2,
+          "score": 3,
           "rationale": {
-            "pl": "Dominacja w duopolu z AMD (ponad 80% rynku kart dedykowanych), przewaga ekosystemu CUDA i sterowników.",
-            "en": "Dominance in duopoly with AMD (>80% discrete GPU share), backed by CUDA and driver ecosystem."
+            "pl": "Mocny odbiór nowych kart GeForce oraz wycofywanie Tegra z zatłoczonego rynku masowych smartfonów na rzecz motoryzacji podniosły przychody o 13,4%.",
+            "en": "Strong reception of new GeForce cards and pivoting Tegra from crowded smartphones to automotive lifted revenue by 13.4%."
           }
         },
         "suppliers": {
           "score": 3,
           "rationale": {
-            "pl": "Zależność od TSMC w procesie 28nm oraz dostawców pamięci GDDR5, ale dojrzały proces zapewnia wysoką rentowność.",
-            "en": "Reliance on TSMC 28nm and GDDR5 memory suppliers, though mature node yields protect margins."
+            "pl": "Efektywna produkcja w dojrzałym procesie technologicznym przełożyła się na dalszy wzrost marży brutto do ok. 55,5%.",
+            "en": "Efficient manufacturing on mature process nodes drove further gross margin expansion to ~55.5%."
           }
         },
         "buyers": {
           "score": 3,
           "rationale": {
-            "pl": "Rozproszona baza graczy PC (niska siła) równoważona przez pierwszych dużych klientów chmurowych testujących GPU.",
-            "en": "Fragmented PC gamer base (low power) balanced by early hyperscale cloud buyers testing GPUs."
+            "pl": "Lojalność graczy, użytkowników stacji roboczych oraz centrów obliczeniowych odbudowała marżę operacyjną z 12,0% do 16,2%.",
+            "en": "Loyalty among gamers, workstation users, and HPC centers restored operating margin from 12.0% to 16.2%."
           }
         },
         "substitutes": {
           "score": 3,
           "rationale": {
-            "pl": "Konsole PS4/Xbox One oraz zintegrowane układy Intel stanowią alternatywę w niższym segmencie gier.",
-            "en": "PS4/Xbox One consoles and Intel integrated graphics serve as substitutes in casual gaming."
+            "pl": "Porzucenie walki z tanimi SoC do telefonów i skupienie na wyspecjalizowanym gamingu, HPC i motoryzacji zmniejszyło ekspozycję na substytucję.",
+            "en": "Abandoning low-end phone SoCs to focus on specialized gaming, HPC, and automotive reduced exposure to integrated substitutes."
           }
         },
         "newEntrants": {
           "score": 2,
           "rationale": {
-            "pl": "Wysokie nakłady R&D (1,33 mld USD rocznie) i efekt sieciowy bibliotek cuDNN blokują nowych konkurentów.",
-            "en": "Heavy R&D spend ($1.33B/yr) and cuDNN library network effects deter new entrants."
+            "pl": "Jednolita architektura łącząca GPU i Tegra maksymalizowała efektywność nakładów R&D i utrzymywała zaporowy dystans technologiczny.",
+            "en": "A unified architecture spanning GPU and Tegra maximized R&D leverage and preserved a prohibitive technological lead."
           }
         }
       },
       "segments": [
-        { "name": { "pl": "Gaming", "en": "Gaming" }, "value": "2.80 mld USD", "pct": 55.9 },
-        { "name": { "pl": "Data Center", "en": "Data Center" }, "value": "0.34 mld USD", "pct": 6.8 },
-        { "name": { "pl": "Pozostałe (ProViz / Auto / OEM)", "en": "Other (ProViz / Auto / OEM)" }, "value": "1.87 mld USD", "pct": 37.3 }
+        {
+          "name": {
+            "pl": "GPU oraz Tegra Processor (brak rozbicia kwotowego)",
+            "en": "GPU & Tegra Processor (no dollar split in extracts)"
+          },
+          "value": {
+            "pl": "4,68 mld USD",
+            "en": "$4.68B"
+          },
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "fiscalLabel": {
+        "pl": "FY2016 (26.01.2015 – 31.01.2016; 53 tyg.)",
+        "en": "FY2016 (Jan 26, 2015 – Jan 31, 2016; 53 wks)"
+      },
+      "era": {
+        "pl": "Era III: Transformacja architektoniczna i eksperyment Tegra (FY2011–FY2016)",
+        "en": "Era III: Architectural Transformation & Tegra Experiment (FY2011–FY2016)"
+      },
+      "summary": {
+        "pl": "Przekroczenie progu 5,0 mld USD sprzedaży (+7,0%) przy marży brutto ok. 56,1% na zakończenie 5-letniego cyklu płatności licencyjnych od Intela.",
+        "en": "Surpassed $5.0B revenue mark (+7.0%) at ~56.1% gross margin as the 5-year Intel licensing payment cycle concluded."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "~5,0 mld USD",
+          "en": "~$5.0B"
+        },
+        "revenueNum": 5.01,
+        "yoy": "+7.0%",
+        "grossMargin": "~56.1%",
+        "opMargin": "~14.9%",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "Gotówka i papiery rynkowe: 5,04 mld USD",
+          "en": "Cash & marketable securities: $5.04B"
+        },
+        "catalyst": {
+          "pl": "Przekroczenie 5 mld USD przychodów oraz ostatnia transza od Intela (200 mln USD)",
+          "en": "Crossing $5B revenue and receiving final Intel licensing tranche ($200M)"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 3,
+          "rationale": {
+            "pl": "Spółka przekroczyła 5,0 mld USD przychodów (+7,0%), utrzymując wyraźną przewagę nad AMD w dyskretnych kartach graficznych.",
+            "en": "NVIDIA crossed $5.0B in revenue (+7.0%), maintaining a clear lead over AMD in discrete graphics cards."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Stabilne koszty krzemu pozwoliły utrzymać marżę brutto na poziomie ok. 56,1% oraz zgromadzić 5,04 mld USD gotówki i papierów rynkowych.",
+            "en": "Stable silicon costs sustained gross margin around ~56.1% while building $5.04B in cash and marketable securities."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Rozproszona baza graczy i odbiorców profesjonalnych stabilizowała marżę operacyjną w okolicach 14,9%.",
+            "en": "A diversified base of gamers and professional users stabilized operating margin around ~14.9%."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "W wymagających grach PC i profesjonalnej wizualizacji brakowało substytutu dla dyskretnych kart NVIDIA, a CUDA zyskiwała przyczółek w nauce.",
+            "en": "In demanding PC gaming and professional visualization, discrete NVIDIA cards had no substitute while CUDA gained traction in scientific computing."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Konieczność jednoczesnego opanowania architektury sprzętowej i stosu programistycznego blokowała pojawienie się nowego konkurenta.",
+            "en": "The need to master both hardware architecture and a full software stack blocked any new competitors from emerging."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "GPU oraz Tegra Processor (brak rozbicia kwotowego)",
+            "en": "GPU & Tegra Processor (no dollar split in extracts)"
+          },
+          "value": {
+            "pl": "~5,0 mld USD",
+            "en": "~$5.0B"
+          },
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "fiscalLabel": {
+        "pl": "FY2017 (01.02.2016 – 29.01.2017)",
+        "en": "FY2017 (Feb 1, 2016 – Jan 29, 2017)"
+      },
+      "era": {
+        "pl": "Era IV: Rewolucja Deep Learning, Ray Tracing i wyścig Data Center (FY2017–FY2023)",
+        "en": "Era IV: Deep Learning Revolution, Ray Tracing & Data Center Race (FY2017–FY2023)"
+      },
+      "summary": {
+        "pl": "Punkt zwrotny głębokiego uczenia (Deep Learning) i architektury Pascal: skok przychodów o 37,9% do ~6,9 mld USD i wzrost zysku operacyjnego o 158,9%.",
+        "en": "Deep learning and Pascal architecture inflection point: revenue surged 37.9% to ~$6.9B and operating income jumped 158.9%."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "~6,9 mld USD",
+          "en": "~$6.9B"
+        },
+        "revenueNum": 6.91,
+        "yoy": "+37.9%",
+        "grossMargin": "~59.4%",
+        "opMargin": "~27.5%",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "Gotówka: 6,80 mld USD / zysk op. +158,9% r/r",
+          "en": "Cash: $6.80B / Op. income +158.9% YoY"
+        },
+        "catalyst": {
+          "pl": "Infleksja głębokiego uczenia (AI) na architekturze Pascal i skok sprzedaży GPU o 39%",
+          "en": "Deep learning AI inflection on Pascal architecture and 39% GPU revenue surge"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 2,
+          "rationale": {
+            "pl": "Skok sprzedaży biznesu GPU o 39% r/r (84,3% przychodów) i eksplozja zastosowań AI na jednej architekturze odsadziły rywali, podnosząc wynik operacyjny o 158,9%.",
+            "en": "A 39% YoY surge in GPU sales (84.3% of revenue) and booming AI adoption on a unified architecture distanced rivals, lifting operating profit 158.9%."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Skok popytu na wydajniejsze procesory graficzne został zmonetyzowany z nadwyżką, podnosząc marżę brutto z ok. 56,1% do ok. 59,4%.",
+            "en": "Surging demand for higher-performance GPUs was monetized effectively, expanding gross margin from ~56.1% to ~59.4%."
+          }
+        },
+        "buyers": {
+          "score": 2,
+          "rationale": {
+            "pl": "Brak porównywalnego zamiennika zarówno w kartach dla graczy, jak i w akceleratorach AI przełożył się na skok marży operacyjnej do ok. 27,5%.",
+            "en": "The lack of comparable alternatives in both gaming cards and AI accelerators drove operating margin up to ~27.5%."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Masowa adopcja równoległego przetwarzania na GPU w głębokim uczeniu dowiodła przewagi nad klasycznymi CPU w zadaniach AI.",
+            "en": "Mass adoption of parallel GPU processing in deep learning proved clear superiority over traditional CPUs in AI workloads."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Wspólna platforma obsługująca jednocześnie cztery rynki (Gaming, Data Center, ProViz, Auto) tworzyła ogromną barierę skali.",
+            "en": "A unified platform serving four markets simultaneously (Gaming, Data Center, ProViz, Auto) created a massive scale barrier."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Segment GPU (Gaming, Data Center, ProViz)",
+            "en": "GPU Segment (Gaming, Data Center, ProViz)"
+          },
+          "value": {
+            "pl": "~5,82 mld USD",
+            "en": "~$5.82B"
+          },
+          "pct": 84.3
+        },
+        {
+          "name": {
+            "pl": "Segment Tegra Processor (Auto, OEM)",
+            "en": "Tegra Processor Segment (Auto, OEM)"
+          },
+          "value": {
+            "pl": "~1,08 mld USD",
+            "en": "~$1.08B"
+          },
+          "pct": 15.7
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "fiscalLabel": {
+        "pl": "FY2018 (30.01.2017 – 28.01.2018)",
+        "en": "FY2018 (Jan 30, 2017 – Jan 28, 2018)"
+      },
+      "era": {
+        "pl": "Era IV: Rewolucja Deep Learning, Ray Tracing i wyścig Data Center (FY2017–FY2023)",
+        "en": "Era IV: Deep Learning Revolution, Ray Tracing & Data Center Race (FY2017–FY2023)"
+      },
+      "summary": {
+        "pl": "Premiera architektury Volta z pierwszymi rdzeniami Tensor Cores oraz boom kryptowalutowy wywindowały przychody o 40,6% do ~9,7 mld USD przy marży operacyjnej ~33,0%.",
+        "en": "Launch of Volta architecture with first Tensor Cores and the crypto mining boom propelled revenue up 40.6% to ~$9.7B at ~33.0% operating margin."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "~9,7 mld USD",
+          "en": "~$9.7B"
+        },
+        "revenueNum": 9.714,
+        "yoy": "+40.6%",
+        "grossMargin": "~59.8%",
+        "opMargin": "~33.0%",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "Wprowadzenie architektury Volta i rdzeni Tensor",
+          "en": "Introduction of Volta architecture & Tensor Cores"
+        },
+        "catalyst": {
+          "pl": "Premiera architektury Volta w AI oraz silny popyt na GPU ze strony górników kryptowalut",
+          "en": "Volta architecture launch in AI and strong GPU demand from cryptocurrency miners"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 2,
+          "rationale": {
+            "pl": "Architektura Volta z rdzeniami Tensor oraz wzrost przychodów o 40,6% utrzymały głęboką przewagę technologiczną w gamingu i centrach danych.",
+            "en": "Volta architecture with Tensor Cores and 40.6% revenue growth maintained a deep technological lead across gaming and data centers."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Wzrost wolumenu produkcji przy silnym popycie rynkowym utrzymał wysoką rentowność bezpośrednią — marża brutto wzrosła do ok. 59,8%.",
+            "en": "Expanding production volume amid strong market demand sustained high manufacturing profitability with gross margin at ~59.8%."
+          }
+        },
+        "buyers": {
+          "score": 2,
+          "rationale": {
+            "pl": "Połączenie popytu chmurowego oraz zakupów GPU przez górników kryptowalut przeniosło siłę cenową na NVIDIA, podnosząc marżę operacyjną do ok. 33,0%.",
+            "en": "Combined cloud demand and crypto miner GPU purchases shifted pricing power to NVIDIA, lifting operating margin to ~33.0%."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Specjalizowane rdzenie Tensor przyspieszające operacje macierzowe sieci neuronowych jeszcze bardziej oddaliły GPU od procesorów ogólnego przeznaczenia.",
+            "en": "Specialized Tensor Cores accelerating neural network matrix math further distanced GPUs from general-purpose processors."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Ekosystem CUDA stanowił barierę oprogramowania, która uniemożliwiała młodym projektantom chipów szybkie przejęcie klientów AI.",
+            "en": "The CUDA ecosystem formed a software moat that prevented young chip startups from rapidly capturing AI customers."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "GPU (+40% r/r) oraz Tegra Processor (brak pełnego podziału kwotowego)",
+            "en": "GPU (+40% YoY) & Tegra Processor (full dollar split N/A)"
+          },
+          "value": {
+            "pl": "~9,7 mld USD",
+            "en": "~$9.7B"
+          },
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "fiscalLabel": {
+        "pl": "FY2019 (29.01.2018 – 27.01.2019)",
+        "en": "FY2019 (Jan 29, 2018 – Jan 27, 2019)"
+      },
+      "era": {
+        "pl": "Era IV: Rewolucja Deep Learning, Ray Tracing i wyścig Data Center (FY2017–FY2023)",
+        "en": "Era IV: Deep Learning Revolution, Ray Tracing & Data Center Race (FY2017–FY2023)"
+      },
+      "summary": {
+        "pl": "Wprowadzenie architektury Turing i ray tracingu NVIDIA RTX przy wzroście przychodów o 20,6% (~11,7 mld USD), zakończone krachem popytu kryptowalutowego pod koniec 2018 r.",
+        "en": "Launch of Turing architecture and NVIDIA RTX ray tracing with 20.6% revenue growth (~$11.7B), followed by a late-2018 crypto demand crash."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "~11,7 mld USD",
+          "en": "~$11.7B"
+        },
+        "revenueNum": 11.716,
+        "yoy": "+20.6%",
+        "grossMargin": "~61.5%",
+        "opMargin": "~32.5%",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "Premiera architektury Turing i ray tracingu RTX",
+          "en": "Launch of Turing architecture & RTX ray tracing"
+        },
+        "catalyst": {
+          "pl": "Debiut NVIDIA RTX oraz załamanie popytu kryptowalutowego pod koniec 2018 r.",
+          "en": "NVIDIA RTX debut and collapse of cryptocurrency mining demand in late 2018"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 2,
+          "rationale": {
+            "pl": "Wprowadzenie architektury Turing i ray tracingu w czasie rzeczywistym (NVIDIA RTX) wyprzedziło konkurencję graficzną, zwiększając przychody o 20,6%.",
+            "en": "Introducing Turing architecture and real-time ray tracing (NVIDIA RTX) outpaced graphics rivals, lifting annual revenue by 20.6%."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Wyższa złożoność układów RTX nie obniżyła rentowności bezpośredniej — marża brutto wzrosła do ok. 61,5%.",
+            "en": "Higher complexity of RTX dies did not impair direct profitability, with gross margin climbing to ~61.5%."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Nagłe załamanie popytu na wydobycie kryptowalut pod koniec 2018 roku zostawiło nadmiar kart w kanale dystrybucyjnym i zmusiło odbiorców do wstrzymania zamówień.",
+            "en": "The abrupt late-2018 crypto mining crash left excess cards in the distribution channel and caused buyers to pause orders."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Na rynku profesjonalnego renderingu i obliczeń AI nie pojawił się powszechny zamiennik dla rozwiązań RTX i CUDA.",
+            "en": "No widespread substitute emerged in professional rendering or AI computing for RTX and CUDA solutions."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Przełom w ray tracingu w czasie rzeczywistym jeszcze mocniej wyśrubował wymagania technologiczne wobec potencjalnych rywali.",
+            "en": "The breakthrough in real-time ray tracing raised technological entry thresholds even higher for potential rivals."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "GPU oraz Tegra Processor (brak pełnego podziału kwotowego)",
+            "en": "GPU & Tegra Processor (full dollar split N/A)"
+          },
+          "value": {
+            "pl": "~11,7 mld USD",
+            "en": "~$11.7B"
+          },
+          "pct": 100.0
+        }
       ]
     },
     {
       "year": 2020,
-      "fiscalLabel": { "pl": "FY2021 (Przejęcie Mellanox i boom chmurowy)", "en": "FY2021 (Mellanox Acquisition & Cloud Boom)" },
-      "era": { "pl": "Transformacja w Platformę Data Center", "en": "Data Center Platform Transformation" },
+      "fiscalLabel": {
+        "pl": "FY2020 (28.01.2019 – 26.01.2020)",
+        "en": "FY2020 (Jan 28, 2019 – Jan 26, 2020)"
+      },
+      "era": {
+        "pl": "Era IV: Rewolucja Deep Learning, Ray Tracing i wyścig Data Center (FY2017–FY2023)",
+        "en": "Era IV: Deep Learning Revolution, Ray Tracing & Data Center Race (FY2017–FY2023)"
+      },
       "summary": {
-        "pl": "Zamknięcie przejęcia Mellanox (6,9 mld USD) łączy obliczenia GPU z sieciami InfiniBand; przychody Data Center niemal się podwajają.",
-        "en": "Closing of $6.9B Mellanox acquisition unites GPU compute with InfiniBand networking; Data Center revenue nearly doubles."
+        "pl": "Korekta przychodów o 6,8% (~10,9 mld USD) w trakcie czyszczenia zapasów po krachu kryptowalutowym przy jednoczesnym wzroście R&D o 19,1% (2,8 mld USD) i marży brutto ~62,4%.",
+        "en": "Revenue corrected 6.8% (~$10.9B) during post-crypto inventory digestion while R&D rose 19.1% ($2.8B) and gross margin reached ~62.4%."
       },
       "kpis": {
-        "revenue": { "pl": "16,68 mld USD", "en": "$16.68B" },
-        "revenueNum": 16.68,
-        "yoy": "+53%",
-        "grossMargin": "62.3%",
-        "opMargin": "27.2%",
-        "netIncome": { "pl": "4,33 mld USD", "en": "$4.33B" },
-        "rnd": { "pl": "3,92 mld USD", "en": "$3.92B" },
-        "catalyst": { "pl": "Ampere A100 + Mellanox", "en": "Ampere A100 + Mellanox" }
+        "revenue": {
+          "pl": "~10,9 mld USD",
+          "en": "~$10.9B"
+        },
+        "revenueNum": 10.918,
+        "yoy": "-6.8%",
+        "grossMargin": "~62.4%",
+        "opMargin": "~25.7%",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "R&D: 2,8 mld USD (+19,1% r/r)",
+          "en": "R&D: $2.8B (+19.1% YoY)"
+        },
+        "catalyst": {
+          "pl": "Trawienie zapasów GPU w kanale po krachu kryptowalut oraz wzrost R&D o 19,1%",
+          "en": "Post-crypto GPU channel inventory digestion and 19.1% R&D expansion"
+        }
       },
       "forces": {
         "rivalry": {
           "score": 2,
           "rationale": {
-            "pl": "A100 deklasuje konkurencję w treningu modeli AI; przejęcie Mellanox buduje przewagę na poziomie całego klastra.",
-            "en": "A100 dominates AI training; Mellanox integration creates full-cluster architectural lock-in."
+            "pl": "Mimo spadku sprzedaży o 6,8% w fazie czyszczenia zapasów gamingowych, NVIDIA utrzymała dominację technologiczną, a Data Center osiągnęło ok. 2,98 mld USD.",
+            "en": "Despite a 6.8% revenue dip during gaming inventory digestion, NVIDIA retained technological dominance with Data Center reaching ~$2.98B."
           }
         },
         "suppliers": {
-          "score": 4,
+          "score": 3,
           "rationale": {
-            "pl": "Rosnąca koncentracja na zaawansowanych procesach litograficznych (TSMC 7nm / Samsung 8nm) i pamięciach HBM2.",
-            "en": "Growing reliance on leading-edge lithography (TSMC 7nm / Samsung 8nm) and HBM2 memory."
+            "pl": "Marża brutto wzrosła do ok. 62,4% nawet przy mniejszym wolumenie całkowitym, potwierdzając korzystną strukturę kosztów u odlewni.",
+            "en": "Gross margin climbed to ~62.4% even on lower total volume, confirming favorable foundry cost structures."
           }
         },
         "buyers": {
           "score": 3,
           "rationale": {
-            "pl": "Hyperscalerzy (AWS, Azure, GCP) stają się kluczowymi odbiorcami, ale brak alternatywy ogranicza ich presję cenową.",
-            "en": "Hyperscalers (AWS, Azure, GCP) become major buyers, yet lack viable alternatives to pressure pricing."
+            "pl": "Nadmiar zapasów w kanale konsumenckim przejściowo osłabił dźwignię operacyjną (marża operacyjna ok. 25,7%) przy rosnących wydatkach R&D.",
+            "en": "Excess consumer channel inventory temporarily weighed on operating leverage (~25.7% operating margin) amid rising R&D."
           }
         },
         "substitutes": {
           "score": 2,
           "rationale": {
-            "pl": "Google TPU i wczesne układy ASIC mają wąskie zastosowanie; uniwersalność CUDA wygrywa w badaniach AI.",
-            "en": "Google TPUs and early ASICs remain narrow; CUDA's generality wins across AI research."
+            "pl": "W centrach danych i superkomputerach akceleratory GPU z oprogramowaniem CUDA utrwalały status standardu branżowego.",
+            "en": "In data centers and supercomputers, GPU accelerators paired with CUDA cemented their status as the industry standard."
           }
         },
         "newEntrants": {
           "score": 2,
           "rationale": {
-            "pl": "Wymóg jednoczesnego dostarczania krzemu, sieci, serwerów DGX i oprogramowania zamyka rynek dla start-upów.",
-            "en": "Need to deliver silicon, networking, DGX systems, and software simultaneously blocks startups."
+            "pl": "Zwiększenie wydatków R&D do 2,8 mld USD w roku korekty przychodów pokazało determinację w utrzymaniu dystansu nad potencjalnymi rywalami.",
+            "en": "Increasing R&D spending to $2.8B during a revenue correction year demonstrated commitment to preserving its lead over newcomers."
           }
         }
       },
       "segments": [
-        { "name": { "pl": "Gaming", "en": "Gaming" }, "value": "7.76 mld USD", "pct": 46.5 },
-        { "name": { "pl": "Data Center", "en": "Data Center" }, "value": "6.70 mld USD", "pct": 40.2 },
-        { "name": { "pl": "Pozostałe (ProViz / Auto)", "en": "Other (ProViz / Auto)" }, "value": "2.22 mld USD", "pct": 13.3 }
+        {
+          "name": {
+            "pl": "Data Center (szac. analityczne)",
+            "en": "Data Center (analyst est.)"
+          },
+          "value": {
+            "pl": "~2,98 mld USD",
+            "en": "~$2.98B"
+          },
+          "pct": 27.3
+        },
+        {
+          "name": {
+            "pl": "Gaming, ProViz, Auto i OEM (reszta)",
+            "en": "Gaming, ProViz, Auto & OEM (rest)"
+          },
+          "value": {
+            "pl": "~7,92 mld USD",
+            "en": "~$7.92B"
+          },
+          "pct": 72.7
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "fiscalLabel": {
+        "pl": "FY2021 (27.01.2020 – 31.01.2021)",
+        "en": "FY2021 (Jan 27, 2020 – Jan 31, 2021)"
+      },
+      "era": {
+        "pl": "Era IV: Rewolucja Deep Learning, Ray Tracing i wyścig Data Center (FY2017–FY2023)",
+        "en": "Era IV: Deep Learning Revolution, Ray Tracing & Data Center Race (FY2017–FY2023)"
+      },
+      "summary": {
+        "pl": "Skok przychodów o 52,7% (~16,7 mld USD) napędzany pandemicznym popytem na gaming i chmurę, premierą architektury Ampere oraz integracją sieci Mellanox.",
+        "en": "Revenue jumped 52.7% (~$16.7B) driven by pandemic gaming and cloud demand, the Ampere architecture launch, and Mellanox networking integration."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "~16,7 mld USD",
+          "en": "~$16.7B"
+        },
+        "revenueNum": 16.675,
+        "yoy": "+52.7%",
+        "grossMargin": "~62.3%",
+        "opMargin": "~26.9%",
+        "netIncome": {
+          "pl": "Brak danych w wyciągach",
+          "en": "N/A in filings"
+        },
+        "rnd": {
+          "pl": "Integracja Mellanox i reorganizacja segmentów",
+          "en": "Mellanox integration & segment reorganization"
+        },
+        "catalyst": {
+          "pl": "Pandemiczny boom w gamingu i chmurze, premiera Ampere oraz przejęcie Mellanox",
+          "en": "Pandemic gaming and cloud boom, Ampere launch, and Mellanox acquisition"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 2,
+          "rationale": {
+            "pl": "Pandemia napędziła popyt w gamingu i chmurze (+52,7% przychodów), a integracja sieci Mellanox i premiera Ampere stworzyły bezkonkurencyjną ofertę.",
+            "en": "The pandemic fueled gaming and cloud demand (+52.7% revenue), while Mellanox networking and Ampere created an unmatched portfolio."
+          }
+        },
+        "suppliers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Pomimo globalnych zakłóceń podaży półprzewodników w trakcie pandemii marża brutto utrzymała się na wysokim poziomie ok. 62,3%.",
+            "en": "Despite global semiconductor supply disruptions during the pandemic, gross margin held steady at a high ~62.3%."
+          }
+        },
+        "buyers": {
+          "score": 2,
+          "rationale": {
+            "pl": "Ostry deficyt kart RTX 30 (Ampere) oraz pilne inwestycje chmurowe pozbawiły dystrybutorów i OEM zdolności negocjowania rabatów.",
+            "en": "Severe shortages of RTX 30 (Ampere) cards and urgent cloud deployments stripped distributors and OEMs of discounting leverage."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Połączenie akceleracji GPU z szybkimi sieciami Data Center (Mellanox) ograniczało atrakcyjność rozwiązań opartych na samych CPU.",
+            "en": "Combining GPU acceleration with high-speed Data Center networking (Mellanox) reduced the appeal of CPU-only server setups."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Skalowanie kompetencji sieciowych oraz ogłoszenie planu przejęcia Arm (mimo późniejszych barier regulacyjnych) podkreślało skalę konsolidacji ekosystemu.",
+            "en": "Scaling networking capabilities and announcing the Arm acquisition bid underscored the scale of ecosystem consolidation."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Compute & Networking oraz Graphics (brak pełnych kwot rocznych w wyciągach)",
+            "en": "Compute & Networking and Graphics (full annual split N/A)"
+          },
+          "value": {
+            "pl": "~16,7 mld USD",
+            "en": "~$16.7B"
+          },
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "fiscalLabel": {
+        "pl": "FY2022 (01.02.2021 – 30.01.2022)",
+        "en": "FY2022 (Feb 1, 2021 – Jan 30, 2022)"
+      },
+      "era": {
+        "pl": "Era IV: Rewolucja Deep Learning, Ray Tracing i wyścig Data Center (FY2017–FY2023)",
+        "en": "Era IV: Deep Learning Revolution, Ray Tracing & Data Center Race (FY2017–FY2023)"
+      },
+      "summary": {
+        "pl": "Rekordowe przychody 26,91 mld USD (+61,4%), marża brutto 64,9% i zysk netto 9,75 mld USD przy równoległym rozkwicie Gamingu (12,46 mld) i Data Center (10,61 mld).",
+        "en": "Record $26.91B revenue (+61.4%), 64.9% gross margin, and $9.75B net income as both Gaming ($12.46B) and Data Center ($10.61B) hit highs."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "26,91 mld USD",
+          "en": "$26.91B"
+        },
+        "revenueNum": 26.914,
+        "yoy": "+61.4%",
+        "grossMargin": "64.9%",
+        "opMargin": "~37.2%",
+        "netIncome": {
+          "pl": "9,75 mld USD",
+          "en": "$9.75B"
+        },
+        "rnd": {
+          "pl": "R&D: 5,27 mld USD (19,6% przych.)",
+          "en": "R&D: $5.27B (19.6% of rev.)"
+        },
+        "catalyst": {
+          "pl": "Rekordowe wyniki Gaming i Data Center (84% sprzedaży poza USA) oraz blokada fuzji z Arm",
+          "en": "Record Gaming and Data Center results (84% non-US sales) and regulatory block of Arm deal"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 2,
+          "rationale": {
+            "pl": "Rekordowe przychody w Gaming (12,46 mld USD, +61%) i Data Center (10,61 mld USD, +58%) oraz marża operacyjna ok. 37,2% potwierdzały przewagę konkurencyjną.",
+            "en": "Record revenue in Gaming ($12.46B, +61%) and Data Center ($10.61B, +58%) alongside ~37.2% operating margin confirmed strong competitive superiority."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Globalne braki mocy wytwórczych w odlewniach krzemu i zaawansowanym pakowaniu ograniczały podaż układów względem popytu, choć marża brutto wzrosła do 64,9%.",
+            "en": "Global foundry and advanced packaging capacity shortages constrained chip supply relative to demand, though gross margin rose to 64.9%."
+          }
+        },
+        "buyers": {
+          "score": 2,
+          "rationale": {
+            "pl": "Zdywersyfikowany popyt geograficzny (84% sprzedaży poza USA) oraz deficyt kart graficznych i akceleratorów utrzymywały przewagę cenową po stronie NVIDIA.",
+            "en": "Geographically diversified demand (84% non-US revenue) and acute GPU shortages kept pricing power firmly with NVIDIA."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Wzrost skali modeli AI i projektów cyfrowych bliźniaków w Omniverse pogłębiał technologiczną przepaść wobec tradycyjnych serwerów.",
+            "en": "Scaling AI models and Omniverse digital twin deployments widened the technological gap over traditional servers."
+          }
+        },
+        "newEntrants": {
+          "score": 2,
+          "rationale": {
+            "pl": "Nakłady R&D wzrosły do 5,27 mld USD (19,6% przychodów), tworząc masywną barierę finansowo-patentową.",
+            "en": "R&D expenditures rose to $5.27B (19.6% of revenue), creating a massive financial and IP barrier."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Gaming (platforma rynkowa)",
+            "en": "Gaming (Market Platform)"
+          },
+          "value": {
+            "pl": "12,46 mld USD",
+            "en": "$12.46B"
+          },
+          "pct": 46.3
+        },
+        {
+          "name": {
+            "pl": "Data Center (platforma rynkowa)",
+            "en": "Data Center (Market Platform)"
+          },
+          "value": {
+            "pl": "10,61 mld USD",
+            "en": "$10.61B"
+          },
+          "pct": 39.4
+        },
+        {
+          "name": {
+            "pl": "ProViz, Auto i OEM (reszta)",
+            "en": "ProViz, Auto & OEM (Rest)"
+          },
+          "value": {
+            "pl": "3,84 mld USD",
+            "en": "$3.84B"
+          },
+          "pct": 14.3
+        }
       ]
     },
     {
       "year": 2023,
-      "fiscalLabel": { "pl": "FY2024 (Eksplozja Generatywnej AI)", "en": "FY2024 (Generative AI Inflection)" },
-      "era": { "pl": "Infleksja GenAI: Monopol infrastruktury LLM", "en": "GenAI Inflection: LLM Infrastructure Monopoly" },
+      "fiscalLabel": {
+        "pl": "FY2023 (31.01.2022 – 29.01.2023)",
+        "en": "FY2023 (Jan 31, 2022 – Jan 29, 2023)"
+      },
+      "era": {
+        "pl": "Era IV: Rewolucja Deep Learning, Ray Tracing i wyścig Data Center (FY2017–FY2023)",
+        "en": "Era IV: Deep Learning Revolution, Ray Tracing & Data Center Race (FY2017–FY2023)"
+      },
       "summary": {
-        "pl": "Premiera ChatGPT wywołuje globalny wyścig zbrojeń o układy Hopper H100; przychody Data Center rosną o ponad 217% r/r.",
-        "en": "ChatGPT sparks a global hyperscaler arms race for Hopper H100 GPUs; Data Center revenue surges over 217% YoY."
+        "pl": "Stagnacja przychodów (26,97 mld USD, +0,2%) i spadek zysku netto o 55,2% (4,37 mld USD) wskutek korekty w Gamingu, sankcji na Chiny i kosztu zerwania fuzji z Arm (1,35 mld USD).",
+        "en": "Flat revenue ($26.97B, +0.2%) and a 55.2% net income drop ($4.37B) amid Gaming inventory correction, China export controls, and a $1.35B Arm termination charge."
       },
       "kpis": {
-        "revenue": { "pl": "60,92 mld USD", "en": "$60.92B" },
-        "revenueNum": 60.92,
-        "yoy": "+126%",
-        "grossMargin": "72.7%",
-        "opMargin": "54.1%",
-        "netIncome": { "pl": "29,76 mld USD", "en": "$29.76B" },
-        "rnd": { "pl": "8,68 mld USD", "en": "$8.68B" },
-        "catalyst": { "pl": "Hopper H100 & NVLink", "en": "Hopper H100 & NVLink" }
+        "revenue": {
+          "pl": "26,97 mld USD",
+          "en": "$26.97B"
+        },
+        "revenueNum": 26.974,
+        "yoy": "+0.2%",
+        "grossMargin": "~57.1%",
+        "opMargin": "~15.6%",
+        "netIncome": {
+          "pl": "4,37 mld USD",
+          "en": "$4.37B"
+        },
+        "rnd": {
+          "pl": "Koszt zerwania przejęcia Arm: 1,35 mld USD (Q1 FY23)",
+          "en": "Arm termination fee: $1.35B (Q1 FY23)"
+        },
+        "catalyst": {
+          "pl": "Data Center wyprzedziło Gaming; korekta PC, sankcje USA na Chiny, premiera H100 i CPU Grace",
+          "en": "Data Center overtook Gaming; PC correction, US China sanctions, H100 & Grace CPU launch"
+        }
       },
       "forces": {
         "rivalry": {
-          "score": 1,
+          "score": 3,
           "rationale": {
-            "pl": "Ponad 90% udziału w akceleratorach AI w centrach danych; rywale nie są w stanie dostarczyć porównywalnego stosu programowego.",
-            "en": "Over 90% share in data center AI accelerators; rivals lack a comparable full-stack software ecosystem."
+            "pl": "W 2022 roku na rynek dyskretnych GPU wszedł Intel, a spadek w Gamingu (do 9,1 mld USD) i amerykańskie restrykcje wobec Chin zatrzymały wzrost sprzedaży (+0,2%).",
+            "en": "Intel entered discrete GPUs in 2022, while a Gaming slump (to $9.1B) and US export restrictions on China stalled top-line growth (+0.2%)."
           }
         },
         "suppliers": {
           "score": 4,
           "rationale": {
-            "pl": "Wąskie gardła w zaawansowanym pakowaniu CoWoS w TSMC oraz dostawach pamięci HBM3 (SK Hynix).",
-            "en": "Supply bottlenecks in TSMC CoWoS advanced packaging and SK Hynix HBM3 memory capacity."
+            "pl": "Koszty wdrożenia architektury Hopper H100 oraz rozliczenia zobowiązań podażowych przy dekoniunkturze w PC obniżyły marżę brutto z 64,9% do ok. 57,1%.",
+            "en": "Hopper H100 ramp costs and supply commitment charges during the PC downturn compressed gross margin from 64.9% to ~57.1%."
           }
         },
         "buyers": {
-          "score": 2,
+          "score": 3,
           "rationale": {
-            "pl": "Niedobór mocy obliczeniowych zmusza gigantów chmurowych do akceptacji cen dyktowanych przez NVIDIĘ i wielomiesięcznych kolejek.",
-            "en": "Severe compute shortage forces cloud giants to accept NVIDIA pricing and multi-month waitlists."
+            "pl": "Spowolnienie gospodarcze i korekta zapasów w kanale gamingowym wymusiły dostosowania cenowo-ilościowe, mimo 41-procentowego wzrostu Data Center do 15,0 mld USD.",
+            "en": "Macro slowdown and gaming channel inventory adjustments forced pricing/volume concessions despite 41% Data Center growth to $15.0B."
           }
         },
         "substitutes": {
           "score": 2,
           "rationale": {
-            "pl": "Własne układy klientów (AWS Trainium, Google TPU) łagodzą niedobory, lecz nie zastępują H100 w kluczowych modelach.",
-            "en": "In-house silicon (AWS Trainium, Google TPU) eases shortages but cannot replace H100 for frontier models."
+            "pl": "Zapowiedź własnego serwerowego CPU Grace w połączeniu z GPU Hopper umacniała pozycję NVIDIA w architekturze centrów danych.",
+            "en": "Announcing the in-house Grace server CPU paired with Hopper GPUs strengthened NVIDIA's architectural foothold in data centers."
           }
         },
         "newEntrants": {
-          "score": 1,
+          "score": 3,
           "rationale": {
-            "pl": "Budżet R&D na poziomie 8,7 mld USD i ekosystem 4+ mln programistów CUDA tworzą niemal nieprzekraczalną fosę.",
-            "en": "$8.7B R&D budget and an ecosystem of 4M+ CUDA developers create a near-insurmountable moat."
+            "pl": "Wejście Intela w dyskretne GPU i przyspieszenie prac nad akceleratorami w chmurach pokazały, że gracze o głębokim bilansie próbują przełamać duopol.",
+            "en": "Intel's discrete GPU entry and accelerating hyperscaler accelerator programs showed well-capitalized giants trying to break the duopoly."
           }
         }
       },
       "segments": [
-        { "name": { "pl": "Data Center", "en": "Data Center" }, "value": "47.52 mld USD", "pct": 78.0 },
-        { "name": { "pl": "Gaming", "en": "Gaming" }, "value": "10.45 mld USD", "pct": 17.2 },
-        { "name": { "pl": "Pozostałe (ProViz / Auto)", "en": "Other (ProViz / Auto)" }, "value": "2.95 mld USD", "pct": 4.8 }
+        {
+          "name": {
+            "pl": "Data Center (platforma rynkowa)",
+            "en": "Data Center (Market Platform)"
+          },
+          "value": {
+            "pl": "15,00 mld USD",
+            "en": "$15.00B"
+          },
+          "pct": 55.6
+        },
+        {
+          "name": {
+            "pl": "Gaming (platforma rynkowa)",
+            "en": "Gaming (Market Platform)"
+          },
+          "value": {
+            "pl": "9,10 mld USD",
+            "en": "$9.10B"
+          },
+          "pct": 33.7
+        },
+        {
+          "name": {
+            "pl": "ProViz, Auto i OEM (reszta)",
+            "en": "ProViz, Auto & OEM (Rest)"
+          },
+          "value": {
+            "pl": "2,87 mld USD",
+            "en": "$2.87B"
+          },
+          "pct": 10.7
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "fiscalLabel": {
+        "pl": "FY2024 (30.01.2023 – 28.01.2024)",
+        "en": "FY2024 (Jan 30, 2023 – Jan 28, 2024)"
+      },
+      "era": {
+        "pl": "Era V: Supercykl generatywnej AI i dominacja full-stack (FY2024–2026)",
+        "en": "Era V: Generative AI Supercycle & Full-Stack Dominance (FY2024–2026)"
+      },
+      "summary": {
+        "pl": "Eksplozja generatywnej AI (Hopper H100): przychody wzrosły o 125,9% do 60,92 mld USD, marża brutto osiągnęła 72,7%, a zysk netto skoczył blisko siedmiokrotnie do 29,76 mld USD.",
+        "en": "Generative AI explosion (Hopper H100): revenue soared 125.9% to $60.92B, gross margin reached 72.7%, and net income jumped nearly sevenfold to $29.76B."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "60,92 mld USD",
+          "en": "$60.92B"
+        },
+        "revenueNum": 60.922,
+        "yoy": "+125.9%",
+        "grossMargin": "72.7%",
+        "opMargin": "54.1%",
+        "netIncome": {
+          "pl": "29,76 mld USD",
+          "en": "$29.76B"
+        },
+        "rnd": {
+          "pl": "R&D: 8,68 mld USD (14,2% przych.) / >4 400 aplikacji CUDA",
+          "en": "R&D: $8.68B (14.2% of rev.) / >4,400 CUDA apps"
+        },
+        "catalyst": {
+          "pl": "Globalny boom na generatywną AI i akceleratory Hopper H100 (>75% list TOP500)",
+          "en": "Global generative AI boom and Hopper H100 accelerators (>75% of TOP500 systems)"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 1,
+          "rationale": {
+            "pl": "Boom generatywnej AI podwoił przychody (+125,9% do 60,92 mld USD), a układy H100 oraz ekosystem >4 400 aplikacji CUDA zapewniły niemal monopolistyczną pozycję.",
+            "en": "The generative AI boom more than doubled revenue (+125.9% to $60.92B), with H100 and >4,400 CUDA apps securing near-monopoly leadership."
+          }
+        },
+        "suppliers": {
+          "score": 4,
+          "rationale": {
+            "pl": "Zapotrzebowanie na zaawansowane węzły TSMC, pakowanie CoWoS i pamięci HBM tworzyło ograniczenia podażowe, lecz pełna siła cenowa podniosła marżę brutto do 72,7%.",
+            "en": "Demand for leading-edge TSMC nodes, CoWoS packaging, and HBM created supply bottlenecks, yet full pricing power lifted gross margin to 72.7%."
+          }
+        },
+        "buyers": {
+          "score": 1,
+          "rationale": {
+            "pl": "Desperacki wyścig hiperskalerów i laboratoriów AI o alokację H100 zniósł presję na ceny, windując marżę operacyjną do 54,1% (32,97 mld USD).",
+            "en": "A desperate race among hyperscalers and AI labs for H100 allocation eliminated price resistance, driving operating margin to 54.1% ($32.97B)."
+          }
+        },
+        "substitutes": {
+          "score": 2,
+          "rationale": {
+            "pl": "Układy GPU z CUDA stały się domyślną infrastrukturą dla dużych modeli AI, choć Google (TPU) i AWS (Trainium) rozwijały wewnętrzne alternatywy.",
+            "en": "CUDA-enabled GPUs became the default infrastructure for large AI models, though Google (TPU) and AWS (Trainium) advanced internal alternatives."
+          }
+        },
+        "newEntrants": {
+          "score": 3,
+          "rationale": {
+            "pl": "Wzrost R&D do 8,68 mld USD nie powstrzymał gigantów technologicznych i AMD przed intensyfikacją prac nad akceleratorami wobec ogromnej puli zysków branży.",
+            "en": "Raising R&D to $8.68B did not deter tech giants and AMD from intensifying accelerator efforts given the industry's massive profit pool."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Compute & Networking oraz Graphics (brak pełnych kwot rocznych w wyciągach)",
+            "en": "Compute & Networking and Graphics (full annual split N/A)"
+          },
+          "value": {
+            "pl": "60,92 mld USD",
+            "en": "$60.92B"
+          },
+          "pct": 100.0
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "fiscalLabel": {
+        "pl": "FY2025 (29.01.2024 – 26.01.2025)",
+        "en": "FY2025 (Jan 29, 2024 – Jan 26, 2025)"
+      },
+      "era": {
+        "pl": "Era V: Supercykl generatywnej AI i dominacja full-stack (FY2024–2026)",
+        "en": "Era V: Generative AI Supercycle & Full-Stack Dominance (FY2024–2026)"
+      },
+      "summary": {
+        "pl": "Przekroczenie 130,50 mld USD przychodów (+114,2%), rekordowa marża brutto 75,0% i zysk netto 72,88 mld USD przy szczycie sprzedaży Hopper i starcie Blackwell (11 mld USD w Q4).",
+        "en": "Crossed $130.50B in revenue (+114.2%), peak 75.0% gross margin, and $72.88B net income as Hopper peaked and Blackwell launched ($11B in Q4)."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "130,50 mld USD",
+          "en": "$130.50B"
+        },
+        "revenueNum": 130.497,
+        "yoy": "+114.2%",
+        "grossMargin": "75.0%",
+        "opMargin": "62.5%",
+        "netIncome": {
+          "pl": "72,88 mld USD",
+          "en": "$72.88B"
+        },
+        "rnd": {
+          "pl": "R&D: 12,91 mld USD (9,9% przych.) / Data Center 115,2 mld USD",
+          "en": "R&D: $12.91B (9.9% of rev.) / Data Center $115.2B"
+        },
+        "catalyst": {
+          "pl": "Szczyt Hopper, start Blackwell (11 mld USD w Q4 FY25), split 10:1 (VI 2024) i wejście do DJIA",
+          "en": "Hopper peak, Blackwell launch ($11B in Q4 FY25), 10:1 stock split (Jun 2024), and DJIA inclusion"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 1,
+          "rationale": {
+            "pl": "Szacowany przez analityków 80–90% udział w akceleratorach AI oraz 92% w dyskretnych GPU, przy wzroście Data Center o 142% do 115,2 mld USD, potwierdzały dominację.",
+            "en": "An estimated 80–90% share in AI accelerators and 92% in discrete GPUs, alongside 142% Data Center growth to $115.2B, confirmed dominance."
+          }
+        },
+        "suppliers": {
+          "score": 5,
+          "rationale": {
+            "pl": "Zaledwie trzech producentów pamięci HBM (lider SK Hynix ok. 50–62% udziału) oraz monopol TSMC w zaawansowanej litografii i CoWoS wyznaczały sztywne limity podaży.",
+            "en": "Only three HBM memory suppliers (led by SK Hynix at ~50–62% share) and TSMC's monopoly in leading-edge nodes and CoWoS imposed rigid supply limits."
+          }
+        },
+        "buyers": {
+          "score": 2,
+          "rationale": {
+            "pl": "Choć marże osiągnęły szczyt (brutto 75,0%, operacyjna 62,5%), przychody skoncentrowały się w rękach kilku hiperskalerów (pojedynczy klient przekraczał 16% sprzedaży).",
+            "en": "While margins peaked (75.0% gross, 62.5% operating), revenue concentrated among a few hyperscalers (single direct customer exceeding 16% of sales)."
+          }
+        },
+        "substitutes": {
+          "score": 3,
+          "rationale": {
+            "pl": "Hiperskalerzy przyspieszyli wdrażanie własnych układów ASIC (Google TPU, AWS Trainium-2, Meta MTIA), a AMD wdrożyło akceleratory MI300X/MI350.",
+            "en": "Hyperscalers accelerated internal ASIC deployments (Google TPU, AWS Trainium-2, Meta MTIA), while AMD rolled out MI300X/MI350 accelerators."
+          }
+        },
+        "newEntrants": {
+          "score": 3,
+          "rationale": {
+            "pl": "Nakłady R&D na poziomie 12,91 mld USD i budowa zamkniętego ekosystemu chronią rdzeń rynku, lecz blokady eksportu H20 do Chin stymulowały tamtejsze substytuty.",
+            "en": "$12.91B in R&D and a full-stack ecosystem protected the core market, though H20 export bans to China stimulated domestic Chinese alternatives."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Compute & Networking (segment sprawozdawczy)",
+            "en": "Compute & Networking (Reporting Segment)"
+          },
+          "value": {
+            "pl": "116,20 mld USD",
+            "en": "$116.20B"
+          },
+          "pct": 89.0
+        },
+        {
+          "name": {
+            "pl": "Graphics (segment sprawozdawczy)",
+            "en": "Graphics (Reporting Segment)"
+          },
+          "value": {
+            "pl": "14,30 mld USD",
+            "en": "$14.30B"
+          },
+          "pct": 11.0
+        }
       ]
     },
     {
       "year": 2026,
-      "fiscalLabel": { "pl": "FY2026/2027 (Architektura Blackwell i Rubin)", "en": "FY2026/2027 (Blackwell & Rubin Cycle)" },
-      "era": { "pl": "Era Fabryk AI: Pełnoskalowe systemy Rack-Scale", "en": "AI Factory Era: Full-Stack Rack-Scale Systems" },
+      "fiscalLabel": {
+        "pl": "FY2026 (27.01.2025 – 25.01.2026)",
+        "en": "FY2026 (Jan 27, 2025 – Jan 25, 2026)"
+      },
+      "era": {
+        "pl": "Era V: Supercykl generatywnej AI i dominacja full-stack (FY2024–2026)",
+        "en": "Era V: Generative AI Supercycle & Full-Stack Dominance (FY2024–2026)"
+      },
       "summary": {
-        "pl": "NVIDIA sprzedaje kompletne fabryki AI (szafy NVL72 Blackwell oraz zapowiedź Rubin), generując ponad 85% przychodów w segmencie Data Center.",
-        "en": "NVIDIA transitions from chip vendor to full AI factory provider (Blackwell NVL72 racks & Rubin roadmap), with >85% Data Center revenue mix."
+        "pl": "Wdrożenia systemów Blackwell (GB200) podniosły roczne przychody o 65,5% do 215,94 mld USD i zysk netto do 120,07 mld USD przy marży brutto 71,1% i 89,7% udziale Data Center.",
+        "en": "Blackwell (GB200) ramp lifted annual revenue 65.5% to $215.94B and net income to $120.07B, with 71.1% gross margin and 89.7% Data Center share."
       },
       "kpis": {
-        "revenue": { "pl": "130,5+ mld USD", "en": "$130.5B+" },
-        "revenueNum": 130.5,
-        "yoy": "+114%",
-        "grossMargin": "75.0%",
-        "opMargin": "62.4%",
-        "netIncome": { "pl": "72,88 mld USD", "en": "$72.88B" },
-        "rnd": { "pl": "12,91 mld USD", "en": "$12.91B" },
-        "catalyst": { "pl": "Blackwell GB200 NVL72 / NIM", "en": "Blackwell GB200 NVL72 / NIM" }
+        "revenue": {
+          "pl": "215,94 mld USD",
+          "en": "$215.94B"
+        },
+        "revenueNum": 215.938,
+        "yoy": "+65.5%",
+        "grossMargin": "71.1%",
+        "opMargin": "60.4%",
+        "netIncome": {
+          "pl": "120,07 mld USD",
+          "en": "$120.07B"
+        },
+        "rnd": {
+          "pl": "R&D: 18,50 mld USD (+43,2% r/r) / OCF 103 mld USD",
+          "en": "R&D: $18.50B (+43.2% YoY) / OCF $103B"
+        },
+        "catalyst": {
+          "pl": "Skalowanie Blackwell (GB200), wyprzedzenie Apple u TSMC (~19% przych.) i >5 bln USD kapitalizacji",
+          "en": "Blackwell (GB200) scaling, surpassing Apple as TSMC's #1 client (~19%), and >$5T market cap"
+        }
       },
       "forces": {
         "rivalry": {
           "score": 2,
           "rationale": {
-            "pl": "AMD MI300/MI350 zdobywa przyczółki w inferencji, lecz integracja szaf NVLink72 utrzymuje przywództwo NVIDII.",
-            "en": "AMD MI300/MI350 gains inference footholds, yet NVLink72 rack integration preserves NVIDIA's leadership."
+            "pl": "Mimo 65,5% skoku przychodów do 215,94 mld USD, zaostrzyła się walka o wielkoskalowe kontrakty klastrowe z AMD (MI350/MI400) i chipami chmur przy braku dostaw H20 do Chin.",
+            "en": "Despite a 65.5% revenue surge to $215.94B, competition intensified for massive cluster deals against AMD (MI350/MI400) and cloud ASICs amid zero China H20 shipments."
           }
         },
         "suppliers": {
-          "score": 4,
+          "score": 5,
           "rationale": {
-            "pl": "Krytyczna zależność od TSMC (CoWoS-L) oraz dostawców HBM3e (SK Hynix, Micron), łagodzona przedpłatami i rezerwacją mocy.",
-            "en": "Critical reliance on TSMC (CoWoS-L) and HBM3e suppliers (SK Hynix, Micron), mitigated via capacity prepayments."
+            "pl": "NVIDIA została największym klientem TSMC (~19% sprzedaży odlewni), czas oczekiwania na pakowanie CoWoS przekraczał 50 tygodni, a wdrożenie Blackwell obniżyło marżę brutto do 71,1%.",
+            "en": "NVIDIA became TSMC's top customer (~19% of foundry sales), CoWoS lead times exceeded 50 weeks, and the Blackwell ramp compressed gross margin to 71.1%."
           }
         },
         "buyers": {
           "score": 3,
           "rationale": {
-            "pl": "Wysoka koncentracja (4 największych hyperscalerów to ~45% przychodów), którzy intensywnie rozwijają własne układy ASIC.",
-            "en": "High buyer concentration (top 4 hyperscalers ~45% of revenue) actively investing in custom ASICs."
+            "pl": "Wydatki kapitałowe nielicznych globalnych hiperskalerów finansują niemal 90% sprzedaży NVIDIA (Data Center 193,7 mld USD), co wzmacnia ich pozycję negocjacyjną.",
+            "en": "CapEx from a handful of global hyperscalers funded nearly 90% of NVIDIA's revenue (Data Center $193.7B), strengthening their bargaining leverage."
           }
         },
         "substitutes": {
           "score": 3,
           "rationale": {
-            "pl": "Custom ASIC (Google TPU v6, AWS Trainium2, Broadcom) stają się realnym substytutem dla wyspecjalizowanych obciążeń.",
-            "en": "Custom ASICs (Google TPU v6, AWS Trainium2, Broadcom) emerge as viable substitutes for targeted workloads."
+            "pl": "Układy własne hiperskalerów (TPU-v5/v6, Trainium-2, MTIA) przejmowały rosnącą część wewnętrznych obciążeń wnioskowania i trenowania AI u największych klientów.",
+            "en": "Custom hyperscaler ASICs (TPU-v5/v6, Trainium-2, MTIA) absorbed a growing share of internal AI inference and training workloads at top accounts."
           }
         },
         "newEntrants": {
-          "score": 1,
+          "score": 3,
           "rationale": {
-            "pl": "Roczny rytm premier architektur (Hopper -> Blackwell -> Rubin) i oprogramowanie NIM uniemożliwiają dogonienie lidera.",
-            "en": "Annual architecture cadence (Hopper -> Blackwell -> Rubin) and NIM enterprise software lock out new entrants."
+            "pl": "Budżet R&D zwiększony o 43,2% do 18,50 mld USD utrudnia wejście niezależnym start-upom, ale pionowa integracja hiperskalerów pozostaje stałym źródłem konkurencji.",
+            "en": "Raising R&D by 43.2% to $18.50B deterred independent startups, though vertical integration by hyperscalers remained a persistent competitive threat."
           }
         }
       },
       "segments": [
-        { "name": { "pl": "Data Center & Networking", "en": "Data Center & Networking" }, "value": "115.2 mld USD", "pct": 88.3 },
-        { "name": { "pl": "Gaming & AI PC", "en": "Gaming & AI PC" }, "value": "11.4 mld USD", "pct": 8.7 },
-        { "name": { "pl": "ProViz & Automotive", "en": "ProViz & Automotive" }, "value": "3.9 mld USD", "pct": 3.0 }
+        {
+          "name": {
+            "pl": "Compute & Networking (segment sprawozdawczy)",
+            "en": "Compute & Networking (Reporting Segment)"
+          },
+          "value": {
+            "pl": "193,50 mld USD",
+            "en": "$193.50B"
+          },
+          "pct": 89.6
+        },
+        {
+          "name": {
+            "pl": "Graphics (segment sprawozdawczy)",
+            "en": "Graphics (Reporting Segment)"
+          },
+          "value": {
+            "pl": "22,44 mld USD",
+            "en": "$22.44B"
+          },
+          "pct": 10.4
+        }
+      ]
+    },
+    {
+      "year": 2027,
+      "fiscalLabel": {
+        "pl": "FY2027 YTD — 9M 2026 (Q1–Q3 do 25.10.2026)",
+        "en": "FY2027 YTD — 9M 2026 (Q1–Q3 ended Oct 25, 2026)"
+      },
+      "era": {
+        "pl": "Era V: Supercykl generatywnej AI i dominacja full-stack (FY2024–2026)",
+        "en": "Era V: Generative AI Supercycle & Full-Stack Dominance (FY2024–2026)"
+      },
+      "summary": {
+        "pl": "W 9M FY2027 (Q1–Q3 2026) przychody osiągnęły ~293,6 mld USD (115,8 mld w Q3, +103% r/r) przy zysku netto 183,30 mld USD, starcie Vera Rubin NVL72 i 518 mld USD zobowiązań dostawczych.",
+        "en": "In 9M FY2027 (Q1–Q3 2026), revenue reached ~$293.6B ($115.8B in Q3, +103% YoY) with $183.30B net income, Vera Rubin NVL72 ramp, and $518B in supply commitments."
+      },
+      "kpis": {
+        "revenue": {
+          "pl": "~293,6 mld USD (9M FY27)",
+          "en": "~$293.6B (9M FY27)"
+        },
+        "revenueNum": 293.6,
+        "yoy": "+103% (Q3 r/r)",
+        "grossMargin": "74.8%",
+        "opMargin": "66.9%",
+        "netIncome": {
+          "pl": "183,30 mld USD (9M FY27)",
+          "en": "$183.30B (9M FY27)"
+        },
+        "rnd": {
+          "pl": "R&D (9M): 20,83 mld USD / 518 mld USD zobowiązań",
+          "en": "R&D (9M): $20.83B / $518B supply commitments"
+        },
+        "catalyst": {
+          "pl": "Start dostaw Vera Rubin NVL72, 3 klientów = 36% sprzedaży Q3, prognoza Q4: 130 mld USD",
+          "en": "Vera Rubin NVL72 shipments start, 3 customers = 36% of Q3 sales, Q4 guidance $130B"
+        }
+      },
+      "forces": {
+        "rivalry": {
+          "score": 2,
+          "rationale": {
+            "pl": "Pomimo skoku przychodów (+103% r/r w Q3 do 115,8 mld USD) i startu Vera Rubin NVL72, AMD dynamicznie rośnie dzięki serii MI400 i wielogigawatowym kontraktom (m.in. 6 GW dla OpenAI).",
+            "en": "Despite Q3 revenue surging +103% YoY to $115.8B and the Vera Rubin NVL72 ramp, AMD gained momentum with MI400 and multi-gigawatt deals (incl. 6 GW for OpenAI)."
+          }
+        },
+        "suppliers": {
+          "score": 5,
+          "rationale": {
+            "pl": "Wyprzedana pamięć HBM3E (~20% podwyżki cen w 2026 r. u SK Hynix i Samsunga) oraz przejście na HBM4 zmusiły NVIDIA do zaciągnięcia aż 518 mld USD przyszłych zobowiązań podażowo-inwestycyjnych.",
+            "en": "Sold-out HBM3E supply (~20% 2026 price hikes at SK Hynix and Samsung) and the HBM4 transition forced NVIDIA into $518B of future supply and investment commitments."
+          }
+        },
+        "buyers": {
+          "score": 3,
+          "rationale": {
+            "pl": "Trzech klientów bezpośrednich wygenerowało 36% przychodów Q3 FY2027 (14%, 11%, 11%), a spółka wspiera pojemność neochmur gwarancjami do 118,0 mld USD, utrzymując marżę brutto 74,8%.",
+            "en": "Three direct customers generated 36% of Q3 FY2027 revenue (14%, 11%, 11%), while NVIDIA backed neocloud capacity with up to $118.0B in guarantees at a 74.8% gross margin."
+          }
+        },
+        "substitutes": {
+          "score": 4,
+          "rationale": {
+            "pl": "Równoległy rozwój i skalowanie w latach 2026–2027 własnych układów ASIC hiperskalerów (AWS Trainium, Google TPU-v6, Meta MTIA) oraz akceleratorów AMD MI400 stanowi realną presję długoterminową.",
+            "en": "Parallel 2026–2027 scaling of custom hyperscaler ASICs (AWS Trainium, Google TPU-v6, Meta MTIA) and AMD MI400 accelerators exerts growing structural pressure."
+          }
+        },
+        "newEntrants": {
+          "score": 3,
+          "rationale": {
+            "pl": "Rywalizacja na poziomie systemów rack-scale (Vera Rubin NVL72) przy 20,83 mld USD wydatków R&D w 9 miesięcy eliminuje małe podmioty, lecz pionowa integracja chmur utrzymuje presję.",
+            "en": "Rack-scale competition (Vera Rubin NVL72) backed by $20.83B in 9-month R&D eliminates small startups, but vertical integration by cloud buyers sustains pressure."
+          }
+        }
+      },
+      "segments": [
+        {
+          "name": {
+            "pl": "Compute & Networking (Q3 FY2027)",
+            "en": "Compute & Networking (Q3 FY2027)"
+          },
+          "value": {
+            "pl": "106,00 mld USD",
+            "en": "$106.00B"
+          },
+          "pct": 91.5
+        },
+        {
+          "name": {
+            "pl": "Graphics (Q3 FY2027)",
+            "en": "Graphics (Q3 FY2027)"
+          },
+          "value": {
+            "pl": "9,80 mld USD",
+            "en": "$9.80B"
+          },
+          "pct": 8.5
+        }
       ]
     }
   ]
