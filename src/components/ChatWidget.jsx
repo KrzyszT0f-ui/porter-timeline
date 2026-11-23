@@ -28,14 +28,14 @@ const UI_TEXT = {
     loadingModel: 'Pobieranie i kompilacja modelu w pamięci GPU...',
     fallbackTitle: 'Brak wsparcia WebGPU na tym urządzeniu',
     fallbackBody:
-      'Twoja przeglądarka lub karta graficzna nie obsługuje lokalnego uruchamiania modeli 3B (wymagany Chrome/Edge na komputerze z WebGPU). Możesz skopiować gotowy pakiet danych wybranego roku do własnego czatu AI:',
-    copyPromptBtn: 'Kopiuj dane roku + prompt do schowka',
+      'Twoja przeglądarka lub karta graficzna nie obsługuje lokalnego uruchamiania modeli 3B (wymagany Chrome/Edge na komputerze z WebGPU). Możesz skopiować gotowy pakiet danych spółki do własnego czatu AI:',
+    copyPromptBtn: 'Kopiuj dane spółki + prompt do schowka',
     copiedBtn: 'Skopiowano do schowka',
     placeholder: 'Zapytaj o przychody, marże lub 5 Sił Portera...',
     thinking: 'Analizuję dane...',
     contextBadge: 'Kontekst:',
     welcome:
-      'Model gotowy. Zadaj pytanie dotyczące aktywnej spółki i wybranego roku na osi czasu.'
+      'Model gotowy. Znam pełną historię przychodów i KPI aktywnej spółki oraz szczegóły wybranego roku na osi czasu.'
   },
   en: {
     btnLabel: 'AI Analyst',
@@ -50,19 +50,19 @@ const UI_TEXT = {
     loadingModel: 'Downloading & compiling model on GPU...',
     fallbackTitle: 'WebGPU Unavailable on This Device',
     fallbackBody:
-      'Your browser or GPU does not support running a local 3B model (requires desktop Chrome/Edge with WebGPU). You can copy the structured context for the selected year to use in any external AI:',
-    copyPromptBtn: 'Copy Year Data + Prompt',
+      'Your browser or GPU does not support running a local 3B model (requires desktop Chrome/Edge with WebGPU). You can copy the structured company context to use in any external AI:',
+    copyPromptBtn: 'Copy Company Data + Prompt',
     copiedBtn: 'Copied to Clipboard',
     placeholder: 'Ask about revenue, margins, or Five Forces...',
     thinking: 'Analyzing data...',
     contextBadge: 'Context:',
     welcome:
-      'Model ready. Ask any question about the active company and selected timeline year.'
+      'Model ready. I have access to the full historical revenue/KPI table for this company and detailed Five Forces scores for the selected year.'
   }
 };
 
 function buildContextPayload(company, currentEntry, compareEntry, lang) {
-  const formatEntry = (entry) => ({
+  const formatDetailedEntry = (entry) => ({
     year: entry.year,
     fiscalPeriod: pickLang(entry.fiscalLabel, lang),
     era: pickLang(entry.era, lang),
@@ -89,24 +89,34 @@ function buildContextPayload(company, currentEntry, compareEntry, lang) {
     }))
   });
 
+  const allYearsOverview = company.timeline.map((item) => ({
+    year: item.year,
+    revenue: pickLang(item.kpis.revenue, lang),
+    yoy: item.kpis.yoy,
+    grossMargin: item.kpis.grossMargin,
+    opMargin: item.kpis.opMargin,
+    catalyst: pickLang(item.kpis.catalyst, lang)
+  }));
+
   const payload = {
     company: `${company.name} (${company.ticker})`,
     sector: pickLang(company.sector, lang),
-    selectedPeriod: formatEntry(currentEntry)
+    activeSliderYearDetail: formatDetailedEntry(currentEntry),
+    allYearsFinancialTable: allYearsOverview
   };
 
   if (compareEntry) {
-    payload.comparisonPeriod = formatEntry(compareEntry);
+    payload.comparisonYearDetail = formatDetailedEntry(compareEntry);
   }
 
-  return JSON.stringify(payload, null, 2);
+  return JSON.stringify(payload);
 }
 
 export default function ChatWidget({ company, currentEntry, compareEntry, lang }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [hwStatus, setHwStatus] = useState('checking'); // checking | supported | unsupported
+  const [hwStatus, setHwStatus] = useState('checking');
   const [hwReason, setHwReason] = useState('');
-  const [engineStatus, setEngineStatus] = useState('idle'); // idle | loading | ready | error
+  const [engineStatus, setEngineStatus] = useState('idle');
   const [progressText, setProgressText] = useState('');
   const [progressPct, setProgressPct] = useState(0);
   const [messages, setMessages] = useState([]);
@@ -210,21 +220,40 @@ export default function ChatWidget({ company, currentEntry, compareEntry, lang }
     const contextJson = buildContextPayload(company, currentEntry, compareEntry, lang);
     const systemPrompt =
       lang === 'pl'
-        ? `Jesteś precyzyjnym analitykiem finansowym i strategicznym. Odpowiadaj WYŁĄCZNIE po polsku, zwięźle i na podstawie poniższego kontekstu JSON. Nie wymyślaj liczb spoza kontekstu. Jeśli brakuje informacji, napisz o tym wprost.\n\nKONTEKST DANYCH:\n${contextJson}`
-        : `You are a precise financial and strategic analyst. Answer ONLY in English, concisely, strictly using the JSON context below. Never invent numbers outside the context. If data is missing, state it clearly.\n\nDATA CONTEXT:\n${contextJson}`;
+        ? `Jesteś precyzyjnym analitykiem finansowym.
+ZASADY KRYTYCZNE:
+1. Odpowiadaj WYŁĄCZNIE w poprawnym języku polskim. Nigdy nie używaj chińskich znaków ani obcych wtrąceń.
+2. Opieraj się WYŁĄCZNIE na poniższym obiekcie JSON.
+3. Jeśli użytkownik pyta o konkretny rok (np. 2021), znajdź obiekt "year": 2021 w tablicy "allYearsFinancialTable" i podaj DOKŁADNE wartości z tego roku (revenue, yoy, grossMargin, catalyst). Nie mieszaj liczb z innych lat!
+4. Jeśli użytkownik nie poda roku, odnieś się do "activeSliderYearDetail" (rok ${currentEntry.year}).
+5. Zachowuj dokładne nazwy produktów (np. Vera Rubin NVL72, Hopper H100, Blackwell). Bądź zwięzły i konkretny.
+
+DANE SPÓŁKI (JSON):
+${contextJson}`
+        : `You are a precise financial analyst.
+CRITICAL RULES:
+1. Answer ONLY in clean English. Never output Chinese characters or mixed languages.
+2. Rely STRICTLY on the JSON object below.
+3. If the user asks about a specific year (e.g., 2021), look up "year": 2021 in "allYearsFinancialTable" and report the EXACT figures for that year. Never mix metrics across different years!
+4. If no year is specified, refer to "activeSliderYearDetail" (year ${currentEntry.year}).
+5. Keep exact product names (e.g., Vera Rubin NVL72, Hopper H100, Blackwell). Be concise and factual.
+
+COMPANY DATA (JSON):
+${contextJson}`;
 
     try {
       const chatMessages = [
         { role: 'system', content: systemPrompt },
-        ...updatedHistory.slice(-4).map((m) => ({ role: m.role, content: m.content }))
+        ...updatedHistory.slice(-2).map((m) => ({ role: m.role, content: m.content }))
       ];
 
       setMessages((prev) => [...prev, { role: 'assistant', content: '' }]);
 
       const chunks = await engineRef.current.chat.completions.create({
         messages: chatMessages,
-        temperature: 0.2,
-        max_tokens: 450,
+        temperature: 0.05,
+        repetition_penalty: 1.1,
+        max_tokens: 400,
         stream: true
       });
 
