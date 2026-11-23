@@ -8,7 +8,8 @@ import {
   AlertTriangle,
   Copy,
   Check,
-  Sparkles
+  Sparkles,
+  RotateCcw
 } from 'lucide-react';
 import { pickLang } from '../i18n/translations';
 
@@ -28,14 +29,15 @@ const UI_TEXT = {
     loadingModel: 'Pobieranie i kompilacja modelu w pamięci GPU...',
     fallbackTitle: 'Brak wsparcia WebGPU na tym urządzeniu',
     fallbackBody:
-      'Twoja przeglądarka lub karta graficzna nie obsługuje lokalnego uruchamiania modeli 3B (wymagany Chrome/Edge na komputerze z WebGPU). Możesz skopiować gotowy pakiet danych spółki do własnego czatu AI:',
-    copyPromptBtn: 'Kopiuj dane spółki + prompt do schowka',
+      'Twoja przeglądarka lub karta graficzna nie obsługuje lokalnego uruchamiania modeli 3B (wymagany Chrome/Edge na komputerze z WebGPU). Możesz skopiować gotowy pakiet danych do własnego czatu AI:',
+    copyPromptBtn: 'Kopiuj dane okresu + prompt do schowka',
     copiedBtn: 'Skopiowano do schowka',
-    placeholder: 'Zapytaj o przychody, marże lub 5 Sił Portera...',
+    placeholder: 'Zapytaj o dowolny rok (np. 2021 vs 2024) lub 5 Sił...',
     thinking: 'Analizuję dane...',
     contextBadge: 'Kontekst:',
+    clearBtn: 'Wyczyść rozmowę',
     welcome:
-      'Model gotowy. Znam pełną historię przychodów i KPI aktywnej spółki oraz szczegóły wybranego roku na osi czasu.'
+      'Model gotowy. Zapytaj o dowolny rok z historii spółki, wyniki finansowe lub 5 Sił Portera.'
   },
   en: {
     btnLabel: 'AI Analyst',
@@ -50,66 +52,76 @@ const UI_TEXT = {
     loadingModel: 'Downloading & compiling model on GPU...',
     fallbackTitle: 'WebGPU Unavailable on This Device',
     fallbackBody:
-      'Your browser or GPU does not support running a local 3B model (requires desktop Chrome/Edge with WebGPU). You can copy the structured company context to use in any external AI:',
-    copyPromptBtn: 'Copy Company Data + Prompt',
+      'Your browser or GPU does not support running a local 3B model (requires desktop Chrome/Edge with WebGPU). You can copy the structured context to use in any external AI:',
+    copyPromptBtn: 'Copy Period Data + Prompt',
     copiedBtn: 'Copied to Clipboard',
-    placeholder: 'Ask about revenue, margins, or Five Forces...',
+    placeholder: 'Ask about any year (e.g. 2021 vs 2024) or Five Forces...',
     thinking: 'Analyzing data...',
     contextBadge: 'Context:',
+    clearBtn: 'Clear chat',
     welcome:
-      'Model ready. I have access to the full historical revenue/KPI table for this company and detailed Five Forces scores for the selected year.'
+      'Model ready. Ask about any year in the company timeline, financials, or Porter’s Five Forces.'
   }
 };
 
-function buildContextPayload(company, currentEntry, compareEntry, lang) {
-  const formatDetailedEntry = (entry) => ({
-    year: entry.year,
-    fiscalPeriod: pickLang(entry.fiscalLabel, lang),
-    era: pickLang(entry.era, lang),
-    summary: pickLang(entry.summary, lang),
-    kpis: {
-      revenue: pickLang(entry.kpis.revenue, lang),
-      yoy: entry.kpis.yoy,
-      grossMargin: entry.kpis.grossMargin,
-      opMargin: entry.kpis.opMargin,
-      netIncome: pickLang(entry.kpis.netIncome, lang),
-      rndOrOps: pickLang(entry.kpis.rnd, lang),
-      catalyst: pickLang(entry.kpis.catalyst, lang)
-    },
-    forces: Object.fromEntries(
-      Object.entries(entry.forces).map(([k, v]) => [
-        k,
-        { score: `${v.score}/5`, rationale: pickLang(v.rationale, lang) }
-      ])
-    ),
-    segments: entry.segments.map((s) => ({
-      name: pickLang(s.name, lang),
-      value: pickLang(s.value, lang),
-      sharePct: s.pct
-    }))
+function formatEntryBlock(entry, tag, lang) {
+  const forcesLines = Object.entries(entry.forces)
+    .map(([k, v]) => `  - ${k}: ${v.score}/5 (${pickLang(v.rationale, lang)})`)
+    .join('\n');
+
+  const segmentsLines = entry.segments
+    .map((s) => `  - ${pickLang(s.name, lang)}: ${pickLang(s.value, lang)} (${s.pct}%)`)
+    .join('\n');
+
+  return [
+    `=== ${tag}: ROK / YEAR ${entry.year} (${pickLang(entry.fiscalLabel, lang)}) ===`,
+    `Era: ${pickLang(entry.era, lang)}`,
+    `Podsumowanie / Summary: ${pickLang(entry.summary, lang)}`,
+    `Przychody / Revenue: ${pickLang(entry.kpis.revenue, lang)}`,
+    `Dynamika YoY: ${entry.kpis.yoy}`,
+    `Marża brutto / Gross Margin: ${entry.kpis.grossMargin}`,
+    `Marża operacyjna / Operating Margin: ${entry.kpis.opMargin}`,
+    `Zysk netto / Net Income: ${pickLang(entry.kpis.netIncome, lang)}`,
+    `R&D / Operacje: ${pickLang(entry.kpis.rnd, lang)}`,
+    `Katalizator / Catalyst: ${pickLang(entry.kpis.catalyst, lang)}`,
+    `Segmenty / Segments:\n${segmentsLines}`,
+    `5 Sił Portera / Five Forces:\n${forcesLines}`
+  ].join('\n');
+}
+
+function buildTargetedContext(company, currentEntry, compareEntry, userQuery, lang) {
+  const mentionedYears = [...new Set((userQuery.match(/\b(19\d{2}|20\d{2})\b/g) || []).map(Number))];
+  const blocks = [];
+  const includedYears = new Set();
+
+  // 1. Najpierw lata wprost wymienione w pytaniu użytkownika
+  mentionedYears.forEach((yr) => {
+    const found = company.timeline.find((item) => item.year === yr);
+    if (found && !includedYears.has(found.year)) {
+      blocks.push(formatEntryBlock(found, `ZAPYTANY ROK / REQUESTED YEAR`, lang));
+      includedYears.add(found.year);
+    }
   });
 
-  const allYearsOverview = company.timeline.map((item) => ({
-    year: item.year,
-    revenue: pickLang(item.kpis.revenue, lang),
-    yoy: item.kpis.yoy,
-    grossMargin: item.kpis.grossMargin,
-    opMargin: item.kpis.opMargin,
-    catalyst: pickLang(item.kpis.catalyst, lang)
-  }));
-
-  const payload = {
-    company: `${company.name} (${company.ticker})`,
-    sector: pickLang(company.sector, lang),
-    activeSliderYearDetail: formatDetailedEntry(currentEntry),
-    allYearsFinancialTable: allYearsOverview
-  };
-
-  if (compareEntry) {
-    payload.comparisonYearDetail = formatDetailedEntry(compareEntry);
+  // 2. Aktywny rok z suwaka (jeśli nie był już dodany)
+  if (currentEntry && !includedYears.has(currentEntry.year)) {
+    blocks.push(formatEntryBlock(currentEntry, `AKTYWNY ROK NA SUWAKU / ACTIVE SLIDER YEAR`, lang));
+    includedYears.add(currentEntry.year);
   }
 
-  return JSON.stringify(payload);
+  // 3. Rok porównywany (jeśli wybrany i nie był już dodany)
+  if (compareEntry && !includedYears.has(compareEntry.year)) {
+    blocks.push(formatEntryBlock(compareEntry, `ROK PORÓWNYWANY / COMPARISON YEAR`, lang));
+    includedYears.add(compareEntry.year);
+  }
+
+  return [
+    `SPÓŁKA / COMPANY: ${company.name} (${company.ticker})`,
+    `SEKTOR / SECTOR: ${pickLang(company.sector, lang)}`,
+    `DOSTĘPNY ZAKRES LAT / AVAILABLE YEARS: ${company.timeline[0].year}–${company.timeline[company.timeline.length - 1].year}`,
+    '',
+    ...blocks
+  ].join('\n\n');
 }
 
 export default function ChatWidget({ company, currentEntry, compareEntry, lang }) {
@@ -127,6 +139,13 @@ export default function ChatWidget({ company, currentEntry, compareEntry, lang }
   const engineRef = useRef(null);
   const messagesEndRef = useRef(null);
   const t = UI_TEXT[lang] || UI_TEXT.pl;
+
+  // Reset historii przy zmianie spółki lub języka, żeby nie mieszać danych
+  useEffect(() => {
+    if (engineStatus === 'ready') {
+      setMessages([{ role: 'assistant', content: t.welcome }]);
+    }
+  }, [company.id, lang, engineStatus, t.welcome]);
 
   useEffect(() => {
     if (!isOpen || hwStatus !== 'checking') return;
@@ -195,11 +214,11 @@ export default function ChatWidget({ company, currentEntry, compareEntry, lang }
   };
 
   const handleCopyFallbackPrompt = () => {
-    const contextJson = buildContextPayload(company, currentEntry, compareEntry, lang);
+    const contextText = buildTargetedContext(company, currentEntry, compareEntry, '', lang);
     const prompt =
       lang === 'pl'
-        ? `Przeanalizuj poniższe dane finansowe i oceny Pięciu Sił Portera dla spółki ${company.name} (${company.ticker}):\n\n${contextJson}`
-        : `Analyze the following financial metrics and Porter's Five Forces scores for ${company.name} (${company.ticker}):\n\n${contextJson}`;
+        ? `Przeanalizuj poniższe dane finansowe i oceny Pięciu Sił Portera dla spółki ${company.name} (${company.ticker}):\n\n${contextText}`
+        : `Analyze the following financial metrics and Porter's Five Forces scores for ${company.name} (${company.ticker}):\n\n${contextText}`;
 
     navigator.clipboard.writeText(prompt);
     setCopied(true);
@@ -212,48 +231,45 @@ export default function ChatWidget({ company, currentEntry, compareEntry, lang }
     if (!trimmed || !engineRef.current || isGenerating) return;
 
     const userMsg = { role: 'user', content: trimmed };
-    const updatedHistory = [...messages, userMsg];
-    setMessages(updatedHistory);
+    setMessages((prev) => [...prev, userMsg]);
     setInput('');
     setIsGenerating(true);
 
-    const contextJson = buildContextPayload(company, currentEntry, compareEntry, lang);
+    const contextText = buildTargetedContext(company, currentEntry, compareEntry, trimmed, lang);
+
     const systemPrompt =
       lang === 'pl'
         ? `Jesteś precyzyjnym analitykiem finansowym.
-ZASADY KRYTYCZNE:
-1. Odpowiadaj WYŁĄCZNIE w poprawnym języku polskim. Nigdy nie używaj chińskich znaków ani obcych wtrąceń.
-2. Opieraj się WYŁĄCZNIE na poniższym obiekcie JSON.
-3. Jeśli użytkownik pyta o konkretny rok (np. 2021), znajdź obiekt "year": 2021 w tablicy "allYearsFinancialTable" i podaj DOKŁADNE wartości z tego roku (revenue, yoy, grossMargin, catalyst). Nie mieszaj liczb z innych lat!
-4. Jeśli użytkownik nie poda roku, odnieś się do "activeSliderYearDetail" (rok ${currentEntry.year}).
-5. Zachowuj dokładne nazwy produktów (np. Vera Rubin NVL72, Hopper H100, Blackwell). Bądź zwięzły i konkretny.
+ZASADY:
+1. Odpowiadaj WYŁĄCZNIE poprawną polszczyzną, krótko i rzeczowo (maksymalnie 3-4 zdania lub krótkie punkty).
+2. Korzystaj WYŁĄCZNIE z danych podanych poniżej dla spółki ${company.name} (${company.ticker}).
+3. Przypisuj liczby dokładnie do właściwego roku z nagłówka sekcji (np. ROK 2021 vs ROK 2024). Nie zgaduj i nie dopowiadaj nic spoza tekstu.
 
-DANE SPÓŁKI (JSON):
-${contextJson}`
+DANE ŹRÓDŁOWE:
+${contextText}`
         : `You are a precise financial analyst.
-CRITICAL RULES:
-1. Answer ONLY in clean English. Never output Chinese characters or mixed languages.
-2. Rely STRICTLY on the JSON object below.
-3. If the user asks about a specific year (e.g., 2021), look up "year": 2021 in "allYearsFinancialTable" and report the EXACT figures for that year. Never mix metrics across different years!
-4. If no year is specified, refer to "activeSliderYearDetail" (year ${currentEntry.year}).
-5. Keep exact product names (e.g., Vera Rubin NVL72, Hopper H100, Blackwell). Be concise and factual.
+RULES:
+1. Answer ONLY in clean English, concisely and factually (max 3-4 sentences or brief bullet points).
+2. Rely STRICTLY on the data provided below for ${company.name} (${company.ticker}).
+3. Match every metric strictly to its exact year section header. Never guess or invent anything outside the provided text.
 
-COMPANY DATA (JSON):
-${contextJson}`;
+SOURCE DATA:
+${contextText}`;
 
     try {
       const chatMessages = [
         { role: 'system', content: systemPrompt },
-        ...updatedHistory.slice(-2).map((m) => ({ role: m.role, content: m.content }))
+        { role: 'user', content: trimmed }
       ];
 
       setMessages((prev) => [...prev, { role: 'assistant', content: '' }]);
 
       const chunks = await engineRef.current.chat.completions.create({
         messages: chatMessages,
-        temperature: 0.05,
-        repetition_penalty: 1.1,
-        max_tokens: 400,
+        temperature: 0.01,
+        top_p: 0.9,
+        repetition_penalty: 1.05,
+        max_tokens: 350,
         stream: true
       });
 
@@ -323,12 +339,23 @@ ${contextJson}`;
                 </div>
               </div>
             </div>
-            <button
-              onClick={() => setIsOpen(false)}
-              className="p-1 rounded-lg opacity-70 hover:opacity-100 cursor-pointer"
-            >
-              <X className="w-4 h-4" />
-            </button>
+            <div className="flex items-center gap-1">
+              {engineStatus === 'ready' && (
+                <button
+                  onClick={() => setMessages([{ role: 'assistant', content: t.welcome }])}
+                  title={t.clearBtn}
+                  className="p-1 rounded-lg opacity-70 hover:opacity-100 cursor-pointer"
+                >
+                  <RotateCcw className="w-3.5 h-3.5" />
+                </button>
+              )}
+              <button
+                onClick={() => setIsOpen(false)}
+                className="p-1 rounded-lg opacity-70 hover:opacity-100 cursor-pointer"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
           </div>
 
           <div
