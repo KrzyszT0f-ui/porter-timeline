@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import { COMPANIES, getCompanyById } from './data/registry';
 import { translations, pickLang } from './i18n/translations';
+import ChatWidget from './components/ChatWidget';
 
 const FORCE_KEYS = ['rivalry', 'suppliers', 'buyers', 'substitutes', 'newEntrants'];
 
@@ -728,6 +729,12 @@ export default function App() {
           </div>
         </div>
       </footer>
+        <ChatWidget
+        company={company}
+        currentEntry={currentEntry}
+        compareEntry={compareEntry}
+        lang={lang}
+        />
     </div>
   );
 }

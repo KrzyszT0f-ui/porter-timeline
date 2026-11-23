@@ -10,6 +10,9 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['icon.svg'],
+      workbox: {
+        globIgnores: ['**/llm.worker*.js', '**/lib-*.js'],
+      },
       manifest: {
         name: 'Silnik 5 Sił Portera',
         short_name: '5 Sił Portera',
