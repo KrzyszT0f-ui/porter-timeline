@@ -65,60 +65,65 @@ const UI_TEXT = {
 };
 
 function formatEntryBlock(entry, tag, lang) {
-  const forcesLines = Object.entries(entry.forces)
-    .map(([k, v]) => `  - ${k}: ${v.score}/5 (${pickLang(v.rationale, lang)})`)
+  if (!entry) return '';
+  const kpis = entry.kpis || {};
+  const forcesLines = Object.entries(entry.forces || {})
+    .map(([k, v]) => `  - ${k}: ${v?.score ?? '?'}/5 (${pickLang(v?.rationale, lang)})`)
     .join('\n');
 
-  const segmentsLines = entry.segments
-    .map((s) => `  - ${pickLang(s.name, lang)}: ${pickLang(s.value, lang)} (${s.pct}%)`)
+  const segmentsLines = (entry.segments || [])
+    .map((s) => `  - ${pickLang(s?.name, lang)}: ${pickLang(s?.value, lang)} (${s?.pct ?? 0}%)`)
     .join('\n');
 
   return [
     `=== ${tag}: ROK / YEAR ${entry.year} (${pickLang(entry.fiscalLabel, lang)}) ===`,
     `Era: ${pickLang(entry.era, lang)}`,
     `Podsumowanie / Summary: ${pickLang(entry.summary, lang)}`,
-    `Przychody / Revenue: ${pickLang(entry.kpis.revenue, lang)}`,
-    `Dynamika YoY: ${entry.kpis.yoy}`,
-    `Marża brutto / Gross Margin: ${entry.kpis.grossMargin}`,
-    `Marża operacyjna / Operating Margin: ${entry.kpis.opMargin}`,
-    `Zysk netto / Net Income: ${pickLang(entry.kpis.netIncome, lang)}`,
-    `R&D / Operacje: ${pickLang(entry.kpis.rnd, lang)}`,
-    `Katalizator / Catalyst: ${pickLang(entry.kpis.catalyst, lang)}`,
-    `Segmenty / Segments:\n${segmentsLines}`,
-    `5 Sił Portera / Five Forces:\n${forcesLines}`
-  ].join('\n');
+    `Przychody / Revenue: ${pickLang(kpis.revenue, lang)}`,
+    `Dynamika YoY: ${kpis.yoy || 'N/A'}`,
+    `Marża brutto / Gross Margin: ${kpis.grossMargin || 'N/A'}`,
+    `Marża operacyjna / Operating Margin: ${kpis.opMargin || 'N/A'}`,
+    `Zysk netto / Net Income: ${pickLang(kpis.netIncome, lang)}`,
+    `R&D / Operacje: ${pickLang(kpis.rnd, lang)}`,
+    `Katalizator / Catalyst: ${pickLang(kpis.catalyst, lang)}`,
+    segmentsLines ? `Segmenty / Segments:\n${segmentsLines}` : '',
+    forcesLines ? `5 Sił Portera / Five Forces:\n${forcesLines}` : ''
+  ]
+    .filter(Boolean)
+    .join('\n');
 }
 
 function buildTargetedContext(company, currentEntry, compareEntry, userQuery, lang) {
+  const timeline = company?.timeline || [];
   const mentionedYears = [...new Set((userQuery.match(/\b(19\d{2}|20\d{2})\b/g) || []).map(Number))];
   const blocks = [];
   const includedYears = new Set();
 
-  // 1. Najpierw lata wprost wymienione w pytaniu użytkownika
   mentionedYears.forEach((yr) => {
-    const found = company.timeline.find((item) => item.year === yr);
+    const found = timeline.find((item) => item.year === yr);
     if (found && !includedYears.has(found.year)) {
-      blocks.push(formatEntryBlock(found, `ZAPYTANY ROK / REQUESTED YEAR`, lang));
+      blocks.push(formatEntryBlock(found, 'ZAPYTANY ROK / REQUESTED YEAR', lang));
       includedYears.add(found.year);
     }
   });
 
-  // 2. Aktywny rok z suwaka (jeśli nie był już dodany)
   if (currentEntry && !includedYears.has(currentEntry.year)) {
-    blocks.push(formatEntryBlock(currentEntry, `AKTYWNY ROK NA SUWAKU / ACTIVE SLIDER YEAR`, lang));
+    blocks.push(formatEntryBlock(currentEntry, 'AKTYWNY ROK NA SUWAKU / ACTIVE SLIDER YEAR', lang));
     includedYears.add(currentEntry.year);
   }
 
-  // 3. Rok porównywany (jeśli wybrany i nie był już dodany)
   if (compareEntry && !includedYears.has(compareEntry.year)) {
-    blocks.push(formatEntryBlock(compareEntry, `ROK PORÓWNYWANY / COMPARISON YEAR`, lang));
+    blocks.push(formatEntryBlock(compareEntry, 'ROK PORÓWNYWANY / COMPARISON YEAR', lang));
     includedYears.add(compareEntry.year);
   }
+
+  const firstYear = timeline[0]?.year ?? '';
+  const lastYear = timeline[timeline.length - 1]?.year ?? '';
 
   return [
     `SPÓŁKA / COMPANY: ${company.name} (${company.ticker})`,
     `SEKTOR / SECTOR: ${pickLang(company.sector, lang)}`,
-    `DOSTĘPNY ZAKRES LAT / AVAILABLE YEARS: ${company.timeline[0].year}–${company.timeline[company.timeline.length - 1].year}`,
+    `DOSTĘPNY ZAKRES LAT / AVAILABLE YEARS: ${firstYear}–${lastYear}`,
     '',
     ...blocks
   ].join('\n\n');
@@ -140,7 +145,6 @@ export default function ChatWidget({ company, currentEntry, compareEntry, lang }
   const messagesEndRef = useRef(null);
   const t = UI_TEXT[lang] || UI_TEXT.pl;
 
-  // Reset historii przy zmianie spółki lub języka, żeby nie mieszać danych
   useEffect(() => {
     if (engineStatus === 'ready') {
       setMessages([{ role: 'assistant', content: t.welcome }]);
@@ -170,7 +174,7 @@ export default function ChatWidget({ company, currentEntry, compareEntry, lang }
         }
         setHwStatus('supported');
       } catch (err) {
-        setHwReason(err?.message || 'WebGPU initialization failed');
+        setHwReason(err?.message || String(err));
         setHwStatus('unsupported');
       }
     }
@@ -207,7 +211,7 @@ export default function ChatWidget({ company, currentEntry, compareEntry, lang }
       setEngineStatus('ready');
       setMessages([{ role: 'assistant', content: t.welcome }]);
     } catch (err) {
-      setHwReason(err?.message || 'Model initialization error');
+      setHwReason(err?.message || String(err));
       setHwStatus('unsupported');
       setEngineStatus('error');
     }
@@ -235,11 +239,12 @@ export default function ChatWidget({ company, currentEntry, compareEntry, lang }
     setInput('');
     setIsGenerating(true);
 
-    const contextText = buildTargetedContext(company, currentEntry, compareEntry, trimmed, lang);
+    try {
+      const contextText = buildTargetedContext(company, currentEntry, compareEntry, trimmed, lang);
 
-    const systemPrompt =
-      lang === 'pl'
-        ? `Jesteś precyzyjnym analitykiem finansowym.
+      const systemPrompt =
+        lang === 'pl'
+          ? `Jesteś precyzyjnym analitykiem finansowym.
 ZASADY:
 1. Odpowiadaj WYŁĄCZNIE poprawną polszczyzną, krótko i rzeczowo (maksymalnie 3-4 zdania lub krótkie punkty).
 2. Korzystaj WYŁĄCZNIE z danych podanych poniżej dla spółki ${company.name} (${company.ticker}).
@@ -247,7 +252,7 @@ ZASADY:
 
 DANE ŹRÓDŁOWE:
 ${contextText}`
-        : `You are a precise financial analyst.
+          : `You are a precise financial analyst.
 RULES:
 1. Answer ONLY in clean English, concisely and factually (max 3-4 sentences or brief bullet points).
 2. Rely STRICTLY on the data provided below for ${company.name} (${company.ticker}).
@@ -256,7 +261,6 @@ RULES:
 SOURCE DATA:
 ${contextText}`;
 
-    try {
       const chatMessages = [
         { role: 'system', content: systemPrompt },
         { role: 'user', content: trimmed }
@@ -284,14 +288,15 @@ ${contextText}`;
         });
       }
     } catch (err) {
+      const errMsg = err?.message || (typeof err === 'string' ? err : JSON.stringify(err));
       setMessages((prev) => [
         ...prev,
         {
           role: 'assistant',
           content:
             lang === 'pl'
-              ? `Błąd generowania odpowiedzi: ${err.message}`
-              : `Generation error: ${err.message}`
+              ? `Błąd generowania odpowiedzi: ${errMsg}`
+              : `Generation error: ${errMsg}`
         }
       ]);
     } finally {
