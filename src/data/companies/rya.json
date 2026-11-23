@@ -35,10 +35,10 @@
       },
       "kpis": {
         "revenue": {
-          "pl": "PAX: 205,0 mln / Load Factor: 94%",
-          "en": "PAX: 205.0M / Load Factor: 94%"
+          "pl": "176,9 mln EUR (IR£139,3 mln)",
+          "en": "€176.9M (IR£139.3m)"
         },
-        "revenueNum": 0.0,
+        "revenueNum": 0.177,
         "yoy": "N/A",
         "grossMargin": "N/A",
         "opMargin": "N/A",
@@ -427,10 +427,10 @@
       },
       "kpis": {
         "revenue": {
-          "pl": "Brak danych w wyciągach",
-          "en": "Not available in extracts"
+          "pl": "487,4 mln EUR",
+          "en": "€487.4M"
         },
-        "revenueNum": 0.0,
+        "revenueNum": 0.487,
         "yoy": "N/A",
         "grossMargin": "N/A",
         "opMargin": "N/A",
@@ -721,10 +721,10 @@
       },
       "kpis": {
         "revenue": {
-          "pl": "Brak danych w wyciągach",
-          "en": "Not available in extracts"
+          "pl": "1,07 mld EUR",
+          "en": "€1.07B"
         },
-        "revenueNum": 0.0,
+        "revenueNum": 1.074,
         "yoy": "N/A",
         "grossMargin": "N/A",
         "opMargin": "N/A",
@@ -819,10 +819,10 @@
       },
       "kpis": {
         "revenue": {
-          "pl": "Brak danych w wyciągach",
-          "en": "Not available in extracts"
+          "pl": "1,34 mld EUR",
+          "en": "€1.34B"
         },
-        "revenueNum": 0.0,
+        "revenueNum": 1.337,
         "yoy": "N/A",
         "grossMargin": "N/A",
         "opMargin": "N/A",
@@ -1211,10 +1211,10 @@
       },
       "kpis": {
         "revenue": {
-          "pl": "Brak pełnych kwot w wyciągach",
-          "en": "Full figures N/A in extracts"
+          "pl": "2,94 mld EUR",
+          "en": "€2.94B"
         },
-        "revenueNum": 0.0,
+        "revenueNum": 2.942,
         "yoy": "N/A (rozkładowe +5,7%, ancillary +22,5%)",
         "grossMargin": "N/A",
         "opMargin": "N/A",
@@ -1309,10 +1309,10 @@
       },
       "kpis": {
         "revenue": {
-          "pl": "Brak danych w wyciągach",
-          "en": "Not available in extracts"
+          "pl": "2,99 mld EUR",
+          "en": "€2.99B"
         },
-        "revenueNum": 0.0,
+        "revenueNum": 2.988,
         "yoy": "N/A",
         "grossMargin": "N/A",
         "opMargin": "N/A",
@@ -1407,10 +1407,10 @@
       },
       "kpis": {
         "revenue": {
-          "pl": "Brak danych w wyciągach",
-          "en": "Not available in extracts"
+          "pl": "3,63 mld EUR",
+          "en": "€3.63B"
         },
-        "revenueNum": 0.0,
+        "revenueNum": 3.63,
         "yoy": "N/A",
         "grossMargin": "N/A",
         "opMargin": "N/A",
@@ -2485,10 +2485,10 @@
       },
       "kpis": {
         "revenue": {
-          "pl": "Brak pełnych kwot w wyciągach",
-          "en": "Full figures N/A in extracts"
+          "pl": "4,80 mld EUR",
+          "en": "€4.80B"
         },
-        "revenueNum": 0.0,
+        "revenueNum": 4.801,
         "yoy": "N/A",
         "grossMargin": "N/A",
         "opMargin": "N/A",

@@ -200,16 +200,18 @@ function RevenueChart({ timeline, activeIndex, onSelectIndex, isLog, accentColor
               stroke="var(--bg-main)"
               strokeWidth="1.5"
             />
+            {(timeline.length <= 14 || idx % 2 === 0 || idx === timeline.length - 1 || isActive) && (
             <text
               x={c.x}
               y={height - 4}
               textAnchor="middle"
               fill={isActive ? accentColor : 'var(--text-secondary)'}
-              fontSize="10"
+              fontSize={timeline.length > 14 ? '9' : '10'}
               fontWeight={isActive ? '700' : '400'}
             >
-              {c.year}
+              {timeline.length > 14 ? `'${String(c.year).slice(-2)}` : c.year}
             </text>
+          )}
           </g>
         );
       })}
@@ -693,10 +695,10 @@ export default function App() {
             </button>
 
             <div className="flex-1">
-              <div className="flex justify-between text-[11px] font-bold mb-1.5 px-1">
+              <div className="flex justify-between text-[9px] sm:text-[11px] font-bold mb-1.5 px-1">
                 {company.timeline.map((item, idx) => (
                   <button
-                    key={item.year}
+                    key={company.timeline.length > 14 ? `'${String(item.year).slice(-2)}` : item.year}
                     onClick={() => setYearIndex(idx)}
                     className="cursor-pointer transition-colors"
                     style={{ color: idx === yearIndex ? 'var(--accent)' : 'var(--text-secondary)' }}
