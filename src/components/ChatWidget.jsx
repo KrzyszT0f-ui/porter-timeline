@@ -12,6 +12,7 @@ import {
   RotateCcw
 } from 'lucide-react';
 import { pickLang } from '../i18n/translations';
+import { getExtendedForcesForYear } from '../data/registry';
 
 const MODEL_ID = 'Qwen2.5-3B-Instruct-q4f16_1-MLC';
 
@@ -32,12 +33,12 @@ const UI_TEXT = {
       'Twoja przeglądarka lub karta graficzna nie obsługuje lokalnego uruchamiania modeli 3B (wymagany Chrome/Edge na komputerze z WebGPU). Możesz skopiować gotowy pakiet danych do własnego czatu AI:',
     copyPromptBtn: 'Kopiuj dane okresu + prompt do schowka',
     copiedBtn: 'Skopiowano do schowka',
-    placeholder: 'Zapytaj o dowolny rok (np. 2021 vs 2024) lub 5 Sił...',
+    placeholder: 'Zapytaj o dowolny rok (np. 2021 vs 2024), 5 Sił lub 9 obszarów...',
     thinking: 'Analizuję dane...',
     contextBadge: 'Kontekst:',
     clearBtn: 'Wyczyść rozmowę',
     welcome:
-      'Model gotowy. Zapytaj o dowolny rok z historii spółki, wyniki finansowe lub 5 Sił Portera.'
+      'Model gotowy. Zapytaj o dowolny rok z historii spółki, wyniki finansowe, 5 Sił Portera lub 9 obszarów.'
   },
   en: {
     btnLabel: 'AI Analyst',
@@ -55,25 +56,47 @@ const UI_TEXT = {
       'Your browser or GPU does not support running a local 3B model (requires desktop Chrome/Edge with WebGPU). You can copy the structured context to use in any external AI:',
     copyPromptBtn: 'Copy Period Data + Prompt',
     copiedBtn: 'Copied to Clipboard',
-    placeholder: 'Ask about any year (e.g. 2021 vs 2024) or Five Forces...',
+    placeholder: 'Ask about any year (e.g. 2021 vs 2024), Five Forces, or 9 areas...',
     thinking: 'Analyzing data...',
     contextBadge: 'Context:',
     clearBtn: 'Clear chat',
     welcome:
-      'Model ready. Ask about any year in the company timeline, financials, or Porter’s Five Forces.'
+      'Model ready. Ask about any year in the company timeline, financials, Porter’s Five Forces, or 9 areas.'
   }
 };
 
-function formatEntryBlock(entry, tag, lang) {
+function resolveForcesForEntry(companyId, entry, includeExtended) {
+  if (!entry) return { forces: {}, isExtended: false };
+  const baseForces = entry.forces || {};
+  if (!includeExtended || !companyId) {
+    return { forces: baseForces, isExtended: false };
+  }
+  const ext = getExtendedForcesForYear(companyId, entry.year);
+  if (!ext) {
+    return { forces: baseForces, isExtended: false };
+  }
+  return {
+    forces: { ...baseForces, ...ext },
+    isExtended: true
+  };
+}
+
+function formatEntryBlock(companyId, entry, tag, lang, includeExtended) {
   if (!entry) return '';
   const kpis = entry.kpis || {};
-  const forcesLines = Object.entries(entry.forces || {})
+  const { forces, isExtended } = resolveForcesForEntry(companyId, entry, includeExtended);
+
+  const forcesLines = Object.entries(forces)
     .map(([k, v]) => `  - ${k}: ${v?.score ?? '?'}/5 (${pickLang(v?.rationale, lang)})`)
     .join('\n');
 
   const segmentsLines = (entry.segments || [])
     .map((s) => `  - ${pickLang(s?.name, lang)}: ${pickLang(s?.value, lang)} (${s?.pct ?? 0}%)`)
     .join('\n');
+
+  const forcesHeader = isExtended
+    ? '9 Obszarów (5 Sił Portera + 4 Obszary Rozszerzone) / 9 Areas:'
+    : '5 Sił Portera / Five Forces:';
 
   return [
     `=== ${tag}: ROK / YEAR ${entry.year} (${pickLang(entry.fiscalLabel, lang)}) ===`,
@@ -87,13 +110,13 @@ function formatEntryBlock(entry, tag, lang) {
     `R&D / Operacje: ${pickLang(kpis.rnd, lang)}`,
     `Katalizator / Catalyst: ${pickLang(kpis.catalyst, lang)}`,
     segmentsLines ? `Segmenty / Segments:\n${segmentsLines}` : '',
-    forcesLines ? `5 Sił Portera / Five Forces:\n${forcesLines}` : ''
+    forcesLines ? `${forcesHeader}\n${forcesLines}` : ''
   ]
     .filter(Boolean)
     .join('\n');
 }
 
-function buildTargetedContext(company, currentEntry, compareEntry, userQuery, lang) {
+function buildTargetedContext(company, currentEntry, compareEntry, userQuery, lang, includeExtended) {
   const timeline = company?.timeline || [];
   const mentionedYears = [...new Set((userQuery.match(/\b(19\d{2}|20\d{2})\b/g) || []).map(Number))];
   const blocks = [];
@@ -102,18 +125,18 @@ function buildTargetedContext(company, currentEntry, compareEntry, userQuery, la
   mentionedYears.forEach((yr) => {
     const found = timeline.find((item) => item.year === yr);
     if (found && !includedYears.has(found.year)) {
-      blocks.push(formatEntryBlock(found, 'ZAPYTANY ROK / REQUESTED YEAR', lang));
+      blocks.push(formatEntryBlock(company.id, found, 'ZAPYTANY ROK / REQUESTED YEAR', lang, includeExtended));
       includedYears.add(found.year);
     }
   });
 
   if (currentEntry && !includedYears.has(currentEntry.year)) {
-    blocks.push(formatEntryBlock(currentEntry, 'AKTYWNY ROK NA SUWAKU / ACTIVE SLIDER YEAR', lang));
+    blocks.push(formatEntryBlock(company.id, currentEntry, 'AKTYWNY ROK NA SUWAKU / ACTIVE SLIDER YEAR', lang, includeExtended));
     includedYears.add(currentEntry.year);
   }
 
   if (compareEntry && !includedYears.has(compareEntry.year)) {
-    blocks.push(formatEntryBlock(compareEntry, 'ROK PORÓWNYWANY / COMPARISON YEAR', lang));
+    blocks.push(formatEntryBlock(company.id, compareEntry, 'ROK PORÓWNYWANY / COMPARISON YEAR', lang, includeExtended));
     includedYears.add(compareEntry.year);
   }
 
@@ -129,7 +152,7 @@ function buildTargetedContext(company, currentEntry, compareEntry, userQuery, la
   ].join('\n\n');
 }
 
-export default function ChatWidget({ company, currentEntry, compareEntry, lang }) {
+export default function ChatWidget({ company, currentEntry, compareEntry, lang, isExtendedActive = false }) {
   const [isOpen, setIsOpen] = useState(false);
   const [hwStatus, setHwStatus] = useState('checking');
   const [hwReason, setHwReason] = useState('');
@@ -218,11 +241,13 @@ export default function ChatWidget({ company, currentEntry, compareEntry, lang }
   };
 
   const handleCopyFallbackPrompt = () => {
-    const contextText = buildTargetedContext(company, currentEntry, compareEntry, '', lang);
+    const contextText = buildTargetedContext(company, currentEntry, compareEntry, '', lang, isExtendedActive);
+    const scopeLabelPl = isExtendedActive ? '9 obszarów analizy' : 'Pięciu Sił Portera';
+    const scopeLabelEn = isExtendedActive ? '9-area analysis' : 'Five Forces';
     const prompt =
       lang === 'pl'
-        ? `Przeanalizuj poniższe dane finansowe i oceny Pięciu Sił Portera dla spółki ${company.name} (${company.ticker}):\n\n${contextText}`
-        : `Analyze the following financial metrics and Porter's Five Forces scores for ${company.name} (${company.ticker}):\n\n${contextText}`;
+        ? `Przeanalizuj poniższe dane finansowe i oceny (${scopeLabelPl}) dla spółki ${company.name} (${company.ticker}):\n\n${contextText}`
+        : `Analyze the following financial metrics and ${scopeLabelEn} scores for ${company.name} (${company.ticker}):\n\n${contextText}`;
 
     navigator.clipboard.writeText(prompt);
     setCopied(true);
@@ -240,7 +265,7 @@ export default function ChatWidget({ company, currentEntry, compareEntry, lang }
     setIsGenerating(true);
 
     try {
-      const contextText = buildTargetedContext(company, currentEntry, compareEntry, trimmed, lang);
+      const contextText = buildTargetedContext(company, currentEntry, compareEntry, trimmed, lang, isExtendedActive);
 
       const systemPrompt =
         lang === 'pl'
@@ -248,7 +273,7 @@ export default function ChatWidget({ company, currentEntry, compareEntry, lang }
 ZASADY:
 1. Odpowiadaj WYŁĄCZNIE poprawną polszczyzną, krótko i rzeczowo (maksymalnie 3-4 zdania lub krótkie punkty).
 2. Korzystaj WYŁĄCZNIE z danych podanych poniżej dla spółki ${company.name} (${company.ticker}).
-3. Przypisuj liczby dokładnie do właściwego roku z nagłówka sekcji (np. ROK 2021 vs ROK 2024). Nie zgaduj i nie dopowiadaj nic spoza tekstu.
+3. Przypisuj liczby oraz oceny sił i obszarów dokładnie do właściwego roku z nagłówka sekcji (np. ROK 2021 vs ROK 2024). Nie zgaduj i nie dopowiadaj nic spoza tekstu.
 
 DANE ŹRÓDŁOWE:
 ${contextText}`
@@ -256,7 +281,7 @@ ${contextText}`
 RULES:
 1. Answer ONLY in clean English, concisely and factually (max 3-4 sentences or brief bullet points).
 2. Rely STRICTLY on the data provided below for ${company.name} (${company.ticker}).
-3. Match every metric strictly to its exact year section header. Never guess or invent anything outside the provided text.
+3. Match every metric and force or area score strictly to its exact year section header. Never guess or invent anything outside the provided text.
 
 SOURCE DATA:
 ${contextText}`;
@@ -373,7 +398,7 @@ ${contextText}`;
           >
             <span>
               {t.contextBadge} {company.ticker} • {currentEntry.year}
-              {compareEntry ? ` vs ${compareEntry.year}` : ''}
+              {compareEntry ? ` vs ${compareEntry.year}` : ''} • {isExtendedActive ? '9' : '5'}
             </span>
             <span>WebGPU</span>
           </div>
