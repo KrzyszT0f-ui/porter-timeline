@@ -1,0 +1,995 @@
+{
+  "ticker": "NVDA",
+  "extendedForces": {
+    "1995": {
+      "complementors": {
+        "score": 5,
+        "rationale": {
+          "pl": "W maju 1995 roku spółka wprowadziła układ NV1 produkowany przez SGS Thomson, wykazała 79 tysięcy dolarów przychodów z tantiem oraz zawarła w lipcu wyłączną umowę licencyjną z Segą. Brak zgodności z rosnącymi standardami OpenGL i 3Dfx Glide odizolował produkt od głównych twórców gier.",
+          "en": "In May 1995, the company launched the NV1 chip made by SGS Thomson, recorded 79 thousand dollars in royalty revenue, and signed an exclusive licensing deal with Sega in July. Lack of support for emerging OpenGL and 3Dfx Glide standards isolated the product from major game developers."
+        }
+      },
+      "regulation": {
+        "score": 1,
+        "rationale": {
+          "pl": "W dostępnych wyciągach z prospektu Form S 1 za 1995 rok nie widać spraw antymonopolowych, sankcji eksportowych ani sporów sądowych. Spółka opierała się na standardowych umowach rozwojowych i licencyjnych z STMicroelectronics oraz partnerem przy projekcie NV2, według źródeł branżowych z Segą.",
+          "en": "Available excerpts from the 1995 Form S 1 filing show no antitrust cases, export sanctions, or lawsuits. The company relied on standard development and licensing agreements with STMicroelectronics and a partner on NV2, identified by industry sources as Sega."
+        }
+      },
+      "labor": {
+        "score": 3,
+        "rationale": {
+          "pl": "Dokumenty Form S 1 nie podają liczby etatów za 1995 rok, ale wykazują obniżenie kosztów R&D o 2,0 miliona dolarów dzięki umowie rozwojowej NV2 z partnerem zewnętrznym. Dwuletnie tworzenie układu NV1 po wcześniejszym emulatorze NV0 pod wczesny Windows wymagało intensywnej pracy nad architekturą i sterownikami.",
+          "en": "The Form S 1 filings omit headcount for 1995, but show a 2.0 million dollar reduction in R&D expense from an external NV2 development agreement. Building NV1 over two years after an earlier NV0 emulator for early Windows demanded heavy work on architecture and drivers."
+        }
+      },
+      "disruption": {
+        "score": 5,
+        "rationale": {
+          "pl": "Przy przychodach na poziomie zaledwie 1,182 miliona dolarów i stracie netto 6,377 miliona dolarów układ NV1 poniósł porażkę rynkową. Architektura oparta na mapowaniu kwadratowym przegrała ze zwrotem rynku w stronę trójkątów oraz standardów OpenGL i DirectX.",
+          "en": "With revenue of just 1.182 million dollars and a net loss of 6.377 million dollars, NV1 failed commercially. Its quadratic texture mapping architecture lost out as the market shifted toward triangles and OpenGL and DirectX standards."
+        }
+      }
+    },
+    "1996": {
+      "complementors": {
+        "score": 5,
+        "rationale": {
+          "pl": "W 1996 roku STMicroelectronics wpłaciło 2,5 miliona dolarów zaliczki na tantiemy oraz częściowo współfinansowało R&D i marketing, a przychody z tantiem sięgnęły 202 tysięcy dolarów. Pod koniec roku spółka wycofała układ NV1, a projekt konsolowy NV2 dla Segi upadł, zmuszając firmę do podporządkowania nowej architektury standardowi Microsoft Direct3D.",
+          "en": "In 1996, STMicroelectronics paid a 2.5 million dollar royalty advance and co funded R&D and marketing, while royalty revenue reached 202 thousand dollars. Late in the year, the company retired NV1 and the Sega console project NV2 collapsed, forcing alignment of the new architecture with Microsoft Direct3D."
+        }
+      },
+      "regulation": {
+        "score": 1,
+        "rationale": {
+          "pl": "Przytoczone fragmenty Form S 1 za 1996 rok nie wskazują na żadne postępowania regulacyjne, cła ani spory sądowe przeciwko spółce. Prawna strona działalności sprowadzała się do realizacji umów rozwojowych z STMicroelectronics oraz zewnętrznym partnerem projektu NV2.",
+          "en": "Cited Form S 1 excerpts for 1996 show no regulatory actions, tariffs, or lawsuits against the company. Legal exposure centered on executing development contracts with STMicroelectronics and the external NV2 partner."
+        }
+      },
+      "labor": {
+        "score": 3,
+        "rationale": {
+          "pl": "Dokładne dane o zatrudnieniu w 1996 roku nie figurują w przytoczonych dokumentach S 1, ale budżet inżynieryjny wsparły redukcje kosztów R&D o 3,0 miliona dolarów z umowy NV2 oraz 1,58 miliona dolarów ze współpracy z STMicroelectronics. Mimo tego zespół musiał porzucić układ NV2 i od podstaw zaprojektować NV3 czyli RIVA 128.",
+          "en": "Exact 1996 headcount is missing from the cited S 1 records, though R&D expense reductions of 3.0 million dollars from NV2 and 1.58 million dollars from STMicroelectronics eased engineering budget pressure. Even so, the team had to drop NV2 and design NV3, RIVA 128, from scratch."
+        }
+      },
+      "disruption": {
+        "score": 5,
+        "rationale": {
+          "pl": "Przychody wzrosły do 3,912 miliona dolarów przy stracie netto 3,077 miliona dolarów, jednak porażka NV1 i anulowanie NV2 utrwaliły przewagę renderowania trójkątnego w DirectX i OpenGL. Spółka znalazła się w głębokim kryzysie technologicznym i musiała zbudować nową generację układów RIVA 128.",
+          "en": "Revenue rose to 3.912 million dollars against a 3.077 million dollar net loss, yet NV1 failing and NV2 being canceled cemented triangle rendering across DirectX and OpenGL. The company faced a severe technology crisis and had to build a fresh generation of RIVA 128 chips."
+        }
+      }
+    },
+    "1997": {
+      "complementors": {
+        "score": 4,
+        "rationale": {
+          "pl": "W 1997 roku spółka wprowadziła architekturę RIVA 128 pod Microsoft Direct3D, która zadebiutowała w kwietniu z SGS Thomson i w sierpniu zyskała zamówienia pięciu partnerów OEM i producentów kart, w tym Della i Gateway 2000. W grudniu 1997 roku w zakładach STMicroelectronics wystąpiły jednak niskie uzyski produkcyjne, a tantiemy od tego partnera wyniosły 1,791 miliona dolarów.",
+          "en": "In 1997, the company launched RIVA 128 for Microsoft Direct3D, debuting in April with SGS Thomson and winning August orders from five OEM and board partners including Dell and Gateway 2000. In December 1997, STMicroelectronics hit low manufacturing yields, while royalties from that partner totaled 1.791 million dollars."
+        }
+      },
+      "regulation": {
+        "score": 2,
+        "rationale": {
+          "pl": "Prospekt Form S 1 nie odnotowuje za 1997 rok wyroków ani kar regulacyjnych, ale sygnalizuje rosnące ryzyko roszczeń patentowych wraz ze wzrostem wolumenu na rynku szacowanym przez Mercury Research na 8,6 miliona akceleratorów 3D. Spółka działała jeszcze jako podmiot niepubliczny w Kalifornii ze skumulowanym deficytem około 14,0 miliona dolarów na koniec roku.",
+          "en": "The Form S 1 filing notes no rulings or regulatory fines for 1997, but flags rising patent claim risk as volume grew in a 3D accelerator market estimated by Mercury Research at 8.6 million units. The company remained a private California entity with roughly 14.0 million dollars in accumulated deficit at year end."
+        }
+      },
+      "labor": {
+        "score": 3,
+        "rationale": {
+          "pl": "Dostępne fragmenty Form S 1 nie podają liczby pracowników w 1997 roku i wskazują na redukcję kosztów R&D o 1,936 miliona dolarów dzięki współpracy z STMicroelectronics. Przy premierze RIVA 128 spółka miała mniej niż sześć tygodni zapasu gotówki, więc motywację zespołu wspierała pula ponad 5,53 miliona akcji opcyjnych na 28 lutego 1998 roku.",
+          "en": "Available Form S 1 excerpts do not list 1997 headcount and show a 1.936 million dollar R&D cost reduction from working with STMicroelectronics. At RIVA 128 launch, cash runway was under six weeks, so staff incentives leaned on an option pool exceeding 5.53 million shares as of February 28, 1998."
+        }
+      },
+      "disruption": {
+        "score": 4,
+        "rationale": {
+          "pl": "Przychody wzrosły ponad siedmiokrotnie do 29,071 miliona dolarów przy stracie rocznej 2,691 miliona dolarów i dodatnim wyniku netto w czwartym kwartale, ponieważ RIVA 128 łączyła akcelerację 2D i 3D niedostępną w układzie 3Dfx Voodoo. Sprzedaż w kolejnym roku przekroczyła milion sztuk, ale krótki cykl życia produktów wymuszał szybkie kolejne premiery.",
+          "en": "Revenue jumped more than sevenfold to 29.071 million dollars with a 2.691 million dollar annual loss and fourth quarter net profit, as RIVA 128 combined 2D and 3D acceleration absent in 3Dfx Voodoo. Unit sales topped one million the next year, yet short product cycles demanded rapid follow on launches."
+        }
+      }
+    },
+    "1998": {
+      "complementors": {
+        "score": 4,
+        "rationale": {
+          "pl": "W roku przejściowym STMicroelectronics umorzyło w styczniu 2,5 miliona dolarów zaliczek za wsparcie rozwojowe i wygenerowało 1,911 miliona dolarów tantiem w styczniu oraz 5,945 miliona dolarów w kolejnych dziewięciu miesiącach. Równolegle spółka uruchomiła produkcję w TSMC, gdzie niskie uzyski wafli przez sześć miesięcy do 25 października 1998 roku utrudniły start układów RIVA 128ZX i RIVA TNT.",
+          "en": "In this transition year, STMicroelectronics forgave 2.5 million dollars of advances for development support in January and generated 1.911 million dollars in January royalties plus 5.945 million dollars over the next nine months. At the same time, production started at TSMC, where low wafer yields over six months ended October 25, 1998 hindered RIVA 128ZX and RIVA TNT."
+        }
+      },
+      "regulation": {
+        "score": 4,
+        "rationale": {
+          "pl": "Dokumenty Form S 1 z 1998 roku ujawniły bezpośrednią presję ze strony sporów patentowych z SGI od kwietnia 1998 roku, S3 oraz 3dfx, niosących ryzyko potrójnych odszkodowań, zakazu sprzedaży lub przymusowego licencjonowania. W kwietniu 1998 roku spółka przeniosła rejestrację z Kalifornii do Delaware i przeszła proces rejestracji w SEC przed debiutem giełdowym.",
+          "en": "The 1998 Form S 1 filings revealed direct pressure from patent disputes with SGI starting in April 1998, S3, and 3dfx, carrying risks of treble damages, sales injunctions, or forced licensing. In April 1998, the company reincorporated from California to Delaware and went through SEC registration ahead of going public."
+        }
+      },
+      "labor": {
+        "score": 4,
+        "rationale": {
+          "pl": "W cytowanych fragmentach S 1 brakuje łącznej liczby pracowników za 1998 rok, ale przy wzroście przychodów za dziewięć miesięcy do 92,700 miliona dolarów spółka uruchomiła plany motywacyjne Equity Incentive Plan, Employee Stock Purchase Plan oraz plan opcyjny dla dyrektorów. Na 30 listopada 1998 roku wykazano 7,455 miliona akcji wyłączonych z puli podstawowej na instrumenty pochodne i plany pracownicze.",
+          "en": "Cited S 1 excerpts omit total 1998 headcount, but as nine month revenue reached 92.700 million dollars, the company adopted the Equity Incentive Plan, Employee Stock Purchase Plan, and a director option plan. As of November 30, 1998, 7.455 million shares sat reserved outside the basic pool for derivatives and employee plans."
+        }
+      },
+      "disruption": {
+        "score": 4,
+        "rationale": {
+          "pl": "Uruchomienie masowej produkcji RIVA 128ZX w marcu 1998 roku i wieloteksturującego układu RIVA TNT w lipcu 1998 roku podtrzymywało pozycję techniczną, ale problemy z uzyskami w TSMC podniosły koszty i ograniczyły sprzedaż. Przejście na interfejs AGP 2x oraz ostra rywalizacja z 3Dfx i S3 wymuszały ciągłe skracanie cykli projektowych.",
+          "en": "Starting volume production of RIVA 128ZX in March 1998 and multi texturing RIVA TNT in July 1998 kept technical footing, yet TSMC yield issues raised costs and capped revenue. Moving to AGP 2x alongside fierce competition from 3Dfx and S3 forced constant compression of design cycles."
+        }
+      }
+    },
+    "1999": {
+      "complementors": {
+        "score": 4,
+        "rationale": {
+          "pl": "Choć wejście na giełdę w styczniu 1999 roku wzmocniło spółkę i w tym samym roku kalendarzowym dostarczyła ona dziesięciomilionowy układ graficzny, dotychczasowy partner produkcyjny STMicroelectronics przeszedł do konkurencyjnego VideoLogic. Zależność produkcyjna skupiła się na TSMC, a oprogramowanie opierało się na standardach Direct3D i OpenGL wspieranym przez klienta OEM firmę SGI.",
+          "en": "Although going public in January 1999 strengthened the company and it shipped its ten millionth graphics chip that calendar year, manufacturing partner STMicroelectronics shifted to rival VideoLogic. Foundry reliance centered on TSMC, while software depended on Direct3D and OpenGL backed by OEM customer SGI."
+        }
+      },
+      "regulation": {
+        "score": 3,
+        "rationale": {
+          "pl": "Wejście na Nasdaq 22 stycznia 1999 roku objęło spółkę stałym nadzorem SEC, a późniejszy przegląd wykazał nieprawidłowości w datowaniu grantów opcyjnych sięgające debiutu. Spółka uregulowała spory z S3 i SGI na początku roku, ale złożyła pozew przeciwko 3dfx Interactive.",
+          "en": "Listing on Nasdaq on January 22, 1999 placed the company under ongoing SEC oversight, and a later review found option grant dating issues starting around the IPO. The company settled disputes with S3 and SGI early in the year, but sued 3dfx Interactive."
+        }
+      },
+      "labor": {
+        "score": 4,
+        "rationale": {
+          "pl": "W dostępnych wyciągach brakuje liczby pracowników i kosztów R&D za rok fiskalny 1999, lecz przyjęcie programu motywacyjnego 1999 Plan potwierdzało mocne oparcie wynagrodzeń na akcjach w walce o inżynierów. Sztywna polityka opcyjna tuż po IPO stała się też źródłem późniejszego przeglądu Komitetu Audytu obejmującego lata 1999–2006.",
+          "en": "Available excerpts lack 1999 headcount and R&D spend, yet adopting the 1999 Plan confirmed heavy reliance on equity to compete for engineers. A rigid option policy right after the IPO also became a focus of the Audit Committee review covering January 1999 through June 2006."
+        }
+      },
+      "disruption": {
+        "score": 3,
+        "rationale": {
+          "pl": "W 1999 roku spółka wprowadziła układ GeForce 256, określany w raportach Form 10 K jako wynalazek pierwszego na świecie GPU definiującego współczesną grafikę. Przejście rynku ku wyspecjalizowanym GPU umocniło pozycję spółki, choć sojusz STMicroelectronics i VideoLogic tworzył nową presję konkurencyjną.",
+          "en": "In 1999, the company launched GeForce 256, described in Form 10 K filings as inventing the world first GPU and defining modern computer graphics. The shift toward dedicated GPUs strengthened the company, even as the STMicroelectronics and VideoLogic tie up brought fresh competitive pressure."
+        }
+      }
+    },
+    "2000": {
+      "complementors": {
+        "score": 3,
+        "rationale": {
+          "pl": "W roku fiskalnym 2000 zakończonym 30 stycznia 2000 roku skorygowane przychody pro forma wyniosły 374,505 miliona dolarów, a sukces GeForce 256 ugruntował pozycję rynkową spółki. Wytwarzanie pozostało jednak całkowicie zależne od zewnętrznych odlewni, a ekosystem opierał się na zewnętrznych interfejsach Microsoft Direct3D i OpenGL.",
+          "en": "In fiscal 2000 ended January 30, 2000, pro forma adjusted revenue reached 374.505 million dollars, and GeForce 256 cemented market standing. Manufacturing still depended fully on external foundries, while the ecosystem relied on external Microsoft Direct3D and OpenGL interfaces."
+        }
+      },
+      "regulation": {
+        "score": 3,
+        "rationale": {
+          "pl": "Sprawozdanie za rok fiskalny 2000 skorygowano później w raporcie za 2002 rok po przeglądzie na wniosek SEC, podnosząc zysk netto z 38,1 do 41,0 miliona dolarów po korekcie rezerw na zwroty. Późniejszy audyt wykazał też błędy dat wyceny opcji na 1,177 miliona dolarów, a na rynku trwał spór sądowy z 3dfx.",
+          "en": "Fiscal 2000 results were later restated in the 2002 filing after an SEC requested review, lifting net income from 38.1 million to 41.0 million dollars following product return reserve adjustments. A later audit also found 1.177 million dollars in option pricing date errors, alongside ongoing litigation with 3dfx."
+        }
+      },
+      "labor": {
+        "score": 4,
+        "rationale": {
+          "pl": "Szczegółowy stan zatrudnienia i suma R&D za rok fiskalny 2000 nie są widoczne w analizowanym fragmencie Form 10 K, ale późniejsza korekta ujawniła 1,177 miliona dolarów nieujętych kosztów opcji pracowniczych. Przyjęcie w 2000 roku planu 2000 Nonstatutory Equity Incentive Plan potwierdzało ostrą walkę o talenty inżynieryjne w Dolinie Krzemowej.",
+          "en": "Detailed headcount and total R&D for fiscal 2000 do not appear in the reviewed Form 10 K excerpt, though a later restatement uncovered 1.177 million dollars in unrecorded option costs. Adopting the 2000 Nonstatutory Equity Incentive Plan confirmed stiff competition for engineering talent in Silicon Valley."
+        }
+      },
+      "disruption": {
+        "score": 3,
+        "rationale": {
+          "pl": "Wzrost przychodów do 374,505 miliona dolarów po premierze GeForce 256 potwierdził przełomowy charakter kategorii GPU i wzmocnił przewagę spółki. Mimo tego sukcesu szybkie tempo odświeżania linii produktowych oraz alternatywne projekty odlewnicze konkurencji wymagały stałych nakładów badawczych.",
+          "en": "Revenue climbing to 374.505 million dollars after GeForce 256 validated the GPU category and strengthened the company lead. Even with that momentum, fast product refresh cycles and rival foundry designs required steady research spending."
+        }
+      }
+    },
+    "2001": {
+      "complementors": {
+        "score": 3,
+        "rationale": {
+          "pl": "W roku fiskalnym 2001 zakończonym 28 stycznia 2001 roku przychody pro forma osiągnęły 735,264 miliona dolarów, a 15 grudnia 2000 roku spółka podpisała umowę zakupu aktywów graficznych 3dfx Interactive wraz z pożyczką 15,0 miliona dolarów. Spółka rozwijała własne rozwiązania platformowe i zacieśniała relacje sprzętowe, ale nadal zależała od zewnętrznych odlewni.",
+          "en": "In fiscal 2001 ended January 28, 2001, pro forma revenue hit 735.264 million dollars, and on December 15, 2000 the company signed a deal to buy 3dfx Interactive graphics assets alongside a 15.0 million dollar loan. It expanded platform offerings and hardware ties, yet still depended on external foundries."
+        }
+      },
+      "regulation": {
+        "score": 3,
+        "rationale": {
+          "pl": "Grudniowa umowa przejęcia aktywów 3dfx otworzyła drogę do sądowego zakończenia wieloletniego sporu patentowego między obiema firmami. W sprawozdaniu za rok fiskalny 2001 dokonano później korekty obniżającej zysk netto z 99,9 do 98,5 miliona dolarów oraz wykryto błędy datowania opcji na 9,230 miliona dolarów.",
+          "en": "The December 3dfx asset deal paved the way to end their long running patent dispute in court. Fiscal 2001 financials were later restated lower from 99.9 million to 98.5 million dollars in net income, and option dating errors of 9.230 million dollars were identified."
+        }
+      },
+      "labor": {
+        "score": 4,
+        "rationale": {
+          "pl": "Dostępne fragmenty raportu 10 K nie podają zatrudnienia za rok fiskalny 2001, ale skok późniejszych korekt opcyjnych z 1,177 do 9,230 miliona dolarów pokazywał szybki wzrost świadczeń akcyjnych. Umowa z 3dfx z grudnia 2000 roku objęła także przejęcie i koszty wynagrodzeń inżynierów przechodzących do spółki.",
+          "en": "Available 10 K excerpts omit fiscal 2001 headcount, while later option restatements jumping from 1.177 million to 9.230 million dollars reflected expanding equity grants. The December 2000 3dfx agreement also covered hiring and compensation costs for incoming competitor staff."
+        }
+      },
+      "disruption": {
+        "score": 2,
+        "rationale": {
+          "pl": "Prawie podwojenie przychodów do 735,264 miliona dolarów oraz przejęcie patentów 3dfx skonsolidowały rynek dyskretnych akceleratorów 3D wokół architektury spółki. Przejście ku programowalnym procesorom graficznym na początku dekady ugruntowało wyraźne przywództwo technologiczne.",
+          "en": "Nearly doubling revenue to 735.264 million dollars and acquiring 3dfx patents consolidated discrete 3D accelerators around the company architecture. Shifting toward programmable graphics processors early in the decade cemented clear technical leadership."
+        }
+      }
+    },
+    "2002": {
+      "complementors": {
+        "score": 3,
+        "rationale": {
+          "pl": "W roku fiskalnym 2002 zakończonym 27 stycznia 2002 roku sfinalizowano 18 kwietnia 2001 roku przejęcie aktywów 3dfx za około 74,2–74,4 miliona dolarów, a skorygowane przychody wyniosły 1,369 miliarda dolarów. Duże oparcie na kontrakcie na chipsety do konsoli Microsoft Xbox ujawniło ryzyko koncentracji i w kwietniu 2002 roku doprowadziło do sporu arbitrażowego z Microsoftem.",
+          "en": "In fiscal 2002 ended January 27, 2002, the 3dfx asset purchase closed on April 18, 2001 for roughly 74.2 to 74.4 million dollars, and adjusted revenue reached 1.369 billion dollars. Heavy reliance on the Microsoft Xbox chipset contract exposed concentration risk, triggering price arbitration with Microsoft in April 2002."
+        }
+      },
+      "regulation": {
+        "score": 4,
+        "rationale": {
+          "pl": "Po sądowym umorzeniu sporu z 3dfx 26 kwietnia 2001 roku ciężar przesunął się na kontrolę finansową, gdy w styczniu 2002 roku Komitet Audytu rozpoczął na wniosek SEC przegląd prowadzący do korekt sprawozdań za lata 2000, 2001 i trzy kwartały 2002 roku. W lutym 2002 roku złożono pozew zbiorowy akcjonariusza, a audyt wykrył 21,390 miliona dolarów błędów dat opcji.",
+          "en": "After the 3dfx suit was dismissed on April 26, 2001, scrutiny shifted to accounting when the Audit Committee launched an SEC requested review in January 2002, restating fiscal 2000, 2001, and three quarters of 2002. A shareholder class action followed in February 2002, and an audit found 21.390 million dollars in option date errors."
+        }
+      },
+      "labor": {
+        "score": 4,
+        "rationale": {
+          "pl": "Raport roczny za rok 2002 nie ujawnia łącznego zatrudnienia na koniec okresu, ale raport kwartalny Form 10 Q wykazał wzrost załogi z 1 123 osób rok wcześniej do 1 414 pracowników na 28 lipca 2002 roku przy włączaniu kadr 3dfx. Koszty utrzymania i wynagradzania inżynierów rosły szybko, co pokazała korekta kosztów opcji o 21,390 miliona dolarów.",
+          "en": "The 2002 annual report omits period end total headcount, though a Form 10 Q showed staff rising from 1,123 a year earlier to 1,414 on July 28, 2002 while absorbing 3dfx staff. Retaining and paying engineers climbed rapidly, underscored by 21.390 million dollars in restated option expenses."
+        }
+      },
+      "disruption": {
+        "score": 2,
+        "rationale": {
+          "pl": "Przekroczenie miliarda dolarów rocznych przychodów szybciej niż jakakolwiek inna spółka półprzewodnikowa w historii potwierdziło siłę architektury GPU u progu ery układów programowalnych. Udostępnienie programowalności twórcom oprogramowania otworzyło nowe rynki profesjonalne i ograniczyło ryzyko marginalizacji.",
+          "en": "Crossing one billion dollars in annual revenue faster than any semiconductor company before it validated GPU architecture at the start of programmability. Opening programmability to software developers unlocked professional markets and lowered marginalization risk."
+        }
+      }
+    },
+    "2003": {
+      "complementors": {
+        "score": 3,
+        "rationale": {
+          "pl": "W roku fiskalnym 2003 zakończonym 26 stycznia 2003 roku relacje z Microsoftem obciążał spór o ceny chipsetów Xbox, zakończony ugodą z 6 lutego 2003 roku, przy produkcji powierzanej odlewniom TSMC, IBM, UMC i Chartered. Cytowane fragmenty Form 10 K nie podają łącznych przychodów za rok 2003, ale pokazują, że 68 procent sprzedaży pochodziło spoza Ameryk.",
+          "en": "In fiscal 2003 ended January 26, 2003, ties with Microsoft strained over Xbox chipset pricing until a February 6, 2003 settlement, while production used TSMC, IBM, UMC, and Chartered. Cited Form 10 K excerpts omit 2003 total revenue, yet show 68 percent of sales came outside the Americas."
+        }
+      },
+      "regulation": {
+        "score": 3,
+        "rationale": {
+          "pl": "Po złożeniu skorygowanych sprawozdań w maju 2002 roku spółka zawarła w 2003 roku ugodę z SEC według analizy byłego urzędnika tego organu. Jednocześnie 68 procent sprzedaży międzynarodowej niosło ryzyko ceł i licencji eksportowych, a kontrola opcyjna wykazała w księgach roku 2003 korekty na 27,051 miliona dolarów.",
+          "en": "After filing restated results in May 2002, the company settled with the SEC in 2003 according to a former SEC official analysis. Meanwhile, 68 percent international sales carried tariff and export license exposure, and an option review found 27.051 million dollars in fiscal 2003 adjustments."
+        }
+      },
+      "labor": {
+        "score": 3,
+        "rationale": {
+          "pl": "Na dzień 26 stycznia 2003 roku spółka zatrudniała 832 pełnoetatowych pracowników w R&D bez żadnych układów zbiorowych związków zawodowych. We wrześniu 2002 roku stanowisko CFO objął Marvin Burkett, a 27,051 miliona dolarów późniejszych korekt kosztów opcyjnych wskazywało na presję wynagrodzeń opartych na akcjach.",
+          "en": "As of January 26, 2003, the company employed 832 full time R&D staff with no collective bargaining agreements. Marvin Burkett became CFO in September 2002, and 27.051 million dollars in subsequent option expense adjustments pointed to equity compensation pressure."
+        }
+      },
+      "disruption": {
+        "score": 2,
+        "rationale": {
+          "pl": "Programowalne procesory GPU znajdowały zastosowanie w produkcji filmowej, obrazowaniu medycznym 3D oraz projektowaniu samochodów, poszerzając źródła popytu poza gry. Równoległy rozwój chipsetów nForce dla procesorów AMD wzmacniał pozycję spółki w architekturze komputerów PC.",
+          "en": "Programmable GPUs found uses in moviemaking, 3D medical imaging, and car design, broadening demand beyond gaming. Developing nForce chipsets for AMD processors alongside GPUs strengthened standing across PC architectures."
+        }
+      }
+    },
+    "2004": {
+      "complementors": {
+        "score": 3,
+        "rationale": {
+          "pl": "W roku fiskalnym 2004 zakończonym 25 stycznia 2004 roku spółka opierała rozwój na chipsetach nForce2 i nForce3 dla 64 bitowych procesorów AMD oraz ustabilizowała kontrakt Xbox po ugodzie z 6 lutego 2003 roku. Udział sprzedaży poza Amerykami wzrósł do 75 procent, przy pełnej zależności produkcyjnej od odlewni TSMC, IBM, UMC i Chartered.",
+          "en": "In fiscal 2004 ended January 25, 2004, growth leaned on nForce2 and nForce3 chipsets for 64 bit AMD processors and stabilized Xbox volume after the February 6, 2003 settlement. Non Americas sales rose to 75 percent, while manufacturing remained wholly reliant on TSMC, IBM, UMC, and Chartered."
+        }
+      },
+      "regulation": {
+        "score": 3,
+        "rationale": {
+          "pl": "Ugoda z Microsoftem z 6 lutego 2003 roku zamknęła spór cenowy wokół Xbox, lecz 75 procent sprzedaży zagranicznej utrzymywało ekspozycję na cła, kontyngenty i opóźnienia licencji eksportowych. Późniejszy przegląd księgowy wykazał, że w roku fiskalnym 2004 skumulowały się najwyższe w całym okresie błędy datowania opcji na 37,626 miliona dolarów.",
+          "en": "The February 6, 2003 Microsoft settlement resolved Xbox pricing, yet 75 percent foreign sales kept exposure to tariffs, quotas, and export license delays. A later accounting review showed fiscal 2004 held the period largest option dating errors totaling 37.626 million dollars."
+        }
+      },
+      "labor": {
+        "score": 4,
+        "rationale": {
+          "pl": "Liczba pełnoetatowych pracowników R&D wzrosła o 27 procent z 832 do 1 057 osób na 25 stycznia 2004 roku przy braku układów zbiorowych. Rekordowa korekta historycznych kosztów opcji o 37,626 miliona dolarów, w kwotach 31,387 miliona oraz 6,239 miliona dolarów, odzwierciedlała wysokie koszty utrzymania specjalistów.",
+          "en": "Full time R&D staff grew 27 percent from 832 to 1,057 as of January 25, 2004 with no union agreements. A record historical option expense adjustment of 37.626 million dollars, split into 31.387 million and 6.239 million dollars, reflected steep specialist retention costs."
+        }
+      },
+      "disruption": {
+        "score": 3,
+        "rationale": {
+          "pl": "Jednoczesne rozwijanie kart graficznych oraz chipsetów nForce3 dla nowych środowisk 64 bitowych AMD, w tym wersji mobilnych nForce3 Go i profesjonalnych, zwiększało złożoność prac inżynieryjnych. Przy silnym wzroście rynku PC i narastającej rywalizacji architektonicznej spółka musiała utrzymywać szybkie tempo wdrożeń w obu liniach.",
+          "en": "Developing graphics cards alongside nForce3 chipsets for new 64 bit AMD platforms, including mobile nForce3 Go and workstation variants, added engineering complexity. Amid strong PC growth and rising architectural competition, the company had to keep rapid rollouts across both lines."
+        }
+      }
+    },
+    "2005": {
+      "complementors": {
+        "score": 4,
+        "rationale": {
+          "pl": "W roku fiskalnym 2005 zakończonym 30 stycznia 2005 roku spółka zawarła 19 listopada 2004 roku wieloletnią umowę licencji krzyżowych z Intelem dla magistrali FSB w chipsetach nForce oraz wdrożyła układy PCI Express nForce4 i nForce Professional dla AMD64 i Opteron. Mimo tego opóźnienie i wycofanie wadliwego chipsetu PCI Express przez Intela w drugim kwartale zablokowało klientom rozruch kart GeForce PCX.",
+          "en": "In fiscal 2005 ended January 30, 2005, the company signed a multiyear cross license with Intel on November 19, 2004 for nForce FSB bus support and rolled out nForce4 and nForce Professional PCI Express chips for AMD64 and Opteron. Even so, Intel delaying and pulling a flawed PCI Express chipset in Q2 blocked customer launches of GeForce PCX cards."
+        }
+      },
+      "regulation": {
+        "score": 3,
+        "rationale": {
+          "pl": "Dnia 19 października 2004 roku firma OPTi złożyła w Teksasie pozew o naruszenie pięciu patentów w chipsetach, domagając się odszkodowań i potrójnych kar za rzekome umyślne naruszenie. Przy 76 procentach sprzedaży poza Amerykami utrzymywało się ryzyko ograniczeń eksportowych, a późniejsza korekta opcyjna za rok 2005 wyniosła 19,507 miliona dolarów.",
+          "en": "On October 19, 2004, OPTi sued in Texas over five chipset patents, seeking damages and treble penalties for alleged willful infringement. With 76 percent of sales outside the Americas, export control risk persisted, and later fiscal 2005 option adjustments reached 19.507 million dollars."
+        }
+      },
+      "labor": {
+        "score": 4,
+        "rationale": {
+          "pl": "Koszty R&D sięgnęły 348,2 miliona dolarów, czyli 17 procent przychodów netto, przy czym 14,074 miliona dolarów stanowiło zaraportowane SBC w R&D przy 19,754 miliona dolarów SBC ogółem. Brak związków zawodowych nie chronił przed wysokimi kosztami pozyskania kadry, co potwierdziło dodatkowo 19,507 miliona dolarów późniejszych korekt opcyjnych.",
+          "en": "R&D expense reached 348.2 million dollars, or 17 percent of net revenue, including 14.074 million dollars of reported R&D stock compensation out of 19.754 million total. Having no unions did not prevent high hiring costs, reinforced by 19.507 million dollars in later option adjustments."
+        }
+      },
+      "disruption": {
+        "score": 3,
+        "rationale": {
+          "pl": "Przejście na PCI Express obnażyło podatność harmonogramów GPU na błędy dostawców procesorów po wpadce Intela w drugim kwartale, a przejęcie MediaQ za 71,303 miliona dolarów aktywów netto wymusiło odpis projektów badawczych w toku bez alternatywnego zastosowania. Na koniec roku wartość firmy rozłożyła się na GPU, MCP oraz bezprzewodowe WMP z MediaQ.",
+          "en": "Moving to PCI Express exposed GPU schedules to CPU partner missteps after Intel second quarter trouble, while buying MediaQ for 71.303 million dollars of net assets forced an IPR&D write off with no alternative use. By year end, goodwill spanned GPU, MCP, and wireless WMP including MediaQ."
+        }
+      }
+    },
+    "2006": {
+      "complementors": {
+        "score": 3,
+        "rationale": {
+          "pl": "W roku fiskalnym 2006 zakończonym 29 stycznia 2006 roku przychody wyniosły 2,38 miliarda dolarów, w tym 1,66 miliarda z GPU, 352,3 miliona z MCP, 58,7 miliona z Handheld GPU oraz 167,4 miliona z elektroniki użytkowej. Spółka wygaszała współpracę przy Xbox na rzecz płatnych prac rozwojowych dla Sony Computer Entertainment, a rozwój MCP i układów mobilnych zmniejszał zależność od jednego partnera konsolowego.",
+          "en": "In fiscal 2006 ended January 29, 2006, revenue reached 2.38 billion dollars, including 1.66 billion from GPU, 352.3 million from MCP, 58.7 million from Handheld GPU, and 167.4 million from consumer electronics. The company wound down Xbox work for paid Sony Computer Entertainment development, while MCP and mobile growth lowered single console reliance."
+        }
+      },
+      "regulation": {
+        "score": 3,
+        "rationale": {
+          "pl": "Unijna dyrektywa WEEE dotycząca odpowiedzialności za recykling elektroniki wprowadzanej na rynek po 15 sierpnia 2005 roku oraz trwający spór patentowy z OPTi podniosły koszty zgodności i obsługi prawnej. Raport Form 10 K za rok fiskalny 2006 wymagał też późniejszej korekty księgowej z powodu błędów datowania opcji na 5,952 miliona dolarów.",
+          "en": "The EU WEEE directive on recycling electronics placed on the market after August 15, 2005 and the ongoing OPTi patent suit raised compliance and legal costs. The fiscal 2006 Form 10 K also required a later accounting restatement of 5.952 million dollars for option dating errors."
+        }
+      },
+      "labor": {
+        "score": 4,
+        "rationale": {
+          "pl": "Nakłady na R&D wzrosły o 3 procent do 357,1 miliona dolarów, czyli 15 procent przychodów netto, głównie przez wzrost płac i świadczeń o 32,5 miliona dolarów po zatrudnieniu 423 dodatkowych osób. Przed nowym standardem księgowania opcji wykazano 4,529 miliona dolarów łącznego SBC oraz 5,943 miliona w R&D, a w grudniu 2005 roku do zespołu dołączył Jay Puri.",
+          "en": "R&D spending rose 3 percent to 357.1 million dollars, or 15 percent of net revenue, driven largely by 32.5 million dollars higher salaries and benefits from adding 423 employees. Before the new option accounting rule, reported SBC was 4.529 million total and 5.943 million in R&D, while Jay Puri joined in December 2005."
+        }
+      },
+      "disruption": {
+        "score": 3,
+        "rationale": {
+          "pl": "Realizacja kontraktowych prac dla Sony Computer Entertainment oraz inwestycje w sprzęt i oprogramowanie emulacyjne wspierały projektowanie kolejnych generacji układów o rosnącej złożoności. Jednoczesne utrzymywanie pozycji w GPU, chipsetach MCP i układach przenośnych wymagało ciągłego zwiększania budżetu infrastruktury IT.",
+          "en": "Contract development for Sony Computer Entertainment plus emulation hardware and software investments supported designing increasingly complex chip generations. Sustaining competitiveness across GPUs, MCP chipsets, and handheld chips required steady growth in IT infrastructure spending."
+        }
+      }
+    },
+    "2007": {
+      "complementors": {
+        "score": 3,
+        "rationale": {
+          "pl": "W roku fiskalnym 2007 zakończonym 28 stycznia 2007 roku przychody wzrosły o 29,2 procent do 3,07 miliarda dolarów, w tym 1,99 miliarda z GPU, 661,5 miliona z MCP po przejęciu ULi oraz 108,5 miliona z Handheld GPU, podczas gdy elektronika użytkowa spadła o 42,5 procent do 96,3 miliona po zakończeniu Xbox. Premiera GeForce 8, wygrane na platformie Intel Napa oraz uruchomienie CUDA w 2006 roku zaczęły budować własny ekosystem mimo fuzji AMD i ATI.",
+          "en": "In fiscal 2007 ended January 28, 2007, revenue rose 29.2 percent to 3.07 billion dollars, including 1.99 billion from GPU, 661.5 million from MCP after buying ULi, and 108.5 million from Handheld GPU, while consumer electronics fell 42.5 percent to 96.3 million as Xbox ended. GeForce 8, Intel Napa wins, and launching CUDA in 2006 started building an ecosystem despite AMD buying ATI."
+        }
+      },
+      "regulation": {
+        "score": 5,
+        "rationale": {
+          "pl": "Od 1 lipca 2006 roku weszła w życie unijna dyrektywa RoHS ograniczająca ołów, w sierpniu 2006 roku SEC wszczęła dochodzenie w sprawie opcji wywołując 10 pozwów pochodnych, a 29 listopada 2006 roku DOJ doręczył wezwanie antymonopolowe powiązane do marca 2007 roku z 42 pozwami zbiorowymi. Spółka zawarła też ugodę z OPTi za 11,0 miliona dolarów, podczas gdy FTC uznała praktyki patentowe Rambusa za antykonkurencyjne.",
+          "en": "The EU RoHS lead restriction took effect July 1, 2006, the SEC opened an option probe in August 2006 sparking 10 derivative suits, and the DOJ served an antitrust subpoena on November 29, 2006 tied to 42 class actions by mid March 2007. The company also settled with OPTi for 11.0 million dollars, while the FTC ruled Rambus patent practices anticompetitive."
+        }
+      },
+      "labor": {
+        "score": 5,
+        "rationale": {
+          "pl": "Na 28 stycznia 2007 roku spółka zatrudniała 4 083 osoby, w tym 2 668 w R&D i 1 415 w pozostałych działach, bez układów zbiorowych, po wzroście zatrudnienia o 1 014 pracowników w ciągu roku. Koszty R&D skoczyły o 55 procent do 553,5 miliona dolarów, czyli 18 procent przychodów, przez wyższe o 75,2 miliona płace, wdrożenie SFAS 123R ze 116,735 miliona dolarów SBC oraz 14,0 miliona odpisów IPR&D.",
+          "en": "As of January 28, 2007, headcount reached 4,083, including 2,668 in R&D and 1,415 elsewhere, with no unions after adding 1,014 staff over the year. R&D expense jumped 55 percent to 553.5 million dollars, or 18 percent of revenue, on 75.2 million higher pay, SFAS 123R adoption with 116.735 million in SBC, and 14.0 million in IPR&D charges."
+        }
+      },
+      "disruption": {
+        "score": 4,
+        "rationale": {
+          "pl": "Przejęcie ATI Technologies przez AMD połączyło dużego producenta procesorów x86 z głównym rywalem w grafice, zagrażając modelowi niezależnych kart GPU i chipsetów. Spółka odpowiedziała serią GeForce 8, otwarciem obliczeń równoległych przez CUDA w 2006 roku oraz przejęciami ULi, Hybrid Graphics i PortalPlayer, które podniosły sprzedaż układów przenośnych o 84,7 procent.",
+          "en": "AMD acquiring ATI Technologies paired a major x86 processor maker with a top graphics rival, threatening standalone GPU and chipset models. The company countered with GeForce 8, opening parallel compute via CUDA in 2006, and buying ULi, Hybrid Graphics, and PortalPlayer, lifting handheld chip sales 84.7 percent."
+        }
+      }
+    },
+    "2008": {
+      "complementors": {
+        "score": 3,
+        "rationale": {
+          "pl": "W roku fiskalnym 2008 zakończonym 27 stycznia 2008 roku przychody wzrosły do rekordowych 4,098 miliarda dolarów, ale całość produkcji i pakowania układów spoczywała na zewnętrznych podwykonawcach. Dostępność zaawansowanych mocy w odlewniach oraz konkurencja zintegrowanych platform utrzymywały wysoką wrażliwość marż na współpracę z partnerami sprzętowymi.",
+          "en": "In fiscal 2008 ended January 27, 2008, revenue reached a record 4.098 billion dollars, yet all chip fabrication and packaging remained with external subcontractors. Advanced foundry capacity availability and competition from integrated platforms kept margins sensitive to hardware partner execution."
+        }
+      },
+      "regulation": {
+        "score": 4,
+        "rationale": {
+          "pl": "Według analizy prawnej byłego urzędnika SEC dochodzenie tego organu w sprawie opcji zamknięto w październiku 2007 roku bez postawienia zarzutów, ale przez cały rok fiskalny 2008 spółkę obciążało śledztwo antymonopolowe DOJ oraz powiązane pozwy zbiorowe. Jednocześnie weszły w życie chińskie od marca 2007 roku oraz kalifornijskie przepisy ograniczające substancje niebezpieczne wzorowane na RoHS.",
+          "en": "According to a former SEC official legal analysis, the SEC option probe closed in October 2007 without charges, yet the DOJ antitrust investigation and related class actions weighed through fiscal 2008. Meanwhile, Chinese rules from March 2007 and California hazardous substance limits modeled on RoHS took effect."
+        }
+      },
+      "labor": {
+        "score": 4,
+        "rationale": {
+          "pl": "Łączny stan zatrudnienia za rok fiskalny 2008 nie został ujawniony w dostępnych wyciągach Form 10 K, ale koszty R&D wzrosły do 691,6 miliona dolarów, czyli 17 procent przychodów netto, a łączne wynagrodzenia akcyjne SBC sięgnęły 133,365 miliona dolarów, w tym 76,617 miliona w R&D. Spółka nie miała układów zbiorowych, ale ponosiła rosnące koszty utrzymania dużych zespołów projektowych.",
+          "en": "Total fiscal 2008 headcount is not disclosed in available Form 10 K excerpts, but R&D expense rose to 691.6 million dollars, or 17 percent of net revenue, and total SBC reached 133.365 million dollars, including 76.617 million in R&D. The company remained non union while paying more to retain large design teams."
+        }
+      },
+      "disruption": {
+        "score": 3,
+        "rationale": {
+          "pl": "Rekordowe 4,098 miliarda dolarów przychodów potwierdzało konkurencyjność oferty GPU, a przygotowanie premiery mobilnego układu APX 2500 wprowadzonego w lutym 2008 roku otwierało rynek energooszczędnych platform SoC. Nadal utrzymywała się jednak presja na terminowe wdrażanie nowych węzłów produkcyjnych u podwykonawców.",
+          "en": "Record 4.098 billion dollars in revenue confirmed GPU competitiveness, and preparing the February 2008 launch of the mobile APX 2500 chip opened low power SoC territory. Even so, pressure stayed high to bring new subcontractor process nodes online on schedule."
+        }
+      }
+    },
+    "2009": {
+      "complementors": {
+        "score": 4,
+        "rationale": {
+          "pl": "W roku fiskalnym 2009 zakończonym 25 stycznia 2009 roku wada zestawu materiałowego krzemu i obudowy w części układów notebookowych wymusiła zawiązanie 196,0 miliona dolarów rezerwy gwarancyjnej, częściowo zrekompensowanej przez 8,0 miliona dolarów z ubezpieczenia. Jednocześnie eskalacja sporu patentowego z Rambusem o kontrolery pamięci oraz tarcia licencyjne z Intelem zagroziły kluczowym liniom chipsetowym i pamięciowym.",
+          "en": "In fiscal 2009 ended January 25, 2009, a die and packaging material defect in certain notebook chips forced a 196.0 million dollar warranty accrual, partly offset by 8.0 million in insurance recovery that year. Simultaneously, escalating Rambus memory controller patent litigation and Intel licensing friction threatened core chipset and memory lines."
+        }
+      },
+      "regulation": {
+        "score": 4,
+        "rationale": {
+          "pl": "Dnia 10 października 2008 roku Departament Sprawiedliwości USA powiadomił spółkę o zamknięciu śledztwa antymonopolowego bez postawienia zarzutów. Mimo tego 10 lipca 2008 roku Rambus pozwał spółkę o naruszenie 17 patentów, co dzień później wywołało pozew antymonopolowy spółki, a 6 listopada 2008 roku Rambus złożył skargę do ITC zmierzającą do zakazu importu wybranych produktów.",
+          "en": "On October 10, 2008, the US Department of Justice notified the company that its antitrust investigation closed without charges. Even with that relief, Rambus sued over 17 patents on July 10, 2008, prompting an antitrust countersuit a day later, and filed an ITC import ban complaint on November 6, 2008."
+        }
+      },
+      "labor": {
+        "score": 4,
+        "rationale": {
+          "pl": "We wrześniu 2008 roku spółka zredukowała około 360 etatów na świecie, czyli około 6,5 procent załogi, kosztem 8,0 miliona dolarów odpraw, kończąc rok z 3 772 pracownikami inżynieryjno technicznymi bez układów zbiorowych. Mimo cięć udział R&D wzrósł do 25 procent przychodów, a koszty SBC osiągnęły 162,706 miliona dolarów, w tym 98,007 miliona w R&D.",
+          "en": "In September 2008, the company cut roughly 360 roles worldwide, about 6.5 percent of staff, at an 8.0 million dollar severance cost, ending with 3,772 engineering and technical staff and no unions. Despite cuts, R&D reached 25 percent of revenue and SBC hit 162.706 million dollars, including 98.007 million in R&D."
+        }
+      },
+      "disruption": {
+        "score": 4,
+        "rationale": {
+          "pl": "Przychody spadły do 3,425 miliarda dolarów przy marży brutto 34,3 procent, a defekt materiałowy obudów osłabił zaufanie w segmencie laptopów. W odpowiedzi spółka przyspieszyła ekspansję mobilną od premiery APX 2500 w pierwszym kwartale roku fiskalnego 2009 i mocniej pozycjonowała markę GeForce pod kątem programowalności oraz obliczeń wizualnych.",
+          "en": "Revenue fell to 3.425 billion dollars on a 34.3 percent gross margin, while the packaging material flaw hurt trust in laptops. In response, the company pushed mobile expansion from the Q1 FY2009 APX 2500 launch and positioned GeForce more strongly around programmability and visual computing."
+        }
+      }
+    },
+    "2010": {
+      "complementors": {
+        "score": 4,
+        "rationale": {
+          "pl": "W roku fiskalnym 2010 zakończonym 31 stycznia 2010 roku przychody wyniosły 3,326 miliarda dolarów przy marży brutto 35,4 procent, a Intel pozwał spółkę 17 lutego 2009 roku w sprawie licencji na chipsety z magistralą DMI dla procesorów Nehalem, wymuszając wstrzymanie tych prac. Debiut pierwszych GPU w procesie 40 nm napotkał niedobory mocy i słabe uzyski w zewnętrznych odlewniach, wymuszając racjonowanie dostaw.",
+          "en": "In fiscal 2010 ended January 31, 2010, revenue was 3.326 billion dollars on a 35.4 percent gross margin, and Intel sued on February 17, 2009 over DMI bus chipset licenses for Nehalem processors, forcing a halt to that work. Early 40 nm GPU launches hit capacity shortfalls and weak foundry yields, forcing customer rationing."
+        }
+      },
+      "regulation": {
+        "score": 5,
+        "rationale": {
+          "pl": "Presja prawna wróciła do maksimum po pozwie Intela z lutego 2009 roku oraz sprawie w ITC z Rambusem, gdzie po przesłuchaniach z października 2009 roku sędzia administracyjny wydał wstępne orzeczenie o ważności, naruszeniu i wykonalności trzech patentów Rambusa z ryzykiem zakazu importu. Rozstrzygnięcie w UE zobowiązało Rambusa do pięcioletniej otwartej licencji, a spółka odzyskała 45,4 miliona dolarów z ubezpieczeń.",
+          "en": "Legal pressure returned to peak levels from the February 2009 Intel suit and the ITC case with Rambus, where after October 2009 hearings an administrative judge issued an initial ruling finding three Rambus patents valid, infringed, and enforceable with import ban risk. An EU decision required Rambus to offer a five year open license, and the company recovered 45.4 million dollars from insurance."
+        }
+      },
+      "labor": {
+        "score": 4,
+        "rationale": {
+          "pl": "Zespół pełnoetatowych pracowników R&D wzrósł z 3 772 do 3 940 osób na 31 stycznia 2010 roku, a wydatki R&D zwiększyły się o 6 procent, czyli o 53,0 miliona dolarów, do 27 procent przychodów netto. Głównym obciążeniem było jednorazowe 90,5 miliona dolarów w R&D po marcowym wykupie opcji w 2009 roku, obok 61,337 miliona bieżącego SBC w R&D i 107,091 miliona ogółem.",
+          "en": "Full time R&D staff rose from 3,772 to 3,940 on January 31, 2010, and R&D spending grew 6 percent, or 53.0 million dollars, to 27 percent of net revenue. A one time 90.5 million dollar R&D charge from a March 2009 option buyout led costs, alongside 61.337 million in ongoing R&D SBC and 107.091 million total."
+        }
+      },
+      "disruption": {
+        "score": 4,
+        "rationale": {
+          "pl": "Spółka zaprezentowała nową generację architektury CUDA pod nazwą Fermi oraz środowisko Parallel Nsight w Microsoft Visual Studio C++ do akceleracji ray tracingu, symulacji fizycznych i obliczeń naukowych obok mobilnych układów Tegra. Blokada chipsetów z magistralą DMI oraz ograniczenia podaży wafli 40 nm tworzyły jednak wyraźne bariery dla podstawowego biznesu platformowego.",
+          "en": "The company unveiled the Fermi CUDA architecture generation and Parallel Nsight in Microsoft Visual Studio C++ for ray tracing, physics simulation, and scientific compute alongside mobile Tegra SoCs. Even so, the DMI chipset block and 40 nm wafer supply limits created clear hurdles for the core platform business."
+        }
+      }
+    },
+    "2011": {
+      "complementors": {
+        "score": 3,
+        "rationale": {
+          "pl": "W roku fiskalnym 2011 zakończonym 30 stycznia 2011 roku spółka osiągnęła 3,54 miliarda dolarów przychodu na bazie wczesnej strategii obliczeń równoległych na GPU oraz oprogramowania CUDA. Dostępne wyciągi z dokumentów za ten okres nie zawierają szczegółowych ujawnień o umowach z producentami serwerów ani zewnętrznych standardach chmurowych.",
+          "en": "In fiscal 2011 ended January 30, 2011, the company generated 3.54 billion dollars in revenue on early GPU parallel computing and CUDA software. Available filing excerpts for this period do not detail server maker agreements or external cloud standards."
+        }
+      },
+      "regulation": {
+        "score": 2,
+        "rationale": {
+          "pl": "Zgromadzone wyciągi sprawozdawcze dla roku fiskalnego zakończonego 30 stycznia 2011 roku nie wykazują ceł, barier antymonopolowych ani kontroli eksportu ograniczających sprzedaż. Jednocześnie w dokumentacji Form 10 K odnotowano spory zbiorowe, w których spółka złożyła pisma z kancelarią Milberg LLP na początku 2012 roku fiskalnego 4 marca 2011 roku.",
+          "en": "Collected filing excerpts for the fiscal year ended January 30, 2011 show no tariffs, antitrust barriers, or export controls restricting sales. At the same time, Form 10 K records note class action litigation in which filings with Milberg LLP were made early in fiscal 2012 on March 4, 2011."
+        }
+      },
+      "labor": {
+        "score": 3,
+        "rationale": {
+          "pl": "Według StockAnalysis zatrudnienie na 30 stycznia 2011 roku wzrosło o 5,66 procent, czyli o 323 etaty, do 6 029 osób, przy rocznych wydatkach R&D na poziomie 848,83 miliona dolarów, około 24,0 procent przychodów. Pełnoroczne SBC za ten rok nie jest wyodrębnione w dostępnych materiałach, ale w pierwszym kwartale zakończonym 2 maja 2010 roku wyniosło 25,18 miliona dolarów.",
+          "en": "Per StockAnalysis, headcount on January 30, 2011 rose 5.66 percent, or 323 roles, to 6,029, with annual R&D spending at 848.83 million dollars, roughly 24.0 percent of revenue. Full year SBC is not broken out in available materials, though Q1 ended May 2, 2010 had 25.18 million dollars in SBC."
+        }
+      },
+      "disruption": {
+        "score": 3,
+        "rationale": {
+          "pl": "Utrzymywanie nakładów R&D na poziomie bliskim jednej czwartej przychodów, około 24,0 procent rocznie oraz 24,1–24,3 procent kwartalnie, odzwierciedlało stałą potrzebę finansowania rozwoju architektur GPU. Dostępne źródła dla tego okresu nie zawierają jednak szczegółów o premierach konkurencyjnych akceleratorów ani ryzyku substytucji przez układy ASIC.",
+          "en": "Keeping R&D near one quarter of revenue, around 24.0 percent annually and 24.1–24.3 percent quarterly, reflected ongoing funding needs for GPU architectures. Available sources for this period do not detail rival accelerator launches or ASIC substitution risk."
+        }
+      }
+    },
+    "2012": {
+      "complementors": {
+        "score": 3,
+        "rationale": {
+          "pl": "W roku fiskalnym 2012 zakończonym 29 stycznia 2012 roku przychody wzrosły do 4,00 miliarda dolarów, przy płynności w pierwszym kwartale na 1 maja 2011 roku równej 683,63 miliona dolarów w gotówce i 2,04 miliarda w zbywalnych papierach wartościowych. W dostępnych dokumentach brak bezpośrednich danych o zależności od zewnętrznych frameworków AI lub chmury przy wczesnej adopcji obliczeń równoległych.",
+          "en": "In fiscal 2012 ended January 29, 2012, revenue rose to 4.00 billion dollars, with first quarter liquidity on May 1, 2011 at 683.63 million dollars in cash and 2.04 billion in marketable securities. Available filings lack direct data on reliance on external AI frameworks or cloud providers while parallel compute was still early."
+        }
+      },
+      "regulation": {
+        "score": 2,
+        "rationale": {
+          "pl": "Raport Form 10 K za rok fiskalny 2012 odnotowywał dalszy tok postępowań zbiorowych, w których 4 marca 2011 roku spółka i pełnomocnicy złożyli sprzeciwy procesowe. W dostępnych wyciągach z tego okresu nie odnotowano natomiast ceł, regulacji AI ani ograniczeń eksportowych wpływających na sprzedaż.",
+          "en": "The fiscal 2012 Form 10 K noted ongoing class action proceedings where the company and counsel filed procedural objections on March 4, 2011. Available excerpts from this period show no tariffs, AI rules, or export limits affecting sales."
+        }
+      },
+      "labor": {
+        "score": 3,
+        "rationale": {
+          "pl": "Wydatki R&D przekroczyły próg 1 miliarda dolarów i wyniosły 1 002,61 miliona dolarów, czyli wzrost o 18,1 procent rok do roku i około 25,1 procent przychodów, a SBC w Q1 zakończonym 1 maja 2011 roku wzrosło o 26,1 procent do 31,74 miliona dolarów. Zatrudnienie na 29 stycznia 2012 roku osiągnęło według StockAnalysis 7 133 osoby, choć Macrotrends podaje 5 042 etaty.",
+          "en": "R&D spending crossed 1 billion dollars to 1,002.61 million, up 18.1 percent year over year and roughly 25.1 percent of revenue, while Q1 SBC ended May 1, 2011 rose 26.1 percent to 31.74 million dollars. Headcount on January 29, 2012 reached 7,133 per StockAnalysis, though Macrotrends lists 5,042."
+        }
+      },
+      "disruption": {
+        "score": 3,
+        "rationale": {
+          "pl": "Wzrost wydatków na badania i rozwój powyżej 1 miliarda dolarów przy wzroście przychodów o 13,0 procent z 3,54 do 4,00 miliarda dolarów oznaczał wzrost udziału R&D w sprzedaży do około 25,1 procent. W dostępnych źródłach dla tego roku brak szczegółowych opisów zmian architektonicznych u rywali lub presji układów ASIC.",
+          "en": "R&D crossing 1 billion dollars while revenue grew 13.0 percent from 3.54 billion to 4.00 billion dollars pushed R&D intensity up to roughly 25.1 percent of sales. Available sources for the year lack details on rival architectural shifts or ASIC pressure."
+        }
+      }
+    },
+    "2013": {
+      "complementors": {
+        "score": 3,
+        "rationale": {
+          "pl": "Przychody w roku fiskalnym 2013 osiągnęły 4,28 miliarda dolarów, a zarząd przedstawiał długoterminową strategię platformy podczas dnia inwestora w 2013 roku. Dostępne wyciągi ze sprawozdań za ten okres nie zawierają jednak szczegółowych faktów o udziale partnerów OEM, dostawców chmury czy zewnętrznych bibliotek.",
+          "en": "Fiscal 2013 revenue reached 4.28 billion dollars, and management presented long term platform strategy at the 2013 investor day. Available filing excerpts for the period lack specific details on OEM partners, cloud providers, or external libraries."
+        }
+      },
+      "regulation": {
+        "score": 1,
+        "rationale": {
+          "pl": "Zgromadzone wyciągi z dokumentów za rok fiskalny 2013 nie wskazują na żadne restrykcje eksportowe, taryfy celne ani ingerencje antymonopolowe obciążające spółkę. Niskie nasycenie barierami administracyjnymi w tym okresie uzasadnia minimalną ocenę ryzyka regulacyjnego.",
+          "en": "Collected filing excerpts for fiscal 2013 point to no export restrictions, tariffs, or antitrust interventions weighing on the company. Minimal administrative barriers in this period support the lowest regulatory risk score."
+        }
+      },
+      "labor": {
+        "score": 3,
+        "rationale": {
+          "pl": "Zatrudnienie na 27 stycznia 2013 roku wzrosło według StockAnalysis i Macrotrends o 11,79 procent do 7 974 osób, a roczne wydatki R&D sięgnęły 1 147,30 miliona dolarów, około 26,8 procent przychodów. W Q1 zakończonym 29 kwietnia 2012 roku koszt SBC wyniósł 35,57 miliona dolarów, przy braku rocznej kwoty SBC w dostępnych źródłach.",
+          "en": "Headcount on January 27, 2013 rose 11.79 percent to 7,974 per StockAnalysis and Macrotrends, while annual R&D reached 1,147.30 million dollars, about 26.8 percent of revenue. Q1 SBC ended April 29, 2012 was 35.57 million dollars, with no full year SBC figure in available sources."
+        }
+      },
+      "disruption": {
+        "score": 3,
+        "rationale": {
+          "pl": "Wzrost nakładów R&D o 14,4 procent rok do roku do 1,15 miliarda dolarów przy dynamice przychodów 7,0 procent do 4,28 miliarda dolarów sygnalizował rosnącą kosztochłonność utrzymania konkurencyjności produktowej. Szczegółowe dane o tempie zmian architektur konkurencji w tym roku nie występują w dostępnych materiałach.",
+          "en": "R&D rising 14.4 percent year over year to 1.15 billion dollars against 7.0 percent revenue growth to 4.28 billion dollars signaled rising cost to keep product competitiveness. Detailed data on rival architecture pacing in this year does not appear in available materials."
+        }
+      }
+    },
+    "2014": {
+      "complementors": {
+        "score": 3,
+        "rationale": {
+          "pl": "W roku fiskalnym 2014 zakończonym 26 stycznia 2014 roku przychody spadły o 3,5 procent do 4,13 miliarda dolarów, a dokumentacja roczna i wkładka do Form 10 K skupiały się na utrzymaniu potencjału inżynieryjnego i ładzie wynagrodzeń. W dostępnych źródłach brak szczegółowych ujawnień z tego roku o zależności od zewnętrznych bibliotek AI lub platform chmurowych.",
+          "en": "In fiscal 2014 ended January 26, 2014, revenue dipped 3.5 percent to 4.13 billion dollars, and annual filings plus the Form 10 K insert focused on engineering capacity and pay governance. Available sources lack specific disclosures from the year on reliance on external AI libraries or cloud platforms."
+        }
+      },
+      "regulation": {
+        "score": 1,
+        "rationale": {
+          "pl": "Dostępne wyciągi z raportu Form 10 K za rok fiskalny 2014 nie odnotowują kontroli eksportu, ceł ani barier rządowych ograniczających dostęp do rynków zagranicznych. We wrześniu 2013 roku funkcję CFO objęła Colette Kress, wzmacniając zarządzanie finansami spółki.",
+          "en": "Available fiscal 2014 Form 10 K excerpts record no export controls, tariffs, or government barriers limiting foreign market access. Colette Kress became CFO in September 2013, strengthening financial oversight."
+        }
+      },
+      "labor": {
+        "score": 4,
+        "rationale": {
+          "pl": "Mimo spadku sprzedaży do 4,13 miliarda dolarów wydatki na R&D wzrosły do 1 335,80 miliona dolarów i stanowiły 32,3 procent przychodów netto, przy wzroście zatrudnienia o 10,46 procent do 8 808 osób według StockAnalysis oraz 6 384 pełnoetatowych pracowników R&D według Form 10 K. Tak wysoki udział R&D w sprzedaży wywierał wyraźną presję kosztową na marże operacyjne.",
+          "en": "Despite sales slipping to 4.13 billion dollars, R&D rose to 1,335.80 million dollars or 32.3 percent of net revenue, with headcount up 10.46 percent to 8,808 per StockAnalysis and 6,384 full time R&D staff per Form 10 K. That heavy R&D share of sales pressed operating margins."
+        }
+      },
+      "disruption": {
+        "score": 3,
+        "rationale": {
+          "pl": "Konieczność przeznaczenia 32,3 procent przychodów netto na R&D w roku spadku sprzedaży do 4,13 miliarda dolarów wskazywała na silną presję inwestycyjną wymaganą do utrzymania przewagi architektonicznej. Zgromadzone źródła nie podają jednak szczegółów dotyczących konkretnych premier sprzętowych ani substytucji przez układy ASIC.",
+          "en": "Spending 32.3 percent of net revenue on R&D in a year when sales fell to 4.13 billion dollars pointed to heavy investment pressure to hold architectural advantage. Collected sources do not detail specific hardware launches or ASIC substitution."
+        }
+      }
+    },
+    "2015": {
+      "complementors": {
+        "score": 3,
+        "rationale": {
+          "pl": "Przychody w roku fiskalnym 2015 odbiły o 13,3 procent do 4,68 miliarda dolarów przy zachowaniu wysokich inwestycji badawczych w rozwój platformy GPU. Dostępne wyciągi z Form 10 K za ten okres nie precyzują jednak udziału komplementorów serwerowych czy zewnętrznych standardów chmurowych w generowaniu popytu.",
+          "en": "Fiscal 2015 revenue rebounded 13.3 percent to 4.68 billion dollars while keeping strong research investment in the GPU platform. Available Form 10 K excerpts for the period do not specify the share of server complementors or external cloud standards in driving demand."
+        }
+      },
+      "regulation": {
+        "score": 1,
+        "rationale": {
+          "pl": "W dostępnych wyciągach z raportu Form 10 K za okres zakończony 25 stycznia 2015 roku nie odnotowano ceł, barier antymonopolowych ani ograniczeń eksportowych wpływających na wynik. Otoczenie regulacyjne pozostawało neutralne i nie ograniczało międzynarodowej ekspansji spółki.",
+          "en": "Available Form 10 K excerpts for the period ended January 25, 2015 note no tariffs, antitrust barriers, or export limits affecting results. The regulatory backdrop stayed neutral and did not curb international expansion."
+        }
+      },
+      "labor": {
+        "score": 3,
+        "rationale": {
+          "pl": "Przyrost zatrudnienia zwolnił do 4,77 procent do 9 228 osób według StockAnalysis i Macrotrends, z czego według Form 10 K 6 658 pełnoetatowych pracowników, czyli 72,2 procent załogi, pracowało w R&D. Wydatki na R&D wyniosły 1,36 miliarda dolarów, co przy wzroście sprzedaży obniżyło wskaźnik R&D do 29,0 procent przychodów netto.",
+          "en": "Headcount growth slowed to 4.77 percent at 9,228 per StockAnalysis and Macrotrends, with 6,658 full time staff, or 72.2 percent of the workforce, in R&D per Form 10 K. R&D spending hit 1.36 billion dollars, lowering R&D intensity to 29.0 percent of net revenue as sales grew."
+        }
+      },
+      "disruption": {
+        "score": 3,
+        "rationale": {
+          "pl": "Zwiększenie przychodów o 13,3 procent przy niemal płaskich nakładach na R&D, na poziomie 1,36 miliarda dolarów wobec 1,34 miliarda rok wcześniej, obniżyło relatywną presję kosztową cyklu innowacji. Zgromadzone dokumenty nie zawierają szczegółowych informacji o konkurencyjnych architekturach akceleratorów w tym roku.",
+          "en": "Growing revenue 13.3 percent on nearly flat R&D of 1.36 billion dollars versus 1.34 billion a year earlier eased relative innovation cycle cost pressure. Collected filings lack detail on competing accelerator architectures in this year."
+        }
+      }
+    },
+    "2016": {
+      "complementors": {
+        "score": 2,
+        "rationale": {
+          "pl": "W roku fiskalnym 2016 przychody osiągnęły rekordowe 5,01 miliarda dolarów, rosnąc o 7 procent rok do roku we wszystkich czterech segmentach rynkowych oraz przy rosnącym zainteresowaniu klientów uczeniem głębokim. Szybkie przyjmowanie deep learning zaczynało przekształcać ekosystem programistyczny wokół GPU w atut wzmacniający pozycję spółki.",
+          "en": "In fiscal 2016, revenue hit a record 5.01 billion dollars, up 7 percent year over year across all four market platforms alongside rising customer adoption of deep learning. Rapid deep learning uptake began turning the GPU software ecosystem into a reinforcing advantage."
+        }
+      },
+      "regulation": {
+        "score": 1,
+        "rationale": {
+          "pl": "Sprawozdania za rok fiskalny 2016 nie rejestrują barier eksportowych, ceł ani interwencji antymonopolowych ograniczających sprzedaż w żadnym segmencie. Stabilność regulacyjna pozwoliła spółce zapowiedzieć zwrot około 1,0 miliarda dolarów akcjonariuszom w kolejnym roku poprzez dywidendy i skup akcji.",
+          "en": "Fiscal 2016 filings record no export barriers, tariffs, or antitrust actions limiting sales in any segment. Regulatory stability enabled the company to plan roughly 1.0 billion dollars in shareholder returns the next year via dividends and buybacks."
+        }
+      },
+      "labor": {
+        "score": 2,
+        "rationale": {
+          "pl": "Całkowite zatrudnienie na 31 stycznia 2016 roku pozostało stabilne na poziomie 9 227 osób przy 6 566 pełnoetatowych pracownikach R&D, czyli 71,2 procent według Form 10 K. Koszty R&D spadły nominalnie do 1,33 miliarda dolarów, około 26,5 procent przychodów, co przy marży brutto non GAAP 57,2 procent w Q4 oznaczało niską presję płacową.",
+          "en": "Total headcount on January 31, 2016 held steady at 9,227 with 6,566 full time R&D employees, or 71.2 percent per Form 10 K. R&D expense dipped nominally to 1.33 billion dollars, roughly 26.5 percent of revenue, signaling low wage pressure alongside a 57.2 percent Q4 non GAAP gross margin."
+        }
+      },
+      "disruption": {
+        "score": 2,
+        "rationale": {
+          "pl": "Gwałtownie rosnąca liczba wdrożeń deep learning w centrach danych i motoryzacji w roku fiskalnym 2016 pokazywała, że spółka staje się głównym beneficjentem przełomu w AI. Spadek wydatków R&D do 1,33 miliarda dolarów przy rekordowej sprzedaży 5,01 miliarda dolarów zmniejszał ryzyko nagłej substytucji technologicznej.",
+          "en": "Surging deep learning deployments in data center and automotive in fiscal 2016 showed the company capturing the AI shift. R&D dipping to 1.33 billion dollars against record 5.01 billion dollar sales reduced near term technology substitution risk."
+        }
+      }
+    },
+    "2017": {
+      "complementors": {
+        "score": 2,
+        "rationale": {
+          "pl": "Według danych zagregowanych z raportów przychody w roku fiskalnym 2017 przyspieszyły o 37,9 procent do 6,91 miliarda dolarów, a ROIC osiągnął 21,8 procent, pokazując rosnącą siłę połączenia sprzętu i oprogramowania. Dostępne zestawienia za ten rok nie wyszczególniają jednak osobnych umów z partnerami serwerowymi lub dostawcami chmury.",
+          "en": "Per filing aggregates, fiscal 2017 revenue accelerated 37.9 percent to 6.91 billion dollars and ROIC hit 21.8 percent, pointing to stronger hardware and software traction. Available summaries for the year do not detail separate server partner or cloud provider agreements."
+        }
+      },
+      "regulation": {
+        "score": 1,
+        "rationale": {
+          "pl": "Dostępne źródła za okres zakończony 29 stycznia 2017 roku nie wykazują presji regulacyjnej, ceł ani ograniczeń eksportowych. Kapitalizacja rynkowa spółki osiągnęła na koniec roku fiskalnego 2017 poziom 65,8 miliarda dolarów przy swobodnym dostępie do rynków globalnych.",
+          "en": "Available sources for the period ended January 29, 2017 show no regulatory pressure, tariffs, or export restrictions. Market capitalization reached 65.8 billion dollars at fiscal 2017 year end with open access to global markets."
+        }
+      },
+      "labor": {
+        "score": 3,
+        "rationale": {
+          "pl": "Zatrudnienie wzrosło o 11,62 procent, czyli o 1 072 osoby, do 10 299 pracowników, a roczny koszt SBC wyniósł według zestawienia CoreStock 247 milionów dolarów. Łączne koszty operacyjne wzrosły o 10,0 procent do 2,13 miliarda dolarów, rosnąc znacznie wolniej niż przychody na poziomie +37,9 procent.",
+          "en": "Headcount rose 11.62 percent, or 1,072 staff, to 10,299, and annual SBC reached 247 million dollars per CoreStock data. Total operating expenses rose 10.0 percent to 2.13 billion dollars, well behind the 37.9 percent revenue increase."
+        }
+      },
+      "disruption": {
+        "score": 2,
+        "rationale": {
+          "pl": "Dynamika przychodów na poziomie +37,9 procent przy zaledwie 10,0 procent wzroście kosztów operacyjnych świadczyła o wysokiej dźwigni biznesowej i stabilnej przewadze architektonicznej. Dostępne materiały za ten rok nie zawierają szczegółowych danych o zagrożeniu ze strony konkurencyjnych akceleratorów lub układów ASIC.",
+          "en": "Revenue growth of 37.9 percent against just 10.0 percent operating expense growth showed operating leverage and steady architectural leadership. Available materials for this year lack specific details on rival accelerators or ASIC threats."
+        }
+      }
+    },
+    "2018": {
+      "complementors": {
+        "score": 2,
+        "rationale": {
+          "pl": "W roku fiskalnym 2018 przychody wzrosły o kolejne 40,6 procent do 9,71 miliarda dolarów, przy zysku netto 3,05 miliarda dolarów i wzroście ROIC do 32,4 procent według danych z raportów. Dostępne wyciągi za ten rok nie podają szczegółowych wskaźników o zewnętrznych bibliotekach AI ani koncentracji partnerów chmurowych.",
+          "en": "In fiscal 2018, revenue climbed another 40.6 percent to 9.71 billion dollars with 3.05 billion in net income and ROIC rising to 32.4 percent per filing data. Available excerpts for the year do not report metrics on external AI libraries or cloud partner concentration."
+        }
+      },
+      "regulation": {
+        "score": 1,
+        "rationale": {
+          "pl": "Zgromadzone dane sprawozdawcze dla okresu zakończonego 28 stycznia 2018 roku nie dokumentują żadnych ceł, sankcji eksportowych ani postępowań antymonopolowych obciążających wyniki. Wycena rynkowa spółki na koniec roku fiskalnego 2018 sięgnęła 147 miliardów dolarów bez zidentyfikowanych zakłóceń regulacyjnych.",
+          "en": "Collected filing data for the period ended January 28, 2018 documents no tariffs, export sanctions, or antitrust actions hurting results. Market valuation reached 147 billion dollars at fiscal 2018 year end with no identified regulatory disruptions."
+        }
+      },
+      "labor": {
+        "score": 3,
+        "rationale": {
+          "pl": "Koszty SBC wzrosły o 58,3 procent rok do roku do 391 milionów dolarów, a zatrudnienie zwiększyło się o 11,93 procent do 11 528 osób według Bullfincher i StockAnalysis, podczas gdy Macrotrends podaje 8 191. Całkowite koszty operacyjne wzrosły o 22,9 procent do 2,61 miliarda dolarów, poniżej tempa wzrostu sprzedaży.",
+          "en": "SBC rose 58.3 percent year over year to 391 million dollars, while headcount grew 11.93 percent to 11,528 per Bullfincher and StockAnalysis, against 8,191 on Macrotrends. Total operating expenses rose 22.9 percent to 2.61 billion dollars, trailing sales growth."
+        }
+      },
+      "disruption": {
+        "score": 2,
+        "rationale": {
+          "pl": "Wzrost ROIC do 32,4 procent oraz ponad 40 procentowa dynamika przychodów w roku fiskalnym 2018 potwierdzały mocną pozycję technologiczną bez widocznej erozji marż przez substytuty. Szczegóły premier produktowych konkurencji w samym tym roku nie są jednak opisane w dostępnych materiałach.",
+          "en": "ROIC climbing to 32.4 percent and over 40 percent revenue growth in fiscal 2018 confirmed strong technology standing with no visible margin erosion from substitutes. Rival product launch details in this specific year are not covered in available sources."
+        }
+      }
+    },
+    "2019": {
+      "complementors": {
+        "score": 2,
+        "rationale": {
+          "pl": "Przychody w roku fiskalnym 2019 wzrosły o 20,6 procent do 11,72 miliarda dolarów przy utrzymaniu wysokiego ROIC na poziomie 33,6 procent i zysku netto 4,14 miliarda dolarów według zestawień z raportów SEC. Dostępne wyciągi za ten rok nie zawierają szczegółowych wzmianek o relacjach z dostawcami chmury czy presji zewnętrznych standardów.",
+          "en": "Fiscal 2019 revenue grew 20.6 percent to 11.72 billion dollars while keeping ROIC high at 33.6 percent and net income at 4.14 billion dollars per SEC filing compilations. Available excerpts for the year lack details on cloud provider ties or external standard pressure."
+        }
+      },
+      "regulation": {
+        "score": 1,
+        "rationale": {
+          "pl": "W materiałach z okresu zakończonego 27 stycznia 2019 roku nie udokumentowano wpływu ceł, kontroli eksportu ani ingerencji rządowych na przychody lub marże. Odnotowany na koniec roku spadek kapitalizacji rynkowej do 97,1 miliarda dolarów nie wiązał się w dostępnych źródłach z sankcjami regulacyjnymi.",
+          "en": "Materials for the period ended January 27, 2019 document no impact from tariffs, export controls, or government intervention on revenue or margins. A year end drop in market capitalization to 97.1 billion dollars was not tied to regulatory sanctions in available sources."
+        }
+      },
+      "labor": {
+        "score": 3,
+        "rationale": {
+          "pl": "Według danych z Form 10 K zatrudnienie wzrosło o 15,17 procent do 13 277 osób, w tym 9 486 pracowników R&D, czyli 71,4 procent załogi, natomiast koszt SBC zwiększył się o 42,5 procent do 557 milionów dolarów. Koszty operacyjne wzrosły o 28,9 procent do 3,37 miliarda dolarów, wyprzedzając wzrost przychodów o 20,6 procent.",
+          "en": "Per Form 10 K figures, headcount grew 15.17 percent to 13,277, including 9,486 R&D staff or 71.4 percent of the total, while SBC climbed 42.5 percent to 557 million dollars. Operating expenses rose 28.9 percent to 3.37 billion dollars, outpacing the 20.6 percent revenue gain."
+        }
+      },
+      "disruption": {
+        "score": 3,
+        "rationale": {
+          "pl": "Wyprzedzenie wzrostu sprzedaży o 20,6 procent przez wzrost kosztów operacyjnych o 28,9 procent wskazywało na rosnący koszt utrzymania tempa innowacji oraz większą wrażliwość na cykl popytowy. Dostępne źródła za rok fiskalny 2019 nie dokumentują jednak konkretnych przełomów u rywali w obszarze układów ASIC.",
+          "en": "Operating expenses rising 28.9 percent ahead of 20.6 percent sales growth pointed to higher cost to sustain innovation pace and greater sensitivity to demand cycles. Available fiscal 2019 sources do not document specific rival breakthroughs in custom ASICs."
+        }
+      }
+    },
+    "2020": {
+      "complementors": {
+        "score": 2,
+        "rationale": {
+          "pl": "W roku fiskalnym 2020 zakończonym 26 stycznia 2020 roku przychody spadły o 6,8 procent do 10,92 miliarda dolarów, pokazując wrażliwość na popyt partnerów końcowych mimo rosnącego znaczenia CUDA. Raport za ten okres wskazywał też na szeroką rywalizację w półprzewodnikach i SoC ze strony Broadcom, Intela, Qualcomm, Renesas, Samsunga i Xilinx.",
+          "en": "In fiscal 2020 ended January 26, 2020, revenue fell 6.8 percent to 10.92 billion dollars, showing sensitivity to end partner demand despite growing CUDA traction. The filing also noted broad semiconductor and SoC competition from Broadcom, Intel, Qualcomm, Renesas, Samsung, and Xilinx."
+        }
+      },
+      "regulation": {
+        "score": 2,
+        "rationale": {
+          "pl": "Dostępne wyciągi z Form 10 K za rok fiskalny 2020 nie rejestrują bezpośrednich kontroli eksportu ani kar regulacyjnych ograniczających bieżącą działalność. Skala spółki i przygotowania do dużych przejęć w centrach danych zwiększały jednak ekspozycję na przyszły nadzór antymonopolowy.",
+          "en": "Available fiscal 2020 Form 10 K excerpts record no direct export controls or regulatory fines curbing current operations. Growing scale and moves toward major data center deals increased exposure to future antitrust scrutiny."
+        }
+      },
+      "labor": {
+        "score": 4,
+        "rationale": {
+          "pl": "Koszty SBC skoczyły o 51,5 procent do 844 milionów dolarów, około 7,7 procent przychodów, a wydatki R&D wyniosły 2 829 milionów dolarów, podnosząc ich udział do 25,9 procent przychodów netto wobec 20,3 procent rok wcześniej przy spadku sprzedaży. Zatrudnienie wzrosło do 13 775 osób, co przy spadku ROIC do 18,9 procent wywarło presję na rentowność.",
+          "en": "SBC jumped 51.5 percent to 844 million dollars, about 7.7 percent of revenue, while R&D reached 2,829 million dollars, lifting R&D share to 25.9 percent of net revenue from 20.3 percent a year earlier as sales shrank. Headcount rose to 13,775, pressuring profitability as ROIC fell to 18.9 percent."
+        }
+      },
+      "disruption": {
+        "score": 3,
+        "rationale": {
+          "pl": "Spadek przychodów o 6,8 procent i obniżenie ROIC z 33,6 do 18,9 procent przy rywalizacji ze strony producentów SoC wymusiły wzrost udziału R&D powyżej jednej czwartej przychodów. Szczegółowe dane o harmonogramie własnych premier produktowych w roku fiskalnym 2020 nie są jednak zawarte w dostępnych wyciągach.",
+          "en": "A 6.8 percent revenue drop and ROIC sliding from 33.6 percent to 18.9 percent amid SoC competition pushed R&D above one quarter of revenue. Specific details on own product launch timing in fiscal 2020 are not in the available excerpts."
+        }
+      }
+    },
+    "2021": {
+      "complementors": {
+        "score": 1,
+        "rationale": {
+          "pl": "W roku fiskalnym 2021 sfinalizowano przejęcie Mellanox za 6,9 miliarda dolarów, łącząc układy GPU i oprogramowanie CUDA i NCCL z technologią sieciową InfiniBand. Premiera Ampere A100 z funkcją Multi Instance GPU, dzielącą jeden GPU na do siedmiu izolowanych instancji dla chmury, silnie powiązała hiperskalerów z architekturą spółki.",
+          "en": "In fiscal 2021, the company closed the 6.9 billion dollar Mellanox acquisition, pairing GPUs and CUDA and NCCL software with InfiniBand networking. Launching Ampere A100 with Multi Instance GPU, splitting one GPU into up to seven isolated cloud instances, tied hyperscalers closely to the company architecture."
+        }
+      },
+      "regulation": {
+        "score": 3,
+        "rationale": {
+          "pl": "Zgoda regulacyjna na przejęcie Mellanox wiązała się z sześcioletnimi zobowiązaniami behawioralnymi dotyczącymi kompatybilności i warunków dostępu, odnotowanymi przez OECD. Równolegle planowane przejęcie spółki Arm o wartości 40 miliardów dolarów uruchomiło ostrą kontrolę organów konkurencji.",
+          "en": "Regulatory approval for Mellanox carried six year behavioral commitments on compatibility and access terms noted by the OECD. In parallel, the planned 40 billion dollar Arm acquisition triggered intense competition authority review."
+        }
+      },
+      "labor": {
+        "score": 3,
+        "rationale": {
+          "pl": "Zatrudnienie wzrosło o 37,75 procent, czyli o 5 200 osób po włączeniu Mellanox, do 18 975 pracowników w 29 krajach, w tym 13 532 w R&D, a nakłady R&D wzrosły o 39 procent do 3 924 milionów dolarów. Mimo dużej rozbudowy kadr rotacja wyniosła zaledwie 3,8 procent, a wzrost przychodów do 16,68 miliarda dolarów złagodził presję płacową.",
+          "en": "Headcount jumped 37.75 percent, or 5,200 staff including Mellanox, to 18,975 across 29 countries with 13,532 in R&D, while R&D rose 39 percent to 3,924 million dollars. Even with rapid hiring, attrition was just 3.8 percent and revenue rising to 16.68 billion dollars eased pay pressure."
+        }
+      },
+      "disruption": {
+        "score": 2,
+        "rationale": {
+          "pl": "Wprowadzenie architektury Ampere A100 oraz pełnostosowej integracji sieciowej po zakupie Mellanox umocniło przewagę technologiczną spółki w skalowaniu centrów danych. Wzrost przychodów o 52,7 procent przy spadku udziału R&D z 25,9 do 23,5 procent wspierał ocenę niskiego ryzyka substytucji.",
+          "en": "Introducing Ampere A100 and full stack network integration after Mellanox strengthened technical leadership in scaling data centers. Revenue growing 52.7 percent while R&D share dropped from 25.9 percent to 23.5 percent supported a low substitution risk rating."
+        }
+      }
+    },
+    "2022": {
+      "complementors": {
+        "score": 2,
+        "rationale": {
+          "pl": "Przychody wzrosły o 61,3 procent do 26,91 miliarda dolarów za sprawą adopcji stosu CUDA i NCCL oraz rozwiązań Mellanox u producentów serwerów i dostawców chmury. Jednocześnie zablokowanie przejęcia Arm utrzymywało po stronie CPU potrzebę licencjonowania zewnętrznego standardu.",
+          "en": "Revenue grew 61.3 percent to 26.91 billion dollars as server makers and cloud providers adopted CUDA and NCCL alongside Mellanox networking. At the same time, the blocked Arm deal kept a need to license an external standard on the CPU side."
+        }
+      },
+      "regulation": {
+        "score": 4,
+        "rationale": {
+          "pl": "Wyraźny sprzeciw organów antymonopolowych w USA, Wielkiej Brytanii i Unii Europejskiej doprowadził do upadku zakupu Arm od SoftBanku za 40 miliardów dolarów, co odzwierciedlono w raporcie Form 10 K za rok fiskalny 2022. Bariery regulacyjne stały się jednym z głównych ograniczeń dla strategii integracji pionowej spółki.",
+          "en": "Strong opposition from antitrust regulators in the US, UK, and European Union sank the 40 billion dollar Arm acquisition from SoftBank, reflected in the fiscal 2022 Form 10 K. Regulatory hurdles became a major constraint on vertical integration strategy."
+        }
+      },
+      "labor": {
+        "score": 3,
+        "rationale": {
+          "pl": "Według raportu Form 10 K zatrudnienie wzrosło o 18,43 procent do 22 473 osób w 32 krajach, z czego 16 242 osoby, czyli 72,3 procent, pracowały w R&D, a rotacja wzrosła umiarkowanie do 4,9 procent. Wydatki R&D zwiększyły się o 34 procent do 5 268 milionów dolarów, lecz wyższy wzrost sprzedaży podniósł przychód na pracownika do około 1,20 miliona dolarów.",
+          "en": "Per the Form 10 K, headcount rose 18.43 percent to 22,473 across 32 countries, with 16,242 staff, or 72.3 percent, in R&D and attrition edging up to 4.9 percent. R&D climbed 34 percent to 5,268 million dollars, though faster sales growth lifted revenue per employee to roughly 1.20 million dollars."
+        }
+      },
+      "disruption": {
+        "score": 2,
+        "rationale": {
+          "pl": "Mimo fiaska przejęcia Arm spółka kontynuowała prace nad własnym procesorem Grace opartym na architekturze Arm, chroniąc spójność platformy obliczeniowej. Szybki skok przychodów do 26,91 miliarda dolarów potwierdzał stabilną pozycję GPU wobec rozwiązań alternatywnych.",
+          "en": "Despite the failed Arm acquisition, the company kept developing its own Grace CPU on Arm architecture, protecting compute platform cohesion. Rapid revenue growth to 26.91 billion dollars confirmed steady GPU standing against alternatives."
+        }
+      }
+    },
+    "2023": {
+      "complementors": {
+        "score": 2,
+        "rationale": {
+          "pl": "Mimo formalnego zakończenia umowy z Arm ekosystem CUDA i NCCL oraz sieć Mellanox utrzymały dominującą pozycję dla obciążeń AI w chmurze, choć roczne przychody zatrzymały się na poziomie 26,97 miliarda dolarów. Spółka zachowała mocną pozycję wobec producentów serwerów i partnerów chmurowych bez nadmiernego polegania na obcym oprogramowaniu.",
+          "en": "Despite formally ending the Arm deal, CUDA and NCCL plus Mellanox networking stayed the leading standard for cloud AI workloads, even as annual revenue flattened at 26.97 billion dollars. The company held strong leverage with server makers and cloud partners without heavy reliance on third party software."
+        }
+      },
+      "regulation": {
+        "score": 5,
+        "rationale": {
+          "pl": "W sierpniu 2022 roku rząd USA ogłosił restrykcje eksportowe i licencje wobec Chin, a spółka zaksięgowała 1 353 miliony dolarów kosztu zerwania przejęcia Arm po sprzeciwie regulatorów z USA, Wielkiej Brytanii i UE. W roku fiskalnym 2023 wstrzymano też bezpośrednią sprzedaż do Rosji z 54 milionami dolarów kosztów i przeniesiono część operacji oraz R&D poza Chiny.",
+          "en": "In August 2022, the US government announced export restrictions and licensing toward China, and the company booked 1,353 million dollars in Arm deal termination costs after US, UK, and EU regulatory opposition. In fiscal 2023, direct sales to Russia were halted with 54 million dollars in charges, and some operations and R&D moved outside China."
+        }
+      },
+      "labor": {
+        "score": 4,
+        "rationale": {
+          "pl": "Wydatki R&D skoczyły o 39 procent do 7 339 milionów dolarów, około 27,2 procent przychodów przy stagnacji sprzedaży, a zespół powiększył się o 16,57 procent do 26 196 pracowników w 35 krajach, w tym 19 532 w R&D. Rotacja osiągnęła wieloletnie maksimum 5,3 procent, a przychód na pracownika spadł do około 1,03 miliona dolarów.",
+          "en": "R&D jumped 39 percent to 7,339 million dollars, roughly 27.2 percent of revenue amid flat sales, and headcount grew 16.57 percent to 26,196 across 35 countries, including 19,532 in R&D. Attrition hit a multiyear high of 5.3 percent, and revenue per employee fell to about 1.03 million dollars."
+        }
+      },
+      "disruption": {
+        "score": 3,
+        "rationale": {
+          "pl": "Stagnacja przychodów na poziomie 26,97 miliarda dolarów przy wzroście R&D o 39 procent do 7,34 miliarda dolarów obciążała marże w okresie przejściowym między generacjami sprzętowymi. Spółka przyspieszała prace nad procesorem Grace oraz kolejną generacją akceleracji AI, aby utrzymać dystans wobec rywali.",
+          "en": "Flat revenue at 26.97 billion dollars alongside 39 percent R&D growth to 7.34 billion dollars weighed on margins during a hardware generation transition. The company pushed Grace CPU development and the next AI accelerator wave to stay ahead of rivals."
+        }
+      }
+    },
+    "2024": {
+      "complementors": {
+        "score": 2,
+        "rationale": {
+          "pl": "Przychody wzrosły o 125,9 procent do 60,92 miliarda dolarów, w tym 47,41 miliarda w Compute & Networking i 13,52 miliarda w Graphics, czyniąc z dostawców chmury i twórców modeli AI głównych odbiorców stosu CUDA i Mellanox. Raport roczny odnotowywał jednak presję ze strony wewnętrznych zespołów SoC u dużych klientów oraz rywali takich jak Qualcomm, Renesas czy Samsung.",
+          "en": "Revenue jumped 125.9 percent to 60.92 billion dollars, with 47.41 billion in Compute & Networking and 13.52 billion in Graphics, making cloud providers and AI model builders primary buyers of CUDA and Mellanox. Yet the annual report noted competition from in house SoC teams at large customers plus rivals like Qualcomm, Renesas, and Samsung."
+        }
+      },
+      "regulation": {
+        "score": 4,
+        "rationale": {
+          "pl": "W październiku 2023 roku władze USA zaostrzyły kontrole eksportu układów AI, zamykając luki w przepisach z 2022 roku i rozszerzając ograniczenia na kolejne kraje. Mimo restrykcji sprzedaż do Chin wraz z Hongkongiem wyniosła w roku fiskalnym 2024 12,33 miliarda dolarów, co stanowiło 20,2 procent całkowitych przychodów spółki.",
+          "en": "In October 2023, US authorities tightened AI chip export controls, closing loopholes from 2022 rules and expanding restrictions to more countries. Even under controls, sales to China including Hong Kong reached 12.33 billion dollars in fiscal 2024, representing 20.2 percent of total revenue."
+        }
+      },
+      "labor": {
+        "score": 3,
+        "rationale": {
+          "pl": "Nakłady R&D wzrosły o 18 procent do 8 675 milionów dolarów, czyli 14,2 procent przychodów, SBC wyniosło 3 549 milionów dolarów, a zatrudnienie zwiększyło się o 12,99 procent do około 29 600 osób w 36 krajach, w tym 22 200 w R&D. Podwojenie przychodu na pracownika do około 2,06 miliona dolarów i spadek rotacji z 5,3 do 2,7 procent wyraźnie obniżyły relatywną presję kadrową.",
+          "en": "R&D rose 18 percent to 8,675 million dollars, or 14.2 percent of revenue, SBC totaled 3,549 million dollars, and headcount grew 12.99 percent to roughly 29,600 across 36 countries, including 22,200 in R&D. Doubling revenue per employee to about 2.06 million dollars and cutting attrition from 5.3 percent to 2.7 percent eased relative staffing pressure."
+        }
+      },
+      "disruption": {
+        "score": 2,
+        "rationale": {
+          "pl": "Skok sprzedaży o 125,9 procent przy wzroście wydatków R&D zaledwie o 18 procent potwierdzał dominującą pozycję architektoniczną spółki w trenowaniu i wdrażaniu modeli AI. Pełna kontrola nad połączeniem GPU, sieci i oprogramowania systemowego utrzymywała ryzyko substytucji na niskim poziomie.",
+          "en": "A 125.9 percent sales surge on just 18 percent R&D growth confirmed architectural leadership in training and deploying AI models. Tight integration across GPUs, networking, and system software kept substitution risk low."
+        }
+      }
+    },
+    "2025": {
+      "complementors": {
+        "score": 2,
+        "rationale": {
+          "pl": "Przychody wzrosły o 114,2 procent do 130,50 miliarda dolarów, w tym 116,19 miliarda w Compute & Networking, a spółka wspierała popyt inwestycjami kapitałowymi w ponad 200 startupów AI. Jednocześnie skala wdrożeń zwiększała wrażliwość na dostawy pamięci HBM oraz gotowość energetyczno budowlaną partnerów chmurowych.",
+          "en": "Revenue climbed 114.2 percent to 130.50 billion dollars, including 116.19 billion in Compute & Networking, while equity investments across more than 200 AI startups supported demand. At the same time, deployment scale heightened sensitivity to HBM memory supply and cloud partners power and construction readiness."
+        }
+      },
+      "regulation": {
+        "score": 5,
+        "rationale": {
+          "pl": "W grudniu 2024 roku rząd USA objął ograniczeniami pamięć HBM i dodał 140 chińskich podmiotów do czarnej listy, a w styczniu 2025 roku wydał regułę AI Diffusion dzielącą świat na trzy strefy dostępu do chipów AI. Pod koniec 2024 roku Departament Handlu USA skontrolował też malezyjską firmę Megaspeed, mimo że sprzedaż do Chin i Hongkongu w roku 2025 wyniosła 25,05 miliarda dolarów.",
+          "en": "In December 2024, the US government restricted HBM memory and added 140 Chinese entities to a blacklist, followed in January 2025 by the AI Diffusion rule splitting the world into three AI chip access tiers. Late in 2024, the Commerce Department also audited Malaysia based Megaspeed, even as China and Hong Kong sales reached 25.05 billion dollars in fiscal 2025."
+        }
+      },
+      "labor": {
+        "score": 3,
+        "rationale": {
+          "pl": "Wydatki R&D wzrosły o 48,9 procent do 12 914 milionów dolarów, czyli 9,9 procent przychodów, SBC sięgnęło 4 737 milionów dolarów, a zatrudnienie powiększyło się o 21,62 procent do około 36 000 osób w 38 krajach, w tym 27 100 w R&D. Spadek rotacji do 2,5 procent oraz przychód około 3,62 miliona dolarów na pracownika pokazywały skuteczne zatrzymywanie kadr akcjami.",
+          "en": "R&D rose 48.9 percent to 12,914 million dollars, or 9.9 percent of revenue, SBC hit 4,737 million dollars, and headcount grew 21.62 percent to roughly 36,000 across 38 countries, including 27,100 in R&D. Attrition falling to 2.5 percent and revenue per employee around 3.62 million dollars showed strong retention via equity."
+        }
+      },
+      "disruption": {
+        "score": 3,
+        "rationale": {
+          "pl": "Wprowadzanie platformy Blackwell przyspieszyło cykl technologiczny przy zaostrzonej rywalizacji o zaawansowaną pamięć HBM oraz projektowaniu własnych układów przez dużych klientów. Utrzymanie udziału R&D poniżej 10 procent przychodów pozwalało jednak finansować tę zmianę bez presji na rentowność.",
+          "en": "Rolling out the Blackwell platform accelerated technology pacing amid tighter competition for advanced HBM memory and custom chip design by major customers. Keeping R&D below 10 percent of revenue still allowed funding the transition without margin strain."
+        }
+      }
+    },
+    "2026": {
+      "complementors": {
+        "score": 2,
+        "rationale": {
+          "pl": "Przy przychodach 215,94 miliarda dolarów, w tym 193,7 miliarda w Data Center, ponad 31 miliardów w sieci i 16,0 miliarda w Gaming, spółka zainwestowała w roku fiskalnym 2026 17,5 miliarda dolarów w firmy prywatne i fundusze infrastrukturalne. Premiery systemów DGX Spark oraz RTX PRO 5000 Blackwell utrwaliły ekosystem, choć wymagały współfinansowania partnerów.",
+          "en": "On 215.94 billion dollars in revenue, including 193.7 billion in Data Center, over 31 billion in networking, and 16.0 billion in Gaming, the company invested 17.5 billion dollars in private companies and infrastructure funds in fiscal 2026. DGX Spark and RTX PRO 5000 Blackwell launches reinforced the ecosystem, though they needed partner co investment."
+        }
+      },
+      "regulation": {
+        "score": 5,
+        "rationale": {
+          "pl": "W kwietniu 2025 roku biuro BIS nałożyło bezterminowy wymóg licencyjny na układy H20 dla Chin, powodując odpis 4,5 miliarda dolarów w Q1 i zapis w Form 10 K o skutecznym wykluczeniu z chińskiego rynku centrów danych. Mimo odwołania reguły AI Diffusion w maju 2025 roku sprzedaż do Chin i Hongkongu spadła do 19,68 miliarda dolarów, a w styczniu 2026 roku pojawiło się 25 procentowe cło na wybrane układy oraz śledztwo w sprawie Megaspeed.",
+          "en": "In April 2025, BIS imposed an indefinite licensing rule on H20 chips for China, causing a 4.5 billion dollar Q1 write down and a Form 10 K note on effective exclusion from the Chinese data center market. Despite rescinding AI Diffusion in May 2025, China and Hong Kong sales fell to 19.68 billion dollars, and January 2026 brought a 25 percent tariff on select chips plus a Megaspeed probe."
+        }
+      },
+      "labor": {
+        "score": 3,
+        "rationale": {
+          "pl": "Nakłady R&D wzrosły o 43 procent do 18 497 milionów dolarów, czyli 8,6 procent przychodów, podbijane wzrostem wynagrodzeń i świadczeń z SBC na poziomie 6 386 milionów dolarów o 29 procent oraz skokiem wydatków na moc obliczeniową i infrastrukturę badawczą o 79 procent. Zatrudnienie osiągnęło około 42 000 osób w 38 krajach, w tym 31 000 w R&D, przy rotacji 3,7 procent i przychodzie około 5,14 miliona na pracownika.",
+          "en": "R&D grew 43 percent to 18,497 million dollars, or 8.6 percent of revenue, driven by compensation and benefits including 6,386 million in SBC up 29 percent and a 79 percent jump in compute and research infrastructure spend. Headcount hit roughly 42,000 across 38 countries, including 31,000 in R&D, with 3.7 percent attrition and about 5.14 million in revenue per employee."
+        }
+      },
+      "disruption": {
+        "score": 3,
+        "rationale": {
+          "pl": "Równoległe rozwijanie architektur Blackwell i Blackwell Ultra wymagało utrzymania skróconego cyklu premier, a w roku fiskalnym 2026 spółka zawarła też umowę licencyjną na własność intelektualną z firmą Groq i pokazała system Groq 3 LPX do wnioskowania AI. Pozyskanie technologii od wyspecjalizowanego rywala inferencyjnego świadczyło o aktywnym zabezpieczaniu się przed nowymi architekturami.",
+          "en": "Developing Blackwell and Blackwell Ultra in parallel required keeping a faster launch cadence, and in fiscal 2026 the company also signed an IP licensing deal with Groq and unveiled Groq 3 LPX for AI inference. Licensing technology from a specialized inference rival showed active hedging against newer compute architectures."
+        }
+      }
+    },
+    "2027": {
+      "complementors": {
+        "score": 3,
+        "rationale": {
+          "pl": "W dziewięciu miesiącach roku fiskalnego 2027 przychody wyniosły 293,68 miliarda dolarów, w tym 115,8 miliarda w Q3, a spółka ogłosiła przejęcie Hugging Face przy planowanych 26 miliardach dolarów na otwarte modele przez pięć lat. Jednocześnie powiązania finansowe wygenerowały na koniec Q3 390 miliardów dolarów zobowiązań zakupowych w łańcuchu dostaw, 102 miliardy najmu i chmury, 32 miliardy wobec neochmur oraz 118 miliardów gwarancji.",
+          "en": "Over nine months of fiscal 2027, revenue reached 293.68 billion dollars, including 115.8 billion in Q3, and the company announced acquiring Hugging Face with a reported 26 billion dollar five year plan for open models. Meanwhile, ecosystem financial ties reached 390 billion dollars in supply chain purchase commitments at Q3 end, 102 billion in lease and cloud commitments, 32 billion for neoclouds, and 118 billion in guarantees."
+        }
+      },
+      "regulation": {
+        "score": 5,
+        "rationale": {
+          "pl": "W Q3 roku fiskalnego 2027 dostawy Hopper do Chin wyniosły zaledwie 2,4 miliarda dolarów, prognoza na Q4 nie zakłada sprzedaży Data Center do Chin, w listopadzie 2026 roku ogłoszono kolejne restrykcje eksportowe, a chmurom narzucono wymóg kierowania co najmniej 51 procent usług poza Chiny. W listopadzie 2026 roku sprawa relacji Jensena Huanga z Huang Le z Megaspeed wywołała śledztwa FBI i komisji Izby Reprezentantów oraz powołanie komitetu ds. bezpieczeństwa narodowego.",
+          "en": "In Q3 fiscal 2027, Hopper shipments to China totaled just 2.4 billion dollars, Q4 guidance assumes no China Data Center revenue, November 2026 brought fresh export restrictions, and cloud providers faced a rule directing at least 51 percent of capacity outside China. In November 2026, scrutiny over Jensen Huang ties to Huang Le of Megaspeed sparked FBI and House committee probes and a national security committee."
+        }
+      },
+      "labor": {
+        "score": 4,
+        "rationale": {
+          "pl": "Za dziewięć miesięcy roku fiskalnego 2027 wydatki R&D wzrosły o 60,4 procent rok do roku do 20 829 milionów dolarów, a SBC zwiększyło się o 27,1 procent do 6 042 milionów dolarów przy włączeniu SBC do miar non GAAP od Q1. Na wysokie koszty osobowe nałożył się wstrząs przywódczy: 12 listopada 2026 roku Jensen Huang ustąpił na rzecz tymczasowo pełniącej obowiązki Colette Kress, a 23 listopada 2026 roku wrócił na stanowisko po interwencji prezydenta Donalda Trumpa i petycjach pracowników.",
+          "en": "Over nine months of fiscal 2027, R&D rose 60.4 percent year over year to 20,829 million dollars and SBC rose 27.1 percent to 6,042 million dollars as SBC entered non GAAP measures from Q1. High personnel cost dynamics coincided with leadership turmoil: Jensen Huang stepped down on November 12, 2026 with CFO Colette Kress stepping in temporarily, before returning on November 23, 2026 after Donald Trump intervened and employees petitioned."
+        }
+      },
+      "disruption": {
+        "score": 3,
+        "rationale": {
+          "pl": "W trzecim kwartale roku fiskalnego 2027 ruszyły dostawy platformy Vera Rubin NVL72 obok procesorów Vera CPU oraz wzrostu Blackwell Ultra przy silnym popycie na obciążenia agentowe, gdzie modele agentowe odpowiadały za około 80 procent tokenów na OpenRouter. Szybka wymiana generacyjna przełożyła się jednak na przejściowy spadek prognozowanej marży brutto na Q4 do 71,0–72,0 procent z 74,8 procent GAAP w Q3, przed oczekiwanym powrotem do 72–73 procent w kolejnym roku.",
+          "en": "In Q3 fiscal 2027, Vera Rubin NVL72 shipments began alongside Vera CPU and Blackwell Ultra growth amid surging agentic workloads, accounting for roughly 80 percent of tokens on OpenRouter. Fast generational turnover brought a temporary dip in Q4 guided gross margin to 71.0–72.0 percent from 74.8 percent GAAP in Q3, ahead of an expected return to 72–73 percent next year."
+        }
+      }
+    }
+  }
+}
