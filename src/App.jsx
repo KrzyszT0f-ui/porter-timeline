@@ -11,20 +11,33 @@ import {
   Radio,
   Plane
 } from 'lucide-react';
-import { COMPANIES, getCompanyById } from './data/registry';
+import { COMPANIES, getCompanyById, getExtendedForcesForYear } from './data/registry';
 import { translations, pickLang } from './i18n/translations';
 import ChatWidget from './components/ChatWidget';
 
-const FORCE_KEYS = ['rivalry', 'suppliers', 'buyers', 'substitutes', 'newEntrants'];
+const CLASSIC_FORCE_KEYS = ['rivalry', 'suppliers', 'buyers', 'substitutes', 'newEntrants'];
+const EXTENDED_FORCE_KEYS = ['complementors', 'regulation', 'labor', 'disruption'];
 
-function FiveForcesRadar({ currentForces, compareForces, labels, accentColor, compareColor, selectedForce, onSelectForce }) {
+function FiveForcesRadar({
+  forceKeys,
+  currentForces,
+  compareForces,
+  labels,
+  accentColor,
+  compareColor,
+  selectedForce,
+  onSelectForce
+}) {
   const size = 300;
   const center = size / 2;
-  const maxRadius = 102;
+  const axisCount = forceKeys.length;
+  const isExtended = axisCount > 5;
+  const maxRadius = isExtended ? 88 : 102;
+  const labelRadius = isExtended ? 6.45 : 6.25;
   const levels = [1, 2, 3, 4, 5];
 
   const getPoint = (index, score) => {
-    const angle = (Math.PI * 2 * index) / 5 - Math.PI / 2;
+    const angle = (Math.PI * 2 * index) / axisCount - Math.PI / 2;
     const r = (score / 5) * maxRadius;
     return {
       x: center + r * Math.cos(angle),
@@ -32,20 +45,20 @@ function FiveForcesRadar({ currentForces, compareForces, labels, accentColor, co
     };
   };
 
-  const currentPoints = FORCE_KEYS.map((key, idx) => getPoint(idx, currentForces[key]?.score || 1));
+  const currentPoints = forceKeys.map((key, idx) => getPoint(idx, currentForces[key]?.score || 1));
   const currentPolygon = currentPoints.map((p) => `${p.x},${p.y}`).join(' ');
 
   const comparePoints = compareForces
-    ? FORCE_KEYS.map((key, idx) => getPoint(idx, compareForces[key]?.score || 1))
+    ? forceKeys.map((key, idx) => getPoint(idx, compareForces[key]?.score || 1))
     : null;
   const comparePolygon = comparePoints ? comparePoints.map((p) => `${p.x},${p.y}`).join(' ') : '';
 
   return (
     <div className="flex flex-col items-center justify-center w-full">
-      <svg viewBox={`0 0 ${size} ${size}`} className="w-full max-w-[310px] overflow-visible select-none">
-        {/* Siatka pięciokątów 1-5 */}
+      <svg viewBox={`0 0 ${size} ${size}`} className="w-full max-w-[320px] overflow-visible select-none">
         {levels.map((lvl) => {
-          const pts = FORCE_KEYS.map((_, idx) => getPoint(idx, lvl))
+          const pts = forceKeys
+            .map((_, idx) => getPoint(idx, lvl))
             .map((p) => `${p.x},${p.y}`)
             .join(' ');
           return (
@@ -60,8 +73,7 @@ function FiveForcesRadar({ currentForces, compareForces, labels, accentColor, co
           );
         })}
 
-        {/* Osie promieniowe */}
-        {FORCE_KEYS.map((key, idx) => {
+        {forceKeys.map((key, idx) => {
           const outer = getPoint(idx, 5);
           return (
             <line
@@ -76,7 +88,6 @@ function FiveForcesRadar({ currentForces, compareForces, labels, accentColor, co
           );
         })}
 
-        {/* Wielokąt roku porównawczego */}
         {comparePolygon && (
           <polygon
             points={comparePolygon}
@@ -88,7 +99,6 @@ function FiveForcesRadar({ currentForces, compareForces, labels, accentColor, co
           />
         )}
 
-        {/* Wielokąt aktywnego roku */}
         <polygon
           points={currentPolygon}
           fill={accentColor}
@@ -97,10 +107,9 @@ function FiveForcesRadar({ currentForces, compareForces, labels, accentColor, co
           strokeWidth="2.5"
         />
 
-        {/* Interaktywne wierzchołki i etykiety */}
-        {FORCE_KEYS.map((key, idx) => {
+        {forceKeys.map((key, idx) => {
           const pt = currentPoints[idx];
-          const labelPt = getPoint(idx, 6.25);
+          const labelPt = getPoint(idx, labelRadius);
           const isSelected = selectedForce === key;
 
           return (
@@ -112,7 +121,7 @@ function FiveForcesRadar({ currentForces, compareForces, labels, accentColor, co
               <circle
                 cx={pt.x}
                 cy={pt.y}
-                r={isSelected ? 7 : 5}
+                r={isSelected ? 6.5 : 4.5}
                 fill={isSelected ? 'var(--text-primary)' : accentColor}
                 stroke="var(--bg-main)"
                 strokeWidth="2"
@@ -123,7 +132,7 @@ function FiveForcesRadar({ currentForces, compareForces, labels, accentColor, co
                 textAnchor="middle"
                 dominantBaseline="middle"
                 fill={isSelected ? accentColor : 'var(--text-secondary)'}
-                fontSize="11"
+                fontSize={isExtended ? '9.5' : '11'}
                 fontWeight={isSelected ? '700' : '500'}
                 className="transition-colors"
               >
@@ -161,7 +170,6 @@ function RevenueChart({ timeline, activeIndex, onSelectIndex, isLog, accentColor
 
   return (
     <svg viewBox={`0 0 ${width} ${height}`} className="w-full h-40 overflow-visible select-none">
-      {/* Linia pionowa wybranego roku */}
       {activeCoord && (
         <line
           x1={activeCoord.x}
@@ -174,7 +182,6 @@ function RevenueChart({ timeline, activeIndex, onSelectIndex, isLog, accentColor
         />
       )}
 
-      {/* Linia trendu przychodów */}
       <polyline
         fill="none"
         stroke={accentColor}
@@ -184,7 +191,6 @@ function RevenueChart({ timeline, activeIndex, onSelectIndex, isLog, accentColor
         points={polyline}
       />
 
-      {/* Punkty danych */}
       {coords.map((c, idx) => {
         const isActive = idx === activeIndex;
         return (
@@ -202,17 +208,17 @@ function RevenueChart({ timeline, activeIndex, onSelectIndex, isLog, accentColor
               strokeWidth="1.5"
             />
             {(timeline.length <= 14 || idx % 2 === 0 || idx === timeline.length - 1 || isActive) && (
-            <text
-              x={c.x}
-              y={height - 4}
-              textAnchor="middle"
-              fill={isActive ? accentColor : 'var(--text-secondary)'}
-              fontSize={timeline.length > 14 ? '9' : '10'}
-              fontWeight={isActive ? '700' : '400'}
-            >
-              {timeline.length > 14 ? `'${String(c.year).slice(-2)}` : c.year}
-            </text>
-          )}
+              <text
+                x={c.x}
+                y={height - 4}
+                textAnchor="middle"
+                fill={isActive ? accentColor : 'var(--text-secondary)'}
+                fontSize={timeline.length > 14 ? '9' : '10'}
+                fontWeight={isActive ? '700' : '400'}
+              >
+                {timeline.length > 14 ? `'${String(c.year).slice(-2)}` : c.year}
+              </text>
+            )}
           </g>
         );
       })}
@@ -227,16 +233,15 @@ export default function App() {
   const [compareIndex, setCompareIndex] = useState(null);
   const [selectedForce, setSelectedForce] = useState('rivalry');
   const [isLogScale, setIsLogScale] = useState(true);
+  const [forceMode, setForceMode] = useState('classic');
 
   const company = useMemo(() => getCompanyById(companyId), [companyId]);
   const t = translations[lang] || translations.pl;
 
-  // Zapis języka w localStorage
   useEffect(() => {
     localStorage.setItem('porter_lang', lang);
   }, [lang]);
 
-  // Dynamiczne wstrzykiwanie motywu kolorystycznego aktywnej spółki
   useEffect(() => {
     const theme = company.theme;
     if (!theme) return;
@@ -258,14 +263,12 @@ export default function App() {
     }
   }, [company]);
 
-  // Reset indeksu roku po przełączeniu spółki (ustawienie na przedostatni lub najnowszy rok)
   useEffect(() => {
     const defaultIdx = Math.max(0, company.timeline.length - 1);
     setYearIndex(defaultIdx);
     setCompareIndex(null);
   }, [company]);
 
-  // Obsługa klawiatury (strzałki lewo/prawo)
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'ArrowLeft') {
@@ -280,7 +283,49 @@ export default function App() {
 
   const currentEntry = company.timeline[yearIndex] || company.timeline[0];
   const compareEntry = compareIndex !== null ? company.timeline[compareIndex] : null;
-  const activeForceData = currentEntry.forces[selectedForce];
+
+  const extendedForCurrent = useMemo(
+    () => getExtendedForcesForYear(company.id, currentEntry.year),
+    [company.id, currentEntry.year]
+  );
+
+  const extendedForCompare = useMemo(
+    () => (compareEntry ? getExtendedForcesForYear(company.id, compareEntry.year) : null),
+    [company.id, compareEntry]
+  );
+
+  const hasExtendedForYear = Boolean(extendedForCurrent);
+  const isExtendedActive = forceMode === 'extended' && hasExtendedForYear;
+
+  const activeForceKeys = useMemo(
+    () => (isExtendedActive ? [...CLASSIC_FORCE_KEYS, ...EXTENDED_FORCE_KEYS] : CLASSIC_FORCE_KEYS),
+    [isExtendedActive]
+  );
+
+  const mergedCurrentForces = useMemo(
+    () => (isExtendedActive ? { ...currentEntry.forces, ...extendedForCurrent } : currentEntry.forces),
+    [isExtendedActive, currentEntry.forces, extendedForCurrent]
+  );
+
+  const mergedCompareForces = useMemo(() => {
+    if (!compareEntry) return null;
+    if (isExtendedActive && extendedForCompare) {
+      return { ...compareEntry.forces, ...extendedForCompare };
+    }
+    return compareEntry.forces;
+  }, [isExtendedActive, compareEntry, extendedForCompare]);
+
+  useEffect(() => {
+    if (!activeForceKeys.includes(selectedForce)) {
+      setSelectedForce('rivalry');
+    }
+  }, [activeForceKeys, selectedForce]);
+
+  const effectiveSelectedForce = activeForceKeys.includes(selectedForce) ? selectedForce : 'rivalry';
+  const activeForceData = mergedCurrentForces[effectiveSelectedForce] || mergedCurrentForces.rivalry;
+  const compareForceData = mergedCompareForces
+    ? (mergedCompareForces[effectiveSelectedForce] || mergedCompareForces.rivalry)
+    : null;
 
   const toggleCompare = () => {
     if (compareIndex !== null) {
@@ -296,7 +341,6 @@ export default function App() {
       className="min-h-screen pb-32 transition-colors duration-300"
       style={{ backgroundColor: 'var(--bg-main)', color: 'var(--text-primary)' }}
     >
-      {/* Górny pasek nawigacji */}
       <header
         className="sticky top-0 z-30 border-b backdrop-blur-md"
         style={{ backgroundColor: 'color-mix(in srgb, var(--bg-main) 88%, transparent)', borderColor: 'var(--border-subtle)' }}
@@ -320,7 +364,6 @@ export default function App() {
           </div>
 
           <div className="flex items-center gap-2 sm:gap-3">
-            {/* Przełącznik języka PL / EN */}
             <button
               onClick={() => setLang((prev) => (prev === 'pl' ? 'en' : 'pl'))}
               className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-semibold border transition-all cursor-pointer"
@@ -337,7 +380,6 @@ export default function App() {
               <span className={lang === 'en' ? 'font-extrabold' : 'opacity-50'}>EN</span>
             </button>
 
-            {/* Selektor spółki */}
             <select
               value={companyId}
               onChange={(e) => setCompanyId(e.target.value)}
@@ -355,7 +397,6 @@ export default function App() {
               ))}
             </select>
 
-            {/* Przycisk porównania lat */}
             <button
               onClick={toggleCompare}
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all cursor-pointer"
@@ -374,9 +415,7 @@ export default function App() {
         </div>
       </header>
 
-      {/* Główna zawartość */}
       <main className="max-w-6xl mx-auto px-4 pt-5 space-y-5">
-        {/* Karta nagłówkowa wybranego roku i KPI */}
         <section
           className="rounded-xl p-5 border"
           style={{ backgroundColor: 'var(--bg-card)', borderColor: 'var(--border-subtle)' }}
@@ -408,7 +447,6 @@ export default function App() {
               </span>
             </div>
 
-            {/* Pasek wyboru roku do porównania */}
             {compareIndex !== null && (
               <div
                 className="flex items-center gap-2 px-3 py-1 rounded-lg border text-xs"
@@ -437,7 +475,6 @@ export default function App() {
             {pickLang(currentEntry.summary, lang)}
           </p>
 
-          {/* Siatka 6 kart KPI */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
             <div className="p-3 rounded-lg border" style={{ backgroundColor: 'var(--bg-card-elevated)', borderColor: 'var(--border-subtle)' }}>
               <div className="text-[10px] font-bold tracking-wider uppercase mb-1" style={{ color: 'var(--text-secondary)' }}>
@@ -490,43 +527,72 @@ export default function App() {
           </div>
         </section>
 
-        {/* Główna sekcja analityczna: Radar (lewa) + Uzasadnienie i Wykresy (prawa) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
-          {/* Lewa kolumna: Radar + Lista 5 sił */}
           <section
             className="lg:col-span-5 rounded-xl p-5 border flex flex-col justify-between"
             style={{ backgroundColor: 'var(--bg-card)', borderColor: 'var(--border-subtle)' }}
           >
             <div>
-              <div className="flex items-center justify-between mb-1">
+              <div className="flex flex-wrap items-center justify-between gap-2 mb-1">
                 <h2 className="text-sm font-bold">
-                  {t.radarTitle} ({currentEntry.year})
+                  {isExtendedActive ? (t.radarExtendedTitle || 'Profil 9 Obszarów') : t.radarTitle} ({currentEntry.year})
                 </h2>
-                <span className="text-[11px]" style={{ color: 'var(--text-secondary)' }}>
-                  {t.radarScaleNote}
-                </span>
+                <div className="flex items-center gap-2">
+                  {hasExtendedForYear && (
+                    <div
+                      className="flex rounded-md p-0.5 border text-[11px]"
+                      style={{ backgroundColor: 'var(--bg-main)', borderColor: 'var(--border-subtle)' }}
+                    >
+                      <button
+                        type="button"
+                        onClick={() => setForceMode('classic')}
+                        className="px-2 py-0.5 rounded font-semibold cursor-pointer"
+                        style={{
+                          backgroundColor: !isExtendedActive ? 'var(--accent)' : 'transparent',
+                          color: !isExtendedActive ? 'var(--accent-contrast)' : 'var(--text-secondary)'
+                        }}
+                      >
+                        {t.modeClassic || '5 sił'}
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setForceMode('extended')}
+                        className="px-2 py-0.5 rounded font-semibold cursor-pointer"
+                        style={{
+                          backgroundColor: isExtendedActive ? 'var(--accent)' : 'transparent',
+                          color: isExtendedActive ? 'var(--accent-contrast)' : 'var(--text-secondary)'
+                        }}
+                      >
+                        {t.modeExtended || '9 obszarów'}
+                      </button>
+                    </div>
+                  )}
+                  <span className="text-[11px]" style={{ color: 'var(--text-secondary)' }}>
+                    {t.radarScaleNote}
+                  </span>
+                </div>
               </div>
               <p className="text-xs mb-4" style={{ color: 'var(--text-secondary)' }}>
                 {t.radarInstruction}
               </p>
 
               <FiveForcesRadar
-                currentForces={currentEntry.forces}
-                compareForces={compareEntry?.forces}
+                forceKeys={activeForceKeys}
+                currentForces={mergedCurrentForces}
+                compareForces={mergedCompareForces}
                 labels={t.forces}
                 accentColor="var(--accent)"
                 compareColor="var(--compare-accent)"
-                selectedForce={selectedForce}
+                selectedForce={effectiveSelectedForce}
                 onSelectForce={setSelectedForce}
               />
             </div>
 
-            {/* Lista klikalna wszystkich 5 sił */}
             <div className="mt-4 space-y-2">
-              {FORCE_KEYS.map((key) => {
-                const score = currentEntry.forces[key]?.score || 1;
-                const compScore = compareEntry?.forces[key]?.score;
-                const isSelected = selectedForce === key;
+              {activeForceKeys.map((key) => {
+                const score = mergedCurrentForces[key]?.score || 1;
+                const compScore = mergedCompareForces?.[key]?.score;
+                const isSelected = effectiveSelectedForce === key;
 
                 return (
                   <button
@@ -557,9 +623,7 @@ export default function App() {
             </div>
           </section>
 
-          {/* Prawa kolumna: Uzasadnienie siły + Struktura przychodów + Trajektoria */}
           <div className="lg:col-span-7 space-y-5">
-            {/* Szczegóły wybranej siły */}
             <section
               className="rounded-xl p-5 border"
               style={{ backgroundColor: 'var(--bg-card)', borderColor: 'var(--border-subtle)' }}
@@ -568,7 +632,7 @@ export default function App() {
                 <div className="flex items-center gap-2">
                   <Layers className="w-4 h-4" style={{ color: 'var(--accent)' }} />
                   <h3 className="text-sm font-bold">
-                    {t.forceFullNames[selectedForce]} — {currentEntry.year}
+                    {t.forceFullNames[effectiveSelectedForce]} — {currentEntry.year}
                   </h3>
                 </div>
                 <span
@@ -587,21 +651,20 @@ export default function App() {
                 {pickLang(activeForceData.rationale, lang)}
               </p>
 
-              {compareEntry && (
+              {compareEntry && compareForceData && (
                 <div
                   className="p-3 rounded-lg border mb-4 text-xs"
                   style={{ backgroundColor: 'var(--bg-card-elevated)', borderColor: 'var(--compare-accent)' }}
                 >
                   <div className="font-bold mb-1" style={{ color: 'var(--compare-accent)' }}>
-                    {compareEntry.year} ({compareEntry.forces[selectedForce].score}/5 • {t.levels[compareEntry.forces[selectedForce].score]}):
+                    {compareEntry.year} ({compareForceData.score}/5 • {t.levels[compareForceData.score]}):
                   </div>
                   <p style={{ color: 'var(--text-secondary)' }}>
-                    {pickLang(compareEntry.forces[selectedForce].rationale, lang)}
+                    {pickLang(compareForceData.rationale, lang)}
                   </p>
                 </div>
               )}
 
-              {/* Paski struktury przychodów */}
               <div className="pt-3 border-t" style={{ borderColor: 'var(--border-subtle)' }}>
                 <div className="text-[11px] font-bold uppercase tracking-wider mb-3" style={{ color: 'var(--text-secondary)' }}>
                   {t.segmentTitle} ({pickLang(currentEntry.fiscalLabel, lang)})
@@ -627,7 +690,6 @@ export default function App() {
               </div>
             </section>
 
-            {/* Wykres trajektorii przychodów */}
             <section
               className="rounded-xl p-5 border"
               style={{ backgroundColor: 'var(--bg-card)', borderColor: 'var(--border-subtle)' }}
@@ -679,7 +741,6 @@ export default function App() {
         </div>
       </main>
 
-      {/* Dolny suwak osi czasu (Mobile-first Dock) */}
       <footer
         className="fixed bottom-0 left-0 right-0 z-30 border-t backdrop-blur-md"
         style={{ backgroundColor: 'color-mix(in srgb, var(--bg-main) 92%, transparent)', borderColor: 'var(--border-subtle)' }}
@@ -729,12 +790,13 @@ export default function App() {
           </div>
         </div>
       </footer>
-        <ChatWidget
+
+      <ChatWidget
         company={company}
         currentEntry={currentEntry}
         compareEntry={compareEntry}
         lang={lang}
-        />
+      />
     </div>
   );
 }
